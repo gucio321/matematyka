@@ -26,13 +26,13 @@ załóżmy, że: \\
 n (n-3) >= 2n-6 \\
 n^2 - 3n >= 2n-6 \\
 n^2 - 5n + 6 >= 0 \\
-wtedy dla n+1:\\
+wtedy~dla~n+1:\\
 \frac{1}{2}(n+1)(n-2) >= n-2 \\
 n^2-n-2 >= 2n-4 \\
 n^2-3n+2 >= 0 \\
 (n^2-5n+2) + (2n - 4) >= 0\\
 \begin{matrix}
-(n^2-5n+2) + & (2n - 4) & >= 0\\
-z ind mat.   & \forall n >= 4 2n - 4 >=0 &
+(n^2-5n+2) &  + & (2n - 4) & >= 0\\
+z~ind~mat. &    & \forall n >= 4 2n - 4 >=0 &
 \end{matrix}
 $$
