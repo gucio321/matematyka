@@ -132,8 +132,58 @@ g : B &amp;\Rightarrow C\\
 h(x) &amp;= g(f(x))\\
 h &amp;= g \cdot f\\
 \end{split}\]</div>
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/algebra.md</span></code></em></p>
 </section>
 </section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="algebra">
+<h1>ALGEBRA<a class="headerlink" href="#algebra" title="Link to this heading">¶</a></h1>
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/algebra_09.10.2023.md</span></code></em></p>
+<section id="zestaw-1-zadanie-5">
+<h2>Zestaw 1 zadanie 5<a class="headerlink" href="#zestaw-1-zadanie-5" title="Link to this heading">¶</a></h2>
+<p>Korzystając z zas. indukcji udowodnij że:
+dla dowolnego <span class="math notranslate nohighlight">\(n \in \mathbb{N}, n &gt;= 4\)</span> liczba diagonalnych
+w n-koncie wypukłym jest niewiększa niż <span class="math notranslate nohighlight">\(\frac{1}{2} n(n-3)\)</span></p>
+<ul class="simple">
+<li><p>utworzenie wzoru na liczbę diagonalnych</p>
+<ul>
+<li><p>dla 4-kątu jest to  <code class="docutils literal notranslate"><span class="pre">1</span></code></p></li>
+<li><p>dla 5-kątu - <code class="docutils literal notranslate"><span class="pre">2</span></code></p></li>
+<li><p>dla 6-kątu - <code class="docutils literal notranslate"><span class="pre">3</span></code></p></li>
+</ul>
+</li>
+</ul>
+<p>z tego wniosek, że liczba diagonalnych <span class="math notranslate nohighlight">\(d = n-3\)</span></p>
+<ul class="simple">
+<li><p>sprawdzenie warunku dla n = 4</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+n-3 &lt;= \frac{1}{2} n (n - 3)\\
+dla n = 4\\
+1 &lt;= 2 * 1
+\end{split}\]</div>
+<ul class="simple">
+<li><p>krok indukcyjny</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+załóżmy, że: \\
+\frac{1}{2}n (n-3) &gt;= n-3 \\
+n (n-3) &gt;= 2n-6 \\
+n^2 - 3n &gt;= 2n-6 \\
+n^2 - 5n + 6 &gt;= 0 \\
+wtedy dla n+1:\\
+\frac{1}{2}(n+1)(n-2) &gt;= n-2 \\
+n^2-n-2 &gt;= 2n-4 \\
+n^2-3n+2 &gt;= 0 \\
+(n^2-5n+2) + (2n - 4) &gt;= 0\\
+\begin{matrix}
+(n^2-5n+2) + &amp; (2n - 4) &amp; &gt;= 0\\
+z ind mat.   &amp; \forall n &gt;= 4 2n - 4 &gt;=0 &amp;
+\end{matrix}
+\end{split}\]</div>
 </section>
 </section>
 
@@ -156,6 +206,10 @@ h &amp;= g \cdot f\\
 </li>
 </ul>
 </li>
+</ul>
+</li>
+<li><a class="reference internal" href="#algebra">ALGEBRA</a><ul>
+<li><a class="reference internal" href="#zestaw-1-zadanie-5">Zestaw 1 zadanie 5</a></li>
 </ul>
 </li>
 </ul>
