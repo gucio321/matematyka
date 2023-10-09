@@ -22,10 +22,10 @@ jeżeli $\forall a_1, a_2 \in A ~ f(a_1) \neq f(a_2)$
 $\forall b \in b \exists a in A ~ f(a) = b$
 - f jest bijekcją $\Leftrightarrow$ f jest injekcją oraz surjekcją
 
-jeżeli surjekcja $\Rightleftarrow$ równanie ma rozwiązanie $\forall y$
-jeżeli injekcja $\Rightleftarrow$ równanie ma dokładnie jedno rozwiązanie
+jeżeli surjekcja $\Leftrightarrow$ równanie ma rozwiązanie $\forall y$
+jeżeli injekcja $\Leftrightarrow$ równanie ma dokładnie jedno rozwiązanie
 
-jeżeli f jest bijekcją, wtedy istnieje funkcja odwrotna $f^{-1}: B \rightarrow A ~ f^{-1}(y) = x \Rightleftarrow f(x) = y$
+jeżeli f jest bijekcją, wtedy istnieje funkcja odwrotna $f^{-1}: B \rightarrow A ~ f^{-1}(y) = x \Leftrightarrow f(x) = y$
 
 #### badanie własności fnkcji
 
@@ -45,7 +45,7 @@ prostej $y = x$
 ```
 
 niech $f(x) = sin(x)$ 
-niech $x \in (-\frac{\pi}{2}, \frac{\pi}{2}) \and y \in [-1, 1]$
+niech $x \in (-\frac{\pi}{2}, \frac{\pi}{2}) \land y \in [-1, 1]$
 tak zdefiniowana funkcja jest bijekcją $\Rightarrow \exists f^{-1}$
 
 $\bf{sin^{-1}(x) = arcsin(x)}$
