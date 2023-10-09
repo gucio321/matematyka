@@ -3,18 +3,23 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Matematyka's documentation!
+Wstęp
 ======================================
+
+Niniejsza strona poświęcona jest Matematyce na studiach wyższych.
+W szczególności następującym przedmiotom:
+- Matematyka
+- Metody analizy algebraicznej w fizyce
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Zawartość:
 
    assets/index.md
 
-Indices and tables
-==================
+.. important::
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   Kolejność treści na tej stronie jest generowana automatycznie przez automatyczny skrypt. Jeśli coś jest ułożone w złej kolejności, bardzo proszę o zgłoszenie
+   tego faktu na naszym GitHubie (link poniżej)
+
+Zapraszam do przeglądania kodu źródłowego strony `w naszym repozytorium GitHub <https://github.com/gucio321/matematyka>`_
