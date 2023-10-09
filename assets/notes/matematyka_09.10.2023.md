@@ -1,5 +1,3 @@
-# Teoria zbiorów
-
 ## Iloczyn kartezjański:
 $A \times B = \begin{Bmatrix} (a, b) & \begin{matrix} a \in A \\ b \in B \end{matrix} \end{Bmatrix}$
 
