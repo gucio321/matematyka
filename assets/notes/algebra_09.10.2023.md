@@ -10,11 +10,11 @@ w n-koncie wypukłym jest niewiększa niż $\frac{1}{2} n(n-3)$
 
 z tego wniosek, że liczba diagonalnych $d = n-3$
 
-- sprawdzenie warunku dla n = 4
+- sprawdzenie warunku dla ~ n = 4
 
 $$
 n-3 <= \frac{1}{2} n (n - 3)\\
-dla n = 4\\
+dla ~ n = 4\\
 1 <= 2 * 1
 $$
 
