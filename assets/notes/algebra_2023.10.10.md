@@ -43,7 +43,7 @@ e^{i \phi} = cos \phi + i sin \phi
 $$$
 
 $$
-z_k = \nroot{n}{r}(cos \frac{\phi + 2k \pi}{n} + i sin{\phi + 2k \pi}{n}) ~~ k = 0 , 1 ... n
+z_k = \root{n}{r}(cos \frac{\phi + 2k \pi}{n} + i sin{\phi + 2k \pi}{n}) ~~ k = 0 , 1 ... n
 $$
 
 ```{important}
