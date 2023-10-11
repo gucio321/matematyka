@@ -10,6 +10,17 @@ w postaci linearnej
 Przy dzieleniu liczb zespolonych należy pomnożyć przez czynnik sprzężony
 (tak jak usuwanie niewymierności z mianownika)
 
+### Sprzężenie
+
+Sprzężenie liczby zespolonej $z$ określamy jako $\bar{z}$.
+
+$$
+niech~z \in \mathbb{C} \\
+x, y \in \mathbb{R}
+z = x + y~i \\
+\bar{z} = x - y~i
+$$
+
 ### moduł liczby zespolonej
 
 Utożsamiany z długością wektora będącego interpretacją liczby urojonej.
@@ -18,6 +29,10 @@ niech $z = (x, yi)$
 $$
 |z| = \sqrt{x^2 + y^2}
 $$
+
+```{note}
+$|z|$ określamy również jako $r$
+```
 
 ### Postać trygonometryczna liczyb zespolonej
 $$
@@ -40,7 +55,16 @@ $$
 
 $$
 e^{i \phi} = cos \phi + i sin \phi
-$$$
+$$
+
+```{admonition} Sprzężenie w postaci wykładniczej
+niech $z \in \mathbb{C}$
+
+$$
+z = |z|e^{i\phi} \Leftrightarrow \bar{z} = |z|e^{-i\phi}
+$$
+
+```
 
 $$
 z_k = \root{n} \of{r}(cos \frac{\phi + 2k \pi}{n} + i ~ sin\frac{\phi + 2k \pi}{n} ~~ k = 0 , 1 ... n

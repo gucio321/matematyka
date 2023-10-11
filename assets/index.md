@@ -9,6 +9,10 @@ _Notatki z pliku `notes/algebra_2023.10.10.md`_
 ```{include} notes/algebra_2023.10.10.md
 ```
 ---
+_Notatki z pliku `notes/algebra_2023.10.11_zadanie.md`_
+```{include} notes/algebra_2023.10.11_zadanie.md
+```
+---
 _Notatki z pliku `notes/matematyka_2023.10.09.md`_
 ```{include} notes/matematyka_2023.10.09.md
 ```
