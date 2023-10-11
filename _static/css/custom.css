@@ -1,0 +1,107 @@
+/* page background */
+body {
+     background-color: #000000;
+     /* there are some PRO gifs, but they are tooooo resource-consuming
+      * url("https://acegif.com/wp-content/gif/outerspace-44.gif"),*/
+     background-image: url("background.jpg");
+     background-size: 100% 100%;
+     color: #ffffff;
+}
+
+/* page footer (also _tamplate/layout.html) */
+div.footer, div.footer a{
+        color: #7c7c7c;
+}
+
+div.footer a:hover {
+        background: #7c7c7c;
+        color: #000000;
+}
+
+/* top and bottom bar */
+div.related {
+	background: #212121;
+}
+
+div.related a:hover,
+div.related li.right a:hover {
+	background: #ffffff;
+	color: #000000;
+}
+
+/* search boxes on sidebar and search box */
+div.sphinxsidebar input[type="text"],
+h1#search-documentation ~ form input[type="text"],
+div#searchbox input[type="submit"],
+h1#search-documentation ~ form > input[type="submit"]
+{
+	background: #929292;
+        color: white;
+}
+
+/* sidebar */
+div.sphinxsidebarwrapper, div.documentwrapper {
+	background-color: #1e1e1e;
+}
+
+div.sphinxsidebar a,
+a.reference,
+div.related a code.literal,
+a.headerlink,
+code.literal.xref {
+	color: #f49500;
+}
+
+div.sphinxsidebar a:active {
+	color: #ff0000;
+}
+
+/* page body */
+div.body {
+	background-color: #2d2d2d;
+	color: #ffffff;
+}
+
+/* headers */
+div.body h1,
+div.body h2,
+div.body h3,
+div.body h4,
+div.body h5,
+div.body h6 {
+	color: #ffffff;
+}
+
+div.body h1.highlighted,
+div.body h2.highlighted,
+div.body h3.highlighted,
+div.body h4.highlighted,
+div.body h5.highlighted,
+div.body h6.highlighted {
+	background-color: #f49500;;
+	border-color: #f49500;;
+	color: #000000;
+}
+
+h1#search-documentation ,
+div.body h2 {
+	background: #000000;
+}
+
+
+/* note, important, tip warning, background */
+div.important {
+	background-color: #391a1a;
+}
+
+div.warning, div.attention {
+	background-color: #ff0000;
+}
+
+div.note {
+	background-color: #223c50;
+}
+
+div.tip {
+	background-color: #265022;
+}
