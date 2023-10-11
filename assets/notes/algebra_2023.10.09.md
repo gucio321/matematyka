@@ -1,3 +1,5 @@
+# ALGEBRA
+
 ## Zestaw 1 zadanie 5
 Korzystając z zas. indukcji udowodnij że:
 dla dowolnego $n \in \mathbb{N}, n >= 4$ liczba diagonalnych
