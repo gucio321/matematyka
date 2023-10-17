@@ -29,7 +29,7 @@ $$
 niech~f: D \rightarrow \mathbb{R}
 $$
 
-f jest ciągła w punkcie $x_0 \in D$ jeśli $exists \lim_{x \to x_0} = f(x_0)$
+f jest ciągła w punkcie $x_0 \in D$ jeśli $\exists \lim_{x \to x_0} = f(x_0)$
 
 ```{important}
 funkcja $f(x) = \frac{1}{x} ~ x \neq 0$ jest ciągła, mimo, że w $x_0 = 0$ granica
@@ -45,11 +45,11 @@ $f(x) = sin \frac{1}{x}$
 #### Własności funkcji ciągłych
 
 ```{admonition} Twierdzenie o lokalnym zachowaniu znaku
-niech f ciągła. Dla dowolnego punktu $x_0 \land f(x_0) > 0 \Rightarrow \exists a = \left(x_0 - \epsilon, x_0 + \epsilon \right) taki że \forall x_a in a~ f(x_a) > 0$
+niech f ciągła. Dla dowolnego punktu $x_0 \land f(x_0) > 0 \Rightarrow \exists a = \left(x_0 - \epsilon, x_0 + \epsilon \right) taki~że \forall x_a \in a~ f(x_a) > 0$
 ```
 
 ```{tip}
-jeżeli f jest ciągła oraz $exists a, b ~ f(a) < 0 \land f(b) > 0 \Rightarrow \exists x_0 in (a, b) ~ f(x_0) = 0$
+jeżeli f jest ciągła oraz $\exists a, b ~ f(a) < 0 \land f(b) > 0 \Rightarrow \exists x_0 \in (a, b) ~ f(x_0) = 0$
 ```
 
 ```{admonition} Twierdzenie Bezuta
@@ -63,7 +63,7 @@ własnność o przyjmowaniu wartościpośrednich
 dla $f: I \to \mathbb{R}$
 Jeżeli f(a) = m i f(b) = M $\land  m < M \land m < W < M$
 
-$\bf{\forall W in (m, M) \exists x in (a, b)~f(x) = W}$
+$\bf{\forall W \in (m, M) \exists x \in (a, b)~f(x) = W}$
 ```
 
 ```{admonition} Twierdzenie o przyjmowaniu kresów
