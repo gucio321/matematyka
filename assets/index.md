@@ -24,7 +24,3 @@ _Notatki z pliku `notes/notes/matematyka/matematyka_2023.10.09.md`_
 _Notatki z pliku `notes/notes/matematyka/matematyka_2023.10.15.md`_
 ```{include} notes/matematyka/matematyka_2023.10.15.md
 ```
----
-_Notatki z pliku `notes/notes/matematyka/.matematyka_2023.10.15.md.swp`_
-```{include} notes/matematyka/.matematyka_2023.10.15.md.swp
-```
