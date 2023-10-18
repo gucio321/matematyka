@@ -52,6 +52,7 @@ $$
 $$
 (AB)^T = B^T A^T
 $$
+```
 
 ### Suma elementów na przekątnych
 
@@ -78,7 +79,7 @@ z których jedna jest symetryczna, a druga antysymetryczna
 ```{admonition} Definicja
 wyznacznik to liczba $detA$ taka, że:
 - dla n = 1 $detA = a_11$
-- dla $n>=2$ $\sum_{j=1}^n (-1)^{i+j} * a_ij * detA_ij
+- dla $n \geq 2$ $\sum_{j=1}^n (-1)^{i+j} * a_ij * detA_ij
 gdzie $detA_ij$ to wyznacznik (tzw. minor) macierzy powstałej po skreśleniu i-ego wiersza i j-tej kolumny
 ```
 

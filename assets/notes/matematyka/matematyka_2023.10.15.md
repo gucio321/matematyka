@@ -67,9 +67,9 @@ $\bf{\forall W \in (m, M) \exists x \in (a, b)~f(x) = W}$
 ```
 
 ```{admonition} Twierdzenie o przyjmowaniu kresów
-
 $f <a, b> \to \mathbb{R}$
-f ciągła \\
+
+f ciągła
 
 - f jest ograniczona
 ```
