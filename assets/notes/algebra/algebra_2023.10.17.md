@@ -102,9 +102,11 @@ dla macierzy trujkątnych górnych i dolnych detA to iloczyn elementów na przek
 
 ### Macierz odwrotna
 macierze kwadraowe
+
 $$
-\exists A^{-1} ~ A * A^{-1}a = I \\
+\exists A^{-1} ~ A * A^{-1} = I \\
 $$
+
 ```{note}
 macierz osobliwa jeżeli detA = -
 ```
