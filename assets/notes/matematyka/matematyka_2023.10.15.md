@@ -65,11 +65,3 @@ Jeżeli f(a) = m i f(b) = M $\land  m < M \land m < W < M$
 
 $\bf{\forall W \in (m, M) \exists x \in (a, b)~f(x) = W}$
 ```
-
-```{admonition} Twierdzenie o przyjmowaniu kresów
-$f <a, b> \to \mathbb{R}$
-
-f ciągła
-
-- f jest ograniczona
-```

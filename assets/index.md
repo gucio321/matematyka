@@ -17,10 +17,22 @@ _Notatki z pliku `notes/notes/algebra/algebra_2023.10.17.md`_
 ```{include} notes/algebra/algebra_2023.10.17.md
 ```
 ---
+_Notatki z pliku `notes/notes/matematyka_cw/matematyka_cw_2023.10.19.md`_
+```{include} notes/matematyka_cw/matematyka_cw_2023.10.19.md
+```
+---
+_Notatki z pliku `notes/notes/matematyka_cw/.matematyka_cw_2023.10.19.md.swp`_
+```{include} notes/matematyka_cw/.matematyka_cw_2023.10.19.md.swp
+```
+---
 _Notatki z pliku `notes/notes/matematyka/matematyka_2023.10.09.md`_
 ```{include} notes/matematyka/matematyka_2023.10.09.md
 ```
 ---
 _Notatki z pliku `notes/notes/matematyka/matematyka_2023.10.15.md`_
 ```{include} notes/matematyka/matematyka_2023.10.15.md
+```
+---
+_Notatki z pliku `notes/notes/matematyka/matematyka_2023.10.23.md`_
+```{include} notes/matematyka/matematyka_2023.10.23.md
 ```
