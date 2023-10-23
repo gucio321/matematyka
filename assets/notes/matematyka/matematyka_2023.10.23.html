@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Ciągi &#8212; Matematyka  - dokumentacja</title>
+    <title>Przykłady funkcji ciągłych &#8212; Matematyka  - dokumentacja</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
@@ -53,7 +53,7 @@
              accesskey="I">indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Ciągi</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Przykłady funkcji ciągłych</a></li> 
       </ul>
     </div>
     </div>
@@ -64,81 +64,63 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="ciagi">
-<h1>Ciągi<a class="headerlink" href="#ciagi" title="Link to this heading">¶</a></h1>
-<p>Zbierzność asymptotyczna <span class="math notranslate nohighlight">\(\frac{a_n}{b_n} \to 1\)</span></p>
-<div class="admonition-wzor-sterlinga admonition">
-<p class="admonition-title">wzór Sterlinga</p>
-<p>$n! ~ n^n - e^{-n} \sqrt{2 \pi n}</p>
+  <div class="admonition-twierdzenie-o-osiaganiu-kresow admonition">
+<p class="admonition-title">Twierdzenie o osiąganiu kresów</p>
+<p>Jeżeli funkcja <span class="math notranslate nohighlight">\(f\left&lt;a, b \right&gt; \to \mathbb{R}\)</span> jest ciągła, to:</p>
+<ul class="simple">
+<li><p>jest ograniczona</p></li>
+<li><p>oraz <span class="math notranslate nohighlight">\(\exists x_1 x_2 \in (a, b) ~ f(x_1) = m \land f(x_2) = M\)</span> gdzie <code class="docutils literal notranslate"><span class="pre">m</span></code> to kres dolny
+a <code class="docutils literal notranslate"><span class="pre">M</span></code> to kres górny</p></li>
+</ul>
 </div>
-<section id="wazne-granice">
-<h2>ważne granice<a class="headerlink" href="#wazne-granice" title="Link to this heading">¶</a></h2>
-<ul class="simple">
-<li></li>
-</ul>
+<div class="admonition-twierdzenie-o-ciaglosci-funkcji-odwrotnej admonition">
+<p class="admonition-title">Twierdzenie o ciągłości funkcji odwrotnej</p>
+<p>niech funkcja <span class="math notranslate nohighlight">\(f\left&lt;a, b \right&gt; \to \mathbb{R}\)</span> będzie ciągła</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\lim_{x \to 0} \frac{sin(x)}{x} = 1 \\
+f(a) = c \\
+f(b) = d \\
+f(a) &lt; f(b)
 \end{split}\]</div>
+<p>wtedy</p>
 <ul class="simple">
-<li></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">f</span></code> jest ściśle rosnąca <span class="math notranslate nohighlight">\(\Leftrightarrow\)</span> <code class="docutils literal notranslate"><span class="pre">f</span></code> ma funkcję odwrotną</p></li>
+<li><p>jeśli istnieje funkcja odwrotna, to jest ona również ciągła</p></li>
 </ul>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-dla~a &gt; 1\\
-lim_{x \to 0} a^x = 1\\
-forall n in \mathbb{N} ~a^{\frac{1}{n+1}} &lt; a^x &lt; a^{\frac{1}{n}}
-\end{split}\]</div>
-<ul class="simple">
-<li></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\lim_{h \to 0} \frac{a^h - 1}{h} \\
-\end{split}\]</div>
-</section>
-</section>
-<section id="funkcje-ciagle">
-<h1>Funkcje ciągłe<a class="headerlink" href="#funkcje-ciagle" title="Link to this heading">¶</a></h1>
-<div class="math notranslate nohighlight">
-\[
-niech~f: D \rightarrow \mathbb{R}
-\]</div>
-<p>f jest ciągła w punkcie <span class="math notranslate nohighlight">\(x_0 \in D\)</span> jeśli <span class="math notranslate nohighlight">\(\exists \lim_{x \to x_0} = f(x_0)\)</span></p>
-<div class="admonition important">
-<p class="admonition-title">Ważne</p>
-<p>funkcja <span class="math notranslate nohighlight">\(f(x) = \frac{1}{x} ~ x \neq 0\)</span> jest ciągła, mimo, że w <span class="math notranslate nohighlight">\(x_0 = 0\)</span> granica
-nie istnieje, ponieważ <span class="math notranslate nohighlight">\(x_0 \notin D\)</span></p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Wskazówka</p>
-<p><span class="math notranslate nohighlight">\(f(x) = sin \frac{1}{x}\)</span></p>
-<!--f(x) = sin 1/x-->
-<iframe src="https://www.desmos.com/calculator/ikwyzx40pl" width="100%" style="min-height:200px"></iframe>
+<p>Funkcja <strong>ściśle rosnąca</strong> to taka, dla którje prawdziwe jest twierdzenie
+<span class="math notranslate nohighlight">\(\forall x_1 &lt; x_2 f(x_1)&lt;f(x_2)\)</span></p>
 </div>
-<section id="wlasnosci-funkcji-ciaglych">
-<h2>Własności funkcji ciągłych<a class="headerlink" href="#wlasnosci-funkcji-ciaglych" title="Link to this heading">¶</a></h2>
-<div class="admonition-twierdzenie-o-lokalnym-zachowaniu-znaku admonition">
-<p class="admonition-title">Twierdzenie o lokalnym zachowaniu znaku</p>
-<p>niech f ciągła. Dla dowolnego punktu <span class="math notranslate nohighlight">\(x_0 \land f(x_0) &gt; 0 \Rightarrow \exists a = \left(x_0 - \epsilon, x_0 + \epsilon \right) taki~że \forall x_a \in a~ f(x_a) &gt; 0\)</span></p>
+<div class="admonition-twierdzenie-o-ciaglosci-funkcji-zlozonej admonition">
+<p class="admonition-title">Twierdzenie o ciągłości funkcji złożonej</p>
+<p>Niec <span class="math notranslate nohighlight">\(f:D \to \mathbb{R}\)</span> i <span class="math notranslate nohighlight">\(g:D \to \mathbb{R}\)</span> będzie ciągła wtedy
+<span class="math notranslate nohighlight">\(h = f \dot g\)</span> - <code class="docutils literal notranslate"><span class="pre">h</span></code> jest ciągła</p>
 </div>
-<div class="admonition tip">
-<p class="admonition-title">Wskazówka</p>
-<p>jeżeli f jest ciągła oraz <span class="math notranslate nohighlight">\(\exists a, b ~ f(a) &lt; 0 \land f(b) &gt; 0 \Rightarrow \exists x_0 \in (a, b) ~ f(x_0) = 0\)</span></p>
+<div class="admonition-twierdzenie-o-4-dzialaniach-dla-funkcji-ciaglych admonition">
+<p class="admonition-title">Twierdzenie o 4 działaniach dla funkcji ciągłych</p>
+<p><span class="math notranslate nohighlight">\(f, g : D \to \mathbb{R}\)</span>, jeżeli <code class="docutils literal notranslate"><span class="pre">f</span></code>, <code class="docutils literal notranslate"><span class="pre">g</span></code> ciągłe w <code class="docutils literal notranslate"><span class="pre">D</span></code>
+<span class="math notranslate nohighlight">\(f+g \land f-g \land f*g\)</span> są ciągłe. Ponadto jeżeli
+<span class="math notranslate nohighlight">\(g \neq 0 \Rightarrow \frac{f}{g}\)</span> są również ciągłe</p>
 </div>
-<div class="admonition-twierdzenie-bezuta admonition">
-<p class="admonition-title">Twierdzenie Bezuta</p>
-<p>jeżeli <span class="math notranslate nohighlight">\(x_0\)</span> jest pierwiastkiem wielomianu to wielomian <span class="math notranslate nohighlight">\(W(x)\)</span> można
-przedstawić jako <span class="math notranslate nohighlight">\(W(x) = (x - x_0)P(x)\)</span></p>
+<section id="przyklady-funkcji-ciaglych">
+<h1>Przykłady funkcji ciągłych<a class="headerlink" href="#przyklady-funkcji-ciaglych" title="Link to this heading">¶</a></h1>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(f(x) \equiv const\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = x\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = c * x\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = c_1 * x + c_2\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = x^2\)</span></p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Wielomiany są funkcjami ciągłymi</p>
 </div>
-<div class="admonition-wlasonosc-garbouta admonition">
-<p class="admonition-title">własoność Garbouta</p>
-<p>własnność o przyjmowaniu wartościpośrednich</p>
-<p>dla <span class="math notranslate nohighlight">\(f: I \to \mathbb{R}\)</span>
-Jeżeli f(a) = m i f(b) = M <span class="math notranslate nohighlight">\(\land  m &lt; M \land m &lt; W &lt; M\)</span></p>
-<p><span class="math notranslate nohighlight">\(\bf{\forall W \in (m, M) \exists x \in (a, b)~f(x) = W}\)</span></p>
-</div>
-</section>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\root{n}{x}\)</span> (funkcja odwrotna do <span class="math notranslate nohighlight">\(x^n\)</span>)</p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = a^x~a &gt; 0 \land a \neq 1\)</span></p></li>
+</ul>
 </section>
 
 
@@ -147,20 +129,7 @@ Jeżeli f(a) = m i f(b) = M <span class="math notranslate nohighlight">\(\land  
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
-    <h3><a href="../../../index.html">Spis treści:</a></h3>
-    <ul>
-<li><a class="reference internal" href="#">Ciągi</a><ul>
-<li><a class="reference internal" href="#wazne-granice">ważne granice</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#funkcje-ciagle">Funkcje ciągłe</a><ul>
-<li><a class="reference internal" href="#wlasnosci-funkcji-ciaglych">Własności funkcji ciągłych</a></li>
-</ul>
-</li>
-</ul>
-
-  </div>
+        <div class="sphinxsidebarwrapper">
 <div id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Szybkie wyszukiwanie</h3>
     <div class="searchformwrapper">
@@ -202,7 +171,7 @@ Jeżeli f(a) = m i f(b) = M <span class="math notranslate nohighlight">\(\land  
              >indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Ciągi</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Przykłady funkcji ciągłych</a></li> 
       </ul>
     </div>
     </div>

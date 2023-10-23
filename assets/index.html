@@ -271,8 +271,8 @@ Macierz diagonalna jednostkowa jest elementem neutralnym.
 Na przykład
 $$</p></li>
 </ul>
-<div class="amsmath math notranslate nohighlight" id="equation-a1022108-e073-42c9-92c5-37b38bcd2c98">
-<span class="eqno">(1)<a class="headerlink" href="#equation-a1022108-e073-42c9-92c5-37b38bcd2c98" title="Permalink to this equation">¶</a></span>\[\begin{bmatrix}
+<div class="amsmath math notranslate nohighlight" id="equation-13d36019-7750-4ab9-b6ff-070808c95f28">
+<span class="eqno">(1)<a class="headerlink" href="#equation-13d36019-7750-4ab9-b6ff-070808c95f28" title="Permalink to this equation">¶</a></span>\[\begin{bmatrix}
 1&amp;0 \\
 0&amp;1
 \end{bmatrix}\]</div>
@@ -362,10 +362,21 @@ wszystkich elementów macierzy początkowej.</p></li>
 <li><p>dopełnienie arytmetyczne elementu <code class="docutils literal notranslate"><span class="pre">a_ij</span></code> to wyznacznik macierzyz z wykreślon <code class="docutils literal notranslate"><span class="pre">i</span></code>tym rzędem i <code class="docutils literal notranslate"><span class="pre">j</span></code>otą kolumną pomnożony przez <span class="math notranslate nohighlight">\(\fra{1}{detA}\)</span></p></li>
 </ul>
 <hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/notes/matematyka_cw/matematyka_cw_2023.10.19.md</span></code></em></p>
+</section>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="matematyka-cwiczenia">
+<h1>Matematyka - ćwiczenia<a class="headerlink" href="#matematyka-cwiczenia" title="Link to this heading">¶</a></h1>
+<div class="admonition-wzor-sterlinga admonition">
+<p class="admonition-title">Wzór sterlinga</p>
+<p>$n! = \sqrt{2\pi n} \left(\frac{n}{e}\right)^n</p>
+</div>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/notes/matematyka_cw/.matematyka_cw_2023.10.19.md.swp</span></code></em></p>
+<hr class="docutils" />
 <p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/notes/matematyka/matematyka_2023.10.09.md</span></code></em></p>
-</section>
-</section>
-</section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="matematyka">
 <h1>MATEMATYKA<a class="headerlink" href="#matematyka" title="Link to this heading">¶</a></h1>
@@ -506,14 +517,66 @@ przedstawić jako <span class="math notranslate nohighlight">\(W(x) = (x - x_0)P
 Jeżeli f(a) = m i f(b) = M <span class="math notranslate nohighlight">\(\land  m &lt; M \land m &lt; W &lt; M\)</span></p>
 <p><span class="math notranslate nohighlight">\(\bf{\forall W \in (m, M) \exists x \in (a, b)~f(x) = W}\)</span></p>
 </div>
-<div class="admonition-twierdzenie-o-przyjmowaniu-kresow admonition">
-<p class="admonition-title">Twierdzenie o przyjmowaniu kresów</p>
-<p><span class="math notranslate nohighlight">\(f &lt;a, b&gt; \to \mathbb{R}\)</span></p>
-<p>f ciągła</p>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/notes/matematyka/matematyka_2023.10.23.md</span></code></em></p>
+<div class="admonition-twierdzenie-o-osiaganiu-kresow admonition">
+<p class="admonition-title">Twierdzenie o osiąganiu kresów</p>
+<p>Jeżeli funkcja <span class="math notranslate nohighlight">\(f\left&lt;a, b \right&gt; \to \mathbb{R}\)</span> jest ciągła, to:</p>
 <ul class="simple">
-<li><p>f jest ograniczona</p></li>
+<li><p>jest ograniczona</p></li>
+<li><p>oraz <span class="math notranslate nohighlight">\(\exists x_1 x_2 \in (a, b) ~ f(x_1) = m \land f(x_2) = M\)</span> gdzie <code class="docutils literal notranslate"><span class="pre">m</span></code> to kres dolny
+a <code class="docutils literal notranslate"><span class="pre">M</span></code> to kres górny</p></li>
 </ul>
 </div>
+<div class="admonition-twierdzenie-o-ciaglosci-funkcji-odwrotnej admonition">
+<p class="admonition-title">Twierdzenie o ciągłości funkcji odwrotnej</p>
+<p>niech funkcja <span class="math notranslate nohighlight">\(f\left&lt;a, b \right&gt; \to \mathbb{R}\)</span> będzie ciągła</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+f(a) = c \\
+f(b) = d \\
+f(a) &lt; f(b)
+\end{split}\]</div>
+<p>wtedy</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">f</span></code> jest ściśle rosnąca <span class="math notranslate nohighlight">\(\Leftrightarrow\)</span> <code class="docutils literal notranslate"><span class="pre">f</span></code> ma funkcję odwrotną</p></li>
+<li><p>jeśli istnieje funkcja odwrotna, to jest ona również ciągła</p></li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>Funkcja <strong>ściśle rosnąca</strong> to taka, dla którje prawdziwe jest twierdzenie
+<span class="math notranslate nohighlight">\(\forall x_1 &lt; x_2 f(x_1)&lt;f(x_2)\)</span></p>
+</div>
+<div class="admonition-twierdzenie-o-ciaglosci-funkcji-zlozonej admonition">
+<p class="admonition-title">Twierdzenie o ciągłości funkcji złożonej</p>
+<p>Niec <span class="math notranslate nohighlight">\(f:D \to \mathbb{R}\)</span> i <span class="math notranslate nohighlight">\(g:D \to \mathbb{R}\)</span> będzie ciągła wtedy
+<span class="math notranslate nohighlight">\(h = f \dot g\)</span> - <code class="docutils literal notranslate"><span class="pre">h</span></code> jest ciągła</p>
+</div>
+<div class="admonition-twierdzenie-o-4-dzialaniach-dla-funkcji-ciaglych admonition">
+<p class="admonition-title">Twierdzenie o 4 działaniach dla funkcji ciągłych</p>
+<p><span class="math notranslate nohighlight">\(f, g : D \to \mathbb{R}\)</span>, jeżeli <code class="docutils literal notranslate"><span class="pre">f</span></code>, <code class="docutils literal notranslate"><span class="pre">g</span></code> ciągłe w <code class="docutils literal notranslate"><span class="pre">D</span></code>
+<span class="math notranslate nohighlight">\(f+g \land f-g \land f*g\)</span> są ciągłe. Ponadto jeżeli
+<span class="math notranslate nohighlight">\(g \neq 0 \Rightarrow \frac{f}{g}\)</span> są również ciągłe</p>
+</div>
+</section>
+<section id="przyklady-funkcji-ciaglych">
+<h3>Przykłady funkcji ciągłych<a class="headerlink" href="#przyklady-funkcji-ciaglych" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(f(x) \equiv const\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = x\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = c * x\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = c_1 * x + c_2\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = x^2\)</span></p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Wielomiany są funkcjami ciągłymi</p>
+</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\root{n}{x}\)</span> (funkcja odwrotna do <span class="math notranslate nohighlight">\(x^n\)</span>)</p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = a^x~a &gt; 0 \land a \neq 1\)</span></p></li>
+</ul>
 </section>
 </section>
 </section>
@@ -559,6 +622,7 @@ Jeżeli f(a) = m i f(b) = M <span class="math notranslate nohighlight">\(\land  
 </li>
 </ul>
 </li>
+<li><a class="reference internal" href="#matematyka-cwiczenia">Matematyka - ćwiczenia</a></li>
 <li><a class="reference internal" href="#matematyka">MATEMATYKA</a><ul>
 <li><a class="reference internal" href="#iloczyn-kartezjanski">Iloczyn kartezjański:</a></li>
 <li><a class="reference internal" href="#funkcja">Funkcja</a><ul>
@@ -575,6 +639,7 @@ Jeżeli f(a) = m i f(b) = M <span class="math notranslate nohighlight">\(\land  
 </li>
 <li><a class="reference internal" href="#funkcje-ciagle">Funkcje ciągłe</a><ul>
 <li><a class="reference internal" href="#wlasnosci-funkcji-ciaglych">Własności funkcji ciągłych</a></li>
+<li><a class="reference internal" href="#przyklady-funkcji-ciaglych">Przykłady funkcji ciągłych</a></li>
 </ul>
 </li>
 </ul>
