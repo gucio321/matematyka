@@ -20,7 +20,7 @@ $$
 
 - 
 $$
-\lim_{h \to 0} \frac{a^h - 1}{h} \\
+\lim_{h \to 0} \frac{a^h - 1}{h} = logn~a \\
 $$
 
 ## Funkcje ciągłe

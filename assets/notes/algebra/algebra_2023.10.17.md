@@ -114,9 +114,3 @@ macierz osobliwa jeżeli detA = -
 ```{note}
 Macierz jest odwracalna jeżeli jest niosobliwa
 ```
-
-#### Obliczanie macierzy odwrotnej
-
-- Macierz odwrotna to taka macierz, która składa się z odpowiednich dopełnień arytmetycznych
-wszystkich elementów macierzy początkowej.
-- dopełnienie arytmetyczne elementu `a_ij` to wyznacznik macierzyz z wykreślon `i`tym rzędem i `j`otą kolumną pomnożony przez $\fra{1}{detA}$
