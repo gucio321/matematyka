@@ -48,5 +48,5 @@ $g \neq 0 \Rightarrow \frac{f}{g}$ są również ciągłe
 Wielomiany są funkcjami ciągłymi
 ```
 
-- $\root{n}{x}$ (funkcja odwrotna do $x^n$)
+- $\root{n} \of {x}$ (funkcja odwrotna do $x^n$)
 - $f(x) = a^x~a > 0 \land a \neq 1$
