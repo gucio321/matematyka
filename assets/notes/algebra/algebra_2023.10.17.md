@@ -45,6 +45,7 @@ $$
 $$
 
 - transponowanie:
+
 $$
 (A^T)^T = A
 $$
@@ -109,7 +110,7 @@ $$
 $$
 
 ```{note}
-macierz osobliwa jeżeli detA = -
+macierz osobliwa jeżeli detA = 0
 ```
 
 ```{note}
