@@ -36,6 +36,7 @@ działania są dziedziczone ze zbioru $\mathbb{R}$
 - składanie odwzorowań jest łączne, ale **nie** przemienne
 Macierz diagonalna jednostkowa jest elementem neutralnym.
 Na przykład
+
 $$
 \begin{bmatrix}
 1&0 \\

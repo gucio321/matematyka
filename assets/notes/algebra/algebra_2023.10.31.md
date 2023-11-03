@@ -39,6 +39,6 @@ $$
 x = x_0 + t * a_x + s * b_x \\
 y = y_0 + t * a_y + s * b_y \\
 z = z_0 + t * a_z + s * b_z \\
-\end{matrix}
+\end{matrix} \right.
 $$
 
