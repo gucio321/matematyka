@@ -33,6 +33,10 @@ _Notatki z pliku `notes/notes/matematyka_cw/matematyka_cw_2023.10.19.md`_
 ```{include} notes/matematyka_cw/matematyka_cw_2023.10.19.md
 ```
 ---
+_Notatki z pliku `notes/notes/matematyka_cw/.matematyka_cw_2023.10.19.md.swp`_
+```{include} notes/matematyka_cw/.matematyka_cw_2023.10.19.md.swp
+```
+---
 _Notatki z pliku `notes/notes/matematyka/matematyka_2023.10.09.md`_
 ```{include} notes/matematyka/matematyka_2023.10.09.md
 ```
@@ -63,4 +67,12 @@ _Notatki z pliku `notes/notes/matematyka/matematyka_2023.11.06.md`_
 ---
 _Notatki z pliku `notes/notes/matematyka/matematyka_2023.11.07.md`_
 ```{include} notes/matematyka/matematyka_2023.11.07.md
+```
+---
+_Notatki z pliku `notes/notes/matematyka/matematyka_2023.11.13.md`_
+```{include} notes/matematyka/matematyka_2023.11.13.md
+```
+---
+_Notatki z pliku `notes/notes/matematyka/.matematyka_2023.11.13.md.swp`_
+```{include} notes/matematyka/.matematyka_2023.11.13.md.swp
 ```
