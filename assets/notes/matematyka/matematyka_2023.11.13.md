@@ -60,11 +60,11 @@ $$
 | $sin(x)$ | $x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + ... + R_n$ |
 | $cos(x)$ | $1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + ... + R_n$ |
 | $ln(1+x)$ | $0 + x - x^2 + \frac{x^3}{3} - \frac{x^4}{4} + \frac{x^5}{5} + ... + R_n = \left(\Sigma_{i=1}^n (-1)^{n+1} * \frac{x^n}{n}\right)+R_n$ |
-| $(x+1)^\alpha$ | $1 + \alpha x + \alpha(\alpha-1)\frac{x^2}{2!} + \alpha(\alpha-1)(\alpha-2)\frac{x^3}{3!} + ... + R_n$ = TODO |
+| $(x+1)^\alpha$ | $1 + {\alpha \choose 1} x + {\alpha \choose 2} \frac{x^2}{2!} + {\alpha \choose 3}* \frac{x^3}{3!} + ... + R_n$ |
 
 ```{important}
 $$
-\left(\frac{\alpha}{k}\right) = \frac{\alpha (\alpha-1)(alpha-2) * ... * (\alpha-k)}{k!}
+{\alpha \choose k} = \frac{\alpha (\alpha-1)(alpha-2) * ... * (\alpha-k)}{k!}
 $$
 ```
 
