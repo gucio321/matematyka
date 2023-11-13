@@ -15,7 +15,7 @@ a, b > 0 \\
 A = \frac{a + b}{2} \\
 G = \sqrt{a * b} \\
 \\
-x = \frac{a/b} \\
+x = \frac{a}{b} \\
 \sqrt{\frac{a}{b}} \leq \frac{1}{2} \frac{a}{b} + \frac{1}{2} \\
 b * \sqrt{\frac{a}{b}} \leq \frac{1}{2} a + \frac{1}{2} b \\
 G \leq A \\
