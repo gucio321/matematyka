@@ -153,7 +153,7 @@ f(x) = f(0) + x * f'(0) + \frac{x^2}{2!} f''(0) + ... + \frac{x^n}{n!} * f^(n) (
 <td><p><span class="math notranslate nohighlight">\(0 + x - x^2 + \frac{x^3}{3} - \frac{x^4}{4} + \frac{x^5}{5} + ... + R_n = \left(\Sigma_{i=1}^n (-1)^{n+1} * \frac{x^n}{n}\right)+R_n\)</span></p></td>
 </tr>
 <tr class="row-even"><td><p><span class="math notranslate nohighlight">\((x+1)^\alpha\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(1 + \alpha x + \alpha(\alpha-1)\frac{x^2}{2!} + \alpha(\alpha-1)(\alpha-2)\frac{x^3}{3!} + ... + R_n\)</span> = TODO</p></td>
+<td><p><span class="math notranslate nohighlight">\(1 + {\alpha \choose 1} x + {\alpha \choose 2} \frac{x^2}{2!} + {\alpha \choose 3}* \frac{x^3}{3!} + ... + R_n\)</span></p></td>
 </tr>
 </tbody>
 </table>
@@ -161,7 +161,7 @@ f(x) = f(0) + x * f'(0) + \frac{x^2}{2!} f''(0) + ... + \frac{x^n}{n!} * f^(n) (
 <p class="admonition-title">Ważne</p>
 <div class="math notranslate nohighlight">
 \[
-\left(\frac{\alpha}{k}\right) = \frac{\alpha (\alpha-1)(alpha-2) * ... * (\alpha-k)}{k!}
+{\alpha \choose k} = \frac{\alpha (\alpha-1)(alpha-2) * ... * (\alpha-k)}{k!}
 \]</div>
 </div>
 <div class="admonition tip">
