@@ -24,7 +24,7 @@ G \leq A \\
 $$
 ```
 
-### Reguła Delopitala
+#### Reguła Delopitala
 
 ```{admonition} Reguła Delopitala
 `f`, `g` to funkcje różniczkowalne.

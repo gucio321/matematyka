@@ -1,4 +1,4 @@
-### Pojęcie Różniczki
+#### Pojęcie Różniczki
 Jeżeli `f` jest różniczkowalna
 
 $$
@@ -17,7 +17,7 @@ w punkcie $x_0$.
 Jest to odwzorowanie takie, że $f(x_0+h) - f(x_0)  = f'(x_0) * h + o(h)$
 ```
 
-### Oznaczenia
+#### Oznaczenia
 
 | $f$ | pochodna | |
 |---|---|---|
@@ -28,7 +28,7 @@ Jest to odwzorowanie takie, że $f(x_0+h) - f(x_0)  = f'(x_0) * h + o(h)$
 Funkcję nazywamy **funkcją klasy $C^k$** jeżeli ma pochodne do rzędu `k` i `k`ta pochodna jest ciągła.
 ```
 
-### Wzór Taylora
+#### Wzór Taylora
 
 $$
 F: I \to \mathbb{R}~\land ~ "f klasy" C^1 \\
@@ -45,7 +45,7 @@ Niche~f~będzie~klasy~C^n \\
 \exists \psi~f(x_0+h) = f(x_0) + \frac{h}{1!} f'(x_0) + \frac{h}{2!} f''(x_0) + ... + \frac{h}{n!} f^{(n)}(\psi)
 $$
 
-Ostatnie równanie nazywamy Równaniem Taylora z resztą Peany
+Ostatnie równanie nazywamy Równaniem Taylora z resztą Lagrange'a
 
 
 ```{admonition} Wzór Maclaurina
