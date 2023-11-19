@@ -15,7 +15,7 @@ $$
 
 ```{admonition} twierdzenie
 jeżeli $\exists f^{-1} \land \exists f'$ wtedy
-$\frac{dy}{dx} = \left(\frac{dx}{dy}\right)^{-1}
+$\frac{dy}{dx} = \left(\frac{dx}{dy}\right)^{-1}$
 ```
 
 $$

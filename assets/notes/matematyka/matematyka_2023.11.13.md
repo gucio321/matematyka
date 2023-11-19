@@ -50,7 +50,7 @@ Ostatnie równanie nazywamy Równaniem Taylora z resztą Lagrange'a
 
 ```{admonition} Wzór Maclaurina
 $$
-f(x) = f(0) + x * f'(0) + \frac{x^2}{2!} f''(0) + ... + \frac{x^n}{n!} * f^(n) (\theta x)
+f(x) = f(0) + x * f'(0) + \frac{x^2}{2!} f''(0) + ... + \frac{x^n}{n!} * f^{(n)} (\theta x)
 $$
 ```
 
