@@ -34,5 +34,7 @@ Punkty podejrzane o ekstrenum znajdują się również w punktach,
 w których pochodna nie istnieje.
 
 Szukanie ekstremów:
-- 
-- jeśli $f'(x_0) \land f''(x_0) > 0 \Rightarrow$ f posiada minimum lokalne
+
+- pochodna musi zmieniać znak
+- jeśli $f'(x_0) \land f''(x_0) > 0 \Rightarrow$ f posiada minimum lokalne$
+- druga pochodna wskazuje czy dany punkt to minimum czy maksimum

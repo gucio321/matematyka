@@ -25,15 +25,16 @@ Cosinus kierunkowy to stosunek $cos \alpha = \frac{u_x}{|\vec{u}|}$
 
 Dla wersorów cosinusy kierunkowe to współrzędne wektora.
 
-## Działania na wektorach
+### Działania na wektorach
 
 [Odniesienie](https://gucio321.github.io/fizyka/assets/dzial_4/index.html#dzialania-na-wektorach)
 - iloczyn skalarny jest rozdzielny względem dodawania
 - iloczyn mieszany $(\vec{v_1}, \vec{v_2}, \vec{v_3})$
 
-## Płaszczyzny w przestrzeni $\mathbb{R}^3$
+### Płaszczyzny w przestrzeni $\mathbb{R}^3$
 
 Równanie płaszczyzny
+
 $$
 \pi : \left\{ \begin{matrix}
 x = x_0 + t * a_x + s * b_x \\

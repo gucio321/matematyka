@@ -10,7 +10,7 @@ $$
 
 ```{admonition} Powłoka liniowa
 $$
-\left{v = a_1 v_1 + ... + a_k v_k~:~v_1...v_k \in V \quad a_1...a_k \in A\right}
+\left\{v = a_1 v_1 + ... + a_k v_k~:~v_1...v_k \in V \quad a_1...a_k \in A\right\}
 $$
 
 Jest podprzestrzenią
