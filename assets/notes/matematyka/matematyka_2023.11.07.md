@@ -24,14 +24,14 @@ G \leq A \\
 $$
 ```
 
-#### Reguła Delopitala
+#### Reguła de l'Hospitala
 
-```{admonition} Reguła Delopitala
+```{admonition} Reguła de l'Hospitala
 `f`, `g` to funkcje różniczkowalne.
 
 $$
 jeżeli~\lim_{x\to a}\frac{f}{g} = \frac{0}{0} \\
-jeżeli \quad \exists \lim_{x\to a} \frac{f'(x)}{g'(x)} = G \Rightarrow \exists \lim_{x \to a} \frac{f'(x)}{g'(x)} = G
+jeżeli \quad \exists \lim_{x\to a} \frac{f'(x)}{g'(x)} = G \Rightarrow \exists \lim_{x \to a} \frac{f(x)}{g(x)} = G
 $$
 ```
 
