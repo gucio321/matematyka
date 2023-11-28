@@ -12,7 +12,7 @@ W szczególności następującym przedmiotom:
 - Metody analizy algebraicznej w fizyce
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Zawartość:
 
    assets/index.md
