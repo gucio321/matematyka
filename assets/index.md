@@ -29,6 +29,10 @@ _Notatki z pliku `notes/algebra/algebra_2023.11.07.md`_
 ```{include} notes/algebra/algebra_2023.11.07.md
 ```
 ---
+_Notatki z pliku `notes/algebra/.algebra_2023.11.07.md.swp`_
+```{include} notes/algebra/.algebra_2023.11.07.md.swp
+```
+---
 _Notatki z pliku `notes/algebra/algebra_2023.11.14.md`_
 ```{include} notes/algebra/algebra_2023.11.14.md
 ```
