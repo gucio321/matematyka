@@ -15,7 +15,7 @@ $$
 V'(x) = (a-2x)^2 -4x(a-2x) \\
 V'(x) = (a-2x)(a-2x -4x) \\
 V'(x) = (a-2x)(a-6x) \\
-x = \frac{a}{2} \or x = \frac{a}{6} \\
+x = \frac{a}{2} \lor x = \frac{a}{6} \\
 $$
 
 ```

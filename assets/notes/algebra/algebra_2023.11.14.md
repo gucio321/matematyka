@@ -30,7 +30,7 @@ Oznacza to, że wszystkie elementy są istotne i żadnego nie można przedstawi�
 ```
 
 ```{note}
-wektory generują przestrzeń $\mathbb{R}^n \Leftrigharrow$ rząd macierzy złożonej
+wektory generują przestrzeń $\mathbb{R}^n \Leftrightarrow$ rząd macierzy złożonej
 z tych wektorów jes trówny `n`
 ```
 
