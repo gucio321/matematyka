@@ -11,11 +11,7 @@ W szczególności następującym przedmiotom:
 - Matematyka
 - Metody analizy algebraicznej w fizyce
 
-.. toctree::
-   :maxdepth: 3
-   :caption: Zawartość:
-
-   assets/index.md
+.. include:: assets/index.rst
 
 .. important::
 
