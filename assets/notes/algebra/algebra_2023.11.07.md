@@ -80,6 +80,16 @@ gdzie:\\
 \hat{j} = (0, 1, 0) \\
 \hat{k} = (0, 0, 1) \\
 $$
+
+:::{tip}
+To tak jak w macierzach, gdzie jeden z rzędów można wyzerować za pomocą innych.
+:::
+
+:::{note}
+Aby sprawdzić czy wektory są liniowo niezależne budujemy macierz
+z wektorami wpisanymi w kolumny (tak aby poróœnywać x-owe współrzędne e.t.c.) i przyrównujemy do (0,0,...,0)
+i obliczamy jej rząd.
+:::
 ```
 
 ```{admonition} Generatory
@@ -93,3 +103,15 @@ $$
 - zbiór generatorów oznaczamy jako $W$
 - natomiast generowaną przez nie podprzestrzeń $limW$
 ```
+
+```{admonition} Twierdzenie o geneowaniu podprzestrzeni $\mathbb{R}^n$
+Wektory $v_1, v_2, ..., v_k$ generują przestrzeń $\mathbb{R}^n$ (o n wymiarach) $\Leftrightarrow$ $rowA$ (rząd macierzy A) jest równy n.
+Macierz A to taka macierz, która składa się w kolejno wpisanych w wierszach wektorach v.
+
+:::{tip}
+$k \geq n$ tzn. że generatorów może być więcej niż wymiarów przestrzeni, jednak jeżeli tak jest
+oznacza to że kilka z nich ($k-n$) jest liniowo zależnych.
+:::
+```
+
+
