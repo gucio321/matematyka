@@ -492,7 +492,7 @@ z = z_0 + t * a_z + s * b_z \\
 <h2>Przestrzenie wektorowe<a class="headerlink" href="#przestrzenie-wektorowe" title="Link to this heading">¶</a></h2>
 <div class="admonition-przestrzen-wektorowa admonition">
 <p class="admonition-title">Przestrzeń Wektorowa</p>
-<p>(K, +, <span class="math notranslate nohighlight">\(*\)</span>) jest grupą abelową, natomiast <code class="docutils literal notranslate"><span class="pre">V</span></code> zbiorem (<span class="math notranslate nohighlight">\(V \neq \emptyset\)</span>).</p>
+<p>(K, +, C, <span class="math notranslate nohighlight">\(*\)</span>) jest grupą abelową, natomiast <code class="docutils literal notranslate"><span class="pre">V</span></code> zbiorem (<span class="math notranslate nohighlight">\(V \neq \emptyset\)</span>).</p>
 <ul class="simple">
 <li><p>(V, +) jest grupą abelową</p></li>
 <li><p><span class="math notranslate nohighlight">\(\forall v, v \in V \quad \forall \alpha \in K \quad \alpha * (v + v) = (\alpha * v) + (\alpha * v)\)</span> (występuje rozdzielność mnożenia względem dodawania w mnożeniu <strong>sumy wektorów</strong> przez <strong>skalar</strong>)</p></li>
@@ -506,6 +506,84 @@ z = z_0 + t * a_z + s * b_z \\
 <p class="admonition-title">Wskazówka</p>
 <p>Elementy zbioru V nazywamy wektorami, a K - skalarami</p>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Zbiór <span class="math notranslate nohighlight">\((\mathbb{R}^2, +, \mathbb{R}, *)\)</span> to tradycyjny zbiór wektorów na płaszczyźnie dwuwymiarowej.
+<span class="math notranslate nohighlight">\(V = \mathbb{R}^2\)</span> określa dwa wymiary palszczyzny a <span class="math notranslate nohighlight">\(K = \mathbb{R}\)</span> to ciało (zbiór) tzw. skalarów.</p>
+</div>
+<section id="podprzestrzenie-liniowe">
+<h3>Podprzestrzenie liniowe<a class="headerlink" href="#podprzestrzenie-liniowe" title="Link to this heading">¶</a></h3>
+<p>Zbiór <span class="math notranslate nohighlight">\(U\)</span> nazywamy podprzestrzenią przestrzeni V gdy działania zadeklarowane dla te podprzestrzeni są w niej wewnętrzne.</p>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Innymi słowy aby sprawdzić czy dany zbiór jest podprzestrzenią przestrzeni V dla dla dwuch wektorów <span class="math notranslate nohighlight">\(v_1 i v_2 \in V\)</span> oraz skalara <span class="math notranslate nohighlight">\(\alpha\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+v_1 + v_2 \in V' \land \alpha v_1 \in V'
+\]</div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p><strong>0</strong> musi należeć do podprzestrzeni</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+niech~(\mathbb{R^3}, +, \mathbb{R}, *) \\
+-1 * v_1 = -v_1 \in \mathbb{R}^3 \\
+v_1 - v_1 = 0 \\
+\end{split}\]</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>Jeżeli w definicji przestrzeni występuje translacja (dodanie stałej) przestrzeń ta nie jest podprzestrzenią przestrzeni V.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+V = (\mathbb{R}^3, +, K, *) \\
+U = \left{(x + 1, y + x, z) : x, y, z \in \mathbb{R} \right} \\
+\\
+x_1 + 1 + x_2 + 1 = (x_1 + x_2) + 2 \neq (x_1 + x_2) + 1
+\\
+\\
+V = (\mathbb{R}^3, +, K, *) \\
+U = \left{(2x, y + x, z) : x, y, z \in \mathbb{R} \right} \\
+\\
+2x_1 + 2x_2 = 2(x_1 + x_2) \\
+\alpha 2 x_1 + \alpha 2 x_2 = \alpha 2 (x_1 + x_2)
+\end{split}\]</div>
+<p>Analogicznie można postępować dla innych wyrazów.</p>
+</div>
+</section>
+<section id="liniowa-zaleznosc-wektorow">
+<h3>Liniowa zależność wektorów<a class="headerlink" href="#liniowa-zaleznosc-wektorow" title="Link to this heading">¶</a></h3>
+<div class="admonition-liniowa-zaleznosc-wektorow admonition">
+<p class="admonition-title">liniowa zależność wektorów</p>
+<p>Wektory są liniowo niezależne gdy żadnego z nich nie można przedstawić w formie kombinacji liniowej pozostałych.</p>
+<p>Przykładowo <span class="math notranslate nohighlight">\(v = \alpha v_1 + \beta v_2 + \gamma v_3\)</span> nie jest liniowo niezależny.</p>
+<p>Biorąc pod uwagę inny przykład:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+v = (5, 4, -18) \\
+v = 5 \hat{i} + 4 \hat{j} - 18 \hat{k} \\
+gdzie:\\
+\hat{i} = (1, 0, 0) \\
+\hat{j} = (0, 1, 0) \\
+\hat{k} = (0, 0, 1) \\
+\end{split}\]</div>
+</div>
+<div class="admonition-generatory admonition">
+<p class="admonition-title">Generatory</p>
+<p>Zbiór generatorów to zbiór wektorów pozwalających na zapisanie każdego
+innego wektora w danej podprzestrzeni.</p>
+<div class="math notranslate nohighlight">
+\[
+v = \alpha w_1 + \beta w_2 + ... + \theta w_n
+\]</div>
+<ul class="simple">
+<li><p>zbiór generatorów oznaczamy jako <span class="math notranslate nohighlight">\(W\)</span></p></li>
+<li><p>natomiast generowaną przez nie podprzestrzeń <span class="math notranslate nohighlight">\(limW\)</span></p></li>
+</ul>
+</div>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/algebra/.algebra_2023.11.07.md.swp</span></code></em></p>
 <hr class="docutils" />
 <p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/algebra/algebra_2023.11.14.md</span></code></em></p>
 <p>podzbiorami przestrzeni wektorowych <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span> i <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span> są:</p>
@@ -544,6 +622,7 @@ wektor w tej przestrzeni można opisać w postaci kombinacji liniowej tych wekto
 <p>wektory generują przestrzeń <span class="math notranslate nohighlight">\(\mathbb{R}^n \Leftrightarrow\)</span> rząd macierzy złożonej
 z tych wektorów jes trówny <code class="docutils literal notranslate"><span class="pre">n</span></code></p>
 </div>
+</section>
 <section id="baza">
 <h3>Baza<a class="headerlink" href="#baza" title="Link to this heading">¶</a></h3>
 <p>Układ wektorów można nazwać bazą, jeżeli:</p>
@@ -1475,6 +1554,8 @@ grad F(x, y, z) = \vec{A}(x,y,z)
 </ul>
 </li>
 <li><a class="reference internal" href="#przestrzenie-wektorowe">Przestrzenie wektorowe</a><ul>
+<li><a class="reference internal" href="#podprzestrzenie-liniowe">Podprzestrzenie liniowe</a></li>
+<li><a class="reference internal" href="#liniowa-zaleznosc-wektorow">Liniowa zależność wektorów</a></li>
 <li><a class="reference internal" href="#baza">Baza</a><ul>
 <li><a class="reference internal" href="#macierz-przejscia">Macierz Przejścia</a></li>
 </ul>
