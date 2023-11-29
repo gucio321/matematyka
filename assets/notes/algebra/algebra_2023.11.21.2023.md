@@ -12,7 +12,7 @@ Wektory ze starej bazy można przedstawić jako kombinacje współrzędnych z no
 wypisac w macierzy w kolumnach.
 Następnie należy znaleźć macierz odwrotną.
 
-- $P_{B\to B'} = (P_{B'\to B})^{-1}
+- $P_{B\to B'} = (P_{B'\to B})^{-1}$
 - $P_{B \to B'} * P_{B' \to B''} = B_{P \to B''}$
 
 ### Odwzorowania Liniowe
@@ -40,3 +40,24 @@ Przy odwzorowaniu liniowym $0 \to 0$
 
 - odwzorowanie może być surjekcją (tożsamość obu zbiorów) (**epimorfizm**)
 - aby sprawdzić czy odwzorowanie jest injekcją można sprawdzić czy $0 \to 0$
+
+```{tip}
+Zbiór wszystkich odwzorowań liniowych V w W oznaczamy przez $Hom_k(V, W)$
+```
+
+```{important}
+Jezeli w liniowym występuje translacja nie jest ono liniowe.
+
+$$
+\phi : \mathbb{R} \to \mathbb{R},~\phi(x) = ax + b \\
+$$
+
+Niech $x_1 = 1 \land x_2 = 2$ wtedy:
+
+$$
+\begin{matrix}
+\phi(1+2) = a(1 + 2) + b  = 3a + b \\
+\phi(1) + \phi(2) = a + b + 2a + b = 3a + 2b
+\end{matrix} \Rightarrow \phi(1+2) \neq \phi(1) + \phi(2)
+$$
+```
