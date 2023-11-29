@@ -21,4 +21,3 @@
 	:maxdepth: 3
 
 	assets/notes/mechanika_cw.md
-
