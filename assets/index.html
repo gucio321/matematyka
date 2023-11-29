@@ -626,31 +626,89 @@ a_1 v_1 + a_2 v_2 + ... + a_n v_n = 0
 \]</div>
 <p>Jest podprzestrzenią</p>
 </div>
-<div class="admonition tip">
-<p class="admonition-title">Wskazówka</p>
-<p><strong>Generatory</strong></p>
-<p>w przestrzei 2-wymiarowej generatorami są wersory <span class="math notranslate nohighlight">\(\hat{i}\)</span> i <span class="math notranslate nohighlight">\(\hat{j}\)</span>, ponieważ każdy inny
-wektor w tej przestrzeni można opisać w postaci kombinacji liniowej tych wektorów</p>
-</div>
-<div class="admonition-uklad-niezalezny admonition">
-<p class="admonition-title">Układ niezależny</p>
-<p>jeżeli <span class="math notranslate nohighlight">\(a_1 v_1+ ... + a_n v_n = 0 \rightarrow a_1...a_n = 0\)</span></p>
-<p>Oznacza to, że wszystkie elementy są istotne i żadnego nie można przedstawić jako kombinacji pozostałych.</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Informacja</p>
-<p>wektory generują przestrzeń <span class="math notranslate nohighlight">\(\mathbb{R}^n \Leftrightarrow\)</span> rząd macierzy złożonej
-z tych wektorów jes trówny <code class="docutils literal notranslate"><span class="pre">n</span></code></p>
-</div>
 </section>
 <section id="baza">
 <h3>Baza<a class="headerlink" href="#baza" title="Link to this heading">¶</a></h3>
-<p>Układ wektorów można nazwać bazą, jeżeli:</p>
+<p>Układ wektorów (generatorów) można nazwać bazą, jeżeli:</p>
 <ul class="simple">
 <li><p>są niezależne liniowo</p></li>
 <li><p>generują przestrzeń wektorową</p></li>
-<li><p>układ n wektorów liniowo niezależnych wprzestrzeni n-wymiarowej jest bazą</p></li>
 </ul>
+<div class="admonition-baza admonition">
+<p class="admonition-title">Baza</p>
+<p>Podsumowując: układ n wektorów-generatorów liniowo niezależnych w przestrzeni n-wymiarowej jest bazą</p>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>przestrzeń <span class="math notranslate nohighlight">\(\left\{\bf{0}\right\}\)</span> nie posiada bazy.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>Najprostszą bazą przestrzeni 3-wymiarowej jet układ wersorów <span class="math notranslate nohighlight">\((\hat{j}, \hat{k}, \hat{l})\)</span></p>
+</div>
+<div class="admonition-reper-bazowy-aka-baza-uporzadkowana admonition">
+<p class="admonition-title">Reper Bazowy (aka Baza uporządkowana)</p>
+<p>To uporządkowany ciąg wektorów bazowych.</p>
+</div>
+</div>
+<div class="admonition-wymiar-przestrzeni-wektorowej-v admonition">
+<p class="admonition-title">Wymiar przestrzeni wektorowej V</p>
+<p>To liczba eleentów bazy i oznaczamy <span class="math notranslate nohighlight">\(dimX\)</span> gdzie X to przestrzeń.</p>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p><span class="math notranslate nohighlight">\(dim{0} = 0\)</span></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>Wymiar podprzestrzeni jest mniejszy niż wymiar przestrzeni wyjściowej.
+Jeżeli <span class="math notranslate nohighlight">\(dimV = dimW \Rightarrow W = V\)</span></p>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>Współrzędnymi wektora nazywamy skalary <span class="math notranslate nohighlight">\(v = \alpha_1 v_1 + \alpha_2 v_2 + ... + \alpha_n v_n\)</span>
+i zapisujemy jako <span class="math notranslate nohighlight">\(v = [\alpha_1, \alpha_2, ..., \alpha_n]_B\)</span></p>
+</div>
+</section>
+<section id="macierz-przejscia">
+<h3>Macierz Przejścia<a class="headerlink" href="#macierz-przejscia" title="Link to this heading">¶</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Oznaczenie: <span class="math notranslate nohighlight">\(P_{B \to B'}\)</span></p>
+</div>
+<div class="admonition-macierz-przejscia admonition">
+<p class="admonition-title">Macierz przejścia</p>
+<p>Wektor v należy do przestrzeni liniowej V.</p>
+<p>W bazie <code class="docutils literal notranslate"><span class="pre">B</span></code> można zapisać go jako <span class="math notranslate nohighlight">\(v = [x_1, x_2, ..., x_n]_B\)</span> natomiast w bazie <span class="math notranslate nohighlight">\(B'\)</span>:
+<span class="math notranslate nohighlight">\(v = [x_1', x_2', ..., x_n']_{B'}\)</span></p>
+<p><strong>W takim przypadku macierz przejścia można powiązać z wektorami w poszczególnych bazach jako:</strong> <span class="math notranslate nohighlight">\(\bf{X = P_{B \to B'} X'}\)</span>.</p>
+<p>X to wypisane w jdenej kolumnie współrzędne w bazie B a <span class="math notranslate nohighlight">\(X'\)</span> - w bazie <span class="math notranslate nohighlight">\(B'\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+X = \begin{Bmatrix}
+x_1 \\
+x_2 \\
+... \\
+x_n
+\end{Bmatrix}
+\quad
+X' = \begin{Bmatrix}
+x_1' \\
+x_2' \\
+... \\
+x_n'
+\end{Bmatrix}
+\end{split}\]</div>
+<p><span class="math notranslate nohighlight">\(P_{B \to B'}\)</span> to obraz azy <span class="math notranslate nohighlight">\(B'\)</span> w bazie <span class="math notranslate nohighlight">\(B\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+P_{B \to B'} = \begin{Bmatrix}
+b_{1_1} &amp; b_{1_2} &amp; ... &amp; b_{1_n} \\
+b_{2_1} &amp; b_{2_2} &amp; ... &amp; b_{2_n} \\
+... &amp; ... &amp; ... &amp; ... \\
+b_{n_1} &amp; b_{n_2} &amp; ... &amp; b_{n_n} \\
+\end{Bmatrix}
+\end{split}\]</div>
+</div>
 <hr class="docutils" />
 <p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/algebra/algebra_2023.11.21.2023.md</span></code></em></p>
 <ul class="simple">
@@ -659,8 +717,8 @@ z tych wektorów jes trówny <code class="docutils literal notranslate"><span cl
 </ul>
 <p>aby przedstawić wektor w bazie <em>kanonicznej</em> w innej bazie
 należy rozwiązać układ równań (<span class="math notranslate nohighlight">\(b_1' = \alpha~b_2' = \beta\)</span>)</p>
-<section id="macierz-przejscia">
-<h4>Macierz Przejścia<a class="headerlink" href="#macierz-przejscia" title="Link to this heading">¶</a></h4>
+<section id="id1">
+<h4>Macierz Przejścia<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h4>
 <p>niech <span class="math notranslate nohighlight">\(b_1, b_2...\)</span> - stara baza i <span class="math notranslate nohighlight">\(b_1', b_2' ....\)</span> nowa baza.</p>
 <p>Wektory ze starej bazy można przedstawić jako kombinacje współrzędnych z nowej bazy oraz
 wypisac w macierzy w kolumnach.
@@ -1576,8 +1634,9 @@ grad F(x, y, z) = \vec{A}(x,y,z)
 <li><a class="reference internal" href="#przestrzenie-wektorowe">Przestrzenie wektorowe</a><ul>
 <li><a class="reference internal" href="#podprzestrzenie-liniowe">Podprzestrzenie liniowe</a></li>
 <li><a class="reference internal" href="#liniowa-zaleznosc-wektorow">Liniowa zależność wektorów</a></li>
-<li><a class="reference internal" href="#baza">Baza</a><ul>
-<li><a class="reference internal" href="#macierz-przejscia">Macierz Przejścia</a></li>
+<li><a class="reference internal" href="#baza">Baza</a></li>
+<li><a class="reference internal" href="#macierz-przejscia">Macierz Przejścia</a><ul>
+<li><a class="reference internal" href="#id1">Macierz Przejścia</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#odwzorowania-liniowe">Odwzorowania Liniowe</a></li>
