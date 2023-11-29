@@ -77,7 +77,7 @@ należy rozwiązać układ równań (<span class="math notranslate nohighlight">
 wypisac w macierzy w kolumnach.
 Następnie należy znaleźć macierz odwrotną.</p>
 <ul class="simple">
-<li><p>$P_{B\to B’} = (P_{B’\to B})^{-1}</p></li>
+<li><p><span class="math notranslate nohighlight">\(P_{B\to B'} = (P_{B'\to B})^{-1}\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(P_{B \to B'} * P_{B' \to B''} = B_{P \to B''}\)</span></p></li>
 </ul>
 </section>
@@ -109,6 +109,26 @@ zachodzi odwzorowanie działań w tych przestrzeniach</p></li>
 <li><p>odwzorowanie może być surjekcją (tożsamość obu zbiorów) (<strong>epimorfizm</strong>)</p></li>
 <li><p>aby sprawdzić czy odwzorowanie jest injekcją można sprawdzić czy <span class="math notranslate nohighlight">\(0 \to 0\)</span></p></li>
 </ul>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>Zbiór wszystkich odwzorowań liniowych V w W oznaczamy przez <span class="math notranslate nohighlight">\(Hom_k(V, W)\)</span></p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>Jezeli w liniowym występuje translacja nie jest ono liniowe.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\phi : \mathbb{R} \to \mathbb{R},~\phi(x) = ax + b \\
+\end{split}\]</div>
+<p>Niech <span class="math notranslate nohighlight">\(x_1 = 1 \land x_2 = 2\)</span> wtedy:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{matrix}
+\phi(1+2) = a(1 + 2) + b  = 3a + b \\
+\phi(1) + \phi(2) = a + b + 2a + b = 3a + 2b
+\end{matrix} \Rightarrow \phi(1+2) \neq \phi(1) + \phi(2)
+\end{split}\]</div>
+</div>
 </section>
 
 
