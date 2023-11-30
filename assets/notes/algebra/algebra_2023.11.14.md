@@ -103,6 +103,6 @@ $$
 ```{admonition} Twierdzenie o N-Bazach
 załóżmy że $B~B'~i~B''$ to bazy przestrzenii V.
 
-- $P_{B' \to B} = (P_{B \to B'})^{-1}
+- $P_{B' \to B} = (P_{B \to B'})^{-1}$
 - $P_{B \to B''} = P_{B \to B'} * P_{B' \to B''}$
 ```

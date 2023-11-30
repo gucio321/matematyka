@@ -15,7 +15,7 @@ $$
 $$
 dla~a > 1\\
 lim_{x \to 0} a^x = 1\\
-forall n in \mathbb{N} ~a^{\frac{1}{n+1}} < a^x < a^{\frac{1}{n}}
+\forall n \in \mathbb{N} ~a^{\frac{1}{n+1}} < a^x < a^{\frac{1}{n}}
 $$
 
 - 

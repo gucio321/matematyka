@@ -59,6 +59,6 @@ Prosta o równaniu $y = ax+b$ jest asymptotą ukośną, jeśli
 $f(x)-ax-b \to 0~dla~x\to \infty$
 ```
 
-Prosta o równaniu $y=ax+b$ jest asymptotą ukośną funkcji f $Rightleftarrow$
+Prosta o równaniu $y=ax+b$ jest asymptotą ukośną funkcji f $\Leftrightarrow$
 $\exists lim_{x \to \infty} \frac{f(x)}{x} = a \land$
 $\exists lim_{x \to \infty} f(x)-ax = b$

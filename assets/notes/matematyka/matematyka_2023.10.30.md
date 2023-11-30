@@ -35,7 +35,7 @@ jeżeli $\forall x in I \exists f'(x)\quad f' : X \to \mathbb{R}$
 | $y = \sqrt{x}$ | $\frac{f(x+h) - f(x)}{h} = \frac{x + h - x}{h(\sqrt{x+h} + \sqrt{x})} \to \frac{1}{2 \sqrt{x}}$ |
 | $y = x^n$ | $\frac{f(x+h) - f(x)}{h} =\frac{(x+h)^n - x^n}{h} = n * x^{n-1}$ |
 | $y = sin(x)$ [więcej](#pochodne-funkcji-trygonometrycznych) | $y' = cos(x)$ |
-| $y = arctg(x)$ | $\rac{1}{x^2+1} |
+| $y = arctg(x)$ | $\frac{1}{x^2+1}$ |
 
 **[Zaawansowany Kalkulator Pochodnych](https://mathdf.com/der/pl/)**
 
