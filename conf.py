@@ -18,8 +18,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Matematyka'
-copyright = '2023, Maciej Sz'
-author = 'Maciej Sz'
+copyright = '2023, Maciej Szeptuch'
+author = 'Maciej Szeptuch'
 
 
 # -- General configuration ---------------------------------------------------
