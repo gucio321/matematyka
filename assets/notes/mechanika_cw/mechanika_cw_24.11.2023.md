@@ -6,7 +6,7 @@
 
 $$
 grad F(x, y, z) = \vec{A}(x,y,z)
-(\frac{d}{dx}, \frac{d}{dy}, \frac{d}{dz})
+\left(\frac{\partial}{\partial x}, \frac{\partial}{\partial y}, \frac{\partial}{\partial z}\right)
 $$
 
 ```
