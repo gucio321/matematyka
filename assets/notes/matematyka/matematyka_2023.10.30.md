@@ -48,7 +48,7 @@ Dla~h < 0\quad f'(0) \to -1 \land dla~h>0\quad f'(0) \to 1
 $$
 
 
-```{amdonition} Twierdzenie
+```{admonition} Twierdzenie o ciągłości funkcji różniczkowalnej
 Jeżeli `f` jest różnniczkowalna, to `f` jest ciągła
 
 $$
@@ -59,7 +59,7 @@ $$
 
 ### Działania na pochodnych
 
-```{amdonition} Twierdzenie
+```{admonition} Twierdzenie o różniczkowalności złożeń funkcji różniczkowalnych
 Jeżeli funkcje `f` i `g` sa różniczkowalne, to funkcje $f+g$ oraz $c*g$ są różniczkowalne
 i zachodzą następujące wzory
 
