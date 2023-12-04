@@ -863,6 +863,155 @@ Jeśli <span class="math notranslate nohighlight">\(f''(x_0) &lt; 0 \Rightarrow\
 </ul>
 </li>
 </ul>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/matematyka/matematyka_2023.12.04.md</span></code></em></p>
+</section>
+</section>
+</section>
+<section id="rachunek-calkowy">
+<h2>Rachunek Całkowy<a class="headerlink" href="#rachunek-calkowy" title="Link to this heading">¶</a></h2>
+<p><a class="reference external" href="https://mathdf.com/int/pl/">Kalkulator Całek</a></p>
+<div class="admonition-definicja-calki admonition">
+<p class="admonition-title">definicja całki</p>
+<p>f to funkcja określona na przedziale otwartym</p>
+<p>jeżeli F na tym samym przedziale ma pochodną i <span class="math notranslate nohighlight">\(F'(x) = f(x)\)</span>
+funkcję <code class="docutils literal notranslate"><span class="pre">F</span></code> nazywamy <strong>funkcją pierwotną</strong> <code class="docutils literal notranslate"><span class="pre">f</span></code> lub <strong>całką nieoznaczoną funkcji <code class="docutils literal notranslate"><span class="pre">f</span></code></strong>
+i oznaczamy <span class="math notranslate nohighlight">\(\int f(x) dx\)</span></p>
+</div>
+<div class="admonition-twierdzenie-o-stalej-calkowania admonition">
+<p class="admonition-title">Twierdzenie o stałej całkowania</p>
+<p>Jeżeli <code class="docutils literal notranslate"><span class="pre">F</span></code> jest funkcją pierwotną <code class="docutils literal notranslate"><span class="pre">f</span></code>, to <span class="math notranslate nohighlight">\(F + C\)</span> róœnież jest
+pierwotną funkcji <code class="docutils literal notranslate"><span class="pre">f</span></code>$</p>
+<p><span class="math notranslate nohighlight">\(\int f(x) dx\)</span> to rodzina funkcji. Funkcja pierwotna jest określona z dokładnością
+do stałej.
+$$</p>
+</div>
+<section id="metody-obliczania-calek">
+<h3>Metody obliczania całek<a class="headerlink" href="#metody-obliczania-calek" title="Link to this heading">¶</a></h3>
+<section id="zgadywanie">
+<h4>Zgadywanie<a class="headerlink" href="#zgadywanie" title="Link to this heading">¶</a></h4>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>f(x)</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\int f(x) dx\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td><p>const</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(C\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(C x\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(x^2\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{2} x^2\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(x^\alpha\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{\alpha+1}x^{\alpha+1} ~ \alpha \neq -1\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\frac{1}{x}\)</span></p></td>
+<td><p>$ln(</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(cos(x)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(sin(x)\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(sin(x)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(-cos(x)\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(ctg(x)\)</span></p></td>
+<td><p>$ln(</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(tg(x)\)</span></p></td>
+<td><p>$-ln(</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\frac{1}{cos^2(x)}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(tg(x)\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>$\frac{-1}{sin^2(x)}</p></td>
+<td><p><span class="math notranslate nohighlight">\(ctg(x\)</span>)$</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(e^x\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(e^x\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>$e^{=x}</p></td>
+<td><p><span class="math notranslate nohighlight">\(-e^{-x}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\frac{1}{1+x^2}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(arctg(x)\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(cosh(x)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(sinh(x)\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(sinh(x)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(cosh(x)\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\frac{1}{\sqrt{1-x^2}}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(arcsin(x)\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\frac{1}{\sqrt{x^2+a}}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(ln(x+\sqrt{x^2+a})\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition-liniowosc admonition">
+<p class="admonition-title"><em>Liniowość*</em></p>
+<p>Jeśli <code class="docutils literal notranslate"><span class="pre">f</span></code> i <code class="docutils literal notranslate"><span class="pre">g</span></code> mają funkcje pierwotne <span class="math notranslate nohighlight">\(f+g\)</span> oraz <span class="math notranslate nohighlight">\(c*f\)</span> też mają
+funkcje pierwotne oraz <span class="math notranslate nohighlight">\(\int f+g = \int f + \int g\)</span> natomiast <span class="math notranslate nohighlight">\(\int c*f = c * \int f\)</span>.</p>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>Operacja całkowania nie jest liniowa, ponieważ wystęþuje translacja o stałą</p>
+</div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>niech <span class="math notranslate nohighlight">\(f(x) \neq 0\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\int \frac{f'(x)}{f(x)} dx = ln(f(x))
+\]</div>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\int \frac{x}{1+x^2} dx = \frac{1}{2} \int \frac{2x}{1+x^2} dx = \\
+= \frac{1}{2} ln (1+x^2) + C \\
+\\
+\int ctg(x) dx = \int \frac{cos(x)}{sin(x)} dx = ln(sin(x)) + C \\
+\\
+\int tg(x) dx = \int \frac{sin(x)}{cos(x)} dx = \\
+= - \int \frac{-sin(x)}{cos(x)} dx = -ln(|cos(x)|) + C
+\end{split}\]</div>
+</div>
+</div>
+</section>
+<section id="przez-czesci">
+<h4>przez części<a class="headerlink" href="#przez-czesci" title="Link to this heading">¶</a></h4>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+f * g = \int f' * g + \int f * g' \\
+\int f' * g = f * g - \int f g' 
+\end{split}\]</div>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\int x * e^x = \int x * (e^x)' = x * e^x - \int e^x = x * e^x - e^x \\
+\cancel{\int x * e^x = \int (\frac{x^2}{2})' * e^x = \frac{x^2}{2} e^x - \int(\frac{x^2}{2}e^x)}
+\\
+\\
+\int ln(x) = \int 1 * ln(x) = \int (x)' ln(x) = x ln(x) - \int x * \frac{1}{x} = x * ln(x) - x \\
+\end{split}\]</div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Ostrzeżenie</p>
+<h1 class="rubric" id="egzamin-z-analizy">EGZAMIN Z ANALIZY</h1>
+<ul class="simple">
+<li><p>Czas trwania: 90 min</p></li>
+<li><p>1 termin na początku sesji</p></li>
+<li><p>4 zadania (3 zadania-zadania + 1 teoria).</p></li>
+<li><p><em>Zadania klasyczne</em></p></li>
+</ul>
+</div>
 </section>
 </section>
 </section>
@@ -918,6 +1067,14 @@ Jeśli <span class="math notranslate nohighlight">\(f''(x_0) &lt; 0 \Rightarrow\
 <li><a class="reference internal" href="#wypuklosc-funkcji">Wypukłość funkcji</a></li>
 <li><a class="reference internal" href="#asymptoty">Asymptoty</a></li>
 <li><a class="reference internal" href="#sporzadzanie-wykresow-funkcji">Sporządzanie wykresów funkcji</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#rachunek-calkowy">Rachunek Całkowy</a><ul>
+<li><a class="reference internal" href="#metody-obliczania-calek">Metody obliczania całek</a><ul>
+<li><a class="reference internal" href="#zgadywanie">Zgadywanie</a></li>
+<li><a class="reference internal" href="#przez-czesci">przez części</a></li>
 </ul>
 </li>
 </ul>
