@@ -19,3 +19,27 @@ de l'Hospital'a
 |  $f'(x)$ | +               | 0            |  -                               | -                                 | -                              | X | -        | 0                | +             |
 | $f''(x)$ | -               | -            | -                                | 0                                 | +                              | X | +        | +                | +             |
 | $f(x)$   | rośnie          | max $e^{-1}$ | maleje                           | PP $\frac{8}{5}e^{-\frac{5}{2}}$  | maleje                         | X | maleje   | min $4 \sqrt{e}$ | rośnie        |
+
+## Triksy
+
+```{important}
+Równość:
+
+$$
+\root{3} \of {x} = x^{\frac{1}{3}}
+$$
+
+jest prawdziwa tylko dla $x \geq 0$ ponieważ:
+
+$$
+\root {3} \of {x} = x^{\frac{1}{3}} = x^{\frac{2}{6}} = \root {6} \of {x^2} \\
+$$
+
+Przykładowo dla $x = -1$
+
+$$
+\root{3} \of {-1} = -1 \\
+\root{6} \of {(-1)^2} = 1
+$$
+
+```
