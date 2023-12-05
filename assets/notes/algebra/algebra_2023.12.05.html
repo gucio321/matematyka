@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>&lt;no title&gt; &#8212; Matematyka  - dokumentacja</title>
+    <title>Endomorfizmy &#8212; Matematyka  - dokumentacja</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
@@ -54,7 +54,7 @@
              accesskey="I">indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">&lt;no title&gt;</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Endomorfizmy</a></li> 
       </ul>
     </div>
     </div>
@@ -65,51 +65,57 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="admonition tip">
-<p class="admonition-title">Wskazówka</p>
-<p>Aby obraz wektorów liniowo niezależnych był liniowo niezależny
-odwzorowanie musi być injektywne.</p>
-<p><em>Na przykład rzutowanie <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span> na płaszczyznę <span class="math notranslate nohighlight">\(OY\)</span></em></p>
+  <section id="endomorfizmy">
+<h1>Endomorfizmy<a class="headerlink" href="#endomorfizmy" title="Link to this heading">¶</a></h1>
+<div class="admonition-endomorfizm admonition">
+<p class="admonition-title">Endomorfizm</p>
+<p><strong>Odwzorowanie liniowe</strong> jednego zbioru na ten sam zbiór.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Informacja</p>
-<p>macierz reprezentuje odwzorowanie liniowe</p>
-<ul class="simple">
-<li><p>dodawanie macierzy reprezentuje dodawanie odwzorowań</p></li>
-<li><p>natomiast mnożenie macierzy to składanie</p></li>
-</ul>
+<p>Zbiór wszystkich endomorfizmów ma strukturę przestrzeni wektorowej</p>
 </div>
-<div class="admonition-reprezencacja-macierzowa-odwzorowan-liniowych admonition">
-<p class="admonition-title">Reprezencacja macierzowa odwzorowań liniowych</p>
-<p>Macierz której kolumny nsą <strong>obrazami</strong> wektorów bazowych nazywamy
-reprezentacją macierzową odwzoorowania liniowego</p>
+<div class="admonition-phi-niezmiennicza admonition">
+<p class="admonition-title"><span class="math notranslate nohighlight">\(\phi\)</span> niezmiennicza</p>
+<p>jeżeli <code class="docutils literal notranslate"><span class="pre">u</span></code> jest podzbiorem V, dla <span class="math notranslate nohighlight">\(x \in u\)</span> <span class="math notranslate nohighlight">\(\phi(x) \in u\)</span></p>
 </div>
-<div class="admonition-jadro admonition">
-<p class="admonition-title">Jądro</p>
-<p>Przeciwobraz wszystkich elementów które przechodzą na 0.</p>
-<p>Obliczamy Je następująco: <span class="math notranslate nohighlight">\(\phi(x) = 0\)</span></p>
-<p>Przykładowo</p>
+<div class="admonition-wartosc-wlasna admonition">
+<p class="admonition-title">wartość włąsna</p>
+<p>Liczba <span class="math notranslate nohighlight">\(\lambda\)</span> jest wartością własną jężeli istnieje niezerowy wektor <code class="docutils literal notranslate"><span class="pre">v</span></code>, któ©y spełnia
+równość <span class="math notranslate nohighlight">\(\phi(v) = \lambda v\)</span></p>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Zbió© wszystkich wartości własnych nazywa się spektrum (lub widmem) operatora</p>
+</div>
+</div>
+<div class="admonition-operator-rzutowania admonition">
+<p class="admonition-title">Operator rzutowania</p>
+<p>Określea wszystkie wektory które po zrzutowaniu na oś OX nie zmieni kierunku (lub stanie się punktem)</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\text{dla v w postaci}~v=(x,y,z) \\
-\phi(v) = (2x, y, x+y) \\
-\phi(v) = 0 \\
-(2x, y, x+y) = 0 \Leftrightarrow x = 0 \land y = 0 \Rightarrow z \in \mathbb{R} \\
-ker\phi = \left\{(0,0,z), z \in \mathbb{R}\right\} \\
-dimKer\phi = 1
+spec = ? \\
+\phi(0, V_y) = (0, v_y) \Rightarrow \lambda = 1 \\
+\phi(0, v_y) = (0, 0) \Rightarrow \lambda = 0 \\
+spec = \left \{0, 1\right\} \\
 \end{split}\]</div>
-<p><strong>Przeciwobraz</strong> - elementy które “podajemy” do odwzorowania (jak dziedzina funkcji)</p>
-<div class="admonition tip">
-<p class="admonition-title">Wskazówka</p>
+</div>
+<section id="szukanie-wartosci-wlasnych">
+<h2>Szukanie wartości własnych<a class="headerlink" href="#szukanie-wartosci-wlasnych" title="Link to this heading">¶</a></h2>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{matrix}
-\text{przeciwobraz} &amp;=&amp; \text{Dziedzina} \\
-\text{Obraz} &amp;=&amp; \text{Zbiór Wartości}
-\end{matrix}
-\end{split}\]</div>
+\[
+x_\phi(t) = det(A-tI)
+\]</div>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>Nie wszystkie pierwiastki ww. równania są pierwiastkami charakterystycznymi.
+Należy pamiętać, że <span class="math notranslate nohighlight">\(t = \lambda \in K\)</span>, gdzie <code class="docutils literal notranslate"><span class="pre">K</span></code> to ciało nad którym pracujemy</p>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Wielomiany włąsne nie zależą od bazy</p>
 </div>
+</section>
+</section>
 
 
             <div class="clearer"></div>
@@ -117,7 +123,16 @@ dimKer\phi = 1
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
+        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
+    <h3><a href="../../../index.html">Spis treści:</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Endomorfizmy</a><ul>
+<li><a class="reference internal" href="#szukanie-wartosci-wlasnych">Szukanie wartości własnych</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
 <div id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Szybkie wyszukiwanie</h3>
     <div class="searchformwrapper">
@@ -159,7 +174,7 @@ dimKer\phi = 1
              >indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">&lt;no title&gt;</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Endomorfizmy</a></li> 
       </ul>
     </div>
     </div>

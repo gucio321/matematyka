@@ -809,6 +809,85 @@ odwzorowanie musi być injektywne.</p>
 <p>Macierz której kolumny nsą <strong>obrazami</strong> wektorów bazowych nazywamy
 reprezentacją macierzową odwzoorowania liniowego</p>
 </div>
+<div class="admonition-jadro admonition">
+<p class="admonition-title">Jądro</p>
+<p>Przeciwobraz wszystkich elementów które przechodzą na 0.</p>
+<p>Obliczamy Je następująco: <span class="math notranslate nohighlight">\(\phi(x) = 0\)</span></p>
+<p>Przykładowo</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\text{dla v w postaci}~v=(x,y,z) \\
+\phi(v) = (2x, y, x+y) \\
+\phi(v) = 0 \\
+(2x, y, x+y) = 0 \Leftrightarrow x = 0 \land y = 0 \Rightarrow z \in \mathbb{R} \\
+ker\phi = \left\{(0,0,z), z \in \mathbb{R}\right\} \\
+dimKer\phi = 1
+\end{split}\]</div>
+<p><strong>Przeciwobraz</strong> - elementy które “podajemy” do odwzorowania (jak dziedzina funkcji)</p>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{matrix}
+\text{przeciwobraz} &amp;=&amp; \text{Dziedzina} \\
+\text{Obraz} &amp;=&amp; \text{Zbiór Wartości}
+\end{matrix}
+\end{split}\]</div>
+</div>
+</div>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/algebra/algebra_2023.12.05.md</span></code></em></p>
+</section>
+</section>
+<section id="endomorfizmy">
+<h2>Endomorfizmy<a class="headerlink" href="#endomorfizmy" title="Link to this heading">¶</a></h2>
+<div class="admonition-endomorfizm admonition">
+<p class="admonition-title">Endomorfizm</p>
+<p><strong>Odwzorowanie liniowe</strong> jednego zbioru na ten sam zbiór.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Zbiór wszystkich endomorfizmów ma strukturę przestrzeni wektorowej</p>
+</div>
+<div class="admonition-phi-niezmiennicza admonition">
+<p class="admonition-title"><span class="math notranslate nohighlight">\(\phi\)</span> niezmiennicza</p>
+<p>jeżeli <code class="docutils literal notranslate"><span class="pre">u</span></code> jest podzbiorem V, dla <span class="math notranslate nohighlight">\(x \in u\)</span> <span class="math notranslate nohighlight">\(\phi(x) \in u\)</span></p>
+</div>
+<div class="admonition-wartosc-wlasna admonition">
+<p class="admonition-title">wartość włąsna</p>
+<p>Liczba <span class="math notranslate nohighlight">\(\lambda\)</span> jest wartością własną jężeli istnieje niezerowy wektor <code class="docutils literal notranslate"><span class="pre">v</span></code>, któ©y spełnia
+równość <span class="math notranslate nohighlight">\(\phi(v) = \lambda v\)</span></p>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Zbió© wszystkich wartości własnych nazywa się spektrum (lub widmem) operatora</p>
+</div>
+</div>
+<div class="admonition-operator-rzutowania admonition">
+<p class="admonition-title">Operator rzutowania</p>
+<p>Określea wszystkie wektory które po zrzutowaniu na oś OX nie zmieni kierunku (lub stanie się punktem)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+spec = ? \\
+\phi(0, V_y) = (0, v_y) \Rightarrow \lambda = 1 \\
+\phi(0, v_y) = (0, 0) \Rightarrow \lambda = 0 \\
+spec = \left \{0, 1\right\} \\
+\end{split}\]</div>
+</div>
+<section id="szukanie-wartosci-wlasnych">
+<h3>Szukanie wartości własnych<a class="headerlink" href="#szukanie-wartosci-wlasnych" title="Link to this heading">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[
+x_\phi(t) = det(A-tI)
+\]</div>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>Nie wszystkie pierwiastki ww. równania są pierwiastkami charakterystycznymi.
+Należy pamiętać, że <span class="math notranslate nohighlight">\(t = \lambda \in K\)</span>, gdzie <code class="docutils literal notranslate"><span class="pre">K</span></code> to ciało nad którym pracujemy</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Wielomiany włąsne nie zależą od bazy</p>
+</div>
 </section>
 </section>
 </section>
@@ -875,6 +954,10 @@ reprezentacją macierzową odwzoorowania liniowego</p>
 </ul>
 </li>
 <li><a class="reference internal" href="#odwzorowania-liniowe">Odwzorowania Liniowe</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#endomorfizmy">Endomorfizmy</a><ul>
+<li><a class="reference internal" href="#szukanie-wartosci-wlasnych">Szukanie wartości własnych</a></li>
 </ul>
 </li>
 </ul>
