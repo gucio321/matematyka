@@ -13,11 +13,11 @@ jeżeli `u` jest podzbiorem V, dla $x \in u$ $\phi(x) \in u$
 ```
 
 ```{admonition} wartość włąsna
-Liczba $\lambda$ jest wartością własną jężeli istnieje niezerowy wektor `v`, któ©y spełnia
+Liczba $\lambda$ jest wartością własną jężeli istnieje niezerowy wektor `v`, który spełnia
 równość $\phi(v) = \lambda v$
 
 :::{note}
-Zbió© wszystkich wartości własnych nazywa się spektrum (lub widmem) operatora
+Zbiór wszystkich wartości własnych nazywa się spektrum (lub widmem) operatora
 :::
 ```
 
