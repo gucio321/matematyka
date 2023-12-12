@@ -855,11 +855,11 @@ dimKer\phi = 1
 </div>
 <div class="admonition-wartosc-wlasna admonition">
 <p class="admonition-title">wartość włąsna</p>
-<p>Liczba <span class="math notranslate nohighlight">\(\lambda\)</span> jest wartością własną jężeli istnieje niezerowy wektor <code class="docutils literal notranslate"><span class="pre">v</span></code>, któ©y spełnia
+<p>Liczba <span class="math notranslate nohighlight">\(\lambda\)</span> jest wartością własną jężeli istnieje niezerowy wektor <code class="docutils literal notranslate"><span class="pre">v</span></code>, który spełnia
 równość <span class="math notranslate nohighlight">\(\phi(v) = \lambda v\)</span></p>
 <div class="admonition note">
 <p class="admonition-title">Informacja</p>
-<p>Zbió© wszystkich wartości własnych nazywa się spektrum (lub widmem) operatora</p>
+<p>Zbiór wszystkich wartości własnych nazywa się spektrum (lub widmem) operatora</p>
 </div>
 </div>
 <div class="admonition-operator-rzutowania admonition">
@@ -887,6 +887,144 @@ Należy pamiętać, że <span class="math notranslate nohighlight">\(t = \lambda
 <div class="admonition note">
 <p class="admonition-title">Informacja</p>
 <p>Wielomiany włąsne nie zależą od bazy</p>
+</div>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/algebra/algebra_2023.12.12.md</span></code></em></p>
+</section>
+<section id="wlasnosci-spektrum">
+<h3>Własności spektrum<a class="headerlink" href="#wlasnosci-spektrum" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>spec(A) = spec(A^T)</p></li>
+<li><p>spec(A^n) = spec(A)^n</p></li>
+<li><p>\frac{1}{\lambda} = spec(A^{-1})</p></li>
+</ul>
+<div class="admonition-kiedy-mozna-dokonac-diagonalizacji-macierzy-odwzorowania admonition">
+<p class="admonition-title">Kiedy można dokonać diagonalizacji macierzy odwzorowania?</p>
+<p>Jeżeli wszystkie pierwiastki wielomianu (z któ©ego szukamy wartości włąsnych)
+są krotności 1.</p>
+<p>Inaczej musi istnieć baza z wektoróœ własnych.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>macierze reprezentujące to samo odwzorowanie <strong>w różnych bazach</strong> są do siebie podobne</p>
+</div>
+</section>
+<section id="schemat-rozwiazywania-zadan">
+<h3>Schemat rozwiązywania zadań:<a class="headerlink" href="#schemat-rozwiazywania-zadan" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>załóżmy, że mamy dane odwzorowanie.</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>Jeżeli odwzorowanie mamy zadane w następujący sposób:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\phi(1, 0, 0) = (1, 0, 0) \\
+\phi(0, 1, 1) = (0, 2, 2) = 2 * (0, 1, 1) \\
+e.t.c.
+\end{split}\]</div>
+<p>Oznacza to że mamy zadane już wektory/wartości własne w tym przypadku:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{matrix}
+\lambda_1 = 1 &amp;&amp; v_1 = (1, 0, 0) \\
+\lambda_2 = 2 &amp;&amp; v_2 = (0, 1, 1)
+\end{matrix}
+\end{split}\]</div>
+</div>
+<ul class="simple">
+<li><p>Najpierw należy skonstruować macierz odwzorowania</p></li>
+<li><p>teraz od wszystkich elementów na diagonali macierzy odejmujemy <span class="math notranslate nohighlight">\(t\)</span> (bądź <span class="math notranslate nohighlight">\(\lambda\)</span> - ja przyjmuję tutaj <span class="math notranslate nohighlight">\(t\)</span> dla kompatybilności z panią dr)</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>Jeżeli macierz ma postać trujkątną, można pominąć ten i następny krok
+przyjmując za <span class="math notranslate nohighlight">\(\lambda\)</span> elementy na diagonali.</p>
+</div>
+<ul class="simple">
+<li><p>Obliczamy wyznacznik z którego później wyliczamy wartości <span class="math notranslate nohighlight">\(t\)</span>.</p></li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>Należy pamiętać o możliwych wartościach <span class="math notranslate nohighlight">\(t\)</span> (<span class="math notranslate nohighlight">\(\mathbb{R}\)</span> czy <span class="math notranslate nohighlight">\(\mathbb{C}\)</span>)</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>Jeśli wyszło nam w sumie (licząc krotności) mniej <span class="math notranslate nohighlight">\(\lambda\)</span> nniż wynika z wymiaru przestrzeni
+(na przykład część rozwiązań wyszła urojona i nie było to dopuszczone)
+macierz <strong>NIE</strong> jest diagonalizowalna.</p>
+</div>
+<div class="admonition-spektrum admonition">
+<p class="admonition-title">Spektrum</p>
+<p>Otrzymane wyniki nazywamy <strong>spektrum</strong> odwzorowania.</p>
+</div>
+<div class="admonition-spektrum-proste admonition">
+<p class="admonition-title">Spektrum proste</p>
+<p>Jeżeli wszystkie <span class="math notranslate nohighlight">\(t\)</span> są jednokrotnymi rozwiązaniami równania, i jest ich dokładnie tyle
+co wymiar przestrzeni, to mamy do czynienia ze spektrum prostym - pomiń następny krok (jeżeli zadanie tego nie wymaga)</p>
+</div>
+<ul class="simple">
+<li><p>Obliczanie wektorów Własnych. Aby to zrobić rozwiązujemy następujące równanie:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\phi(v) = \lambda v \\
+A * v = \lambda * I *  v \\
+(A - \lambda * I) * v = 0
+\end{split}\]</div>
+<p>Gdzie: <span class="math notranslate nohighlight">\(A\)</span> to macierz odwzorowania, <span class="math notranslate nohighlight">\(\lambda\)</span> to dana wartość <span class="math notranslate nohighlight">\(t\)</span> a <span class="math notranslate nohighlight">\(v\)</span> to szukany wektor własny</p>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>jeśli <span class="math notranslate nohighlight">\(\lambda\)</span> jest n-krotna należy sprawdzić następujący warunek:
+<span class="math notranslate nohighlight">\(n = dim E_{\lambda} = dim A - Row(A-\lambda I)\)</span>
+Jeżeli warunek nie jest spełniony - macierz nie jest diagonalizowalna.</p>
+</div>
+<ul class="simple">
+<li><p>Teraz nowa macierz tego przekształcenia to</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{Bmatrix}
+\lambda_1 &amp;&amp; 0 &amp;&amp; ... &amp;&amp; 0 \\
+0 &amp;&amp; \lambda_2 &amp;&amp; ... &amp;&amp; 0 \\
+... &amp;&amp; ... &amp;&amp; ... &amp;&amp; ... \\
+0 &amp;&amp; 0 &amp;&amp; ... &amp;&amp; \lambda_n
+\end{Bmatrix}
+\end{split}\]</div>
+<p>A więc macierz ze współczynnikami <span class="math notranslate nohighlight">\(\lambda\)</span> na diagonali.</p>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Nowa macierz odwzorowania zapisana jest dla bazy złożonej z wektorów własnych!</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>załużmy wektor <span class="math notranslate nohighlight">\(v\)</span> w bazie kanonicznej. Aby przekształcić go taką macierzą diagonalną należy:</p>
+<ul class="simple">
+<li><p>Pomnożyć lewostronnie wektor przez macierz przejścia (złożoną z wektorów nowej bazy - wektorów własnych)</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+P_{B_k \to B} * v
+\]</div>
+<ul class="simple">
+<li><p>Pomnożyć lewostronnie przez nową macierz diagonalną <span class="math notranslate nohighlight">\(D\)</span></p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+D * P_{B_k \to B} * v
+\]</div>
+<ul class="simple">
+<li><p>na koniec można powrócić do bazy kanonicznej</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+P_{B_k \to B}^{-1} * D * P_{B_k \to B} * v
+\]</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>Wizualizacja graficzna!</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PFDu9oVAE-g?si=QySpNWEbMN5QoFL6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 </section>
 </section>
@@ -958,6 +1096,8 @@ Należy pamiętać, że <span class="math notranslate nohighlight">\(t = \lambda
 </li>
 <li><a class="reference internal" href="#endomorfizmy">Endomorfizmy</a><ul>
 <li><a class="reference internal" href="#szukanie-wartosci-wlasnych">Szukanie wartości własnych</a></li>
+<li><a class="reference internal" href="#wlasnosci-spektrum">Własności spektrum</a></li>
+<li><a class="reference internal" href="#schemat-rozwiazywania-zadan">Schemat rozwiązywania zadań:</a></li>
 </ul>
 </li>
 </ul>
