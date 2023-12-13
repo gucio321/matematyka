@@ -13,6 +13,8 @@ W szczególności następującym przedmiotom:
 
 .. include:: assets/index.rst
 
+.. include:: assets/links.rst
+
 .. important::
 
    Kolejność treści na tej stronie jest generowana automatycznie przez automatyczny skrypt. Jeśli coś jest ułożone w złej kolejności, bardzo proszę o zgłoszenie
