@@ -173,6 +173,35 @@ de l’Hospital’a</p>
 \root{6} \of {(-1)^2} = 1
 \end{split}\]</div>
 </div>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/matematyka_cw/matematyka_cw_2024.01.03.md</span></code></em></p>
+</section>
+<section id="calki-istotne-wzory-wyprowadzenia">
+<h2>Całki - Istotne wzory / wyprowadzenia<a class="headerlink" href="#calki-istotne-wzory-wyprowadzenia" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Wzór redukcyjny (na <span class="math notranslate nohighlight">\(sin^nx\)</span>)</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\int sin^n x = -\frac{sin^{n-1}x * cos~x}{n} + \frac{n-1}{n} \int sin^{n-2}x dx
+\]</div>
+<details><summary>Wyprowadzenie</summary>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\int sin^nx = \\
+= \int sin^{n-1}x* sin~x = \\
+\left|\begin{matrix}
+u = sin^{n-1}x &amp;&amp; v' = sin~x \\
+u' = (n-1)sin^{n-2}x cos~x &amp;&amp; v = -cos~x \\
+\end{matrix}\right| = \\
+= - sin^{n-1}x * cos~x + (n-1)\int sin^{n-2} cos^2x = \\
+= - sin^{n-1}x * cos~x + (n-1)\int sin^{n-2}x (1- sin^2x) dx = \\
+= - sin^{n-1}x * cos~x + (n-1)\int sin^{n-2}x - (n-1) \int sin^nx \\
+\\
+n \int sin^n x dx = - sin^{n-1}x * cos~x + (n-1)\int sin^{n-2}x dx \\
+\int sin^n x dx = -\frac{ sin^{n-1}x * cos~x}{n} + \frac{n-1}{n}\int sin^{n-2}x dx \\
+\end{split}\]</div>
+</details>
 </section>
 </section>
 
@@ -189,6 +218,7 @@ de l’Hospital’a</p>
 <li><a class="reference internal" href="#przydatne-wlasnosci">Przydatne własności</a></li>
 <li><a class="reference internal" href="#przykladowa-tabela-przebiegu-zmiennosci-funkcji">Przykładowa tabela przebiegu zmienności funkcji:</a></li>
 <li><a class="reference internal" href="#triksy">Triksy</a></li>
+<li><a class="reference internal" href="#calki-istotne-wzory-wyprowadzenia">Całki - Istotne wzory / wyprowadzenia</a></li>
 </ul>
 </li>
 </ul>
