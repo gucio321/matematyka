@@ -48,3 +48,7 @@ _Notatki z pliku `notes/algebra/algebra_2023.12.05.md`_
 _Notatki z pliku `notes/algebra/algebra_2023.12.12.md`_
 ```{include} ../notes/algebra/algebra_2023.12.12.md
 ```
+---
+_Notatki z pliku `notes/algebra/algebra_2024.01.07.md`_
+```{include} ../notes/algebra/algebra_2024.01.07.md
+```
