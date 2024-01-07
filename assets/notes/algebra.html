@@ -1026,7 +1026,100 @@ P_{B_k \to B}^{-1} * D * P_{B_k \to B} * v
 <p>Wizualizacja graficzna!</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PFDu9oVAE-g?si=QySpNWEbMN5QoFL6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/algebra/algebra_2024.01.07.md</span></code></em></p>
 </section>
+</section>
+<section id="przestrzenie-euklidesowe">
+<h2>Przestrzenie euklidesowe<a class="headerlink" href="#przestrzenie-euklidesowe" title="Link to this heading">¶</a></h2>
+<div class="admonition-przestrzen-euklidesowa admonition">
+<p class="admonition-title">Przestrzeń euklidesowa</p>
+<p>to po prostu w dziwny sposób powiedziane “Iloczyn Skalarny”.</p>
+<p>To tak aprzestrzeń wektrowoa, nad któ©ą zdefiiowano iloczyn skalarny.</p>
+<p>Oznaczenie: <span class="math notranslate nohighlight">\(\mathbb{E}^n\)</span> to <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span> ze zdefiniowanym standardowym iloczynem skalarnym.</p>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>standardowy iloczyn skalarny to funkcja zefiniwoana w następujący sposób</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u = (u_0, u_1, ... u_n) \\
+w = (w_0, w_1, ... w_n) \\
+s(u, w) = u \dot w = \Sigma_{i=0}^{n} u_i * w_i
+\end{split}\]</div>
+</div>
+</div>
+<div class="admonition-norma admonition">
+<p class="admonition-title">Norma</p>
+<p>Norma to dziwna nazwa na “długość wektora”</p>
+<p>oznaczenie: <span class="math notranslate nohighlight">\(||v||\)</span></p>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<ul class="simple">
+<li><p>Norma spełnia zasadę liniowości</p></li>
+<li><p><span class="math notranslate nohighlight">\(||v|| = 0 \Leftrightarrow v = \bf{0}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(||\alpha v|| = |\alpha| * ||v||\)</span></p></li>
+</ul>
+</div>
+<p>Przestrzeń wektorową ze zdefiniowaną normą nazywamy <em>Przestrzenią Unormowaną</em></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>Jeżeli znamy iloczyn wektorowy możemy od razu zdefiniować normę.
+Określamy ją następującym wzorem:</p>
+<div class="math notranslate nohighlight">
+\[
+||v|| = \sqrt{s(v, v)}
+\]</div>
+<p>Obrazowo:</p>
+<ul class="simple">
+<li><p>iloczynn skalarny <span class="math notranslate nohighlight">\(v \dot v\)</span> lub <span class="math notranslate nohighlight">\(s(v, v)\)</span> to po prostu z definicji
+iloczynu skalarnego długość <span class="math notranslate nohighlight">\(v\)</span> pomnożona przez rzut <span class="math notranslate nohighlight">\(v\)</span> na <span class="math notranslate nohighlight">\(v\)</span> czyli po prostu długość <span class="math notranslate nohighlight">\(v\)</span>
+podniesiona do kwadratu</p></li>
+<li><p>gdy nałożymy na to pierwiastek otrzymamy długość <span class="math notranslate nohighlight">\(v\)</span></p></li>
+</ul>
+</div>
+<div class="admonition-wektor-unormowany admonition">
+<p class="admonition-title">Wektor unormowany</p>
+<p>Również znany jako <strong>wersor</strong>.</p>
+<p>Jesto to wektor w przestrzeni V którego norma wynosi <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>Każdy wektor z przestrzeni euklidesowej można unormować.</p>
+<div class="math notranslate nohighlight">
+\[
+\hat{v} = \frac{v}{||v||}
+\]</div>
+</div>
+</div>
+<p>Znając powyższe zależności można określić
+miarę kąta między wektorami.</p>
+<div class="math notranslate nohighlight">
+\[
+cso \angle (u, v) = \frac{u \dot v}{||u|| * ||v||}
+\]</div>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>To wszystko nie ma sensu dopuki togo nie zobaczysz, więc polecam</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LyGKycYT2v0?si=wuELwsKmKt-c6Mfc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>W przypadku ww. zależnośći warto rozważyć dwa skrajne przypadki:</p>
+<ul class="simple">
+<li><p>jeżeli wektory są współliniowe, to długość rzutu <code class="docutils literal notranslate"><span class="pre">u</span></code> na <code class="docutils literal notranslate"><span class="pre">v</span></code> ma długość całego <code class="docutils literal notranslate"><span class="pre">u</span></code>, więc $<span class="math notranslate nohighlight">\(\frac{\cancel{||u|| * ||v||}}{\cancel{||u||*||v||}} = 1 \Rightarrow cos \angle(u, v) = 0^o\)</span></p></li>
+<li><p>jeżeli wektory są prostopadelk, długość rzutu <code class="docutils literal notranslate"><span class="pre">u</span></code> na <code class="docutils literal notranslate"><span class="pre">v</span></code> ma długość <code class="docutils literal notranslate"><span class="pre">0</span></code> z czego wynika, że <span class="math notranslate nohighlight">\(\frac{0 * ||v||}{||u||*||v||} = 0 \Rightarrow cos\angle(u,v) = 90^o\)</span></p></li>
+</ul>
+</div>
+<div class="admonition-wektory-ortogonalne admonition">
+<p class="admonition-title">Wektory ortogonalne</p>
+<p>To inaczej wektory prostopadłe (aka <span class="math notranslate nohighlight">\(u \perp w\)</span>). Z tego również wynika, że
+<span class="math notranslate nohighlight">\(u \dot w = 0\)</span> (ofc w drugą stronę też to działa)</p>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>w tym przypadku jednak inna nazwa ma sens, ponieważ pojęcie wektoróœ ortogonalnych ma również
+sens w większej liczbie wymiarów (np. 4)</p>
+</div>
+</div>
 </section>
 </section>
 
@@ -1100,6 +1193,7 @@ P_{B_k \to B}^{-1} * D * P_{B_k \to B} * v
 <li><a class="reference internal" href="#schemat-rozwiazywania-zadan">Schemat rozwiązywania zadań:</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#przestrzenie-euklidesowe">Przestrzenie euklidesowe</a></li>
 </ul>
 </li>
 </ul>
@@ -1171,7 +1265,7 @@ P_{B_k \to B}^{-1} * D * P_{B_k \to B} * v
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/367318502f9eca6c73d2ccc77a82d9a34377c013>Fri Jan 5 19:38:13 2024 +0100 website: put commit and date at the bottom of the website (367318502f9eca6c73d2ccc77a82d9a34377c013)</a>
+<a href=https://github.com/gucio321/matematyka/commit/dcd2a55b45f6e19efb8a396873ae410be8968307>Sun Jan 7 15:50:52 2024 +0100 algebra: figuring out perpendicular vectors (dcd2a55b45f6e19efb8a396873ae410be8968307)</a>
 </font>
 
   </body>
