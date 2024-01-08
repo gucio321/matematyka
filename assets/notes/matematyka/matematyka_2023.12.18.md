@@ -32,7 +32,7 @@ $$
 Metoda: Podstawienie $t=tg\frac{x}{2}$
 
 $$
-sin(x) = 2 * sin(\frac{x}{2}})cos(\frac{x}{2}) = \frac{2tg\frac{x}{2}}{1+tg^2\frac{x}{2}} \\
+sin(x) = 2 * sin(\frac{x}{2})cos(\frac{x}{2}) = \frac{2tg\frac{x}{2}}{1+tg^2\frac{x}{2}} \\
 cos(x) = \frac{1-t^2}{1+t^2} \\
 tg(x) = \frac{2t}{1+t} \\
 dt = 2 \frac{1}{1+t^2}dt

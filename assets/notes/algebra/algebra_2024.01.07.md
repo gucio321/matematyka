@@ -85,4 +85,8 @@ $u \dot w = 0$ (ofc w drugą stronę też to działa)
 w tym przypadku jednak inna nazwa ma sens, ponieważ pojęcie wektoróœ ortogonalnych ma również
 sens w większej liczbie wymiarów (np. 4)
 :::
-````
+```
+
+```{admonition} Układ ortonormalny
+układ wektorów ortogonalnych, w którym każdy wektor jest dodatkowo unormowany.
+```
