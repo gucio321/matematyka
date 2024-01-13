@@ -3,6 +3,24 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. warning::
+   Terminy egzaminów:
+
+   +-----------+---------------------+
+   | Przedmiot | Termin 1            |
+   +===========+=====================+
+   | Mechanika | | Termin 0: 26.01   |
+   |           | | Grupa 1: 01.02    |
+   |           | | Grupa 2: 02.02    |
+   |           | | Grupa 3: 05.02    |
+   |           | | Sala 308          |
+   +-----------+---------------------+
+   | Algebra   | 31.01 (12:00 U2)    |
+   +-----------+---------------------+
+   | Analiza   | 30.01 (9:00 sala B) |
+   +-----------+---------------------+
+
+
 Wstęp
 ======================================
 
