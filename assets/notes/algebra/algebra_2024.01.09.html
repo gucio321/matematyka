@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Całkowanie ułamków prostych &#8212; Matematyka  - dokumentacja</title>
+    <title>Metoda ortogonalizacji Gramma-Schmidta &#8212; Matematyka  - dokumentacja</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
@@ -54,7 +54,7 @@
              accesskey="I">indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Całkowanie ułamków prostych</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Metoda ortogonalizacji Gramma-Schmidta</a></li> 
       </ul>
     </div>
     </div>
@@ -65,61 +65,38 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="calkowanie-ulamkow-prostych">
-<h1>Całkowanie ułamków prostych<a class="headerlink" href="#calkowanie-ulamkow-prostych" title="Link to this heading">¶</a></h1>
+  <div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Przykłądem bazy ortonormalnej jest baza kanoniczna w <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span>.</p>
+</div>
+<p>Aby wyliczyć współrzędne wektora w bazie ortogonalnej?:</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{Ax+B}{((x-p)^2 +q)^k}
+\alpha_a = \frac{\left&lt;v, b_1\right&gt;}{||b_1||^2}
 \]</div>
-<div class="admonition tip">
-<p class="admonition-title">Wskazówka</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\frac{x+3}{((x-2)^2+5)^2} \\
-y=(x-2)^2+5 \\
-dy = 2(x-2)dx \\
-\frac{2(x-2)-2(x-2) + x+3}{((x-2)^2+5)^2} \\
-\end{split}\]</div>
-</div>
 <div class="admonition note">
 <p class="admonition-title">Informacja</p>
-<p>Rozkładanie na ułamki proste</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\frac{1}{(x-1)(x+2)} = \frac{A}{x-1} + \frac{B}{x+2} \\
-1 = A(x+2) + B(x-1) \\
-1 = Ax + 2A + Bx - B \\
-\left\{\begin{matrix}
-A + B = 0 \\
-2A - B = 1 \\
-\end{matrix}\right. \Rightarrow A = -B = \frac{1}{3} \\
-\end{split}\]</div>
+<p><span class="math notranslate nohighlight">\(\left&lt;v, b_1\right&gt;\)</span> to <span class="math notranslate nohighlight">\(||v_{b_1}|| * ||b_1|\)</span> po podzieleniu zostaje
+<span class="math notranslate nohighlight">\(\frac{||v_{b_1}||}{||b_1||}\)</span></p>
+<p>gdzie <span class="math notranslate nohighlight">\(v_{B_1}\)</span> to długość rzutu <span class="math notranslate nohighlight">\(v\)</span> na <span class="math notranslate nohighlight">\(b_k\)</span></p>
 </div>
+<section id="metoda-ortogonalizacji-gramma-schmidta">
+<h1>Metoda ortogonalizacji Gramma-Schmidta<a class="headerlink" href="#metoda-ortogonalizacji-gramma-schmidta" title="Link to this heading">¶</a></h1>
+<p>Jeżeli istnieje basa generujaca jakąś podprzestrzeń to istnieje
+też inna <strong>ortogonalna</strong> baza która generuje tą podprzestrzeń.</p>
+<ol class="arabic simple" start="0">
+<li><p>najpierw warto sprawdzić, czy zadana baza nie jest już przypadkiem ortogonalna ;-)</p></li>
+<li><p><span class="math notranslate nohighlight">\(c_1 = b_1\)</span></p></li>
+<li><p>aby <span class="math notranslate nohighlight">\(c_2\)</span> generował tą samą przestrzeć co <span class="math notranslate nohighlight">\(lin\left\{c_1, b_2\right\}\)</span> musi on być kombinacją liniową tych wektorów <span class="math notranslate nohighlight">\(c_2 = b_2 + \alpha c_1\)</span>.</p></li>
+<li><p>to samo należy zrobić dla 3 wektora.  Również <span class="math notranslate nohighlight">\(c_2 = \left&lt;c_2, b_2\right&gt; = 0\)</span></p></li>
+</ol>
 </section>
-<section id="calkowanie-funkcji-typu-r-cos-x-sin-x">
-<h1>Całkowanie Funkcji typu <span class="math notranslate nohighlight">\(R(cos(x), sin(x))\)</span><a class="headerlink" href="#calkowanie-funkcji-typu-r-cos-x-sin-x" title="Link to this heading">¶</a></h1>
-<p>Metoda: Podstawienie <span class="math notranslate nohighlight">\(t=tg\frac{x}{2}\)</span></p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-sin(x) = 2 * sin(\frac{x}{2})cos(\frac{x}{2}) = \frac{2tg\frac{x}{2}}{1+tg^2\frac{x}{2}} \\
-cos(x) = \frac{1-t^2}{1+t^2} \\
-tg(x) = \frac{2t}{1+t} \\
-dt = 2 \frac{1}{1+t^2}dt
-\end{split}\]</div>
-</section>
-<section id="calki-z-pierwiastkiem">
-<h1>Całki z pierwiastkiem<a class="headerlink" href="#calki-z-pierwiastkiem" title="Link to this heading">¶</a></h1>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\int \sqrt{1-x^2}dx \\
-x = sin(t) \\
-dx = cos(t) \\
-\int \sqrt{1-sin^2(t)} cos(t) dt \\
-\int cos^2(t) dt \\
-\\
-\\
-\int \sqrt{1+x^2}dx \\
-x= sinh(t) \\\end{split}\]</div>
+<section id="rzut-ortogonalny">
+<h1>Rzut Ortogonalny<a class="headerlink" href="#rzut-ortogonalny" title="Link to this heading">¶</a></h1>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>również znany jako rzut prostokątny w <span class="math notranslate nohighlight">\(\mathbb{r}^2\)</span></p>
+</div>
 </section>
 
 
@@ -131,9 +108,8 @@ x= sinh(t) \\\end{split}\]</div>
         <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
     <h3><a href="../../../index.html">Spis treści:</a></h3>
     <ul>
-<li><a class="reference internal" href="#">Całkowanie ułamków prostych</a></li>
-<li><a class="reference internal" href="#calkowanie-funkcji-typu-r-cos-x-sin-x">Całkowanie Funkcji typu <span class="math notranslate nohighlight">\(R(cos(x), sin(x))\)</span></a></li>
-<li><a class="reference internal" href="#calki-z-pierwiastkiem">Całki z pierwiastkiem</a></li>
+<li><a class="reference internal" href="#">Metoda ortogonalizacji Gramma-Schmidta</a></li>
+<li><a class="reference internal" href="#rzut-ortogonalny">Rzut Ortogonalny</a></li>
 </ul>
 
   </div>
@@ -178,7 +154,7 @@ x= sinh(t) \\\end{split}\]</div>
              >indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Całkowanie ułamków prostych</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Metoda ortogonalizacji Gramma-Schmidta</a></li> 
       </ul>
     </div>
     </div>

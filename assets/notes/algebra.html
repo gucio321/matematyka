@@ -1124,6 +1124,67 @@ sens w większej liczbie wymiarów (np. 4)</p>
 <p class="admonition-title">Układ ortonormalny</p>
 <p>układ wektorów ortogonalnych, w którym każdy wektor jest dodatkowo unormowany.</p>
 </div>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/algebra/algebra_2024.01.09.md</span></code></em></p>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Przykłądem bazy ortonormalnej jest baza kanoniczna w <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span>.</p>
+</div>
+<p>Aby wyliczyć współrzędne wektora w bazie ortogonalnej?:</p>
+<div class="math notranslate nohighlight">
+\[
+\alpha_a = \frac{\left&lt;v, b_1\right&gt;}{||b_1||^2}
+\]</div>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p><span class="math notranslate nohighlight">\(\left&lt;v, b_1\right&gt;\)</span> to <span class="math notranslate nohighlight">\(||v_{b_1}|| * ||b_1|\)</span> po podzieleniu zostaje
+<span class="math notranslate nohighlight">\(\frac{||v_{b_1}||}{||b_1||}\)</span></p>
+<p>gdzie <span class="math notranslate nohighlight">\(v_{B_1}\)</span> to długość rzutu <span class="math notranslate nohighlight">\(v\)</span> na <span class="math notranslate nohighlight">\(b_k\)</span></p>
+</div>
+<section id="metoda-ortogonalizacji-gramma-schmidta">
+<h3>Metoda ortogonalizacji Gramma-Schmidta<a class="headerlink" href="#metoda-ortogonalizacji-gramma-schmidta" title="Link to this heading">¶</a></h3>
+<p>Jeżeli istnieje basa generujaca jakąś podprzestrzeń to istnieje
+też inna <strong>ortogonalna</strong> baza która generuje tą podprzestrzeń.</p>
+<ol class="arabic simple" start="0">
+<li><p>najpierw warto sprawdzić, czy zadana baza nie jest już przypadkiem ortogonalna ;-)</p></li>
+<li><p><span class="math notranslate nohighlight">\(c_1 = b_1\)</span></p></li>
+<li><p>aby <span class="math notranslate nohighlight">\(c_2\)</span> generował tą samą przestrzeć co <span class="math notranslate nohighlight">\(lin\left\{c_1, b_2\right\}\)</span> musi on być kombinacją liniową tych wektorów <span class="math notranslate nohighlight">\(c_2 = b_2 + \alpha c_1\)</span>.</p></li>
+<li><p>to samo należy zrobić dla 3 wektora.  Również <span class="math notranslate nohighlight">\(c_2 = \left&lt;c_2, b_2\right&gt; = 0\)</span></p></li>
+</ol>
+</section>
+<section id="rzut-ortogonalny">
+<h3>Rzut Ortogonalny<a class="headerlink" href="#rzut-ortogonalny" title="Link to this heading">¶</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>również znany jako rzut prostokątny w <span class="math notranslate nohighlight">\(\mathbb{r}^2\)</span></p>
+</div>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/algebra/algebra_2024.01.16.md</span></code></em></p>
+</section>
+</section>
+<section id="przestrzenie-unitarne">
+<h2>Przestrzenie unitarne<a class="headerlink" href="#przestrzenie-unitarne" title="Link to this heading">¶</a></h2>
+<div class="admonition-macierze-ortogonalne admonition">
+<p class="admonition-title">Macierze ortogonalne</p>
+<p>TO takie macierze, które <span class="math notranslate nohighlight">\(A^T * A = I\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<div class="math notranslate nohighlight">
+\[
+detA \neq \left( \land detA^2 = 1 \Rightarrow detA = 1 \lor detA = -1 \right)
+\]</div>
+<div class="docutils">
+</div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>Jeżeli macierze A i B są ortogonalne, wtedy <span class="math notranslate nohighlight">\(A * B\)</span> też jest ortogonalna.</p>
+</div>
+<div class="admonition-izometrie-liniowe admonition">
+<p class="admonition-title">Izometrie liniowe</p>
+<p>to przekształcenia któ©e nie zmieniają odległości między wektorami.</p>
+</div>
 </section>
 </section>
 
@@ -1197,7 +1258,12 @@ sens w większej liczbie wymiarów (np. 4)</p>
 <li><a class="reference internal" href="#schemat-rozwiazywania-zadan">Schemat rozwiązywania zadań:</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#przestrzenie-euklidesowe">Przestrzenie euklidesowe</a></li>
+<li><a class="reference internal" href="#przestrzenie-euklidesowe">Przestrzenie euklidesowe</a><ul>
+<li><a class="reference internal" href="#metoda-ortogonalizacji-gramma-schmidta">Metoda ortogonalizacji Gramma-Schmidta</a></li>
+<li><a class="reference internal" href="#rzut-ortogonalny">Rzut Ortogonalny</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#przestrzenie-unitarne">Przestrzenie unitarne</a></li>
 </ul>
 </li>
 </ul>
@@ -1269,7 +1335,7 @@ sens w większej liczbie wymiarów (np. 4)</p>
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/6b2dc333c6669890088eb85b498216317433158e>Tue Jan 16 09:54:58 2024 +0100 matematyka: new integrals notes (6b2dc333c6669890088eb85b498216317433158e)</a>
+<a href=https://github.com/gucio321/matematyka/commit/f0ebc0687a1edf554dad071d5e38193c7d305a10>Tue Jan 16 16:36:57 2024 +0100 algbra: new notes (f0ebc0687a1edf554dad071d5e38193c7d305a10)</a>
 </font>
 
   </body>
