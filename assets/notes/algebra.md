@@ -52,3 +52,11 @@ _Notatki z pliku `notes/algebra/algebra_2023.12.12.md`_
 _Notatki z pliku `notes/algebra/algebra_2024.01.07.md`_
 ```{include} ../notes/algebra/algebra_2024.01.07.md
 ```
+---
+_Notatki z pliku `notes/algebra/algebra_2024.01.09.md`_
+```{include} ../notes/algebra/algebra_2024.01.09.md
+```
+---
+_Notatki z pliku `notes/algebra/algebra_2024.01.16.md`_
+```{include} ../notes/algebra/algebra_2024.01.16.md
+```
