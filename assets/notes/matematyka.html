@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/cloud.css?v=f9ae72be" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=2c74f6a9" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=9343e14b" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
     
     <script src="../../_static/documentation_options.js?v=a28d12eb"></script>
@@ -1190,6 +1190,47 @@ S_n - s_n = \Sigma_i x_i (M-m ) &lt;= \epsilon \Sigma_i x_i = \epsilon (a-b)
 <li><p><span class="math notranslate nohighlight">\(m(b-a)\leq \int_a^b \leq M(b-a)\)</span></p></li>
 <li><p>twierdzenie o wartośći średniej dla całęk (jeżeli f ciągła) <span class="math notranslate nohighlight">\(\exists \psi \in \left&lt;a,b\right&gt; ~ \frac{1}{b-a} \int_a^b f = f(\psi)\)</span></p></li>
 </ul>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/matematyka/matematyka_2024.01.15.md</span></code></em></p>
+</section>
+</section>
+<section id="zastosowania-calek">
+<h2>Zastosowania całek<a class="headerlink" href="#zastosowania-calek" title="Link to this heading">¶</a></h2>
+<section id="pole-pod-wykresem">
+<h3>Pole pod wykresem<a class="headerlink" href="#pole-pod-wykresem" title="Link to this heading">¶</a></h3>
+<p>Jeżeli funkcja jest całkowalna, to pole pomiędzy prostymi <span class="math notranslate nohighlight">\(a\)</span> i <span class="math notranslate nohighlight">\(b\)</span> wynosi <span class="math notranslate nohighlight">\(\int_a^b f(x)dx\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>całka to <strong>nie</strong> jest pole. (e.g. <span class="math notranslate nohighlight">\(\int_0^{\frac{\pi}{2}} sin~x~dx = 0\)</span>)</p>
+</div>
+<div class="admonition-pole-elipsy admonition">
+<p class="admonition-title">pole elipsy</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\frac{x^2}{A^2} + \frac{y^2}{B^2} = 1 \\
+y = +- \frac{B}{A} * \sqrt{A^2 - x^2} \\
+\\
+P = 4 \int_0^a \frac{B}{A} \sqrt{A^2-x^2} = \pi * A * B \\
+\end{split}\]</div>
+</div>
+<p>###4 Obliczanie długości krzywej</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+l = \Sigma_i \sart{(\phi(t_i) - \phi(t_i - 1))^2 + (\psi(t_i) - \psi(t_i - 1))^2} = \\
+= \Delta t_i \Sigma_i \sqrt{\phi'(u_i)^2 + \psi(\dzeta_i)^2 } \\
+\int_\alpha^\beta \sqrt{\phi'^2 + \psi'^2 } dt \\\end{split}\]</div>
+<div class="admonition-twierdzenie admonition">
+<p class="admonition-title">Twierdzenie</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma = \int_\alpha^\beta \sqrt{\phi'^2 + \psi'^2} dt
+\]</div>
+<p>jeżeli krzywa jest opisana równaniem</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma = \int_a^b \sqrt{1+f'(x)^2} dx
+\]</div>
+</div>
 </section>
 </section>
 </section>
@@ -1267,6 +1308,10 @@ S_n - s_n = \Sigma_i x_i (M-m ) &lt;= \epsilon \Sigma_i x_i = \epsilon (a-b)
 <li><a class="reference internal" href="#wlasnosci-calki-rimmana">Własności całki Rimmana</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#zastosowania-calek">Zastosowania całek</a><ul>
+<li><a class="reference internal" href="#pole-pod-wykresem">Pole pod wykresem</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1338,7 +1383,7 @@ S_n - s_n = \Sigma_i x_i (M-m ) &lt;= \epsilon \Sigma_i x_i = \epsilon (a-b)
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/5309f540507adde643e9569255e88d413a6108af>Sat Jan 13 15:07:10 2024 +0100 exams: update dates (5309f540507adde643e9569255e88d413a6108af)</a>
+<a href=https://github.com/gucio321/matematyka/commit/6b2dc333c6669890088eb85b498216317433158e>Tue Jan 16 09:54:58 2024 +0100 matematyka: new integrals notes (6b2dc333c6669890088eb85b498216317433158e)</a>
 </font>
 
   </body>

@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Zadania &#8212; Matematyka  - dokumentacja</title>
+    <title>Zastosowania całek &#8212; Matematyka  - dokumentacja</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
@@ -54,7 +54,7 @@
              accesskey="I">indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Zadania</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Zastosowania całek</a></li> 
       </ul>
     </div>
     </div>
@@ -65,67 +65,44 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="zadania">
-<h1>Zadania<a class="headerlink" href="#zadania" title="Link to this heading">¶</a></h1>
+  <section id="zastosowania-calek">
+<h1>Zastosowania całek<a class="headerlink" href="#zastosowania-calek" title="Link to this heading">¶</a></h1>
+<section id="pole-pod-wykresem">
+<h2>Pole pod wykresem<a class="headerlink" href="#pole-pod-wykresem" title="Link to this heading">¶</a></h2>
+<p>Jeżeli funkcja jest całkowalna, to pole pomiędzy prostymi <span class="math notranslate nohighlight">\(a\)</span> i <span class="math notranslate nohighlight">\(b\)</span> wynosi <span class="math notranslate nohighlight">\(\int_a^b f(x)dx\)</span>.</p>
 <div class="admonition note">
 <p class="admonition-title">Informacja</p>
-<p>Z kwadratoweo arkusza blachy wycinamy 4 kwadratowe kawałki (na rogach).
-Z czego powstaje nam “pudełko”. Jaka największa objętość?</p>
+<p>całka to <strong>nie</strong> jest pole. (e.g. <span class="math notranslate nohighlight">\(\int_0^{\frac{\pi}{2}} sin~x~dx = 0\)</span>)</p>
+</div>
+<div class="admonition-pole-elipsy admonition">
+<p class="admonition-title">pole elipsy</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-0 &lt; x &lt; \frac{a}{2} \\
-V(x) = (a-2x)^2 x \\
-\end{split}\]</div>
-<p>szukamy największą wartość funkcji w przedziale <span class="math notranslate nohighlight">\(x \in \left&lt;0, \frac{a}{2}\right&gt;\)</span></p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-V'(x) = (a-2x)^2 -4x(a-2x) \\
-V'(x) = (a-2x)(a-2x -4x) \\
-V'(x) = (a-2x)(a-6x) \\
-x = \frac{a}{2} \lor x = \frac{a}{6} \\
+\frac{x^2}{A^2} + \frac{y^2}{B^2} = 1 \\
+y = +- \frac{B}{A} * \sqrt{A^2 - x^2} \\
+\\
+P = 4 \int_0^a \frac{B}{A} \sqrt{A^2-x^2} = \pi * A * B \\
 \end{split}\]</div>
 </div>
-<div class="admonition note">
-<p class="admonition-title">Informacja</p>
+<p>###4 Obliczanie długości krzywej</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-O(h) = C * sin \alpha * \frac{1}{r^2} \\
-\frac{a}{r} = cos \alpha \\
-O(h) = C * sin \alpha * \frac{cos^2 \alpha}{a^2} \\
-O(h) = \frac{C}{a^2} * sin \alpha * cos^2 \alpha \\
-f(x) = sin x * cos^2 x \\
-x \in \left&lt;0, \frac{\pi}{2}\right) \\
-f'(x) = cos^3 x - 2sin^2 x cos x  \\
-f'(x) = cos x (cos^2 x - 2sin^2 x) \\
-x = \frac{\pi}{2} &amp;\lor tg^2 x = \frac{1}{2} \\
-&amp;\lor tg x = \frac{1}{\sqrt{2}} \text{tg &gt; 0 w przedziale} \\
-&amp;\lor x = arctg \frac{1}{\sqrt{2}} \\
-\end{split}\]</div>
+l = \Sigma_i \sart{(\phi(t_i) - \phi(t_i - 1))^2 + (\psi(t_i) - \psi(t_i - 1))^2} = \\
+= \Delta t_i \Sigma_i \sqrt{\phi'(u_i)^2 + \psi(\dzeta_i)^2 } \\
+\int_\alpha^\beta \sqrt{\phi'^2 + \psi'^2 } dt \\\end{split}\]</div>
+<div class="admonition-twierdzenie admonition">
+<p class="admonition-title">Twierdzenie</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma = \int_\alpha^\beta \sqrt{\phi'^2 + \psi'^2} dt
+\]</div>
+<p>jeżeli krzywa jest opisana równaniem</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma = \int_a^b \sqrt{1+f'(x)^2} dx
+\]</div>
 </div>
 </section>
-<section id="wypuklosc-funkcji">
-<h1>Wypukłość funkcji<a class="headerlink" href="#wypuklosc-funkcji" title="Link to this heading">¶</a></h1>
-<p><code class="docutils literal notranslate"><span class="pre">f</span></code> jest wypukłą ku górze jeśli w pewnym otoczeniu
-wykres f jest poniżej wykresu stycznej.</p>
-<p>Funkcja jest wypukła ku dołowi w punkcie <span class="math notranslate nohighlight">\(x_0\)</span> jeżeli w tm punkcie wykres jest powyżej wykresu stycznej</p>
-<div class="admonition-twierdzenie-o-wypuklosci admonition">
-<p class="admonition-title">Twierdzenie o wypukłości</p>
-<p><code class="docutils literal notranslate"><span class="pre">f</span></code> klasy <span class="math notranslate nohighlight">\(C^2\)</span></p>
-<p>Jeżeli <code class="docutils literal notranslate"><span class="pre">f</span></code> wypukła ku górze <span class="math notranslate nohighlight">\(\Rightarrow f''(x_0) \leq 0\)</span>
-Jeśli <span class="math notranslate nohighlight">\(f''(x_0) &lt; 0 \Rightarrow\)</span> funkcja jest wypukła ku górze.</p>
-</div>
-</section>
-<section id="asymptoty">
-<h1>Asymptoty<a class="headerlink" href="#asymptoty" title="Link to this heading">¶</a></h1>
-<p>Asymptoty to proste, do których wykres danej funkcji zbliża się dowolnie blisko.</p>
-<div class="admonition tip">
-<p class="admonition-title">Wskazówka</p>
-<p>Prosta o równaniu <span class="math notranslate nohighlight">\(y = ax+b\)</span> jest asymptotą ukośną, jeśli
-<span class="math notranslate nohighlight">\(f(x)-ax-b \to 0~dla~x\to \infty\)</span></p>
-</div>
-<p>Prosta o równaniu <span class="math notranslate nohighlight">\(y=ax+b\)</span> jest asymptotą ukośną funkcji f <span class="math notranslate nohighlight">\(\Leftrightarrow\)</span>
-<span class="math notranslate nohighlight">\(\exists lim_{x \to \infty} \frac{f(x)}{x} = a \land\)</span>
-<span class="math notranslate nohighlight">\(\exists lim_{x \to \infty} f(x)-ax = b\)</span></p>
 </section>
 
 
@@ -137,9 +114,10 @@ Jeśli <span class="math notranslate nohighlight">\(f''(x_0) &lt; 0 \Rightarrow\
         <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
     <h3><a href="../../../index.html">Spis treści:</a></h3>
     <ul>
-<li><a class="reference internal" href="#">Zadania</a></li>
-<li><a class="reference internal" href="#wypuklosc-funkcji">Wypukłość funkcji</a></li>
-<li><a class="reference internal" href="#asymptoty">Asymptoty</a></li>
+<li><a class="reference internal" href="#">Zastosowania całek</a><ul>
+<li><a class="reference internal" href="#pole-pod-wykresem">Pole pod wykresem</a></li>
+</ul>
+</li>
 </ul>
 
   </div>
@@ -184,7 +162,7 @@ Jeśli <span class="math notranslate nohighlight">\(f''(x_0) &lt; 0 \Rightarrow\
              >indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Zadania</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Zastosowania całek</a></li> 
       </ul>
     </div>
     </div>
