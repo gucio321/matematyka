@@ -19,8 +19,8 @@ $$
 ###4 Obliczanie długości krzywej
 
 $$
-l = \Sigma_i \sart{(\phi(t_i) - \phi(t_i - 1))^2 + (\psi(t_i) - \psi(t_i - 1))^2} = \\
-= \Delta t_i \Sigma_i \sqrt{\phi'(u_i)^2 + \psi(\dzeta_i)^2 } \\
+l = \Sigma_i \sqrt{(\phi(t_i) - \phi(t_i - 1))^2 + (\psi(t_i) - \psi(t_i - 1))^2} = \\
+= \Delta t_i \Sigma_i \sqrt{\phi'(u_i)^2 + \psi(\zeta_i)^2 } \\
 \int_\alpha^\beta \sqrt{\phi'^2 + \psi'^2 } dt \\
 
 $$
