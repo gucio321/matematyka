@@ -64,3 +64,7 @@ _Notatki z pliku `notes/matematyka/matematyka_2023.12.18.md`_
 _Notatki z pliku `notes/matematyka/matematyka_2024.01.08.md`_
 ```{include} ../notes/matematyka/matematyka_2024.01.08.md
 ```
+---
+_Notatki z pliku `notes/matematyka/matematyka_2024.01.15.md`_
+```{include} ../notes/matematyka/matematyka_2024.01.15.md
+```
