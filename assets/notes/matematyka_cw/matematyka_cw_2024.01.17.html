@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Mechanika - Ćwiczenia &#8212; Matematyka  - dokumentacja</title>
+    <title>Całki Rimmana - tricki / przydatne wzory &#8212; Matematyka  - dokumentacja</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
@@ -54,7 +54,7 @@
              accesskey="I">indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Mechanika - Ćwiczenia</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Całki Rimmana - tricki / przydatne wzory</a></li> 
       </ul>
     </div>
     </div>
@@ -65,16 +65,17 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section class="tex2jax_ignore mathjax_ignore" id="mechanika-cwiczenia">
-<h1>Mechanika - Ćwiczenia<a class="headerlink" href="#mechanika-cwiczenia" title="Link to this heading">¶</a></h1>
-<p><strong>Siłą zachowawcza</strong> - praca siły na dowolnym zamkniętym torze jest równa 0</p>
-<div class="admonition-gradient admonition">
-<p class="admonition-title">Gradient</p>
+  <section id="calki-rimmana-tricki-przydatne-wzory">
+<h1>Całki Rimmana - tricki / przydatne wzory<a class="headerlink" href="#calki-rimmana-tricki-przydatne-wzory" title="Link to this heading">¶</a></h1>
+<p>Oto definicja całki oznaczonej:</p>
 <div class="math notranslate nohighlight">
 \[
-grad F(x, y, z) = \vec{A}(x,y,z)
-\left(\frac{\partial}{\partial x}, \frac{\partial}{\partial y}, \frac{\partial}{\partial z}\right)
+\int_a^b = \lim_{n \to \infty} \left[\frac{b-a}{n} * \sum_{i=1}^n f(a + i\frac{b-a}{n})\right]
 \]</div>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>Ta funkcja oznacza po prostu pocięcie “pola figury” ograniczonej funkcją <code class="docutils literal notranslate"><span class="pre">f</span></code> na małe prostokąty, zbudowanie z nich “wieży” o podstawie <span class="math notranslate nohighlight">\(\frac{b-a}{n}\)</span> i wysokości <span class="math notranslate nohighlight">\(\sum...\)</span> i obliczenie jej pola jako
+pola prostokąta</p>
 </div>
 </section>
 
@@ -126,7 +127,7 @@ grad F(x, y, z) = \vec{A}(x,y,z)
              >indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Mechanika - Ćwiczenia</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Całki Rimmana - tricki / przydatne wzory</a></li> 
       </ul>
     </div>
     </div>

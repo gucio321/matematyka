@@ -1171,7 +1171,7 @@ też inna <strong>ortogonalna</strong> baza która generuje tą podprzestrzeń.<
 <p class="admonition-title">Informacja</p>
 <div class="math notranslate nohighlight">
 \[
-detA \neq \left( \land detA^2 = 1 \Rightarrow detA = 1 \lor detA = -1 \right)
+detA \neq 0 \land \left( detA^2 = 1 \Rightarrow detA = 1 \lor detA = -1 \right)
 \]</div>
 <div class="docutils">
 </div>
@@ -1181,9 +1181,25 @@ detA \neq \left( \land detA^2 = 1 \Rightarrow detA = 1 \lor detA = -1 \right)
 <p class="admonition-title">Wskazówka</p>
 <p>Jeżeli macierze A i B są ortogonalne, wtedy <span class="math notranslate nohighlight">\(A * B\)</span> też jest ortogonalna.</p>
 </div>
+<p>Własności baz ortonormalnych. Niech <span class="math notranslate nohighlight">\(B_{\perp}\)</span> i <span class="math notranslate nohighlight">\(B_{\perp}'\)</span> będą dwiema bazami ortonormalnymi.
+Niech <span class="math notranslate nohighlight">\(P_{B \to B'}\)</span> będzie macierzą przejścia pomiędzy nimi. Wtedy <span class="math notranslate nohighlight">\(P\)</span> również jest ortogonalna.</p>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>Zauważ, że <span class="math notranslate nohighlight">\(P_{B' \to B} = P_{B \to B'}^{-1} = P_{B \to B'}^T\)</span></p>
+</div>
 <div class="admonition-izometrie-liniowe admonition">
 <p class="admonition-title">Izometrie liniowe</p>
-<p>to przekształcenia któ©e nie zmieniają odległości między wektorami.</p>
+<p>to przekształcenia które nie zmieniają odległości między wektorami.</p>
+<div class="math notranslate nohighlight">
+\[
+|| u - w || = || \phi(u) - \phi(w) ||
+\]</div>
+<p>Można wysnuć wniosek, że <span class="math notranslate nohighlight">\(\phi\)</span> jest ortogonalne.</p>
+<p>Możliwe typy Izormorfizmów <strong>liniowych</strong> to:</p>
+<ul class="simple">
+<li><p>obrót</p></li>
+<li><p>odbicie (względem prostej o równaniu <span class="math notranslate nohighlight">\(y = tg\left(\frac{\alpha}{2}\right)x\)</span>)</p></li>
+</ul>
 </div>
 </section>
 </section>
@@ -1335,7 +1351,7 @@ detA \neq \left( \land detA^2 = 1 \Rightarrow detA = 1 \lor detA = -1 \right)
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/f0ebc0687a1edf554dad071d5e38193c7d305a10>Tue Jan 16 16:36:57 2024 +0100 algbra: new notes (f0ebc0687a1edf554dad071d5e38193c7d305a10)</a>
+<a href=https://github.com/gucio321/matematyka/commit/6e4311f5f4867f3e61058f5bea758ec794327e98>Fri Jan 19 14:29:32 2024 +0100 update things (6e4311f5f4867f3e61058f5bea758ec794327e98)</a>
 </font>
 
   </body>
