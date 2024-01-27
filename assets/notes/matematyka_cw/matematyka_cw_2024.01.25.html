@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Obliczanie macierzy odwrotnej &#8212; Matematyka  - dokumentacja</title>
+    <title>&lt;no title&gt; &#8212; Matematyka  - dokumentacja</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
@@ -54,7 +54,7 @@
              accesskey="I">indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Obliczanie macierzy odwrotnej</a></li> 
+        <li class="nav-item nav-item-this"><a href="">&lt;no title&gt;</a></li> 
       </ul>
     </div>
     </div>
@@ -65,81 +65,8 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="admonition important">
-<p class="admonition-title">Ważne</p>
-<p>Macierze odwracalne tworzą grupę (tzw. grupę liniową)</p>
-</div>
-<section id="obliczanie-macierzy-odwrotnej">
-<h1>Obliczanie macierzy odwrotnej<a class="headerlink" href="#obliczanie-macierzy-odwrotnej" title="Link to this heading">¶</a></h1>
-<ul class="simple">
-<li><p>metoda dopełnień algebaicznych</p>
-<ul>
-<li><p>możemy ją obliczyć tylko gdy <span class="math notranslate nohighlight">\(detA \neq 0\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(a_ij = (-1)^{i+j} * m_{ij}\)</span></p></li>
-<li><p>tak powstałą macierz transponujemy i kążdy element mnożymy przez <span class="math notranslate nohighlight">\(\frac{1}{detA}\)</span></p></li>
-</ul>
-</li>
-<li><p>metoda operacji elementarnych (bezwyznacznikiowa)</p>
-<ul>
-<li><p>zestawienie macierzy blokowej z macierzy A i macierzy jednostkowej</p></li>
-<li><p>jeżeli macierz A uda się sprowadzić do macierzy jednostkowej, to druga część bloku
-będzie macierzą odwrotną <span class="math notranslate nohighlight">\(A^{-1}\)</span></p></li>
-</ul>
-</li>
-</ul>
-<div class="admonition-algorytm-gausa admonition">
-<p class="admonition-title">Algorytm gausa</p>
-<ul class="simple">
-<li><p>korzystając z operacji elementarnych uzyskać macierz trujkątną górną
-przemieszczając się od lewego górnego rogu macierzy</p></li>
-<li><p>zerowanie od prawej na lewą stronę</p></li>
-</ul>
-</div>
-</section>
-<section id="wlasnosci-macierzy-odwrotnej">
-<h1>Własności macierzy odwrotnej<a class="headerlink" href="#wlasnosci-macierzy-odwrotnej" title="Link to this heading">¶</a></h1>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(detA = \frac{1}{detA^{-1}}\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\((A^{-1})^{-1} = A\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\((A^{-1})^T = (A^T)^{-1}\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\((\alpha A)^{-1} = \frac{1}{\alpha} A^{-1}\)</span></p></li>
-<li><p>(AB)^-1 = B^{-1} A^{-1}$</p></li>
-</ul>
-</section>
-<section id="uklady-rownan-liniowych">
-<h1>Układy równań liniowych<a class="headerlink" href="#uklady-rownan-liniowych" title="Link to this heading">¶</a></h1>
-<p>Układ równań liniowych można zapisać jako <span class="math notranslate nohighlight">\(A * X = B\)</span></p>
-<section id="uklad-rownan">
-<h2>Układ równań<a class="headerlink" href="#uklad-rownan" title="Link to this heading">¶</a></h2>
-<div class="admonition-uklady-crammerowskie admonition">
-<p class="admonition-title">układy crammerowskie</p>
-<p>są to takie układy, w których liczba niewiadomych jest równa liczbie równań</p>
-</div>
-<ul class="simple">
-<li><p>Macierz A jest kwadratowa</p></li>
-<li><p><span class="math notranslate nohighlight">\(x = \frac{W}{W_x}\)</span> …</p></li>
-<li><p>jeśli W = 0 układ <strong>nie</strong> jest oznaczony</p></li>
-<li><p>jeśli macierz <strong>nie</strong> jest kwadratowa należy wykorzystać rząd macierzy</p>
-<ul>
-<li><p>rząd to <strong>największy stopień niezerowego minora</strong></p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="wyznaczanie-rzedu">
-<h2>Wyznaczanie rzędu<a class="headerlink" href="#wyznaczanie-rzedu" title="Link to this heading">¶</a></h2>
-<ul class="simple">
-<li><p>sprowadzanie macierzy do postaci schodkowej</p></li>
-<li><p>rząd macierzy to ilość “schodów”</p></li>
-</ul>
-</section>
-<section id="rozwiazywanie-ukladow-rownan-m-neq-n">
-<h2>Rozwiązywanie układów równań <span class="math notranslate nohighlight">\(m \neq n\)</span><a class="headerlink" href="#rozwiazywanie-ukladow-rownan-m-neq-n" title="Link to this heading">¶</a></h2>
-<ul class="simple">
-<li><p>układ jest sprzeczny jeżei rząd macierzy jest rożny od rzędu macierzy uzupełnionej</p></li>
-</ul>
-</section>
-</section>
+  <p>Objętość bryły utworozonej przez krzywą obracaną wokół osi OX: <span class="math notranslate nohighlight">\(|V| = \pi \int_a^b f^2(x)dx\)</span></p>
+<p>Pole powierzchni figury utworzonej poprzez obrut prostej f(x) wokół osi x <span class="math notranslate nohighlight">\(|S| = \int_a^b f(x) * \sqrt{1+f'(x)^2}\)</span></p>
 
 
             <div class="clearer"></div>
@@ -147,20 +74,7 @@ przemieszczając się od lewego górnego rogu macierzy</p></li>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
-    <h3><a href="../../../index.html">Spis treści:</a></h3>
-    <ul>
-<li><a class="reference internal" href="#">Obliczanie macierzy odwrotnej</a></li>
-<li><a class="reference internal" href="#wlasnosci-macierzy-odwrotnej">Własności macierzy odwrotnej</a></li>
-<li><a class="reference internal" href="#uklady-rownan-liniowych">Układy równań liniowych</a><ul>
-<li><a class="reference internal" href="#uklad-rownan">Układ równań</a></li>
-<li><a class="reference internal" href="#wyznaczanie-rzedu">Wyznaczanie rzędu</a></li>
-<li><a class="reference internal" href="#rozwiazywanie-ukladow-rownan-m-neq-n">Rozwiązywanie układów równań <span class="math notranslate nohighlight">\(m \neq n\)</span></a></li>
-</ul>
-</li>
-</ul>
-
-  </div>
+        <div class="sphinxsidebarwrapper">
 <div id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Szybkie wyszukiwanie</h3>
     <div class="searchformwrapper">
@@ -202,7 +116,7 @@ przemieszczając się od lewego górnego rogu macierzy</p></li>
              >indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Obliczanie macierzy odwrotnej</a></li> 
+        <li class="nav-item nav-item-this"><a href="">&lt;no title&gt;</a></li> 
       </ul>
     </div>
     </div>
