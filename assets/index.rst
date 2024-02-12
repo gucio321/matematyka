@@ -10,12 +10,12 @@
 .. toctree::
 	:maxdepth: 3
 
-	assets/notes/matematyka.md
+	assets/notes/matematyka1.md
 
 .. toctree::
 	:maxdepth: 3
 
-	assets/notes/matematyka_cw.md
+	assets/notes/matematyka1_cw.md
 
 .. toctree::
 	:maxdepth: 3
