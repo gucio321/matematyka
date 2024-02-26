@@ -1,4 +1,4 @@
-## Przestrzenie unitarne
+## Przestrzenie euklidesowe
 
 ```{admonition} Macierze ortogonalne
 TO takie macierze, które $A^T * A = I$.
