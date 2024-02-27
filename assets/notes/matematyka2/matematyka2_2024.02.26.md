@@ -60,14 +60,14 @@ Szerzej rozważane w MATEMATYKA 3
 ```
 
 $$
-\Sum_i^1^\infty a_n = a_1 + a_2 + a_3 + ... + a_\infty$ \\
+\sum_{i=1}^\infty a_n = a_1 + a_2 + a_3 + ... + a_\infty$ \\
 $$
 Jeżeli ciąg $a_n$ jest zbierzny, wtedy mówimy, że szereg jest zbierzny.
 
 Rozważmy tzw. szereg harmoniczny:
 
 $$
-\Sum_n=1^\infty \frac{1}{n} \\
+\sum_n=1^\infty \frac{1}{n} \\
 $$
 
 ```{admonition} bezwzględna zbierzność

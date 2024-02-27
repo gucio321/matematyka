@@ -8,3 +8,7 @@ _Notatki z pliku `notes/matematyka2/matematyka2_0000.00.00.md`_
 _Notatki z pliku `notes/matematyka2/matematyka2_2024.02.26.md`_
 ```{include} ../notes/matematyka2/matematyka2_2024.02.26.md
 ```
+---
+_Notatki z pliku `notes/matematyka2/matematyka2_2024.02.27.md`_
+```{include} ../notes/matematyka2/matematyka2_2024.02.27.md
+```
