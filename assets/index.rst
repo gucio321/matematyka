@@ -20,5 +20,25 @@
 .. toctree::
 	:maxdepth: 3
 
+	assets/notes/matematyka2.md
+
+.. toctree::
+	:maxdepth: 3
+
+	assets/notes/mechanika.md
+
+.. toctree::
+	:maxdepth: 3
+
 	assets/notes/mechanika_cw.md
+
+.. toctree::
+	:maxdepth: 3
+
+	assets/notes/oie.md
+
+.. toctree::
+	:maxdepth: 3
+
+	assets/notes/oie_cw.md
 
