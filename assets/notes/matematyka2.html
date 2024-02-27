@@ -137,13 +137,13 @@ zbierzne lub rozbierzne.</p></li>
 </div>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\Sum_i^1^\infty a_n = a_1 + a_2 + a_3 + ... + a_\infty$ \\
+\sum_{i=1}^\infty a_n = a_1 + a_2 + a_3 + ... + a_\infty$ \\
 \end{split}\]</div>
 <p>Jeżeli ciąg <span class="math notranslate nohighlight">\(a_n\)</span> jest zbierzny, wtedy mówimy, że szereg jest zbierzny.</p>
 <p>Rozważmy tzw. szereg harmoniczny:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\Sum_n=1^\infty \frac{1}{n} \\
+\sum_n=1^\infty \frac{1}{n} \\
 \end{split}\]</div>
 <div class="admonition-bezwzgledna-zbierznosc admonition">
 <p class="admonition-title">bezwzględna zbierzność</p>
@@ -153,7 +153,62 @@ zbierzne lub rozbierzne.</p></li>
 <p class="admonition-title">Informacja</p>
 <p>Jeżeli całka <span class="math notranslate nohighlight">\(\int_a^b f(x)dx\)</span> jest bezwzględnie zbierzna, to jest również zbierzna</p>
 </div>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/matematyka2/matematyka2_2024.02.27.md</span></code></em></p>
 </section>
+</section>
+<section id="funkcja-gamma-eulera">
+<h2>Funkcja Gamma Eulera<a class="headerlink" href="#funkcja-gamma-eulera" title="Link to this heading">¶</a></h2>
+<div class="math notranslate nohighlight">
+\[
+\Gamma(x) = \int_0^\infty t^{x-1} e^{-t} dt
+\]</div>
+<ul class="simple">
+<li><p>W otoczeniu 0</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\Gamma ~ \int_0^\infty t^{x-1} dt
+\]</div>
+<p>Funkcja jest zbierzna jeżeli <span class="math notranslate nohighlight">\(1 - x &lt; 1 \Leftrightarrow x &gt; 0\)</span></p>
+<p>W “otoczeniu” <span class="math notranslate nohighlight">\(\infty\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\text{dla } t \to \infty \\
+t^{x-1} \leq e^t \\
+\end{split}\]</div>
+<section id="wlasnosci">
+<h3>Własnośći<a class="headerlink" href="#wlasnosci" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\Gamma(x+1) = x * \Gamma(x)\)</span></p></li>
+</ul>
+<p><em>dowóð z obliczenia całki <span class="math notranslate nohighlight">\(\Gamma(x+1)\)</span> przez części</em></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\Gamma(1) = \left. -e^{-t} \right|_ 0^\infty = 1\)</span></p></li>
+<li><p>Definicja silni</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Gamma(2) = 1 * \Gamma(1) = 1 \\
+\Gamma(3) = \Gamma(2 + 1) = 2 * \Gamma(2) = 2 \\
+\Gamma(4) = 3 * \Gamma(3) = 6 \\
+\\
+\Gamma(n+1) = n! \\
+\end{split}\]</div>
+<ul class="simple">
+<li><p>$\Gamma(\alpha) * \Gamma(1-\alpha) = \frac{\pi}{sin(\pi \alpha)}</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(n! ~ n^n * e^{-n} * \sqrt{2\pi n}\)</span></p>
+</section>
+</section>
+<section id="funkcja-beta">
+<h2>Funkcja <span class="math notranslate nohighlight">\(\Beta\)</span><a class="headerlink" href="#funkcja-beta" title="Link to this heading">¶</a></h2>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Beta(\alpha, \beta) = \frac{\Gamma(\alpha) * \Gamma(\beta) }{\Gamma(\alpha + \beta)} = \int_0^1 x^{\alpha-1}(1-x)^{\beta-x} \\
+\\
+\int_{-\infty}^{\infty} e^{-t^{2}} = \sqrt{\pi}
+\end{split}\]</div>
 </section>
 </section>
 
@@ -174,6 +229,11 @@ zbierzne lub rozbierzne.</p></li>
 <li><a class="reference internal" href="#szeregi">Szeregi</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#funkcja-gamma-eulera">Funkcja Gamma Eulera</a><ul>
+<li><a class="reference internal" href="#wlasnosci">Własnośći</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#funkcja-beta">Funkcja <span class="math notranslate nohighlight">\(\Beta\)</span></a></li>
 </ul>
 </li>
 </ul>
@@ -229,7 +289,7 @@ zbierzne lub rozbierzne.</p></li>
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/b96a47fcb5a3b84922094f2bf16778b4e7c78aaf>Tue Feb 27 08:55:47 2024 +0100 update (b96a47fcb5a3b84922094f2bf16778b4e7c78aaf)</a>
+<a href=https://github.com/gucio321/matematyka/commit/cc8da4abac4966090c247c79f11cb97d17efdd97>Tue Feb 27 13:26:48 2024 +0100 mechanika_cw: fix dates fromat (cc8da4abac4966090c247c79f11cb97d17efdd97)</a>
 </font>
 
   </body>

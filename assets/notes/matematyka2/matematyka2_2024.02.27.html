@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Działania elementarne, które nie zmieniają rozwiązań &#8212; Matematyka  - dokumentacja</title>
+    <title>Funkcja Gamma Eulera &#8212; Matematyka  - dokumentacja</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
@@ -54,7 +54,7 @@
              accesskey="I">indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Działania elementarne, które nie zmieniają rozwiązań</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Funkcja Gamma Eulera</a></li> 
       </ul>
     </div>
     </div>
@@ -65,53 +65,58 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="dzialania-elementarne-ktore-nie-zmieniaja-rozwiazan">
-<h1>Działania elementarne, które nie zmieniają rozwiązań<a class="headerlink" href="#dzialania-elementarne-ktore-nie-zmieniaja-rozwiazan" title="Link to this heading">¶</a></h1>
+  <section id="funkcja-gamma-eulera">
+<h1>Funkcja Gamma Eulera<a class="headerlink" href="#funkcja-gamma-eulera" title="Link to this heading">¶</a></h1>
+<div class="math notranslate nohighlight">
+\[
+\Gamma(x) = \int_0^\infty t^{x-1} e^{-t} dt
+\]</div>
 <ul class="simple">
-<li><p>skreślenie wiersza z samych zer</p></li>
-<li><p>skreślenie jednego z wierszy proporcjonalnych</p></li>
-<li><p>mnożenie wiersza przez dowolną stałą niezerową</p></li>
-<li><p>przestawienie kolumn</p></li>
+<li><p>W otoczeniu 0</p></li>
 </ul>
-<div class="admonition tip">
-<p class="admonition-title">Wskazówka</p>
-<p>Rząd macierzy (układu równań) informuje ile niewiadomych można
-z danego układu wyliczyć</p>
-</div>
-</section>
-<section id="geometria-analityczna">
-<h1>Geometria Analityczna<a class="headerlink" href="#geometria-analityczna" title="Link to this heading">¶</a></h1>
-<section id="wektory">
-<h2>Wektory<a class="headerlink" href="#wektory" title="Link to this heading">¶</a></h2>
-<p>wektor możemy oznaczac jako <span class="math notranslate nohighlight">\((x, y, z): x, y, z \in \mathbb{R}\)</span></p>
-<div class="admonition note">
-<p class="admonition-title">Informacja</p>
-<p>Wektor od ługości 1 nazywamy wersorem.</p>
-</div>
-<p>Kąty kierunkowe to kąt między osią a wektorem.</p>
-<p>Cosinus kierunkowy to stosunek <span class="math notranslate nohighlight">\(cos \alpha = \frac{u_x}{|\vec{u}|}\)</span></p>
-<p>Dla wersorów cosinusy kierunkowe to współrzędne wektora.</p>
-</section>
-<section id="dzialania-na-wektorach">
-<h2>Działania na wektorach<a class="headerlink" href="#dzialania-na-wektorach" title="Link to this heading">¶</a></h2>
-<p><a class="reference external" href="https://gucio321.github.io/fizyka/assets/dzial_4/index.html#dzialania-na-wektorach">Odniesienie</a></p>
-<ul class="simple">
-<li><p>iloczyn skalarny jest rozdzielny względem dodawania</p></li>
-<li><p>iloczyn mieszany <span class="math notranslate nohighlight">\((\vec{v_1}, \vec{v_2}, \vec{v_3})\)</span></p></li>
-</ul>
-</section>
-<section id="plaszczyzny-w-przestrzeni-mathbb-r-3">
-<h2>Płaszczyzny w przestrzeni <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span><a class="headerlink" href="#plaszczyzny-w-przestrzeni-mathbb-r-3" title="Link to this heading">¶</a></h2>
-<p>Równanie płaszczyzny</p>
+<div class="math notranslate nohighlight">
+\[
+\Gamma ~ \int_0^\infty t^{x-1} dt
+\]</div>
+<p>Funkcja jest zbierzna jeżeli <span class="math notranslate nohighlight">\(1 - x &lt; 1 \Leftrightarrow x &gt; 0\)</span></p>
+<p>W “otoczeniu” <span class="math notranslate nohighlight">\(\infty\)</span></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\pi : \left\{ \begin{matrix}
-x = x_0 + t * a_x + s * b_x \\
-y = y_0 + t * a_y + s * b_y \\
-z = z_0 + t * a_z + s * b_z \\
-\end{matrix} \right.
+\text{dla } t \to \infty \\
+t^{x-1} \leq e^t \\
 \end{split}\]</div>
+<section id="wlasnosci">
+<h2>Własnośći<a class="headerlink" href="#wlasnosci" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\Gamma(x+1) = x * \Gamma(x)\)</span></p></li>
+</ul>
+<p><em>dowóð z obliczenia całki <span class="math notranslate nohighlight">\(\Gamma(x+1)\)</span> przez części</em></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\Gamma(1) = \left. -e^{-t} \right|_ 0^\infty = 1\)</span></p></li>
+<li><p>Definicja silni</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Gamma(2) = 1 * \Gamma(1) = 1 \\
+\Gamma(3) = \Gamma(2 + 1) = 2 * \Gamma(2) = 2 \\
+\Gamma(4) = 3 * \Gamma(3) = 6 \\
+\\
+\Gamma(n+1) = n! \\
+\end{split}\]</div>
+<ul class="simple">
+<li><p>$\Gamma(\alpha) * \Gamma(1-\alpha) = \frac{\pi}{sin(\pi \alpha)}</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(n! ~ n^n * e^{-n} * \sqrt{2\pi n}\)</span></p>
 </section>
+</section>
+<section id="funkcja-beta">
+<h1>Funkcja <span class="math notranslate nohighlight">\(\Beta\)</span><a class="headerlink" href="#funkcja-beta" title="Link to this heading">¶</a></h1>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Beta(\alpha, \beta) = \frac{\Gamma(\alpha) * \Gamma(\beta) }{\Gamma(\alpha + \beta)} = \int_0^1 x^{\alpha-1}(1-x)^{\beta-x} \\
+\\
+\int_{-\infty}^{\infty} e^{-t^{2}} = \sqrt{\pi}
+\end{split}\]</div>
 </section>
 
 
@@ -123,13 +128,11 @@ z = z_0 + t * a_z + s * b_z \\
         <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
     <h3><a href="../../../index.html">Spis treści:</a></h3>
     <ul>
-<li><a class="reference internal" href="#">Działania elementarne, które nie zmieniają rozwiązań</a></li>
-<li><a class="reference internal" href="#geometria-analityczna">Geometria Analityczna</a><ul>
-<li><a class="reference internal" href="#wektory">Wektory</a></li>
-<li><a class="reference internal" href="#dzialania-na-wektorach">Działania na wektorach</a></li>
-<li><a class="reference internal" href="#plaszczyzny-w-przestrzeni-mathbb-r-3">Płaszczyzny w przestrzeni <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span></a></li>
+<li><a class="reference internal" href="#">Funkcja Gamma Eulera</a><ul>
+<li><a class="reference internal" href="#wlasnosci">Własnośći</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#funkcja-beta">Funkcja <span class="math notranslate nohighlight">\(\Beta\)</span></a></li>
 </ul>
 
   </div>
@@ -174,7 +177,7 @@ z = z_0 + t * a_z + s * b_z \\
              >indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Działania elementarne, które nie zmieniają rozwiązań</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Funkcja Gamma Eulera</a></li> 
       </ul>
     </div>
     </div>
