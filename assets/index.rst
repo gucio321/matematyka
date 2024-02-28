@@ -10,6 +10,11 @@
 .. toctree::
 	:maxdepth: 3
 
+	assets/notes/labfiz1.md
+
+.. toctree::
+	:maxdepth: 3
+
 	assets/notes/matematyka1.md
 
 .. toctree::
