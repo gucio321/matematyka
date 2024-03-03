@@ -1,1 +1,1 @@
-# MATEMATYKA 2 (Semestr Letni 2023/2024)
+# Matematyka 2
