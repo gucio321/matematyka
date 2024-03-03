@@ -3,6 +3,19 @@
 Przed Państwem kod źródłowy mojej strony z notatkami z matematyki.
 Zapraszam do oglądania i komentowania!
 
+## Instalacja
+
+Część plików nie jestd dodawana do git'a. Generują się same po użyciu dowolnej komendy z Makefile'a.
+
+```sh
+python3 -m pip install -m virtualenv # if no virtualenv package already installed
+python3 -m virtualenv venv
+source venv/bin/activate
+python3 -m pip install -r requirements.txt
+# to build html
+make html
+```
+
 ## Thing about PDF customization
 
 <details><summary>Start here later</summary>
