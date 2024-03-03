@@ -36,6 +36,6 @@ W szczególności następującym przedmiotom:
 .. important::
 
    Kolejność treści na tej stronie jest generowana automatycznie przez automatyczny skrypt. Jeśli coś jest ułożone w złej kolejności, bardzo proszę o zgłoszenie
-   tego faktu na naszym GitHubie (link poniżej)
+   tego faktu na moim GitHubie (link poniżej)
 
-Zapraszam do przeglądania kodu źródłowego strony `w naszym repozytorium GitHub <https://github.com/gucio321/matematyka>`_
+Zapraszam do przeglądania kodu źródłowego strony `w moim repozytorium GitHub <https://github.com/gucio321/matematyka>`_
