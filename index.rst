@@ -38,4 +38,13 @@ W szczególności następującym przedmiotom:
    Kolejność treści na tej stronie jest generowana automatycznie przez automatyczny skrypt. Jeśli coś jest ułożone w złej kolejności, bardzo proszę o zgłoszenie
    tego faktu na moim GitHubie (link poniżej)
 
+.. |img| image:: button.png
+.. _img: https://google.com
+
+.. note:: 
+   
+   Niniejszy dokument jest również dostępny w formacie PDF'a!
+
+   |img|
+
 Zapraszam do przeglądania kodu źródłowego strony `w moim repozytorium GitHub <https://github.com/gucio321/matematyka>`_
