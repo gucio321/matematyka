@@ -60,7 +60,7 @@ Szerzej rozważane w MATEMATYKA 3
 ```
 
 $$
-\sum_{i=1}^\infty a_n = a_1 + a_2 + a_3 + ... + a_\infty$ \\
+\sum_{i=1}^\infty a_n = a_1 + a_2 + a_3 + ... + a_\infty \\
 $$
 Jeżeli ciąg $a_n$ jest zbierzny, wtedy mówimy, że szereg jest zbierzny.
 

@@ -36,15 +36,15 @@ $$
 \Gamma(n+1) = n! \\
 $$
 
-- $\Gamma(\alpha) * \Gamma(1-\alpha) = \frac{\pi}{sin(\pi \alpha)}
+- $\Gamma(\alpha) * \Gamma(1-\alpha) = \frac{\pi}{sin(\pi \alpha)}$
 
 $n! ~ n^n * e^{-n} * \sqrt{2\pi n}$
 
 
-## Funkcja $\Beta$
+## Funkcja $\beta$
 
 $$
-\Beta(\alpha, \beta) = \frac{\Gamma(\alpha) * \Gamma(\beta) }{\Gamma(\alpha + \beta)} = \int_0^1 x^{\alpha-1}(1-x)^{\beta-x} \\
+\beta(\alpha, \beta) = \frac{\Gamma(\alpha) * \Gamma(\beta) }{\Gamma(\alpha + \beta)} = \int_0^1 x^{\alpha-1}(1-x)^{\beta-x} \\
 \\
 \int_{-\infty}^{\infty} e^{-t^{2}} = \sqrt{\pi}
 $$
