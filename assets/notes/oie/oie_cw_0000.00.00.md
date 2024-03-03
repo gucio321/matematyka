@@ -1,2 +1,0 @@
-# OOptyka i Elektromagnetyzm - ĆWICZENIA
-
