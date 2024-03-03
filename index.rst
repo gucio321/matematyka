@@ -26,8 +26,17 @@ Wstęp
 
 Niniejsza strona poświęcona jest Matematyce na studiach wyższych.
 W szczególności następującym przedmiotom:
-- Matematyka
-- Metody analizy algebraicznej w fizyce
+
+* W semestrze zimowym 2023/2024:
+ - Matematyka 1
+ - Metody analizy algebraicznej w fizyce
+ - Mechanika
+- W semestrze letnim 2023/2024:
+ - Elektromagnetyzm i Optyka
+ - matematyka 2
+ - Laboratorium Fizyczne 1 (zapiski)
+ - Ekonomia Menedżerska (luźne notatki z wykładu)
+ - Angielski (zadania)
 
 .. include:: assets/index.rst
 
