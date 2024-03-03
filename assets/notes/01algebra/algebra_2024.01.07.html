@@ -1,0 +1,225 @@
+
+
+<!DOCTYPE html>
+
+<html lang="pl" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Przestrzenie euklidesowe &#8212; Matematyka  - dokumentacja</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=df9e62d8" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
+    
+    <script src="../../../_static/documentation_options.js?v=a28d12eb"></script>
+    <script src="../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/translations.js?v=a186e9ce"></script>
+    <script src="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js?v=ffc8af2d"></script>
+    <script src="../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js?v=12818e64"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    
+    
+     
+        <script src="../../../_static/jquery.cookie.js"></script>
+    
+
+    
+     
+        <script src="../../../_static/cloud.base.js"></script>
+    
+
+    
+     
+        <script src="../../../_static/cloud.js"></script>
+    
+
+    <link rel="icon" href="../../../_static/icon.ico"/>
+    <link rel="index" title="Indeks" href="../../../genindex.html" />
+    <link rel="search" title="Szukaj" href="../../../search.html" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head><body>
+    <div class="relbar-top">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Nawigacja</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="Indeks ogólny"
+             accesskey="I">indeks</a></li>
+    <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">Przestrzenie euklidesowe</a></li> 
+      </ul>
+    </div>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="przestrzenie-euklidesowe">
+<h1>Przestrzenie euklidesowe<a class="headerlink" href="#przestrzenie-euklidesowe" title="Link to this heading">¶</a></h1>
+<div class="admonition-przestrzen-euklidesowa admonition">
+<p class="admonition-title">Przestrzeń euklidesowa</p>
+<p>to po prostu w dziwny sposób powiedziane “Iloczyn Skalarny”.</p>
+<p>To tak aprzestrzeń wektrowoa, nad któ©ą zdefiiowano iloczyn skalarny.</p>
+<p>Oznaczenie: <span class="math notranslate nohighlight">\(\mathbb{E}^n\)</span> to <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span> ze zdefiniowanym standardowym iloczynem skalarnym.</p>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>standardowy iloczyn skalarny to funkcja zefiniwoana w następujący sposób</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u = (u_0, u_1, ... u_n) \\
+w = (w_0, w_1, ... w_n) \\
+s(u, w) = u \dot w = \Sigma_{i=0}^{n} u_i * w_i
+\end{split}\]</div>
+</div>
+</div>
+<div class="admonition-norma admonition">
+<p class="admonition-title">Norma</p>
+<p>Norma to dziwna nazwa na “długość wektora”</p>
+<p>oznaczenie: <span class="math notranslate nohighlight">\(||v||\)</span></p>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<ul class="simple">
+<li><p>Norma spełnia zasadę liniowości</p></li>
+<li><p><span class="math notranslate nohighlight">\(||v|| = 0 \Leftrightarrow v = \bf{0}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(||\alpha v|| = |\alpha| * ||v||\)</span></p></li>
+</ul>
+</div>
+<p>Przestrzeń wektorową ze zdefiniowaną normą nazywamy <em>Przestrzenią Unormowaną</em></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>Jeżeli znamy iloczyn wektorowy możemy od razu zdefiniować normę.
+Określamy ją następującym wzorem:</p>
+<div class="math notranslate nohighlight">
+\[
+||v|| = \sqrt{s(v, v)}
+\]</div>
+<p>Obrazowo:</p>
+<ul class="simple">
+<li><p>iloczynn skalarny <span class="math notranslate nohighlight">\(v \dot v\)</span> lub <span class="math notranslate nohighlight">\(s(v, v)\)</span> to po prostu z definicji
+iloczynu skalarnego długość <span class="math notranslate nohighlight">\(v\)</span> pomnożona przez rzut <span class="math notranslate nohighlight">\(v\)</span> na <span class="math notranslate nohighlight">\(v\)</span> czyli po prostu długość <span class="math notranslate nohighlight">\(v\)</span>
+podniesiona do kwadratu</p></li>
+<li><p>gdy nałożymy na to pierwiastek otrzymamy długość <span class="math notranslate nohighlight">\(v\)</span></p></li>
+</ul>
+</div>
+<div class="admonition-wektor-unormowany admonition">
+<p class="admonition-title">Wektor unormowany</p>
+<p>Również znany jako <strong>wersor</strong>.</p>
+<p>Jesto to wektor w przestrzeni V którego norma wynosi <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>Każdy wektor z przestrzeni euklidesowej można unormować.</p>
+<div class="math notranslate nohighlight">
+\[
+\hat{v} = \frac{v}{||v||}
+\]</div>
+</div>
+</div>
+<p>Znając powyższe zależności można określić
+miarę kąta między wektorami.</p>
+<div class="math notranslate nohighlight">
+\[
+cso \angle (u, v) = \frac{u \dot v}{||u|| * ||v||}
+\]</div>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>To wszystko nie ma sensu dopuki togo nie zobaczysz, więc polecam</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LyGKycYT2v0?si=wuELwsKmKt-c6Mfc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>W przypadku ww. zależnośći warto rozważyć dwa skrajne przypadki:</p>
+<ul class="simple">
+<li><p>jeżeli wektory są współliniowe, to długość rzutu <code class="docutils literal notranslate"><span class="pre">u</span></code> na <code class="docutils literal notranslate"><span class="pre">v</span></code> ma długość całego <code class="docutils literal notranslate"><span class="pre">u</span></code>, więc $<span class="math notranslate nohighlight">\(\frac{\cancel{||u|| * ||v||}}{\cancel{||u||*||v||}} = 1 \Rightarrow cos \angle(u, v) = 0^o\)</span></p></li>
+<li><p>jeżeli wektory są prostopadelk, długość rzutu <code class="docutils literal notranslate"><span class="pre">u</span></code> na <code class="docutils literal notranslate"><span class="pre">v</span></code> ma długość <code class="docutils literal notranslate"><span class="pre">0</span></code> z czego wynika, że <span class="math notranslate nohighlight">\(\frac{0 * ||v||}{||u||*||v||} = 0 \Rightarrow cos\angle(u,v) = 90^o\)</span></p></li>
+</ul>
+</div>
+<div class="admonition-wektory-ortogonalne admonition">
+<p class="admonition-title">Wektory ortogonalne</p>
+<p>To inaczej wektory prostopadłe (aka <span class="math notranslate nohighlight">\(u \perp w\)</span>). Z tego również wynika, że
+<span class="math notranslate nohighlight">\(u \dot w = 0\)</span> (ofc w drugą stronę też to działa)</p>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>w tym przypadku jednak inna nazwa ma sens, ponieważ pojęcie wektoróœ ortogonalnych ma również
+sens w większej liczbie wymiarów (np. 4)</p>
+</div>
+</div>
+<div class="admonition-uklad-ortonormalny admonition">
+<p class="admonition-title">Układ ortonormalny</p>
+<p>układ wektorów ortogonalnych, w którym każdy wektor jest dodatkowo unormowany.</p>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Szybkie wyszukiwanie</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Szukaj" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+    
+    
+        <div class="sidebar-toggle-group no-js">
+            
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                 «
+                <span class="show-for-small">hide menu</span>
+                
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                 »
+            </button>
+        </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Nawigacja</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="Indeks ogólny"
+             >indeks</a></li>
+    <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">Przestrzenie euklidesowe</a></li> 
+      </ul>
+    </div>
+    </div>
+
+<div class="footer" style="text-align:center">
+© Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
+Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
+Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
+<a href=https://github.com/gucio321/matematyka/commit/7a672052d99ed9b0092076e19d7c609798991374>Sun Mar 3 14:22:54 2024 +0100 notes: rename directories (7a672052d99ed9b0092076e19d7c609798991374)</a>
+</font>
+
+  </body>
+</html>

@@ -1,0 +1,218 @@
+
+
+<!DOCTYPE html>
+
+<html lang="pl" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Obliczanie macierzy odwrotnej &#8212; Matematyka  - dokumentacja</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=df9e62d8" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
+    
+    <script src="../../../_static/documentation_options.js?v=a28d12eb"></script>
+    <script src="../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/translations.js?v=a186e9ce"></script>
+    <script src="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js?v=ffc8af2d"></script>
+    <script src="../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js?v=12818e64"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    
+    
+     
+        <script src="../../../_static/jquery.cookie.js"></script>
+    
+
+    
+     
+        <script src="../../../_static/cloud.base.js"></script>
+    
+
+    
+     
+        <script src="../../../_static/cloud.js"></script>
+    
+
+    <link rel="icon" href="../../../_static/icon.ico"/>
+    <link rel="index" title="Indeks" href="../../../genindex.html" />
+    <link rel="search" title="Szukaj" href="../../../search.html" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head><body>
+    <div class="relbar-top">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Nawigacja</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="Indeks ogólny"
+             accesskey="I">indeks</a></li>
+    <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">Obliczanie macierzy odwrotnej</a></li> 
+      </ul>
+    </div>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>Macierze odwracalne tworzą grupę (tzw. grupę liniową)</p>
+</div>
+<section id="obliczanie-macierzy-odwrotnej">
+<h1>Obliczanie macierzy odwrotnej<a class="headerlink" href="#obliczanie-macierzy-odwrotnej" title="Link to this heading">¶</a></h1>
+<ul class="simple">
+<li><p>metoda dopełnień algebaicznych</p>
+<ul>
+<li><p>możemy ją obliczyć tylko gdy <span class="math notranslate nohighlight">\(detA \neq 0\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(a_ij = (-1)^{i+j} * m_{ij}\)</span></p></li>
+<li><p>tak powstałą macierz transponujemy i kążdy element mnożymy przez <span class="math notranslate nohighlight">\(\frac{1}{detA}\)</span></p></li>
+</ul>
+</li>
+<li><p>metoda operacji elementarnych (bezwyznacznikiowa)</p>
+<ul>
+<li><p>zestawienie macierzy blokowej z macierzy A i macierzy jednostkowej</p></li>
+<li><p>jeżeli macierz A uda się sprowadzić do macierzy jednostkowej, to druga część bloku
+będzie macierzą odwrotną <span class="math notranslate nohighlight">\(A^{-1}\)</span></p></li>
+</ul>
+</li>
+</ul>
+<div class="admonition-algorytm-gausa admonition">
+<p class="admonition-title">Algorytm gausa</p>
+<ul class="simple">
+<li><p>korzystając z operacji elementarnych uzyskać macierz trujkątną górną
+przemieszczając się od lewego górnego rogu macierzy</p></li>
+<li><p>zerowanie od prawej na lewą stronę</p></li>
+</ul>
+</div>
+</section>
+<section id="wlasnosci-macierzy-odwrotnej">
+<h1>Własności macierzy odwrotnej<a class="headerlink" href="#wlasnosci-macierzy-odwrotnej" title="Link to this heading">¶</a></h1>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(detA = \frac{1}{detA^{-1}}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\((A^{-1})^{-1} = A\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\((A^{-1})^T = (A^T)^{-1}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\((\alpha A)^{-1} = \frac{1}{\alpha} A^{-1}\)</span></p></li>
+<li><p>(AB)^-1 = B^{-1} A^{-1}$</p></li>
+</ul>
+</section>
+<section id="uklady-rownan-liniowych">
+<h1>Układy równań liniowych<a class="headerlink" href="#uklady-rownan-liniowych" title="Link to this heading">¶</a></h1>
+<p>Układ równań liniowych można zapisać jako <span class="math notranslate nohighlight">\(A * X = B\)</span></p>
+<section id="uklad-rownan">
+<h2>Układ równań<a class="headerlink" href="#uklad-rownan" title="Link to this heading">¶</a></h2>
+<div class="admonition-uklady-crammerowskie admonition">
+<p class="admonition-title">układy crammerowskie</p>
+<p>są to takie układy, w których liczba niewiadomych jest równa liczbie równań</p>
+</div>
+<ul class="simple">
+<li><p>Macierz A jest kwadratowa</p></li>
+<li><p><span class="math notranslate nohighlight">\(x = \frac{W}{W_x}\)</span> …</p></li>
+<li><p>jeśli W = 0 układ <strong>nie</strong> jest oznaczony</p></li>
+<li><p>jeśli macierz <strong>nie</strong> jest kwadratowa należy wykorzystać rząd macierzy</p>
+<ul>
+<li><p>rząd to <strong>największy stopień niezerowego minora</strong></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="wyznaczanie-rzedu">
+<h2>Wyznaczanie rzędu<a class="headerlink" href="#wyznaczanie-rzedu" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>sprowadzanie macierzy do postaci schodkowej</p></li>
+<li><p>rząd macierzy to ilość “schodów”</p></li>
+</ul>
+</section>
+<section id="rozwiazywanie-ukladow-rownan-m-neq-n">
+<h2>Rozwiązywanie układów równań <span class="math notranslate nohighlight">\(m \neq n\)</span><a class="headerlink" href="#rozwiazywanie-ukladow-rownan-m-neq-n" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>układ jest sprzeczny jeżei rząd macierzy jest rożny od rzędu macierzy uzupełnionej</p></li>
+</ul>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
+    <h3><a href="../../../index.html">Spis treści:</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Obliczanie macierzy odwrotnej</a></li>
+<li><a class="reference internal" href="#wlasnosci-macierzy-odwrotnej">Własności macierzy odwrotnej</a></li>
+<li><a class="reference internal" href="#uklady-rownan-liniowych">Układy równań liniowych</a><ul>
+<li><a class="reference internal" href="#uklad-rownan">Układ równań</a></li>
+<li><a class="reference internal" href="#wyznaczanie-rzedu">Wyznaczanie rzędu</a></li>
+<li><a class="reference internal" href="#rozwiazywanie-ukladow-rownan-m-neq-n">Rozwiązywanie układów równań <span class="math notranslate nohighlight">\(m \neq n\)</span></a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Szybkie wyszukiwanie</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Szukaj" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+    
+    
+        <div class="sidebar-toggle-group no-js">
+            
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                 «
+                <span class="show-for-small">hide menu</span>
+                
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                 »
+            </button>
+        </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Nawigacja</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="Indeks ogólny"
+             >indeks</a></li>
+    <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">Obliczanie macierzy odwrotnej</a></li> 
+      </ul>
+    </div>
+    </div>
+
+<div class="footer" style="text-align:center">
+© Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
+Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
+Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
+<a href=https://github.com/gucio321/matematyka/commit/7a672052d99ed9b0092076e19d7c609798991374>Sun Mar 3 14:22:54 2024 +0100 notes: rename directories (7a672052d99ed9b0092076e19d7c609798991374)</a>
+</font>
+
+  </body>
+</html>

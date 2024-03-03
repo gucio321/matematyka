@@ -1,0 +1,170 @@
+
+
+<!DOCTYPE html>
+
+<html lang="pl" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Metoda ortogonalizacji Gramma-Schmidta &#8212; Matematyka  - dokumentacja</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=df9e62d8" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
+    
+    <script src="../../../_static/documentation_options.js?v=a28d12eb"></script>
+    <script src="../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/translations.js?v=a186e9ce"></script>
+    <script src="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js?v=ffc8af2d"></script>
+    <script src="../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js?v=12818e64"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    
+    
+     
+        <script src="../../../_static/jquery.cookie.js"></script>
+    
+
+    
+     
+        <script src="../../../_static/cloud.base.js"></script>
+    
+
+    
+     
+        <script src="../../../_static/cloud.js"></script>
+    
+
+    <link rel="icon" href="../../../_static/icon.ico"/>
+    <link rel="index" title="Indeks" href="../../../genindex.html" />
+    <link rel="search" title="Szukaj" href="../../../search.html" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head><body>
+    <div class="relbar-top">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Nawigacja</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="Indeks ogólny"
+             accesskey="I">indeks</a></li>
+    <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">Metoda ortogonalizacji Gramma-Schmidta</a></li> 
+      </ul>
+    </div>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Przykłądem bazy ortonormalnej jest baza kanoniczna w <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span>.</p>
+</div>
+<p>Aby wyliczyć współrzędne wektora w bazie ortogonalnej?:</p>
+<div class="math notranslate nohighlight">
+\[
+\alpha_a = \frac{\left&lt;v, b_1\right&gt;}{||b_1||^2}
+\]</div>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p><span class="math notranslate nohighlight">\(\left&lt;v, b_1\right&gt;\)</span> to <span class="math notranslate nohighlight">\(||v_{b_1}|| * ||b_1|\)</span> po podzieleniu zostaje
+<span class="math notranslate nohighlight">\(\frac{||v_{b_1}||}{||b_1||}\)</span></p>
+<p>gdzie <span class="math notranslate nohighlight">\(v_{B_1}\)</span> to długość rzutu <span class="math notranslate nohighlight">\(v\)</span> na <span class="math notranslate nohighlight">\(b_k\)</span></p>
+</div>
+<section id="metoda-ortogonalizacji-gramma-schmidta">
+<h1>Metoda ortogonalizacji Gramma-Schmidta<a class="headerlink" href="#metoda-ortogonalizacji-gramma-schmidta" title="Link to this heading">¶</a></h1>
+<p>Jeżeli istnieje basa generujaca jakąś podprzestrzeń to istnieje
+też inna <strong>ortogonalna</strong> baza która generuje tą podprzestrzeń.</p>
+<ol class="arabic simple" start="0">
+<li><p>najpierw warto sprawdzić, czy zadana baza nie jest już przypadkiem ortogonalna ;-)</p></li>
+<li><p><span class="math notranslate nohighlight">\(c_1 = b_1\)</span></p></li>
+<li><p>aby <span class="math notranslate nohighlight">\(c_2\)</span> generował tą samą przestrzeć co <span class="math notranslate nohighlight">\(lin\left\{c_1, b_2\right\}\)</span> musi on być kombinacją liniową tych wektorów <span class="math notranslate nohighlight">\(c_2 = b_2 + \alpha c_1\)</span>.</p></li>
+<li><p>to samo należy zrobić dla 3 wektora.  Również <span class="math notranslate nohighlight">\(c_2 = \left&lt;c_2, b_2\right&gt; = 0\)</span></p></li>
+</ol>
+</section>
+<section id="rzut-ortogonalny">
+<h1>Rzut Ortogonalny<a class="headerlink" href="#rzut-ortogonalny" title="Link to this heading">¶</a></h1>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>również znany jako rzut prostokątny w <span class="math notranslate nohighlight">\(\mathbb{r}^2\)</span></p>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
+    <h3><a href="../../../index.html">Spis treści:</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Metoda ortogonalizacji Gramma-Schmidta</a></li>
+<li><a class="reference internal" href="#rzut-ortogonalny">Rzut Ortogonalny</a></li>
+</ul>
+
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Szybkie wyszukiwanie</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Szukaj" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+    
+    
+        <div class="sidebar-toggle-group no-js">
+            
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                 «
+                <span class="show-for-small">hide menu</span>
+                
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                 »
+            </button>
+        </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Nawigacja</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="Indeks ogólny"
+             >indeks</a></li>
+    <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">Metoda ortogonalizacji Gramma-Schmidta</a></li> 
+      </ul>
+    </div>
+    </div>
+
+<div class="footer" style="text-align:center">
+© Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
+Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
+Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
+<a href=https://github.com/gucio321/matematyka/commit/7a672052d99ed9b0092076e19d7c609798991374>Sun Mar 3 14:22:54 2024 +0100 notes: rename directories (7a672052d99ed9b0092076e19d7c609798991374)</a>
+</font>
+
+  </body>
+</html>
