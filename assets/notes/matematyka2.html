@@ -213,6 +213,96 @@ t^{x-1} \leq e^t \\
 \\
 \int_{-\infty}^{\infty} e^{-t^{2}} = \sqrt{\pi}
 \end{split}\]</div>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/matematyka2/matematyka2_2024.03.05.md</span></code></em></p>
+</section>
+<section id="rownania-rozniczkowe">
+<h2>Równania Różniczkowe<a class="headerlink" href="#rownania-rozniczkowe" title="Link to this heading">¶</a></h2>
+<div class="admonition-postac-ogolna-rownania-rozniczkowego-zwyczajnego-i-rzedu admonition">
+<p class="admonition-title">postać ogólna równania różniczkowego zwyczajnego I Rzędu</p>
+<div class="math notranslate nohighlight">
+\[
+F(x,y,y')
+\]</div>
+</div>
+<p>Rząd róœnania zależy od najwyższego rzędu pochodnej z tego róœnania.</p>
+<div class="admonition-krzywa-calkowa admonition">
+<p class="admonition-title">Krzywa całkowa</p>
+<p>wykres całki szczególnej - rozwiązania róœnania różniczkowego</p>
+</div>
+<section id="przyklad-1">
+<h3>Przykłąd 1<a class="headerlink" href="#przyklad-1" title="Link to this heading">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+y' = x^4 + 2x \\
+\int y' dx = \int x^4 + 2x dx \\
+y = \frac{1}{5}x^5 + x^2 + C
+\end{split}\]</div>
+</section>
+<section id="przyklad-2">
+<h3>Przykład 2<a class="headerlink" href="#przyklad-2" title="Link to this heading">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}y' = x^4 + 2x ~ y(0) = 1 \\
+\int y' dx = \int x^4 + 2x dx \\
+y = \frac{1}{5}x^5 + x^2 + C \\
+1 = \frac{1}{5}0^5 + 0^2 + C \Rightarrow C = 1 \\
+y = \frac{1}{5}x^5 + x^2 + 1 \\\end{split}\]</div>
+</section>
+<section id="przyklad-3">
+<h3>Przykłąd 3<a class="headerlink" href="#przyklad-3" title="Link to this heading">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+y' = 1+y^2 \\
+\frac{y'}{1+y^2} = 1 \\
+\int \frac{y'}{1+y^2} dx = \int dx \\
+\int \frac{\frac{dy}{\cancel{dx}}}{1+y^2} \cancel{dx} = \int dx \\
+arctg(y) = x \\
+y = tg(x + C) ~ X \in \left(-\frac{\pi}{2} -C, \frac{\pi}{2}-C)\right)
+\end{split}\]</div>
+<div class="admonition-twierdzenie-o-istnieniu-rozwiazan-rownania-rozniczkowego admonition">
+<p class="admonition-title">Twierdzenie o istnieniu rozwiązań równania różniczkowego</p>
+<p>jeżeli prawa strona równania różniczkowego jest funkcją ciągłą w obszarze D,
+to przez każdy punkt tego obszaru musi przechodzić <strong>conajmniej jedna</strong> krzywa całkowa.</p>
+</div>
+<div class="admonition-warunek-na-jedyne-rozwiazanie-problemu-poczatkowego admonition">
+<p class="admonition-title">warunek na jedyne rozwiązanie problemu początkowego</p>
+<p>Oprócz ciągłości prawej strony zakłada się również ciągłość pochodnej cząstkowej <span class="math notranslate nohighlight">\(\frac{\partial y}{\partial x}\)</span></p>
+</div>
+</section>
+<section id="przylad-4">
+<h3>Przyład 4<a class="headerlink" href="#przylad-4" title="Link to this heading">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+y' = \root{3}\of{y^2} \\
+\end{split}\]</div>
+<p>Zauważmy, że <span class="math notranslate nohighlight">\(f(x)=0\)</span> jest rozwiązaniem równania</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\frac{y'}{\root{3}\of{y^2}} = 1 \\
+\int \frac{dy}{\root{3}\of{y^2}} = x \\
+3 \root{3}\of{y} = x + C \\
+\end{split}\]</div>
+</section>
+</section>
+<section id="rownania-rozniczkowe-o-zmiennych-rozdzielonych">
+<h2>Równania Różniczkowe o zmiennych rozdzielonych<a class="headerlink" href="#rownania-rozniczkowe-o-zmiennych-rozdzielonych" title="Link to this heading">¶</a></h2>
+<div class="admonition-postac-ogolna-rownania-rozniczkowego-o-zmienych-rozdzielonych admonition">
+<p class="admonition-title">Postać ogólna równania różniczkowego o zmienych rozdzielonych</p>
+<div class="math notranslate nohighlight">
+\[
+y' = \frac{f(x)}{g(x)}
+\]</div>
+</div>
+<div class="admonition-rozwiazanie-problemu-coshiego admonition">
+<p class="admonition-title">Rozwiązanie problemu coshiego</p>
+<p>Jeżeli f jest ciągła w X i g jest ciągła i różna od 0 w Y, to <span class="math notranslate nohighlight">\((x,y) \in X \cross Y\)</span> przechodzi jedna krzywa całkowa</p>
+</div>
+<div class="math notranslate nohighlight">
+\[
+\frac{dy}{dx} = \frac{f(x)}{g(y)}
+dy * g(y) = dx * f(x)
+\int dy * g(y) = \int dx * f(x)
+\]</div>
 </section>
 </section>
 
@@ -238,6 +328,14 @@ t^{x-1} \leq e^t \\
 </ul>
 </li>
 <li><a class="reference internal" href="#funkcja-beta">Funkcja <span class="math notranslate nohighlight">\(\beta\)</span></a></li>
+<li><a class="reference internal" href="#rownania-rozniczkowe">Równania Różniczkowe</a><ul>
+<li><a class="reference internal" href="#przyklad-1">Przykłąd 1</a></li>
+<li><a class="reference internal" href="#przyklad-2">Przykład 2</a></li>
+<li><a class="reference internal" href="#przyklad-3">Przykłąd 3</a></li>
+<li><a class="reference internal" href="#przylad-4">Przyład 4</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#rownania-rozniczkowe-o-zmiennych-rozdzielonych">Równania Różniczkowe o zmiennych rozdzielonych</a></li>
 </ul>
 </li>
 </ul>
@@ -301,7 +399,7 @@ t^{x-1} \leq e^t \\
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/7a672052d99ed9b0092076e19d7c609798991374>Sun Mar 3 14:22:54 2024 +0100 notes: rename directories (7a672052d99ed9b0092076e19d7c609798991374)</a>
+<a href=https://github.com/gucio321/matematyka/commit/b006cd0df92222de166451fbad20122332bc93eb>Tue Mar 5 14:22:44 2024 +0100 todays update (b006cd0df92222de166451fbad20122332bc93eb)</a>
 </font>
 
   </body>

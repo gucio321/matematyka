@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Funkcja Gamma Eulera &#8212; Matematyka  - dokumentacja</title>
+    <title>Równania Różniczkowe &#8212; Matematyka  - dokumentacja</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
@@ -54,7 +54,7 @@
              accesskey="I">indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Funkcja Gamma Eulera</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Równania Różniczkowe</a></li> 
       </ul>
     </div>
     </div>
@@ -65,58 +65,93 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="funkcja-gamma-eulera">
-<h1>Funkcja Gamma Eulera<a class="headerlink" href="#funkcja-gamma-eulera" title="Link to this heading">¶</a></h1>
+  <section id="rownania-rozniczkowe">
+<h1>Równania Różniczkowe<a class="headerlink" href="#rownania-rozniczkowe" title="Link to this heading">¶</a></h1>
+<div class="admonition-postac-ogolna-rownania-rozniczkowego-zwyczajnego-i-rzedu admonition">
+<p class="admonition-title">postać ogólna równania różniczkowego zwyczajnego I Rzędu</p>
 <div class="math notranslate nohighlight">
 \[
-\Gamma(x) = \int_0^\infty t^{x-1} e^{-t} dt
+F(x,y,y')
 \]</div>
-<ul class="simple">
-<li><p>W otoczeniu 0</p></li>
-</ul>
+</div>
+<p>Rząd róœnania zależy od najwyższego rzędu pochodnej z tego róœnania.</p>
+<div class="admonition-krzywa-calkowa admonition">
+<p class="admonition-title">Krzywa całkowa</p>
+<p>wykres całki szczególnej - rozwiązania róœnania różniczkowego</p>
+</div>
+<section id="przyklad-1">
+<h2>Przykłąd 1<a class="headerlink" href="#przyklad-1" title="Link to this heading">¶</a></h2>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+y' = x^4 + 2x \\
+\int y' dx = \int x^4 + 2x dx \\
+y = \frac{1}{5}x^5 + x^2 + C
+\end{split}\]</div>
+</section>
+<section id="przyklad-2">
+<h2>Przykład 2<a class="headerlink" href="#przyklad-2" title="Link to this heading">¶</a></h2>
+<div class="math notranslate nohighlight">
+\[\begin{split}y' = x^4 + 2x ~ y(0) = 1 \\
+\int y' dx = \int x^4 + 2x dx \\
+y = \frac{1}{5}x^5 + x^2 + C \\
+1 = \frac{1}{5}0^5 + 0^2 + C \Rightarrow C = 1 \\
+y = \frac{1}{5}x^5 + x^2 + 1 \\\end{split}\]</div>
+</section>
+<section id="przyklad-3">
+<h2>Przykłąd 3<a class="headerlink" href="#przyklad-3" title="Link to this heading">¶</a></h2>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+y' = 1+y^2 \\
+\frac{y'}{1+y^2} = 1 \\
+\int \frac{y'}{1+y^2} dx = \int dx \\
+\int \frac{\frac{dy}{\cancel{dx}}}{1+y^2} \cancel{dx} = \int dx \\
+arctg(y) = x \\
+y = tg(x + C) ~ X \in \left(-\frac{\pi}{2} -C, \frac{\pi}{2}-C)\right)
+\end{split}\]</div>
+<div class="admonition-twierdzenie-o-istnieniu-rozwiazan-rownania-rozniczkowego admonition">
+<p class="admonition-title">Twierdzenie o istnieniu rozwiązań równania różniczkowego</p>
+<p>jeżeli prawa strona równania różniczkowego jest funkcją ciągłą w obszarze D,
+to przez każdy punkt tego obszaru musi przechodzić <strong>conajmniej jedna</strong> krzywa całkowa.</p>
+</div>
+<div class="admonition-warunek-na-jedyne-rozwiazanie-problemu-poczatkowego admonition">
+<p class="admonition-title">warunek na jedyne rozwiązanie problemu początkowego</p>
+<p>Oprócz ciągłości prawej strony zakłada się również ciągłość pochodnej cząstkowej <span class="math notranslate nohighlight">\(\frac{\partial y}{\partial x}\)</span></p>
+</div>
+</section>
+<section id="przylad-4">
+<h2>Przyład 4<a class="headerlink" href="#przylad-4" title="Link to this heading">¶</a></h2>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+y' = \root{3}\of{y^2} \\
+\end{split}\]</div>
+<p>Zauważmy, że <span class="math notranslate nohighlight">\(f(x)=0\)</span> jest rozwiązaniem równania</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\frac{y'}{\root{3}\of{y^2}} = 1 \\
+\int \frac{dy}{\root{3}\of{y^2}} = x \\
+3 \root{3}\of{y} = x + C \\
+\end{split}\]</div>
+</section>
+</section>
+<section id="rownania-rozniczkowe-o-zmiennych-rozdzielonych">
+<h1>Równania Różniczkowe o zmiennych rozdzielonych<a class="headerlink" href="#rownania-rozniczkowe-o-zmiennych-rozdzielonych" title="Link to this heading">¶</a></h1>
+<div class="admonition-postac-ogolna-rownania-rozniczkowego-o-zmienych-rozdzielonych admonition">
+<p class="admonition-title">Postać ogólna równania różniczkowego o zmienych rozdzielonych</p>
 <div class="math notranslate nohighlight">
 \[
-\Gamma ~ \int_0^\infty t^{x-1} dt
+y' = \frac{f(x)}{g(x)}
 \]</div>
-<p>Funkcja jest zbierzna jeżeli <span class="math notranslate nohighlight">\(1 - x &lt; 1 \Leftrightarrow x &gt; 0\)</span></p>
-<p>W “otoczeniu” <span class="math notranslate nohighlight">\(\infty\)</span></p>
+</div>
+<div class="admonition-rozwiazanie-problemu-coshiego admonition">
+<p class="admonition-title">Rozwiązanie problemu coshiego</p>
+<p>Jeżeli f jest ciągła w X i g jest ciągła i różna od 0 w Y, to <span class="math notranslate nohighlight">\((x,y) \in X \cross Y\)</span> przechodzi jedna krzywa całkowa</p>
+</div>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-\text{dla } t \to \infty \\
-t^{x-1} \leq e^t \\
-\end{split}\]</div>
-<section id="wlasnosci">
-<h2>Własnośći<a class="headerlink" href="#wlasnosci" title="Link to this heading">¶</a></h2>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(\Gamma(x+1) = x * \Gamma(x)\)</span></p></li>
-</ul>
-<p><em>dowóð z obliczenia całki <span class="math notranslate nohighlight">\(\Gamma(x+1)\)</span> przez części</em></p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(\Gamma(1) = \left. -e^{-t} \right|_ 0^\infty = 1\)</span></p></li>
-<li><p>Definicja silni</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\Gamma(2) = 1 * \Gamma(1) = 1 \\
-\Gamma(3) = \Gamma(2 + 1) = 2 * \Gamma(2) = 2 \\
-\Gamma(4) = 3 * \Gamma(3) = 6 \\
-\\
-\Gamma(n+1) = n! \\
-\end{split}\]</div>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(\Gamma(\alpha) * \Gamma(1-\alpha) = \frac{\pi}{sin(\pi \alpha)}\)</span></p></li>
-</ul>
-<p><span class="math notranslate nohighlight">\(n! ~ n^n * e^{-n} * \sqrt{2\pi n}\)</span></p>
-</section>
-</section>
-<section id="funkcja-beta">
-<h1>Funkcja <span class="math notranslate nohighlight">\(\beta\)</span><a class="headerlink" href="#funkcja-beta" title="Link to this heading">¶</a></h1>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\beta(\alpha, \beta) = \frac{\Gamma(\alpha) * \Gamma(\beta) }{\Gamma(\alpha + \beta)} = \int_0^1 x^{\alpha-1}(1-x)^{\beta-x} \\
-\\
-\int_{-\infty}^{\infty} e^{-t^{2}} = \sqrt{\pi}
-\end{split}\]</div>
+\[
+\frac{dy}{dx} = \frac{f(x)}{g(y)}
+dy * g(y) = dx * f(x)
+\int dy * g(y) = \int dx * f(x)
+\]</div>
 </section>
 
 
@@ -128,11 +163,14 @@ t^{x-1} \leq e^t \\
         <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
     <h3><a href="../../../index.html">Spis treści:</a></h3>
     <ul>
-<li><a class="reference internal" href="#">Funkcja Gamma Eulera</a><ul>
-<li><a class="reference internal" href="#wlasnosci">Własnośći</a></li>
+<li><a class="reference internal" href="#">Równania Różniczkowe</a><ul>
+<li><a class="reference internal" href="#przyklad-1">Przykłąd 1</a></li>
+<li><a class="reference internal" href="#przyklad-2">Przykład 2</a></li>
+<li><a class="reference internal" href="#przyklad-3">Przykłąd 3</a></li>
+<li><a class="reference internal" href="#przylad-4">Przyład 4</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#funkcja-beta">Funkcja <span class="math notranslate nohighlight">\(\beta\)</span></a></li>
+<li><a class="reference internal" href="#rownania-rozniczkowe-o-zmiennych-rozdzielonych">Równania Różniczkowe o zmiennych rozdzielonych</a></li>
 </ul>
 
   </div>
@@ -177,7 +215,7 @@ t^{x-1} \leq e^t \\
              >indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Funkcja Gamma Eulera</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Równania Różniczkowe</a></li> 
       </ul>
     </div>
     </div>
