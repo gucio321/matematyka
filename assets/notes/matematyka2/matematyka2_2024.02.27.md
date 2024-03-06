@@ -44,7 +44,7 @@ $n! ~ n^n * e^{-n} * \sqrt{2\pi n}$
 ## Funkcja $\beta$
 
 $$
-\beta(\alpha, \beta) = \frac{\Gamma(\alpha) * \Gamma(\beta) }{\Gamma(\alpha + \beta)} = \int_0^1 x^{\alpha-1}(1-x)^{\beta-x} \\
+\beta(\alpha, \beta) = \frac{\Gamma(\alpha) * \Gamma(\beta) }{\Gamma(\alpha + \beta)} = \int_0^1 x^{\alpha-1}(1-x)^{\beta-1} dx \\
 \\
 \int_{-\infty}^{\infty} e^{-t^{2}} = \sqrt{\pi}
 $$
