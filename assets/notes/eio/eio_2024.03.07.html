@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Zastosowanie pochodnych &#8212; Matematyka  - dokumentacja</title>
+    <title>Szczególna Teoria Względności &#8212; Matematyka  - dokumentacja</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
@@ -54,7 +54,7 @@
              accesskey="I">indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Zastosowanie pochodnych</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Szczególna Teoria Względności</a></li> 
       </ul>
     </div>
     </div>
@@ -65,78 +65,74 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="math notranslate nohighlight">
-\[\begin{split}
-f(x) = \left\{\begin{matrix}
-x^2~,~x\in \mathbb{Q} \\
-0~,~x \in \mathbb{R} \setminus \mathbb{Q}
-\end{matrix}\right.
-\end{split}\]</div>
-<p>Funkcja jest różniczkowalna w punkcie <code class="docutils literal notranslate"><span class="pre">x=0</span></code> (<span class="math notranslate nohighlight">\(\frac{h^2}{h} \to 0\)</span>)</p>
-<section id="zastosowanie-pochodnych">
-<h1>Zastosowanie pochodnych<a class="headerlink" href="#zastosowanie-pochodnych" title="Link to this heading">¶</a></h1>
-<div class="admonition-maksimum-lokalne admonition">
-<p class="admonition-title">Maksimum lokalne</p>
+  <section id="szczegolna-teoria-wzglednosci">
+<h1>Szczególna Teoria Względności<a class="headerlink" href="#szczegolna-teoria-wzglednosci" title="Link to this heading">¶</a></h1>
+<div class="admonition-stw admonition">
+<p class="admonition-title">STW</p>
+<p>Szczególna Teoria Względności</p>
+</div>
+<section id="problem-predkosci-swiatla-i-postulaty-einsteina">
+<h2>Problem prędkości światła i postulaty Einsteina<a class="headerlink" href="#problem-predkosci-swiatla-i-postulaty-einsteina" title="Link to this heading">¶</a></h2>
+<section id="doswiadczenie-michaelsona-marleya">
+<h3>Doświadczenie Michaelsona-Marleya<a class="headerlink" href="#doswiadczenie-michaelsona-marleya" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Prędkość światła w próżni jest taka sama dla każdego obserwatora w układzie inercjalnym.</p></li>
+<li><p>Prawa fizyki mają jednakową postać we wszystkich inercjalnych układach odniesienia.</p></li>
+</ol>
+</section>
+</section>
+<section id="transformacja-lorentza">
+<h2>Transformacja Lorentza<a class="headerlink" href="#transformacja-lorentza" title="Link to this heading">¶</a></h2>
+<p>rozważmy 2 ukłądy odniesienia (jak przy transformacji galileusza).
+załużmy, że <span class="math notranslate nohighlight">\(y=y' \land z = z'\)</span>.</p>
+<p>Szukamy związku <span class="math notranslate nohighlight">\(x\)</span> z <span class="math notranslate nohighlight">\(x'\)</span>. Zależność ta musi być liniowa.</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\begin{split}
+\left\{\begin{matrix}
+x' = Ax + bt \\
+t' = Mx + Nt \\
+\end{matrix}\right.\\\end{split}\\\begin{split}v' - \frac{dx'}{dt'} \\
+v' - \frac{Adx + Bdt}{Mdx + Ndt} \\
+v' - \frac{Av + B}{Mv + N} \\
+\end{split}\end{aligned}\end{align} \]</div>
+<p>Jeżeli A spoczywa w S’</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-f : I \to \mathbb{R} \quad I = \left(a,b\right) \\
-\exists \delta \quad x_0 \in \left(x_0 - \delta, x_0 + \delta \right) \\
-f(x) \leq f(x_0)
+v' = 0 \\
+v = u \\
+0 = Au + B
 \end{split}\]</div>
-</div>
-<div class="admonition-twierdzenie-o-zerowaniu-sie-pochodnych-w-maksimum-lokalnym admonition">
-<p class="admonition-title">Twierdzenie o zerowaniu się pochodnych w maksimum lokalnym</p>
-<p>Jeżeli funkcja <code class="docutils literal notranslate"><span class="pre">f</span></code> jest różniczkowalna i ma w punkcie <span class="math notranslate nohighlight">\(x_0\)</span> maksimum
-lokalne <span class="math notranslate nohighlight">\(\Leftrightarrow f'(x_0) = 0\)</span></p>
+<p>Jeżeli A spoczywa w S</p>
+<div class="math notranslate nohighlight">
+\[
+v=0
+v'=-u
+-u = \frac{B}{N}
+\]</div>
+<p>Jeżeli A porusza się z prędkością <span class="math notranslate nohighlight">\(c\)</span> względem obu układów</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-R = \frac{f(x)-f(x_0)}{x-x_0} \\
-dla~x_0 &gt; x \land x \to x_0 \\
-f(x) - f(x_0) \leq 0 \land x-x_0 \geq 0 \Rightarrow R &lt; 0 \\
-dla~x_0 &gt; x \land x \to x_0 \\
-f(x) - f(x_0) \leq 0 \land x-x_0 \leq 0 \Rightarrow R &gt; 0 \\
-R \leq 0 \geq R \Rightarrow R = 0 \\
-\end{split}\]</div>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Informacja</p>
-<p>jeżeli f jest ciągła i różniczkowalna</p>
+c = \frac{Ac + B}{Mc + N} \\
+\left\{\begin{matrix}
+Nu = -B \\
+B = -Au \\
+N=A
+\end{matrix}\right.\\\end{split}\]</div>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-f : I \to \mathbb{R} \quad I = \left(a, b\right) \\
-jeżeli~f(a) = f(b) \\
-\exists~c \in I ,~ f'(c) = 0
-\end{split}\]</div>
-</div>
-<div class="admonition-twierdzenie-lagrange-a-o-wartosci-sredniej admonition">
-<p class="admonition-title">Twierdzenie Lagrange’a o wartości średniej</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">f</span></code> jest ciągła</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">f</span></code> jest różniczkowalna</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\exists c \in \left(a, b\right) \\
-f'(c) = \frac{f(a) - f(b)}{a-b}
-\end{split}\]</div>
-</div>
-<div class="admonition-twierdzenie-coushy-ego admonition">
-<p class="admonition-title">Twierdzenie Coushy’ego</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">f</span></code>, <code class="docutils literal notranslate"><span class="pre">g</span></code>, są ciągłe $\in \left[a, b\right]</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">f</span></code>, <code class="docutils literal notranslate"><span class="pre">g</span></code>, są różniczkowalne</p></li>
-<li><p><span class="math notranslate nohighlight">\(g' \neq 0 \in \left(a,b\right)\)</span></p></li>
-</ul>
-<p>wtedy:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\exists c \in \left(a,b\right) \\
-\frac{f'(c)}{g'(c)} = \frac{f(b)-f(a)}{g(b)-g(a)}
-\end{split}\]</div>
-<div class="admonition tip">
-<p class="admonition-title">Wskazówka</p>
-<p><span class="math notranslate nohighlight">\(g(a) \neq g(b)\)</span> ponieważ <code class="docutils literal notranslate"><span class="pre">g</span></code> jest różniczkowalna <span class="math notranslate nohighlight">\(\Rightarrow~g(b)-g(a) \neq 0\)</span></p>
-</div>
+\[
+x' = \frac{x-ut}{\sqrt{1-\frac{u^2}{c^2}}}
+t' = \frac{t - \frac{ux}{c^2}}{\sqrt{1-\frac{u^2}{c^2}}}
+\]</div>
+</section>
+</section>
+<section id="diagram-minkowskiego-i-interwal-czasoprzestrzenny">
+<h1>Diagram Minkowskiego i interwał czasoprzestrzenny<a class="headerlink" href="#diagram-minkowskiego-i-interwal-czasoprzestrzenny" title="Link to this heading">¶</a></h1>
+<p>ponieważ <span class="math notranslate nohighlight">\(t'\)</span> zależy również od wpsółrzędnej przestrzennej,
+należy mówić o 4-wymiarowej czaso-przestrzeni.</p>
+<p>Diagramem Minkowskiego nazywamy wykres <span class="math notranslate nohighlight">\(c*t(x)\)</span></p>
+<div class="admonition-linie-swiata admonition">
+<p class="admonition-title">Linie świata</p>
+<p>Linie rysowane na diagramie Minkowskiego</p>
 </div>
 </section>
 
@@ -146,7 +142,21 @@ f'(c) = \frac{f(a) - f(b)}{a-b}
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
+        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
+    <h3><a href="../../../index.html">Spis treści:</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Szczególna Teoria Względności</a><ul>
+<li><a class="reference internal" href="#problem-predkosci-swiatla-i-postulaty-einsteina">Problem prędkości światła i postulaty Einsteina</a><ul>
+<li><a class="reference internal" href="#doswiadczenie-michaelsona-marleya">Doświadczenie Michaelsona-Marleya</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#transformacja-lorentza">Transformacja Lorentza</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#diagram-minkowskiego-i-interwal-czasoprzestrzenny">Diagram Minkowskiego i interwał czasoprzestrzenny</a></li>
+</ul>
+
+  </div>
 <div id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Szybkie wyszukiwanie</h3>
     <div class="searchformwrapper">
@@ -188,7 +198,7 @@ f'(c) = \frac{f(a) - f(b)}{a-b}
              >indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Zastosowanie pochodnych</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Szczególna Teoria Względności</a></li> 
       </ul>
     </div>
     </div>

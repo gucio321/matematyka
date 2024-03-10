@@ -305,8 +305,80 @@ Fala dalej propagująca się jest złożeniem tych cząstkowych fal kulistych.</
 <h4>Rezonans akustyczny<a class="headerlink" href="#rezonans-akustyczny" title="Link to this heading">¶</a></h4>
 <p>Doświadczenie: 2 kamertony
 doświadczenie: rury śpiewające</p>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/eio/eio_2024.03.07.md</span></code></em></p>
 </section>
 </section>
+</section>
+<section id="szczegolna-teoria-wzglednosci">
+<h2>Szczególna Teoria Względności<a class="headerlink" href="#szczegolna-teoria-wzglednosci" title="Link to this heading">¶</a></h2>
+<div class="admonition-stw admonition">
+<p class="admonition-title">STW</p>
+<p>Szczególna Teoria Względności</p>
+</div>
+<section id="problem-predkosci-swiatla-i-postulaty-einsteina">
+<h3>Problem prędkości światła i postulaty Einsteina<a class="headerlink" href="#problem-predkosci-swiatla-i-postulaty-einsteina" title="Link to this heading">¶</a></h3>
+<section id="doswiadczenie-michaelsona-marleya">
+<h4>Doświadczenie Michaelsona-Marleya<a class="headerlink" href="#doswiadczenie-michaelsona-marleya" title="Link to this heading">¶</a></h4>
+<ol class="arabic simple">
+<li><p>Prędkość światła w próżni jest taka sama dla każdego obserwatora w układzie inercjalnym.</p></li>
+<li><p>Prawa fizyki mają jednakową postać we wszystkich inercjalnych układach odniesienia.</p></li>
+</ol>
+</section>
+</section>
+<section id="transformacja-lorentza">
+<h3>Transformacja Lorentza<a class="headerlink" href="#transformacja-lorentza" title="Link to this heading">¶</a></h3>
+<p>rozważmy 2 ukłądy odniesienia (jak przy transformacji galileusza).
+załużmy, że <span class="math notranslate nohighlight">\(y=y' \land z = z'\)</span>.</p>
+<p>Szukamy związku <span class="math notranslate nohighlight">\(x\)</span> z <span class="math notranslate nohighlight">\(x'\)</span>. Zależność ta musi być liniowa.</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\begin{split}
+\left\{\begin{matrix}
+x' = Ax + bt \\
+t' = Mx + Nt \\
+\end{matrix}\right.\\\end{split}\\\begin{split}v' - \frac{dx'}{dt'} \\
+v' - \frac{Adx + Bdt}{Mdx + Ndt} \\
+v' - \frac{Av + B}{Mv + N} \\
+\end{split}\end{aligned}\end{align} \]</div>
+<p>Jeżeli A spoczywa w S’</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+v' = 0 \\
+v = u \\
+0 = Au + B
+\end{split}\]</div>
+<p>Jeżeli A spoczywa w S</p>
+<div class="math notranslate nohighlight">
+\[
+v=0
+v'=-u
+-u = \frac{B}{N}
+\]</div>
+<p>Jeżeli A porusza się z prędkością <span class="math notranslate nohighlight">\(c\)</span> względem obu układów</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+c = \frac{Ac + B}{Mc + N} \\
+\left\{\begin{matrix}
+Nu = -B \\
+B = -Au \\
+N=A
+\end{matrix}\right.\\\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[
+x' = \frac{x-ut}{\sqrt{1-\frac{u^2}{c^2}}}
+t' = \frac{t - \frac{ux}{c^2}}{\sqrt{1-\frac{u^2}{c^2}}}
+\]</div>
+</section>
+</section>
+<section id="diagram-minkowskiego-i-interwal-czasoprzestrzenny">
+<h2>Diagram Minkowskiego i interwał czasoprzestrzenny<a class="headerlink" href="#diagram-minkowskiego-i-interwal-czasoprzestrzenny" title="Link to this heading">¶</a></h2>
+<p>ponieważ <span class="math notranslate nohighlight">\(t'\)</span> zależy również od wpsółrzędnej przestrzennej,
+należy mówić o 4-wymiarowej czaso-przestrzeni.</p>
+<p>Diagramem Minkowskiego nazywamy wykres <span class="math notranslate nohighlight">\(c*t(x)\)</span></p>
+<div class="admonition-linie-swiata admonition">
+<p class="admonition-title">Linie świata</p>
+<p>Linie rysowane na diagramie Minkowskiego</p>
+</div>
 </section>
 </section>
 
@@ -343,6 +415,15 @@ doświadczenie: rury śpiewające</p>
 </li>
 </ul>
 </li>
+<li><a class="reference internal" href="#szczegolna-teoria-wzglednosci">Szczególna Teoria Względności</a><ul>
+<li><a class="reference internal" href="#problem-predkosci-swiatla-i-postulaty-einsteina">Problem prędkości światła i postulaty Einsteina</a><ul>
+<li><a class="reference internal" href="#doswiadczenie-michaelsona-marleya">Doświadczenie Michaelsona-Marleya</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#transformacja-lorentza">Transformacja Lorentza</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#diagram-minkowskiego-i-interwal-czasoprzestrzenny">Diagram Minkowskiego i interwał czasoprzestrzenny</a></li>
 </ul>
 </li>
 </ul>
@@ -414,7 +495,7 @@ doświadczenie: rury śpiewające</p>
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/dda555b18be1ea3ab11d297b6fd79fd2b99b72bb>Wed Mar 6 08:42:51 2024 +0100 update (dda555b18be1ea3ab11d297b6fd79fd2b99b72bb)</a>
+<a href=https://github.com/gucio321/matematyka/commit/21d1a4c108d400e5efeb59dfbe51ed844a87664c>Sun Mar 10 20:06:33 2024 +0100 eio: update (21d1a4c108d400e5efeb59dfbe51ed844a87664c)</a>
 </font>
 
   </body>
