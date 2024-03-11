@@ -73,7 +73,7 @@ $$
 ```
 
 ```{admonition} Rozwiązanie problemu coshiego
-Jeżeli f jest ciągła w X i g jest ciągła i różna od 0 w Y, to $(x,y) \in X \cross Y$ przechodzi jedna krzywa całkowa
+Jeżeli f jest ciągła w X i g jest ciągła i różna od 0 w Y, to $(x,y) \in X \times Y$ przechodzi jedna krzywa całkowa
 ```
 
 $$
