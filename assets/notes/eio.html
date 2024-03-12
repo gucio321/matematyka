@@ -336,9 +336,9 @@ załużmy, że <span class="math notranslate nohighlight">\(y=y' \land z = z'\)<
 \left\{\begin{matrix}
 x' = Ax + bt \\
 t' = Mx + Nt \\
-\end{matrix}\right.\\\end{split}\\\begin{split}v' - \frac{dx'}{dt'} \\
-v' - \frac{Adx + Bdt}{Mdx + Ndt} \\
-v' - \frac{Av + B}{Mv + N} \\
+\end{matrix}\right.\\\end{split}\\\begin{split}v' = \frac{dx'}{dt'} \\
+v' = \frac{Adx + Bdt}{Mdx + Ndt} \\
+v' = \frac{Av + B}{Mv + N} \\
 \end{split}\end{aligned}\end{align} \]</div>
 <p>Jeżeli A spoczywa w S’</p>
 <div class="math notranslate nohighlight">
@@ -379,6 +379,93 @@ należy mówić o 4-wymiarowej czaso-przestrzeni.</p>
 <p class="admonition-title">Linie świata</p>
 <p>Linie rysowane na diagramie Minkowskiego</p>
 </div>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/eio/eio_2024.03.12.md</span></code></em></p>
+<div class="admonition-diagram-minkowskiego admonition">
+<p class="admonition-title">Diagram minkowskiego</p>
+<p>wykres zależnośći <code class="docutils literal notranslate"><span class="pre">c*t(x)</span></code> gdzie x tow ektory 3-wymiarowe</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>linie świata pod kątem <span class="math notranslate nohighlight">\(\alpha=45^o\)</span> określają zdarzenia zachodzące z prędkością światła</p>
+<p>FIgura wyznaczone przez te linie nazywa się “Stożkiem Minkowskiego”</p>
+</div>
+<div class="admonition-interwal-czasoprzestrzenny admonition">
+<p class="admonition-title">Interwał czasoprzestrzenny</p>
+<div class="math notranslate nohighlight">
+\[
+S_{AB}^2 = c^2(t_B-t_A)^2 - (x_b-x_A)^2 - (y_B-y_A)^2 - (z_B-z_A)^2
+\]</div>
+</div>
+<section id="niezmienniczosc-interwalu-czasoprzestrznennego">
+<h3>Niezmienniczość interwału czasoprzestrznennego<a class="headerlink" href="#niezmienniczosc-interwalu-czasoprzestrznennego" title="Link to this heading">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+S_{AB}^2 = c^2 (\Delta t)^2 - (\Delta x)^2 \\
+{S'_ {AB}}^2 = c^2 (\Delta t')^2 - (\Delta x')^2 \\
+{S'_ {AB}}^2 = c^2 (t_B' - t_A')^2 - (x_B' - x_A')^2 \\
+{S'_ {AB}}^2 = c^2 \left(\gamma(t_B - \frac{ux_B}{c^2} - t_A + \frac{ux_A}{c^2})\right)^2 - (x_B - ut_B - x_A + ut_A)^2 \\
+{S'_ {AB}}^2 = c^2 (\gamma(t_B - \frac{ux_B}{c^2} - t_A + \frac{ux_A}{c^2}))^2 - \gamma^2(x_B - ut_B - x_A + ut_A)^2 \\
+{S'_ {AB}}^2 = \gamma((c \Delta t - \frac{u}{c^2} \Delta x)^2 - (\Delta x - u \Delta t)^2) \\
+\text{wyliczenie ze wzoróœ skruconego mnożenia} \\
+\text{gamma się skruci} \\
+\end{split}\]</div>
+</section>
+<section id="konsekwencje-transformacji-lorentza">
+<h3>Konsekwencje transformacji Lorentza<a class="headerlink" href="#konsekwencje-transformacji-lorentza" title="Link to this heading">¶</a></h3>
+<section id="relatywistyczne-dodawanie-predkosci">
+<h4>Relatywistyczne dodawanie prędkośći<a class="headerlink" href="#relatywistyczne-dodawanie-predkosci" title="Link to this heading">¶</a></h4>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\frac{dx}{dt} = v_x \land v_x' = \frac{dx'}{dt'} \\
+\frac{dx'}{dt'} = \frac{\gamma(dx - udt)}{\gamma(dt - \frac{udx}{c^2})} \\
+...\\
+v_x' = \frac{v_x + u}{1+\left(\frac{v_x}{c}\right)^2}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+v_y' = \frac{dy'}{dt'} \\
+v_y' = \frac{dy}{\gamma(dt - \frac{u dx}{c^2})} \\
+\end{split}\]</div>
+</section>
+<section id="relatywistyczna-transformacja-przyspieszenia">
+<h4>Relatywistyczna transformacja przyspieszenia<a class="headerlink" href="#relatywistyczna-transformacja-przyspieszenia" title="Link to this heading">¶</a></h4>
+<div class="math notranslate nohighlight">
+\[
+a_x' = \frac{dv_x'}{dt'}
+\]</div>
+</section>
+<section id="relatywistyczne-skrocenie-dlugosci">
+<h4>Relatywistyczne skrócenie długości<a class="headerlink" href="#relatywistyczne-skrocenie-dlugosci" title="Link to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>w układzie, w którym pręt spoczywa ma on długość <code class="docutils literal notranslate"><span class="pre">l</span></code></p></li>
+<li><p>przy mierzeniu długośći pręta zakładamy, że robimy to w tym samym czasie.</p></li>
+</ul>
+<p>W układzie, w którym spoczywa (s’)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+l' = x_b' - x_A'\\
+x = x_b - x_a\\
+...\\
+l' = \gamma * l\\
+\end{split}\]</div>
+</section>
+<section id="relatywistyczne-wydluzenie-czasu">
+<h4>Relatywistyczne wydłużenie czasu<a class="headerlink" href="#relatywistyczne-wydluzenie-czasu" title="Link to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>dwa zdarzenia zachodzą w tym samym miejscu w <span class="math notranslate nohighlight">\(S'\)</span>.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\Delta t = \gamma * \Delta t'
+\]</div>
+<p><em>zegar w S chodzi szybciej niż w S’ dla obserwatora w S</em></p>
+</section>
+<section id="czas-wlasny-procesu">
+<h4>Czas własny procesu<a class="headerlink" href="#czas-wlasny-procesu" title="Link to this heading">¶</a></h4>
+<p>Czas własny procesu jest krótszy Dla każdego innego obszerwatora czas procesu będzie o <span class="math notranslate nohighlight">\(\gamma\)</span> dłuższy.</p>
+</section>
+</section>
 </section>
 </section>
 
@@ -423,7 +510,18 @@ należy mówić o 4-wymiarowej czaso-przestrzeni.</p>
 <li><a class="reference internal" href="#transformacja-lorentza">Transformacja Lorentza</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#diagram-minkowskiego-i-interwal-czasoprzestrzenny">Diagram Minkowskiego i interwał czasoprzestrzenny</a></li>
+<li><a class="reference internal" href="#diagram-minkowskiego-i-interwal-czasoprzestrzenny">Diagram Minkowskiego i interwał czasoprzestrzenny</a><ul>
+<li><a class="reference internal" href="#niezmienniczosc-interwalu-czasoprzestrznennego">Niezmienniczość interwału czasoprzestrznennego</a></li>
+<li><a class="reference internal" href="#konsekwencje-transformacji-lorentza">Konsekwencje transformacji Lorentza</a><ul>
+<li><a class="reference internal" href="#relatywistyczne-dodawanie-predkosci">Relatywistyczne dodawanie prędkośći</a></li>
+<li><a class="reference internal" href="#relatywistyczna-transformacja-przyspieszenia">Relatywistyczna transformacja przyspieszenia</a></li>
+<li><a class="reference internal" href="#relatywistyczne-skrocenie-dlugosci">Relatywistyczne skrócenie długości</a></li>
+<li><a class="reference internal" href="#relatywistyczne-wydluzenie-czasu">Relatywistyczne wydłużenie czasu</a></li>
+<li><a class="reference internal" href="#czas-wlasny-procesu">Czas własny procesu</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -495,7 +593,7 @@ należy mówić o 4-wymiarowej czaso-przestrzeni.</p>
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/1260f3c88c60e21b9fd910d0494ab2b9edbdf3e5>Mon Mar 11 18:07:32 2024 +0100 notes: todays update (1260f3c88c60e21b9fd910d0494ab2b9edbdf3e5)</a>
+<a href=https://github.com/gucio321/matematyka/commit/92d50db0d5c6cfacd7454edc135da459581a7c2b>Tue Mar 12 14:21:18 2024 +0100 eio: update (92d50db0d5c6cfacd7454edc135da459581a7c2b)</a>
 </font>
 
   </body>
