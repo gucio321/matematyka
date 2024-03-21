@@ -475,6 +475,49 @@ r_1 = \alpha + \beta i \\
 y_1 = e^{\alpha x} cos \beta x \\
 y_2 = e^{\alpha x} sin \beta x
 \end{split}\]</div>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/matematyka2/matematyka2_2024.03.19.md</span></code></em></p>
+</section>
+</section>
+<section id="funkcje-wielu-zmiennych">
+<h2>Funkcje wielu zmiennych<a class="headerlink" href="#funkcje-wielu-zmiennych" title="Link to this heading">¶</a></h2>
+<section id="i-to-mathbb-r-n">
+<h3><span class="math notranslate nohighlight">\(I \to \mathbb{R}^n\)</span><a class="headerlink" href="#i-to-mathbb-r-n" title="Link to this heading">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[
+\vec{f} : I \to \mathbb{R}^N
+\]</div>
+<ul class="simple">
+<li><p>Pochodna;</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\begin{split}
+\frac{d\vec{f}}{dt} = \lim_{h \to 0} \frac{\vec(f}(t_0 + h) - \vec{f}(t_0)}{h} \\
+... \\\end{split}\\\frac{d}{dt}(f \times g) = \frac{df}{dt} \times g + \frac{dg}{dt} \times f
+\end{aligned}\end{align} \]</div>
+</section>
+<section id="f-mathbb-r-n-to-mathbb-r">
+<h3><span class="math notranslate nohighlight">\(f : \mathbb{R}^N \to \mathbb{R}\)</span><a class="headerlink" href="#f-mathbb-r-n-to-mathbb-r" title="Link to this heading">¶</a></h3>
+<p>Przykład:</p>
+<div class="math notranslate nohighlight">
+\[
+f(x, y) = x^2 + y^2
+\]</div>
+<div class="admonition-granice-wielu-zmiennych admonition">
+<p class="admonition-title">granice wielu zmiennych</p>
+<p>jeżeli chcemy liczyć granice kilku zmiennych to tak nie można.</p>
+<ul class="simple">
+<li><p>Jeżeli <span class="math notranslate nohighlight">\(x, y \to (0,0)\)</span> można przejść na współrzędne biegunowe, ale wtedy okaże się że granicy nie ma,
+dyż zależy ona od kąta <span class="math notranslate nohighlight">\(\phi\)</span></p></li>
+</ul>
+</div>
+<!--chociaż nowoczesna pedago... nowoczesne metody nauczania móœią, że po co się uczyć wzorów na pamięć, skoro zawsze można znaleźć je w internecie. Ale ja jednak podchodzę klasycznie do tego czy ktoś coś umie.-->
+<div class="admonition-tw-boltzmana-weierstrassa admonition">
+<p class="admonition-title">Tw. Boltzmana-Weierstrassa</p>
+<p><em>metoda polowania na lwa. Obszar ogradzamy i dzielimy na 4 części za każdym razem</em></p>
+<p>Jeźli otoczenie punktu <span class="math notranslate nohighlight">\(x_\)</span> jest rozłączne, to x jest punktem zewnętrznym.</p>
+<p>Jeśli U = int(u) <span class="math notranslate nohighlight">\(\RIghtarrow U\)</span> otwarty</p>
+</div>
 </section>
 </section>
 </section>
@@ -516,6 +559,11 @@ y_2 = e^{\alpha x} sin \beta x
 </ul>
 </li>
 <li><a class="reference internal" href="#rownania-ii-liniowe-rzedu">Równania II liniowe rzędu</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#funkcje-wielu-zmiennych">Funkcje wielu zmiennych</a><ul>
+<li><a class="reference internal" href="#i-to-mathbb-r-n"><span class="math notranslate nohighlight">\(I \to \mathbb{R}^n\)</span></a></li>
+<li><a class="reference internal" href="#f-mathbb-r-n-to-mathbb-r"><span class="math notranslate nohighlight">\(f : \mathbb{R}^N \to \mathbb{R}\)</span></a></li>
 </ul>
 </li>
 </ul>
@@ -589,7 +637,7 @@ y_2 = e^{\alpha x} sin \beta x
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/12acbb068ab9aa8dc0721012a467bbe502c332bb>Mon Mar 18 13:24:45 2024 +0100 updates (12acbb068ab9aa8dc0721012a467bbe502c332bb)</a>
+<a href=https://github.com/gucio321/matematyka/commit/dd49deb4b6802c8ef0bb6c4ea52bae7fa0de5a8e>Thu Mar 21 10:39:36 2024 +0100 update (dd49deb4b6802c8ef0bb6c4ea52bae7fa0de5a8e)</a>
 </font>
 
   </body>

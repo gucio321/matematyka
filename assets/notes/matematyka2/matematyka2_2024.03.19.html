@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Reszta Peano &#8212; Matematyka  - dokumentacja</title>
+    <title>Funkcje wielu zmiennych &#8212; Matematyka  - dokumentacja</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
@@ -54,7 +54,7 @@
              accesskey="I">indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Reszta Peano</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Funkcje wielu zmiennych</a></li> 
       </ul>
     </div>
     </div>
@@ -65,44 +65,46 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="admonition-twierdzenie admonition">
-<p class="admonition-title">Twierdzenie</p>
-<p>Liczba <span class="math notranslate nohighlight">\(e\)</span> nie jest liczbą wymierną.</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\text{Przypuśćmy, że e jest liczbą wymierną w postaci} \frac{p}{q} p,q \in \mathbb{N} \\
-e = 1 + 1 + \frac{1}{2} + \frac{1}{3!} + ... + \frac{1}{q!} + \frac{1}{(q+1)!} e^\theta \\
-\end{split}\]</div>
-<p><code class="docutils literal notranslate"><span class="pre">e</span></code> jest liczbą przestępną (nie jest pierwiastkiem wiielomianu o współczynnikah rzeczywistych)</p>
-</div>
-<section id="reszta-peano">
-<h1>Reszta Peano<a class="headerlink" href="#reszta-peano" title="Link to this heading">¶</a></h1>
+  <section id="funkcje-wielu-zmiennych">
+<h1>Funkcje wielu zmiennych<a class="headerlink" href="#funkcje-wielu-zmiennych" title="Link to this heading">¶</a></h1>
+<section id="i-to-mathbb-r-n">
+<h2><span class="math notranslate nohighlight">\(I \to \mathbb{R}^n\)</span><a class="headerlink" href="#i-to-mathbb-r-n" title="Link to this heading">¶</a></h2>
 <div class="math notranslate nohighlight">
 \[
-f(x+h) = f(x_0) + \frac{h}{1!} f'(x) + \frac{h^2}{2!} f''(x_0) + ... +\frac{h^n}{n!} f^{(n)}(x_0) + o(h^n)
+\vec{f} : I \to \mathbb{R}^N
 \]</div>
-</section>
-<section id="ekstrema-lokalne">
-<h1>Ekstrema lokalne<a class="headerlink" href="#ekstrema-lokalne" title="Link to this heading">¶</a></h1>
-<div class="admonition note">
-<p class="admonition-title">Informacja</p>
-<p>Jeżeli funkcja osiąga w punkcie <span class="math notranslate nohighlight">\(x_0\)</span> extremum, ot jej pochodna
-jest równa 0</p>
-<div class="admonition warning">
-<p class="admonition-title">Ostrzeżenie</p>
-<p>nie oznacza to, że spełnione jest twierdzenie odwrotne</p>
-</div>
-</div>
-<p>Jeżeli pochodna funkcji zeruje się, oznacza to, że punkt <span class="math notranslate nohighlight">\(x_0\)</span> jest
-punktem podejrzanym oe ekstremum.</p>
-<p>Punkty podejrzane o ekstrenum znajdują się również w punktach,
-w których pochodna nie istnieje.</p>
-<p>Szukanie ekstremów:</p>
 <ul class="simple">
-<li><p>pochodna musi zmieniać znak</p></li>
-<li><p>jeśli <span class="math notranslate nohighlight">\(f'(x_0) \land f''(x_0) &gt; 0 \Rightarrow\)</span> f posiada minimum lokalne$</p></li>
-<li><p>druga pochodna wskazuje czy dany punkt to minimum czy maksimum</p></li>
+<li><p>Pochodna;</p></li>
 </ul>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\begin{split}
+\frac{d\vec{f}}{dt} = \lim_{h \to 0} \frac{\vec(f}(t_0 + h) - \vec{f}(t_0)}{h} \\
+... \\\end{split}\\\frac{d}{dt}(f \times g) = \frac{df}{dt} \times g + \frac{dg}{dt} \times f
+\end{aligned}\end{align} \]</div>
+</section>
+<section id="f-mathbb-r-n-to-mathbb-r">
+<h2><span class="math notranslate nohighlight">\(f : \mathbb{R}^N \to \mathbb{R}\)</span><a class="headerlink" href="#f-mathbb-r-n-to-mathbb-r" title="Link to this heading">¶</a></h2>
+<p>Przykład:</p>
+<div class="math notranslate nohighlight">
+\[
+f(x, y) = x^2 + y^2
+\]</div>
+<div class="admonition-granice-wielu-zmiennych admonition">
+<p class="admonition-title">granice wielu zmiennych</p>
+<p>jeżeli chcemy liczyć granice kilku zmiennych to tak nie można.</p>
+<ul class="simple">
+<li><p>Jeżeli <span class="math notranslate nohighlight">\(x, y \to (0,0)\)</span> można przejść na współrzędne biegunowe, ale wtedy okaże się że granicy nie ma,
+dyż zależy ona od kąta <span class="math notranslate nohighlight">\(\phi\)</span></p></li>
+</ul>
+</div>
+<!--chociaż nowoczesna pedago... nowoczesne metody nauczania móœią, że po co się uczyć wzorów na pamięć, skoro zawsze można znaleźć je w internecie. Ale ja jednak podchodzę klasycznie do tego czy ktoś coś umie.-->
+<div class="admonition-tw-boltzmana-weierstrassa admonition">
+<p class="admonition-title">Tw. Boltzmana-Weierstrassa</p>
+<p><em>metoda polowania na lwa. Obszar ogradzamy i dzielimy na 4 części za każdym razem</em></p>
+<p>Jeźli otoczenie punktu <span class="math notranslate nohighlight">\(x_\)</span> jest rozłączne, to x jest punktem zewnętrznym.</p>
+<p>Jeśli U = int(u) <span class="math notranslate nohighlight">\(\RIghtarrow U\)</span> otwarty</p>
+</div>
+</section>
 </section>
 
 
@@ -114,8 +116,11 @@ w których pochodna nie istnieje.</p>
         <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
     <h3><a href="../../../index.html">Spis treści:</a></h3>
     <ul>
-<li><a class="reference internal" href="#">Reszta Peano</a></li>
-<li><a class="reference internal" href="#ekstrema-lokalne">Ekstrema lokalne</a></li>
+<li><a class="reference internal" href="#">Funkcje wielu zmiennych</a><ul>
+<li><a class="reference internal" href="#i-to-mathbb-r-n"><span class="math notranslate nohighlight">\(I \to \mathbb{R}^n\)</span></a></li>
+<li><a class="reference internal" href="#f-mathbb-r-n-to-mathbb-r"><span class="math notranslate nohighlight">\(f : \mathbb{R}^N \to \mathbb{R}\)</span></a></li>
+</ul>
+</li>
 </ul>
 
   </div>
@@ -160,7 +165,7 @@ w których pochodna nie istnieje.</p>
              >indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Reszta Peano</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Funkcje wielu zmiennych</a></li> 
       </ul>
     </div>
     </div>
