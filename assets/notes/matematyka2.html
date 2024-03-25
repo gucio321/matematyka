@@ -492,7 +492,7 @@ y_2 = e^{\alpha x} sin \beta x
 </ul>
 <div class="math notranslate nohighlight">
 \[ \begin{align}\begin{aligned}\begin{split}
-\frac{d\vec{f}}{dt} = \lim_{h \to 0} \frac{\vec(f}(t_0 + h) - \vec{f}(t_0)}{h} \\
+\frac{d\vec{f}}{dt} = \lim_{h \to 0} \frac{\vec{f}(t_0 + h) - \vec{f}(t_0)}{h} \\
 ... \\\end{split}\\\frac{d}{dt}(f \times g) = \frac{df}{dt} \times g + \frac{dg}{dt} \times f
 \end{aligned}\end{align} \]</div>
 </section>
@@ -515,9 +515,45 @@ dyż zależy ona od kąta <span class="math notranslate nohighlight">\(\phi\)</s
 <div class="admonition-tw-boltzmana-weierstrassa admonition">
 <p class="admonition-title">Tw. Boltzmana-Weierstrassa</p>
 <p><em>metoda polowania na lwa. Obszar ogradzamy i dzielimy na 4 części za każdym razem</em></p>
-<p>Jeźli otoczenie punktu <span class="math notranslate nohighlight">\(x_\)</span> jest rozłączne, to x jest punktem zewnętrznym.</p>
-<p>Jeśli U = int(u) <span class="math notranslate nohighlight">\(\RIghtarrow U\)</span> otwarty</p>
+<p>Jeźli otoczenie punktu <span class="math notranslate nohighlight">\(x_0\)</span> jest rozłączne, to x jest punktem zewnętrznym.</p>
+<p>Jeśli U = int(u) <span class="math notranslate nohighlight">\(\Rightarrow U\)</span> otwarty</p>
 </div>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/matematyka2/matematyka2_2024.03.25.md</span></code></em></p>
+</section>
+<section id="pochodne-czastkowe">
+<h3>Pochodne cząstkowe<a class="headerlink" href="#pochodne-czastkowe" title="Link to this heading">¶</a></h3>
+<p>Granicę <span class="math notranslate nohighlight">\(\lim_{h \to 0} \frac{f(x+h,y,z)-f(x,y,z)}{h}\)</span> o ile istnieje nazywamy pochodną cząstkową
+względem zmiennej <span class="math notranslate nohighlight">\(x\)</span> i oznaczamy <span class="math notranslate nohighlight">\(\frac{\partial f}{\partial x}\)</span>.</p>
+<div class="admonition-tw-schwartza admonition">
+<p class="admonition-title">Tw. Schwartza</p>
+<p>Jeżeli pochodne mieszane są ciągłe, to są równe.</p>
+</div>
+<p>Funkcja 2 zmiennych jest klasy <span class="math notranslate nohighlight">\(C^1\)</span> jeżeli <span class="math notranslate nohighlight">\(\frac{\partial f}{\partial x}\)</span> i <span class="math notranslate nohighlight">\(\frac{\partial f}{\partial y}\)</span> są ciągłe.</p>
+<p>Funkcja jest klasy <span class="math notranslate nohighlight">\(C^2\)</span> jeżeli <span class="math notranslate nohighlight">\(\frac{\partial^2 f}{\partial x^2}\)</span>, <span class="math notranslate nohighlight">\(\frac{\partial^2 f}{\partial y^2}\)</span>, <span class="math notranslate nohighlight">\(\frac{\partial^2 f}{\partial x \partial y}\)</span>, <span class="math notranslate nohighlight">\(\frac{\partial^2 f}{\partial y \partial x}\)</span> są ciągłe.</p>
+</section>
+<section id="pojecie-rozniczkowalnosci">
+<h3>Pojęcie różniczkowalności<a class="headerlink" href="#pojecie-rozniczkowalnosci" title="Link to this heading">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[
+f(\vec{x}-\vec{h}) - f(\vec{x}) = L_{\vec{x}}(\vec{h}) + o(||h||)
+\]</div>
+<!--ja nie wiem czy oni nie sprowadzają tej kredy z wydziału fizyki. Taka jest... nienajlepsza-->
+</section>
+<section id="pochodna-funkcji-zlozonych">
+<h3>Pochodna funkcji złożonych<a class="headerlink" href="#pochodna-funkcji-zlozonych" title="Link to this heading">¶</a></h3>
+<p>niech <span class="math notranslate nohighlight">\(f(x,y,z) \land x=x(t)~y=y(t)~z=z(t)\)</span>. Wtedy
+<span class="math notranslate nohighlight">\(F(t) = f(x(t),y(t),z(t))\)</span> Wtedy <span class="math notranslate nohighlight">\(\frac{dF}{dt} = \frac{\partial f}{\partial x } * \frac{d x}{d t} + \frac{\partial f}{\partial y} \frac{dy}{dt} + \frac{\partial f}{\partial z} \frac{dz}{dt}\)</span></p>
+</section>
+<section id="pochodna-kierunkowa">
+<h3>Pochodna kierunkowa<a class="headerlink" href="#pochodna-kierunkowa" title="Link to this heading">¶</a></h3>
+<p>Niech <span class="math notranslate nohighlight">\(\omega=(cos \alpha, cos \beta, cos \gamma)\)</span> będzie wektorem jednostkowym.</p>
+<p>Granica</p>
+<div class="math notranslate nohighlight">
+\[
+\lim_{t \to 0} \frac{f(x+t cos\alpha, y+t*cos \beta, z+t*cos \gamma)}{t}
+\]</div>
+<p>o ile istnieje nazywana jest pochodną <span class="math notranslate nohighlight">\(f\)</span> w kierunku <span class="math notranslate nohighlight">\(\omega\)</span> i oznaczamy <span class="math notranslate nohighlight">\(\frac{\partial f}{\partial \omega}\)</span></p>
 </section>
 </section>
 </section>
@@ -564,6 +600,10 @@ dyż zależy ona od kąta <span class="math notranslate nohighlight">\(\phi\)</s
 <li><a class="reference internal" href="#funkcje-wielu-zmiennych">Funkcje wielu zmiennych</a><ul>
 <li><a class="reference internal" href="#i-to-mathbb-r-n"><span class="math notranslate nohighlight">\(I \to \mathbb{R}^n\)</span></a></li>
 <li><a class="reference internal" href="#f-mathbb-r-n-to-mathbb-r"><span class="math notranslate nohighlight">\(f : \mathbb{R}^N \to \mathbb{R}\)</span></a></li>
+<li><a class="reference internal" href="#pochodne-czastkowe">Pochodne cząstkowe</a></li>
+<li><a class="reference internal" href="#pojecie-rozniczkowalnosci">Pojęcie różniczkowalności</a></li>
+<li><a class="reference internal" href="#pochodna-funkcji-zlozonych">Pochodna funkcji złożonych</a></li>
+<li><a class="reference internal" href="#pochodna-kierunkowa">Pochodna kierunkowa</a></li>
 </ul>
 </li>
 </ul>
@@ -637,7 +677,7 @@ dyż zależy ona od kąta <span class="math notranslate nohighlight">\(\phi\)</s
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/dd49deb4b6802c8ef0bb6c4ea52bae7fa0de5a8e>Thu Mar 21 10:39:36 2024 +0100 update (dd49deb4b6802c8ef0bb6c4ea52bae7fa0de5a8e)</a>
+<a href=https://github.com/gucio321/matematyka/commit/1c4510dbd069c50596a8c7321c190754a921b140>Mon Mar 25 15:16:47 2024 +0100 update 5.03.2024 (1c4510dbd069c50596a8c7321c190754a921b140)</a>
 </font>
 
   </body>

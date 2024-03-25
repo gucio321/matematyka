@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Macierz Przejścia &#8212; Matematyka  - dokumentacja</title>
+    <title>Pochodne cząstkowe &#8212; Matematyka  - dokumentacja</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
@@ -54,7 +54,7 @@
              accesskey="I">indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Macierz Przejścia</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Pochodne cząstkowe</a></li> 
       </ul>
     </div>
     </div>
@@ -65,71 +65,39 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <ul class="simple">
-<li><p><strong>baza</strong> - zbiór wekorów liniowo niezależnych generujących przestrzeń</p></li>
-<li><p><strong>wymiar</strong> - liczność bazy</p></li>
-</ul>
-<p>aby przedstawić wektor w bazie <em>kanonicznej</em> w innej bazie
-należy rozwiązać układ równań (<span class="math notranslate nohighlight">\(b_1' = \alpha~b_2' = \beta\)</span>)</p>
-<section id="macierz-przejscia">
-<h1>Macierz Przejścia<a class="headerlink" href="#macierz-przejscia" title="Link to this heading">¶</a></h1>
-<p>niech <span class="math notranslate nohighlight">\(b_1, b_2...\)</span> - stara baza i <span class="math notranslate nohighlight">\(b_1', b_2' ....\)</span> nowa baza.</p>
-<p>Wektory ze starej bazy można przedstawić jako kombinacje współrzędnych z nowej bazy oraz
-wypisac w macierzy w kolumnach.
-Następnie należy znaleźć macierz odwrotną.</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(P_{B\to B'} = (P_{B'\to B})^{-1}\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(P_{B \to B'} * P_{B' \to B''} = B_{P \to B''}\)</span></p></li>
-</ul>
+  <section id="pochodne-czastkowe">
+<h1>Pochodne cząstkowe<a class="headerlink" href="#pochodne-czastkowe" title="Link to this heading">¶</a></h1>
+<p>Granicę <span class="math notranslate nohighlight">\(\lim_{h \to 0} \frac{f(x+h,y,z)-f(x,y,z)}{h}\)</span> o ile istnieje nazywamy pochodną cząstkową
+względem zmiennej <span class="math notranslate nohighlight">\(x\)</span> i oznaczamy <span class="math notranslate nohighlight">\(\frac{\partial f}{\partial x}\)</span>.</p>
+<div class="admonition-tw-schwartza admonition">
+<p class="admonition-title">Tw. Schwartza</p>
+<p>Jeżeli pochodne mieszane są ciągłe, to są równe.</p>
+</div>
+<p>Funkcja 2 zmiennych jest klasy <span class="math notranslate nohighlight">\(C^1\)</span> jeżeli <span class="math notranslate nohighlight">\(\frac{\partial f}{\partial x}\)</span> i <span class="math notranslate nohighlight">\(\frac{\partial f}{\partial y}\)</span> są ciągłe.</p>
+<p>Funkcja jest klasy <span class="math notranslate nohighlight">\(C^2\)</span> jeżeli <span class="math notranslate nohighlight">\(\frac{\partial^2 f}{\partial x^2}\)</span>, <span class="math notranslate nohighlight">\(\frac{\partial^2 f}{\partial y^2}\)</span>, <span class="math notranslate nohighlight">\(\frac{\partial^2 f}{\partial x \partial y}\)</span>, <span class="math notranslate nohighlight">\(\frac{\partial^2 f}{\partial y \partial x}\)</span> są ciągłe.</p>
 </section>
-<section id="odwzorowania-liniowe">
-<h1>Odwzorowania Liniowe<a class="headerlink" href="#odwzorowania-liniowe" title="Link to this heading">¶</a></h1>
-<ul class="simple">
-<li><p>Załóżmy dwie przestrzenie liniowe <strong>nad tym samym ciałem</strong></p></li>
-<li><p>morfizm przestrzeni liniowych (odwzorowanie liniowe) zachodzi jeżeli
-zachodzi odwzorowanie działań w tych przestrzeniach</p></li>
-</ul>
+<section id="pojecie-rozniczkowalnosci">
+<h1>Pojęcie różniczkowalności<a class="headerlink" href="#pojecie-rozniczkowalnosci" title="Link to this heading">¶</a></h1>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-\phi(\alpha x) = \alpha \phi(x) \\
-\phi(x_1 + x_2) = \phi(x_1) + \phi(x_2)
-\end{split}\]</div>
-<div class="admonition important">
-<p class="admonition-title">Ważne</p>
-<p>Jeżeli występuje translacja (dodanie stałęj) odwzorowanie nie jest liniowe (nie spełnia warunku addytywności).</p>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Wskazówka</p>
-<p>operator różniczkowania <span class="math notranslate nohighlight">\(\frac{dy}{dx}\)</span> jest odwzorowaniem liniowym</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Informacja</p>
-<p>Przy odwzorowaniu liniowym <span class="math notranslate nohighlight">\(0 \to 0\)</span></p>
-</div>
-<ul class="simple">
-<li><p>odwzorowanie może być surjekcją (tożsamość obu zbiorów) (<strong>epimorfizm</strong>)</p></li>
-<li><p>aby sprawdzić czy odwzorowanie jest injekcją można sprawdzić czy <span class="math notranslate nohighlight">\(0 \to 0\)</span></p></li>
-</ul>
-<div class="admonition tip">
-<p class="admonition-title">Wskazówka</p>
-<p>Zbiór wszystkich odwzorowań liniowych V w W oznaczamy przez <span class="math notranslate nohighlight">\(Hom_k(V, W)\)</span></p>
-</div>
-<div class="admonition important">
-<p class="admonition-title">Ważne</p>
-<p>Jezeli w liniowym występuje translacja nie jest ono liniowe.</p>
+\[
+f(\vec{x}-\vec{h}) - f(\vec{x}) = L_{\vec{x}}(\vec{h}) + o(||h||)
+\]</div>
+<!--ja nie wiem czy oni nie sprowadzają tej kredy z wydziału fizyki. Taka jest... nienajlepsza-->
+</section>
+<section id="pochodna-funkcji-zlozonych">
+<h1>Pochodna funkcji złożonych<a class="headerlink" href="#pochodna-funkcji-zlozonych" title="Link to this heading">¶</a></h1>
+<p>niech <span class="math notranslate nohighlight">\(f(x,y,z) \land x=x(t)~y=y(t)~z=z(t)\)</span>. Wtedy
+<span class="math notranslate nohighlight">\(F(t) = f(x(t),y(t),z(t))\)</span> Wtedy <span class="math notranslate nohighlight">\(\frac{dF}{dt} = \frac{\partial f}{\partial x } * \frac{d x}{d t} + \frac{\partial f}{\partial y} \frac{dy}{dt} + \frac{\partial f}{\partial z} \frac{dz}{dt}\)</span></p>
+</section>
+<section id="pochodna-kierunkowa">
+<h1>Pochodna kierunkowa<a class="headerlink" href="#pochodna-kierunkowa" title="Link to this heading">¶</a></h1>
+<p>Niech <span class="math notranslate nohighlight">\(\omega=(cos \alpha, cos \beta, cos \gamma)\)</span> będzie wektorem jednostkowym.</p>
+<p>Granica</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-\phi : \mathbb{R} \to \mathbb{R},~\phi(x) = ax + b \\
-\end{split}\]</div>
-<p>Niech <span class="math notranslate nohighlight">\(x_1 = 1 \land x_2 = 2\)</span> wtedy:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{matrix}
-\phi(1+2) = a(1 + 2) + b  = 3a + b \\
-\phi(1) + \phi(2) = a + b + 2a + b = 3a + 2b
-\end{matrix} \Rightarrow \phi(1+2) \neq \phi(1) + \phi(2)
-\end{split}\]</div>
-</div>
+\[
+\lim_{t \to 0} \frac{f(x+t cos\alpha, y+t*cos \beta, z+t*cos \gamma)}{t}
+\]</div>
+<p>o ile istnieje nazywana jest pochodną <span class="math notranslate nohighlight">\(f\)</span> w kierunku <span class="math notranslate nohighlight">\(\omega\)</span> i oznaczamy <span class="math notranslate nohighlight">\(\frac{\partial f}{\partial \omega}\)</span></p>
 </section>
 
 
@@ -141,8 +109,10 @@ zachodzi odwzorowanie działań w tych przestrzeniach</p></li>
         <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
     <h3><a href="../../../index.html">Spis treści:</a></h3>
     <ul>
-<li><a class="reference internal" href="#">Macierz Przejścia</a></li>
-<li><a class="reference internal" href="#odwzorowania-liniowe">Odwzorowania Liniowe</a></li>
+<li><a class="reference internal" href="#">Pochodne cząstkowe</a></li>
+<li><a class="reference internal" href="#pojecie-rozniczkowalnosci">Pojęcie różniczkowalności</a></li>
+<li><a class="reference internal" href="#pochodna-funkcji-zlozonych">Pochodna funkcji złożonych</a></li>
+<li><a class="reference internal" href="#pochodna-kierunkowa">Pochodna kierunkowa</a></li>
 </ul>
 
   </div>
@@ -187,7 +157,7 @@ zachodzi odwzorowanie działań w tych przestrzeniach</p></li>
              >indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Macierz Przejścia</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Pochodne cząstkowe</a></li> 
       </ul>
     </div>
     </div>
