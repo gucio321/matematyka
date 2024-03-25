@@ -9,7 +9,7 @@ $$
 - Pochodna;
 
 $$
-\frac{d\vec{f}}{dt} = \lim_{h \to 0} \frac{\vec(f}(t_0 + h) - \vec{f}(t_0)}{h} \\
+\frac{d\vec{f}}{dt} = \lim_{h \to 0} \frac{\vec{f}(t_0 + h) - \vec{f}(t_0)}{h} \\
 ... \\
 
 \frac{d}{dt}(f \times g) = \frac{df}{dt} \times g + \frac{dg}{dt} \times f
@@ -33,7 +33,7 @@ dyż zależy ona od kąta $\phi$
 ```{admonition} Tw. Boltzmana-Weierstrassa
 _metoda polowania na lwa. Obszar ogradzamy i dzielimy na 4 części za każdym razem_
 
-Jeźli otoczenie punktu $x_$ jest rozłączne, to x jest punktem zewnętrznym.
+Jeźli otoczenie punktu $x_0$ jest rozłączne, to x jest punktem zewnętrznym.
 
-Jeśli U = int(u) $\RIghtarrow U$ otwarty
+Jeśli U = int(u) $\Rightarrow U$ otwarty
 ```
