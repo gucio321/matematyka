@@ -554,6 +554,43 @@ f(\vec{x}-\vec{h}) - f(\vec{x}) = L_{\vec{x}}(\vec{h}) + o(||h||)
 \lim_{t \to 0} \frac{f(x+t cos\alpha, y+t*cos \beta, z+t*cos \gamma)}{t}
 \]</div>
 <p>o ile istnieje nazywana jest pochodną <span class="math notranslate nohighlight">\(f\)</span> w kierunku <span class="math notranslate nohighlight">\(\omega\)</span> i oznaczamy <span class="math notranslate nohighlight">\(\frac{\partial f}{\partial \omega}\)</span></p>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/matematyka2/matematyka2_2024.03.26.md</span></code></em></p>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>gradient równy <span class="math notranslate nohighlight">\(1\)</span> pokazuje kierunek największego wzrostu funkcji</p>
+</div>
+</section>
+<section id="funkcje-uwiklane">
+<h3>Funkcje uwikłane<a class="headerlink" href="#funkcje-uwiklane" title="Link to this heading">¶</a></h3>
+<div class="admonition-tw-o-funkcji-uwiklanej admonition">
+<p class="admonition-title">tw. o funkcji uwikłanej</p>
+<p>niech funkcja <span class="math notranslate nohighlight">\(f(x,y)\)</span> będzie klasy <span class="math notranslate nohighlight">\(C^1\)</span> w obszarze <span class="math notranslate nohighlight">\(D\)</span>.</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(f(x_0, y_0) = 0\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{\partial f}{\partial y} \neq 0\)</span> w punkcie <span class="math notranslate nohighlight">\((x_0, y_0)\)</span></p></li>
+<li><p>istnieje prostokąt postaci <span class="math notranslate nohighlight">\(P=(x_0-\delta, x_0 + \delta) \times (y_0 - \varepsilon, y_0 + \varepsilon)\)</span>, taki że <span class="math notranslate nohighlight">\(f(x, y) = 0\)</span> ma jednoznaczne rozwiązanie <span class="math notranslate nohighlight">\(y = \varphi(x)\)</span> taki, że <span class="math notranslate nohighlight">\(F(x, f(x)) = 0\)</span></p></li>
+</ul>
+</div>
+<div class="admonition-tw-o-funkcji-uwiklanej-w-przestrzeni-mathbb-r-3 admonition">
+<p class="admonition-title">tw. o funkcji uwikłanej w przestrzeni <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span></p>
+<p>Jeżeli <span class="math notranslate nohighlight">\(F\)</span> jest klasy <span class="math notranslate nohighlight">\(C_1\)</span> w obszarze <span class="math notranslate nohighlight">\(D\)</span></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(F(x_0, y_0, z_0) = 0\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{\partial F}{\partial z} \neq 0\)</span> w punkcie <span class="math notranslate nohighlight">\((x_0, y_0, z_0)\)</span></p></li>
+<li><p>istnieje funkcja <span class="math notranslate nohighlight">\(z = z(x,y)\)</span> taka, że <span class="math notranslate nohighlight">\(F(x, y, z(x,y)) = 0\)</span></p></li>
+</ul>
+</div>
+</section>
+<section id="plaszczyzna-styczna">
+<h3>płaszczyzna styczna<a class="headerlink" href="#plaszczyzna-styczna" title="Link to this heading">¶</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Ogólne róœnanie płaszczyzny to <span class="math notranslate nohighlight">\(Ax + By + Cz + D = 0\)</span></p>
+</div>
+<p>Szukana płaszczyzna ma równanie <span class="math notranslate nohighlight">\(A(x-x_0) + B(y-y_0) + C(z-z_0) = 0\)</span></p>
+<!-- jeśli się o kimś powie że nie jest zbyt prostopadły to raczej nie zrozumie-->
+<p>Równanie płaszczyzny ma postać <span class="math notranslate nohighlight">\(\frac{\partial f}{\partial x}(x- x_0) + \frac{\partial f}{\partial y}(y - y_0) + \frac{\partial f}{\partial z}(z - z_0) = 0\)</span></p>
 </section>
 </section>
 </section>
@@ -604,6 +641,8 @@ f(\vec{x}-\vec{h}) - f(\vec{x}) = L_{\vec{x}}(\vec{h}) + o(||h||)
 <li><a class="reference internal" href="#pojecie-rozniczkowalnosci">Pojęcie różniczkowalności</a></li>
 <li><a class="reference internal" href="#pochodna-funkcji-zlozonych">Pochodna funkcji złożonych</a></li>
 <li><a class="reference internal" href="#pochodna-kierunkowa">Pochodna kierunkowa</a></li>
+<li><a class="reference internal" href="#funkcje-uwiklane">Funkcje uwikłane</a></li>
+<li><a class="reference internal" href="#plaszczyzna-styczna">płaszczyzna styczna</a></li>
 </ul>
 </li>
 </ul>
@@ -677,7 +716,7 @@ f(\vec{x}-\vec{h}) - f(\vec{x}) = L_{\vec{x}}(\vec{h}) + o(||h||)
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/1c4510dbd069c50596a8c7321c190754a921b140>Mon Mar 25 15:16:47 2024 +0100 update 5.03.2024 (1c4510dbd069c50596a8c7321c190754a921b140)</a>
+<a href=https://github.com/gucio321/matematyka/commit/eba73b8a1bab10ad2fb30adfec46aa03e1046a71>Tue Mar 26 17:10:17 2024 +0100 eio: newest notes (eba73b8a1bab10ad2fb30adfec46aa03e1046a71)</a>
 </font>
 
   </body>
