@@ -591,6 +591,161 @@ f(\vec{x}-\vec{h}) - f(\vec{x}) = L_{\vec{x}}(\vec{h}) + o(||h||)
 <p>Szukana płaszczyzna ma równanie <span class="math notranslate nohighlight">\(A(x-x_0) + B(y-y_0) + C(z-z_0) = 0\)</span></p>
 <!-- jeśli się o kimś powie że nie jest zbyt prostopadły to raczej nie zrozumie-->
 <p>Równanie płaszczyzny ma postać <span class="math notranslate nohighlight">\(\frac{\partial f}{\partial x}(x- x_0) + \frac{\partial f}{\partial y}(y - y_0) + \frac{\partial f}{\partial z}(z - z_0) = 0\)</span></p>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/matematyka2/matematyka2_2024.04.09.md</span></code></em></p>
+<div class="admonition-pole-potencjalne admonition">
+<p class="admonition-title">Pole potencjalne</p>
+<p>pole nazywamy potecjalnym, jeżeli <span class="math notranslate nohighlight">\(\exists U(x) ~ grad U(x) = F(x)\)</span></p>
+</div>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/matematyka2/matematyka2_2024.04.15.md</span></code></em></p>
+</section>
+</section>
+<section id="rachunek-calkowy-wielu-zmiennych">
+<h2>Rachunek całkowy wielu zmiennych<a class="headerlink" href="#rachunek-calkowy-wielu-zmiennych" title="Link to this heading">¶</a></h2>
+<section id="calka-podwojna">
+<h3>Całka podwójna<a class="headerlink" href="#calka-podwojna" title="Link to this heading">¶</a></h3>
+<p>Niech <span class="math notranslate nohighlight">\(f = f(x,y)\)</span></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(F: P \to \mathbb{R} ~ P = [a,b] \times [c,d]\)</span></p></li>
+</ul>
+<p>Przypuśćmy, że mamy prostokąt (płąszczyznę) nad którą znajduje się wykres <span class="math notranslate nohighlight">\(f\)</span>.</p>
+<p>Załużmy, że musimy obliczyć objętość pod wykresem <span class="math notranslate nohighlight">\(f\)</span>.</p>
+<p>Tworzymy 3 sumy (jakd dla całek) dla prostopadłościanów skłądających się na wykres funkcji.
+(<span class="math notranslate nohighlight">\(s_n\)</span> dla najmniejszej wartości, <span class="math notranslate nohighlight">\(S_n\)</span> dla największej oraz <span class="math notranslate nohighlight">\(\sigma\)</span>)</p>
+<div class="admonition-definicja admonition">
+<p class="admonition-title">Definicja</p>
+<p>Jeżeli przy każdym, coraz drobniejszym, podziale prostokąta <span class="math notranslate nohighlight">\(P\)</span> ciąg <span class="math notranslate nohighlight">\(\sigma_n\)</span> dąży do tej samej granicy niezależnej od podziału, ani od wyboru punktów pośrednich, to granicę tę nazywamy
+całką podwójną funkcji <span class="math notranslate nohighlight">\(f\)</span> po prostokącie <span class="math notranslate nohighlight">\(P\)</span> i oznaczamy <span class="math notranslate nohighlight">\(\iint_P f(x,y) dxdy\)</span>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Całka <span class="math notranslate nohighlight">\(\iint_P f(x,y) dxdy\)</span> nie zawsze istnieje</p>
+</div>
+</section>
+<section id="calka-podwojna-nie-dla-prostokata">
+<h3>Całka podwójna nie dla prostokąta<a class="headerlink" href="#calka-podwojna-nie-dla-prostokata" title="Link to this heading">¶</a></h3>
+<p>jeżeli nie mamy prostokąßa, rozszeżamy naszą funkcję żeby była na prostokącie
+Przykłądowo: <span class="math notranslate nohighlight">\(f = \sqrt{1 - x^2 - y^2}\)</span></p>
+<div class="admonition-zbior-miary-0 admonition">
+<p class="admonition-title">zbiór miary 0</p>
+<p>Jeżeli zbiór <span class="math notranslate nohighlight">\(A\)</span> jest zbiorem miary 0, to całka podwójna po <span class="math notranslate nohighlight">\(A\)</span> jest równa 0.</p>
+<p>przykładowo:</p>
+<ul class="simple">
+<li><p>punkt jest miary 0 ponieważ można go pokryć prostokątem o dowolnie małym polu</p></li>
+</ul>
+</div>
+<div class="admonition-podstawowe-twierdzenie admonition">
+<p class="admonition-title">podstawowe twierdzenie</p>
+<p>Jeśli <span class="math notranslate nohighlight">\(F:P \to \mathbb{R}\)</span> i zbiór punktów nieciągłości <span class="math notranslate nohighlight">\(F\)</span> ma miarę 0,
+to <span class="math notranslate nohighlight">\(F\)</span> jest całkowalna na <span class="math notranslate nohighlight">\(P\)</span>.</p>
+</div>
+<p>Aby rozpoznać czy brzeg jest miary 0, można posłużyć się następującym
+twierdzeniem:</p>
+<div class="admonition-twierdzenie admonition">
+<p class="admonition-title">Twierdzenie</p>
+<p>jeżeli <span class="math notranslate nohighlight">\(f: \mathbb{R} \to \mathbb{R}\)</span> jest całkowalna, to jej wykres
+(krzywa) ma miarę 0.</p>
+</div>
+<p>Wniosek:</p>
+<blockquote>
+<div><p>Jeżeli <span class="math notranslate nohighlight">\(f: [a,b] \to \mathbb{R}\)</span> jest ciągła <span class="math notranslate nohighlight">\(\Rightarrow\)</span> jej wykres ma miarę 0.</p>
+</div></blockquote>
+<p>Na przykłądzie wykresu koła:</p>
+<ul class="simple">
+<li><p>brzeg to okrąg</p></li>
+<li><p>okrąg można traktować jako wykres funkcji</p></li>
+<li><p>wykres jest ciągły</p></li>
+<li><p>wykres jest miary 0</p></li>
+<li><p>funkcja jest całkowalna</p></li>
+</ul>
+<!--skoro jesteśmy już uspokojeni, to można iść... możecie iść gdzie kto chce, ja idę na obiad.-->
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/matematyka2/matematyka2_2024.04.16.md</span></code></em></p>
+</section>
+<section id="obliczanie-calki-podwojnej">
+<h3>obliczanie całki podwójnej<a class="headerlink" href="#obliczanie-calki-podwojnej" title="Link to this heading">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[
+\iint_P f(x,y)dxdy = \int_a^b \left[\int_c^d f dy\right]dx
+\]</div>
+<div class="admonition-obszar-normalny admonition">
+<p class="admonition-title">Obszar normalny</p>
+<p>D jest <strong>obszarem normalnym</strong> względem osi <span class="math notranslate nohighlight">\(X\)</span> jeżeli jet opisany w następujący
+sposób:</p>
+<div class="math notranslate nohighlight">
+\[
+x \in \left&lt;a,b\right&gt;
+y \int \left&lt;\phi_1, \phi_2\right&gt;
+\]</div>
+<p>gdzie <span class="math notranslate nohighlight">\(\phi_1, \phi_2\)</span> są są klasy <span class="math notranslate nohighlight">\(C^1\)</span>.</p>
+</div>
+<p>zmiana zmiennych:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\iint_D f(x,y)dxdy \\
+x = x(u,v) \\
+y = y(u,v) \\
+\iint_\Delta f(x(u,v),y(u,v)) j(u,v)dudv
+\end{split}\]</div>
+<p>gdzie <span class="math notranslate nohighlight">\(j(u,v)\)</span> to jakobian przekształcenia.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+j(u,v) = \begin{vmatrix}
+\frac{\partial x}{\partial u} &amp; \frac{\partial x}{\partial v} \\
+\frac{\partial y}{\partial u} &amp; \frac{\partial y}{\partial v}
+\end{vmatrix}
+\end{split}\]</div>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/matematyka2/matematyka2_2024.04.22.md</span></code></em></p>
+</section>
+<section id="calka-potrojna">
+<h3>Całka potrójna<a class="headerlink" href="#calka-potrojna" title="Link to this heading">¶</a></h3>
+<div class="admonition-obszar admonition">
+<p class="admonition-title">Obszar</p>
+<p>obszar jest normalny do płąszczyzny jeżeli</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+(x,y) \in D
+z \in \left&lt;\phi_1 (x,y), \phi_2(x,y)\right&gt; \\
+\end{split}\]</div>
+</div>
+<div class="admonition-calka-potrojna admonition">
+<p class="admonition-title">całka potrójna</p>
+<div class="math notranslate nohighlight">
+\[
+\iiint f(x,y,z) dx dy dz = \iint_D dx dy \int_{\phi_1}^{\phi_2} f(x,y,z) dz
+\]</div>
+</div>
+</section>
+<section id="zastosowania-calek">
+<h3>Zastosowania całek<a class="headerlink" href="#zastosowania-calek" title="Link to this heading">¶</a></h3>
+<p>pole: obszar płąski <span class="math notranslate nohighlight">\(D = \iint y_D = \int 1 dx dy\)</span></p>
+<p>Objętość bryły <span class="math notranslate nohighlight">\(\iiint 1 dx dy dz\)</span></p>
+<p>Pole powierzchni</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+P_{ij} = r_{ij} * cos (\phi_{ij}) \\
+cos (\phi_{ij}) = (f_x'^2 + f_y'^2 + 1)^{-\frac{1}{2}} \\
+P = \iint_D \sqrt{1 + f_x'^2 + f_y'^2+1} dx dy \\
+P = \iint_D ||\vec{N}|| dx dy
+\end{split}\]</div>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>krzywą <span class="math notranslate nohighlight">\(f(x)\)</span> obracamy wogół osi <span class="math notranslate nohighlight">\(OX\)</span>.</p>
+</div>
+<p>środek Ciężkości:</p>
+<p>Jeżeli środek ciężkości ma współżędne <span class="math notranslate nohighlight">\(\ksi, \eta\)</span>, to</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\xi = \frac{1}{|D|} \iint_D x dx dy \\
+\eta = \frac{1}{|D|} \iint_D y dx dy \\
+\end{split}\]</div>
+<!-- po co jest nam środek ciężkoći? Żeby dawać zadania, bo tak to wygląda jak zwykłę liczenie całki a jak się powie "Oblicz środek ciężkości" to brzmi to bliżej zastosowania czyli bardziej Górniczo-Hutniczo-->
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Objętość bryły jest równa polu powierzchni obszaru zakreślającego bryłę pomnożonemu przez drogę jaką przebył środek masy.</p>
+</div>
 </section>
 </section>
 </section>
@@ -643,6 +798,14 @@ f(\vec{x}-\vec{h}) - f(\vec{x}) = L_{\vec{x}}(\vec{h}) + o(||h||)
 <li><a class="reference internal" href="#pochodna-kierunkowa">Pochodna kierunkowa</a></li>
 <li><a class="reference internal" href="#funkcje-uwiklane">Funkcje uwikłane</a></li>
 <li><a class="reference internal" href="#plaszczyzna-styczna">płaszczyzna styczna</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#rachunek-calkowy-wielu-zmiennych">Rachunek całkowy wielu zmiennych</a><ul>
+<li><a class="reference internal" href="#calka-podwojna">Całka podwójna</a></li>
+<li><a class="reference internal" href="#calka-podwojna-nie-dla-prostokata">Całka podwójna nie dla prostokąta</a></li>
+<li><a class="reference internal" href="#obliczanie-calki-podwojnej">obliczanie całki podwójnej</a></li>
+<li><a class="reference internal" href="#calka-potrojna">Całka potrójna</a></li>
+<li><a class="reference internal" href="#zastosowania-calek">Zastosowania całek</a></li>
 </ul>
 </li>
 </ul>
@@ -716,7 +879,7 @@ f(\vec{x}-\vec{h}) - f(\vec{x}) = L_{\vec{x}}(\vec{h}) + o(||h||)
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/caf3f362818daa93128fb2eae258ac3bc8e1e981>Mon Apr 22 11:35:21 2024 +0200 terminy egzaminów lato 24 (caf3f362818daa93128fb2eae258ac3bc8e1e981)</a>
+<a href=https://github.com/gucio321/matematyka/commit/44bac25322406340f8ab68e860dd51e00126453e>Mon Apr 22 14:13:00 2024 +0200 notatki z analizy (44bac25322406340f8ab68e860dd51e00126453e)</a>
 </font>
 
   </body>

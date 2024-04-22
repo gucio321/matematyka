@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Przestrzenie Unitarne &#8212; Matematyka  - dokumentacja</title>
+    <title>obliczanie całki podwójnej &#8212; Matematyka  - dokumentacja</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
@@ -54,7 +54,7 @@
              accesskey="I">indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Przestrzenie Unitarne</a></li> 
+        <li class="nav-item nav-item-this"><a href="">obliczanie całki podwójnej</a></li> 
       </ul>
     </div>
     </div>
@@ -65,19 +65,39 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="przestrzenie-unitarne">
-<h1>Przestrzenie Unitarne<a class="headerlink" href="#przestrzenie-unitarne" title="Link to this heading">¶</a></h1>
-<p><strong>Przestrzeń unitarna</strong> to taka przestrzeń euklidesowa określona nad
-ciałęm liczb zespolonych.</p>
-<div class="admonition-iloczyn-hermitowski admonition">
-<p class="admonition-title">Iloczyn hermitowski</p>
-<p>Iloczyn skalarny zdefiniowany w następująćy sposób:</p>
+  <section id="obliczanie-calki-podwojnej">
+<h1>obliczanie całki podwójnej<a class="headerlink" href="#obliczanie-calki-podwojnej" title="Link to this heading">¶</a></h1>
+<div class="math notranslate nohighlight">
+\[
+\iint_P f(x,y)dxdy = \int_a^b \left[\int_c^d f dy\right]dx
+\]</div>
+<div class="admonition-obszar-normalny admonition">
+<p class="admonition-title">Obszar normalny</p>
+<p>D jest <strong>obszarem normalnym</strong> względem osi <span class="math notranslate nohighlight">\(X\)</span> jeżeli jet opisany w następujący
+sposób:</p>
+<div class="math notranslate nohighlight">
+\[
+x \in \left&lt;a,b\right&gt;
+y \int \left&lt;\phi_1, \phi_2\right&gt;
+\]</div>
+<p>gdzie <span class="math notranslate nohighlight">\(\phi_1, \phi_2\)</span> są są klasy <span class="math notranslate nohighlight">\(C^1\)</span>.</p>
+</div>
+<p>zmiana zmiennych:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-v_1 = [x_1, y_1, z_1] \quad v_2 = [x_2, y_2, z_2] \\
-\left&lt;v_1, v_2\right&gt; = x_1 * \bar{x_2} + y_1 * \bar{y_2} + z_1 * \bar{z_2}
+\iint_D f(x,y)dxdy \\
+x = x(u,v) \\
+y = y(u,v) \\
+\iint_\Delta f(x(u,v),y(u,v)) j(u,v)dudv
 \end{split}\]</div>
-</div>
+<p>gdzie <span class="math notranslate nohighlight">\(j(u,v)\)</span> to jakobian przekształcenia.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+j(u,v) = \begin{vmatrix}
+\frac{\partial x}{\partial u} &amp; \frac{\partial x}{\partial v} \\
+\frac{\partial y}{\partial u} &amp; \frac{\partial y}{\partial v}
+\end{vmatrix}
+\end{split}\]</div>
 </section>
 
 
@@ -128,7 +148,7 @@ v_1 = [x_1, y_1, z_1] \quad v_2 = [x_2, y_2, z_2] \\
              >indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Przestrzenie Unitarne</a></li> 
+        <li class="nav-item nav-item-this"><a href="">obliczanie całki podwójnej</a></li> 
       </ul>
     </div>
     </div>

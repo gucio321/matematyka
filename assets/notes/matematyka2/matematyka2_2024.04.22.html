@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Przestrzenie Unitarne &#8212; Matematyka  - dokumentacja</title>
+    <title>Całka potrójna &#8212; Matematyka  - dokumentacja</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
@@ -54,7 +54,7 @@
              accesskey="I">indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Przestrzenie Unitarne</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Całka potrójna</a></li> 
       </ul>
     </div>
     </div>
@@ -65,18 +65,52 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="przestrzenie-unitarne">
-<h1>Przestrzenie Unitarne<a class="headerlink" href="#przestrzenie-unitarne" title="Link to this heading">¶</a></h1>
-<p><strong>Przestrzeń unitarna</strong> to taka przestrzeń euklidesowa określona nad
-ciałęm liczb zespolonych.</p>
-<div class="admonition-iloczyn-hermitowski admonition">
-<p class="admonition-title">Iloczyn hermitowski</p>
-<p>Iloczyn skalarny zdefiniowany w następująćy sposób:</p>
+  <section id="calka-potrojna">
+<h1>Całka potrójna<a class="headerlink" href="#calka-potrojna" title="Link to this heading">¶</a></h1>
+<div class="admonition-obszar admonition">
+<p class="admonition-title">Obszar</p>
+<p>obszar jest normalny do płąszczyzny jeżeli</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-v_1 = [x_1, y_1, z_1] \quad v_2 = [x_2, y_2, z_2] \\
-\left&lt;v_1, v_2\right&gt; = x_1 * \bar{x_2} + y_1 * \bar{y_2} + z_1 * \bar{z_2}
+(x,y) \in D
+z \in \left&lt;\phi_1 (x,y), \phi_2(x,y)\right&gt; \\
 \end{split}\]</div>
+</div>
+<div class="admonition-calka-potrojna admonition">
+<p class="admonition-title">całka potrójna</p>
+<div class="math notranslate nohighlight">
+\[
+\iiint f(x,y,z) dx dy dz = \iint_D dx dy \int_{\phi_1}^{\phi_2} f(x,y,z) dz
+\]</div>
+</div>
+</section>
+<section id="zastosowania-calek">
+<h1>Zastosowania całek<a class="headerlink" href="#zastosowania-calek" title="Link to this heading">¶</a></h1>
+<p>pole: obszar płąski <span class="math notranslate nohighlight">\(D = \iint y_D = \int 1 dx dy\)</span></p>
+<p>Objętość bryły <span class="math notranslate nohighlight">\(\iiint 1 dx dy dz\)</span></p>
+<p>Pole powierzchni</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+P_{ij} = r_{ij} * cos (\phi_{ij}) \\
+cos (\phi_{ij}) = (f_x'^2 + f_y'^2 + 1)^{-\frac{1}{2}} \\
+P = \iint_D \sqrt{1 + f_x'^2 + f_y'^2+1} dx dy \\
+P = \iint_D ||\vec{N}|| dx dy
+\end{split}\]</div>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>krzywą <span class="math notranslate nohighlight">\(f(x)\)</span> obracamy wogół osi <span class="math notranslate nohighlight">\(OX\)</span>.</p>
+</div>
+<p>środek Ciężkości:</p>
+<p>Jeżeli środek ciężkości ma współżędne <span class="math notranslate nohighlight">\(\ksi, \eta\)</span>, to</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\xi = \frac{1}{|D|} \iint_D x dx dy \\
+\eta = \frac{1}{|D|} \iint_D y dx dy \\
+\end{split}\]</div>
+<!-- po co jest nam środek ciężkoći? Żeby dawać zadania, bo tak to wygląda jak zwykłę liczenie całki a jak się powie "Oblicz środek ciężkości" to brzmi to bliżej zastosowania czyli bardziej Górniczo-Hutniczo-->
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Objętość bryły jest równa polu powierzchni obszaru zakreślającego bryłę pomnożonemu przez drogę jaką przebył środek masy.</p>
 </div>
 </section>
 
@@ -86,7 +120,14 @@ v_1 = [x_1, y_1, z_1] \quad v_2 = [x_2, y_2, z_2] \\
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
+        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
+    <h3><a href="../../../index.html">Spis treści:</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Całka potrójna</a></li>
+<li><a class="reference internal" href="#zastosowania-calek">Zastosowania całek</a></li>
+</ul>
+
+  </div>
 <search id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Szybkie wyszukiwanie</h3>
     <div class="searchformwrapper">
@@ -128,7 +169,7 @@ v_1 = [x_1, y_1, z_1] \quad v_2 = [x_2, y_2, z_2] \\
              >indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Przestrzenie Unitarne</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Całka potrójna</a></li> 
       </ul>
     </div>
     </div>

@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Przestrzenie Unitarne &#8212; Matematyka  - dokumentacja</title>
+    <title>Rachunek całkowy wielu zmiennych &#8212; Matematyka  - dokumentacja</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
@@ -54,7 +54,7 @@
              accesskey="I">indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Przestrzenie Unitarne</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Rachunek całkowy wielu zmiennych</a></li> 
       </ul>
     </div>
     </div>
@@ -65,19 +65,66 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="przestrzenie-unitarne">
-<h1>Przestrzenie Unitarne<a class="headerlink" href="#przestrzenie-unitarne" title="Link to this heading">¶</a></h1>
-<p><strong>Przestrzeń unitarna</strong> to taka przestrzeń euklidesowa określona nad
-ciałęm liczb zespolonych.</p>
-<div class="admonition-iloczyn-hermitowski admonition">
-<p class="admonition-title">Iloczyn hermitowski</p>
-<p>Iloczyn skalarny zdefiniowany w następująćy sposób:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-v_1 = [x_1, y_1, z_1] \quad v_2 = [x_2, y_2, z_2] \\
-\left&lt;v_1, v_2\right&gt; = x_1 * \bar{x_2} + y_1 * \bar{y_2} + z_1 * \bar{z_2}
-\end{split}\]</div>
+  <section id="rachunek-calkowy-wielu-zmiennych">
+<h1>Rachunek całkowy wielu zmiennych<a class="headerlink" href="#rachunek-calkowy-wielu-zmiennych" title="Link to this heading">¶</a></h1>
+<section id="calka-podwojna">
+<h2>Całka podwójna<a class="headerlink" href="#calka-podwojna" title="Link to this heading">¶</a></h2>
+<p>Niech <span class="math notranslate nohighlight">\(f = f(x,y)\)</span></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(F: P \to \mathbb{R} ~ P = [a,b] \times [c,d]\)</span></p></li>
+</ul>
+<p>Przypuśćmy, że mamy prostokąt (płąszczyznę) nad którą znajduje się wykres <span class="math notranslate nohighlight">\(f\)</span>.</p>
+<p>Załużmy, że musimy obliczyć objętość pod wykresem <span class="math notranslate nohighlight">\(f\)</span>.</p>
+<p>Tworzymy 3 sumy (jakd dla całek) dla prostopadłościanów skłądających się na wykres funkcji.
+(<span class="math notranslate nohighlight">\(s_n\)</span> dla najmniejszej wartości, <span class="math notranslate nohighlight">\(S_n\)</span> dla największej oraz <span class="math notranslate nohighlight">\(\sigma\)</span>)</p>
+<div class="admonition-definicja admonition">
+<p class="admonition-title">Definicja</p>
+<p>Jeżeli przy każdym, coraz drobniejszym, podziale prostokąta <span class="math notranslate nohighlight">\(P\)</span> ciąg <span class="math notranslate nohighlight">\(\sigma_n\)</span> dąży do tej samej granicy niezależnej od podziału, ani od wyboru punktów pośrednich, to granicę tę nazywamy
+całką podwójną funkcji <span class="math notranslate nohighlight">\(f\)</span> po prostokącie <span class="math notranslate nohighlight">\(P\)</span> i oznaczamy <span class="math notranslate nohighlight">\(\iint_P f(x,y) dxdy\)</span>.</p>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Całka <span class="math notranslate nohighlight">\(\iint_P f(x,y) dxdy\)</span> nie zawsze istnieje</p>
+</div>
+</section>
+<section id="calka-podwojna-nie-dla-prostokata">
+<h2>Całka podwójna nie dla prostokąta<a class="headerlink" href="#calka-podwojna-nie-dla-prostokata" title="Link to this heading">¶</a></h2>
+<p>jeżeli nie mamy prostokąßa, rozszeżamy naszą funkcję żeby była na prostokącie
+Przykłądowo: <span class="math notranslate nohighlight">\(f = \sqrt{1 - x^2 - y^2}\)</span></p>
+<div class="admonition-zbior-miary-0 admonition">
+<p class="admonition-title">zbiór miary 0</p>
+<p>Jeżeli zbiór <span class="math notranslate nohighlight">\(A\)</span> jest zbiorem miary 0, to całka podwójna po <span class="math notranslate nohighlight">\(A\)</span> jest równa 0.</p>
+<p>przykładowo:</p>
+<ul class="simple">
+<li><p>punkt jest miary 0 ponieważ można go pokryć prostokątem o dowolnie małym polu</p></li>
+</ul>
+</div>
+<div class="admonition-podstawowe-twierdzenie admonition">
+<p class="admonition-title">podstawowe twierdzenie</p>
+<p>Jeśli <span class="math notranslate nohighlight">\(F:P \to \mathbb{R}\)</span> i zbiór punktów nieciągłości <span class="math notranslate nohighlight">\(F\)</span> ma miarę 0,
+to <span class="math notranslate nohighlight">\(F\)</span> jest całkowalna na <span class="math notranslate nohighlight">\(P\)</span>.</p>
+</div>
+<p>Aby rozpoznać czy brzeg jest miary 0, można posłużyć się następującym
+twierdzeniem:</p>
+<div class="admonition-twierdzenie admonition">
+<p class="admonition-title">Twierdzenie</p>
+<p>jeżeli <span class="math notranslate nohighlight">\(f: \mathbb{R} \to \mathbb{R}\)</span> jest całkowalna, to jej wykres
+(krzywa) ma miarę 0.</p>
+</div>
+<p>Wniosek:</p>
+<blockquote>
+<div><p>Jeżeli <span class="math notranslate nohighlight">\(f: [a,b] \to \mathbb{R}\)</span> jest ciągła <span class="math notranslate nohighlight">\(\Rightarrow\)</span> jej wykres ma miarę 0.</p>
+</div></blockquote>
+<p>Na przykłądzie wykresu koła:</p>
+<ul class="simple">
+<li><p>brzeg to okrąg</p></li>
+<li><p>okrąg można traktować jako wykres funkcji</p></li>
+<li><p>wykres jest ciągły</p></li>
+<li><p>wykres jest miary 0</p></li>
+<li><p>funkcja jest całkowalna</p></li>
+</ul>
+<!--skoro jesteśmy już uspokojeni, to można iść... możecie iść gdzie kto chce, ja idę na obiad.-->
+</section>
 </section>
 
 
@@ -86,7 +133,17 @@ v_1 = [x_1, y_1, z_1] \quad v_2 = [x_2, y_2, z_2] \\
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
+        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
+    <h3><a href="../../../index.html">Spis treści:</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Rachunek całkowy wielu zmiennych</a><ul>
+<li><a class="reference internal" href="#calka-podwojna">Całka podwójna</a></li>
+<li><a class="reference internal" href="#calka-podwojna-nie-dla-prostokata">Całka podwójna nie dla prostokąta</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
 <search id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Szybkie wyszukiwanie</h3>
     <div class="searchformwrapper">
@@ -128,7 +185,7 @@ v_1 = [x_1, y_1, z_1] \quad v_2 = [x_2, y_2, z_2] \\
              >indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Przestrzenie Unitarne</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Rachunek całkowy wielu zmiennych</a></li> 
       </ul>
     </div>
     </div>
