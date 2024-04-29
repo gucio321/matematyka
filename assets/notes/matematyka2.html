@@ -746,6 +746,79 @@ P = \iint_D ||\vec{N}|| dx dy
 <p class="admonition-title">Informacja</p>
 <p>Objętość bryły jest równa polu powierzchni obszaru zakreślającego bryłę pomnożonemu przez drogę jaką przebył środek masy.</p>
 </div>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/matematyka2/matematyka2_2024.04.29.md</span></code></em></p>
+<div class="math notranslate nohighlight">
+\[
+\psi = \frac{1}{|D|} \iint_D x dx dy
+\]</div>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Przykłąd:</p>
+<p>rozważmy pókole (fragment łuku)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+x = r cos \phi \\
+y = r sin \phi \\
+\phi \in [0, \pi] \\
+{x'}^2 = r^2 sin^2 \phi \\
+{y'}^2 = r^2 cos^2 \phi \\
+\sqrt{{x'}^2 + {y'}^2} = r \\
+\psi = \frac{1}{\pi r} \int_0^\pi r cos \phi r^2 d\phi = 0 
+\etha = \frac{2r}{\pi}
+\end{split}\]</div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>Pole powierzchni otrzymanej przez obrót łuku <code class="docutils literal notranslate"><span class="pre">ł</span></code> dookoła
+prostej <code class="docutils literal notranslate"><span class="pre">e</span></code> (łuk nie przecina prostej) wynosi długość łuku razy droga
+przebyta przez środek ciężkości łuku.</p>
+<div class="` docutils">
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>objętość takiego obszaru jest równe pole tego co się obraca razy droga środka ciężkości</p>
+</div>
+</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+4 \pi r^2 = 2 \pi \etha  \pi r \\
+2 r = \etha  \pi \\
+\etha = \frac{2r}{\pi} \\
+\end{split}\]</div>
+</div>
+<!--wyszło tak samo, oczywiście wyszło tak samo, dlatego że się nie pomyliłem, albo pomyliłem się dwa razy-->
+</section>
+</section>
+<section id="calki-krzywoliniowe">
+<h2>Całki Krzywoliniowe<a class="headerlink" href="#calki-krzywoliniowe" title="Link to this heading">¶</a></h2>
+<section id="calka-krzywoliniowa-nieskierowana">
+<h3>Całka krzywoliniowa nieskierowana<a class="headerlink" href="#calka-krzywoliniowa-nieskierowana" title="Link to this heading">¶</a></h3>
+<div class="admonition-definicja admonition">
+<p class="admonition-title">definicja</p>
+<p>jeżeli dla każdego podziału krzywej <code class="docutils literal notranslate"><span class="pre">k</span></code> suma <span class="math notranslate nohighlight">\(\sum f(N_i) \Delta s\)</span> dąży
+przy średnicy podziału do zera dąży do tej samej liczby niezależnej od punktów podziału
+e.t.c., to granicę tę nazywamy całką krzywolinią nieskierowaną i
+oznaczamy <span class="math notranslate nohighlight">\(\int_k f(s) ds\)</span></p>
+</div>
+<p>niech</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+x = x(s) \\
+y = y(s)
+\end{split}\]</div>
+<p>gdzie <span class="math notranslate nohighlight">\(s\)</span> to długość ktrzywej liczona od punktu a</p>
+</section>
+<section id="calka-krzywoliniowa-skierowana">
+<h3>Całka krzywoliniowa skierowana<a class="headerlink" href="#calka-krzywoliniowa-skierowana" title="Link to this heading">¶</a></h3>
+<p>w obszarze pewnej krzywej rozważmy pole wektorowe.</p>
+<div class="admonition-def admonition">
+<p class="admonition-title">def</p>
+<p>jeżeli … granicę tę nazywamy całką krzywoliniową skierowaną z pola <span class="math notranslate nohighlight">\(\vec{R}\)</span> wzdłuż krzywej <code class="docutils literal notranslate"><span class="pre">k</span></code> i oznaczamy <span class="math notranslate nohighlight">\(\int_k \vec{R} \cdot d\vec{s}\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\int p(x(t))\frac{dx}{dt} + q(y(t)) \frac{dy}{dt}
+\]</div>
+</div>
 </section>
 </section>
 </section>
@@ -806,6 +879,11 @@ P = \iint_D ||\vec{N}|| dx dy
 <li><a class="reference internal" href="#obliczanie-calki-podwojnej">obliczanie całki podwójnej</a></li>
 <li><a class="reference internal" href="#calka-potrojna">Całka potrójna</a></li>
 <li><a class="reference internal" href="#zastosowania-calek">Zastosowania całek</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#calki-krzywoliniowe">Całki Krzywoliniowe</a><ul>
+<li><a class="reference internal" href="#calka-krzywoliniowa-nieskierowana">Całka krzywoliniowa nieskierowana</a></li>
+<li><a class="reference internal" href="#calka-krzywoliniowa-skierowana">Całka krzywoliniowa skierowana</a></li>
 </ul>
 </li>
 </ul>
@@ -879,7 +957,7 @@ P = \iint_D ||\vec{N}|| dx dy
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/304c4d77582e612e5bd7a7b9ffa4e65fa7da7803>Tue Apr 23 14:23:59 2024 +0200 egzamin z matmy: terminy (304c4d77582e612e5bd7a7b9ffa4e65fa7da7803)</a>
+<a href=https://github.com/gucio321/matematyka/commit/81d5c0e36308114d33a27da7c9682fa854206abf>Mon Apr 29 12:59:31 2024 +0200 wykład z matematyki; poprawki błędów latex'a (81d5c0e36308114d33a27da7c9682fa854206abf)</a>
 </font>
 
   </body>

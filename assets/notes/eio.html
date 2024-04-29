@@ -746,7 +746,7 @@ polaryzację wewnątrz dielektryka.</p>
 </div>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\vec{D} = \epsilon_0 \eipsilon_r \vec{E} \\
+\vec{D} = \epsilon_0 \epsilon_r \vec{E} \\
 \vec{P} = \epsilon_0 (\epsilon_r - 1) \vec{E}
 \end{split}\]</div>
 </section>
@@ -833,7 +833,7 @@ U = \epsilon - I*r_w
 <p>suma prądów wpływających jest równa sumie pradóœ wypływających</p>
 <div class="math notranslate nohighlight">
 \[
-\Sum_{k=1}^{n} I_k = 0
+\sum_{k=1}^{n} I_k = 0
 \]</div>
 </section>
 <section id="prawo-prawo-dla-oczek">
@@ -841,7 +841,7 @@ U = \epsilon - I*r_w
 <p>algebraiczna suma sem i napięć w dowolnym obwodzie zamkniętym jest równa <span class="math notranslate nohighlight">\(0\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[
-\Sum_{i = 0}^{m} \epsilon_i + \Sum_{j=0}^{n} I_j * R_j = 0
+\sum_{i = 0}^{m} \epsilon_i + \sum_{j=0}^{n} I_j * R_j = 0
 \]</div>
 <hr class="docutils" />
 <p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/eio/eio_2024.04.18.md</span></code></em></p>
@@ -950,6 +950,116 @@ dB = \frac{\mu_0}{4 \pi} \frac{dl \times r}{r^3}
 <div class="admonition note">
 <p class="admonition-title">Informacja</p>
 <p>indukowany prąd ma taki kierunek, że przeciwstawia się zmianie, któ©a go wywołała</p>
+</div>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/eio/eio_2024.04.25.md</span></code></em></p>
+</section>
+<section id="indukcyjnosc-wzajemna-i-wlasna">
+<h3>Indukcyjność wzajemna i włąsna<a class="headerlink" href="#indukcyjnosc-wzajemna-i-wlasna" title="Link to this heading">¶</a></h3>
+<section id="transformator">
+<h4>Transformator<a class="headerlink" href="#transformator" title="Link to this heading">¶</a></h4>
+<p><strong>Transformator</strong> - dwie cewki nawinięte na jeden zwój</p>
+<div class="math notranslate nohighlight">
+\[
+\epsilon_2 = -\frac{d \Phi}{dt}= -L \frac{dI}{dt}
+\]</div>
+<p><span class="math notranslate nohighlight">\(L\)</span> to indukcyjność <span class="math notranslate nohighlight">\([L] = 1 henr\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\varepsilon_2}{\varepsilon_1} = \frac{N_2}{N_1}
+\]</div>
+<p>Rozważmy pojedynczą cewkę o ilości zwojów <span class="math notranslate nohighlight">\(N\)</span> i prądzie <span class="math notranslate nohighlight">\(I\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Phi = \frac{\mu_0 i N s}{l} \\
+\varepsilon = N \frac{d \Phi}{dt} \\
+\varepsilon = N \frac{d}{dt} \left( \frac{\mu_0 i N s}{l} \right) \\
+\varepsilon = L * \frac{dI}{dt} \\
+L = \frac{\mu_0 N^2 s}{l}
+\\
+dW = \varepsilon_s dq \\
+W = \frac{L I_0^2}{2}
+\\
+\rho_B = \frac{B^2}{2 \mu_0} \\
+\end{split}\]</div>
+</section>
+</section>
+</section>
+<section id="magnetyczne-wlasnosci-materii">
+<h2>Magnetyczne własności materii<a class="headerlink" href="#magnetyczne-wlasnosci-materii" title="Link to this heading">¶</a></h2>
+<section id="pojecie-monopola-magnetycznego">
+<h3>Pojęcie monopola magnetycznego<a class="headerlink" href="#pojecie-monopola-magnetycznego" title="Link to this heading">¶</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Nie istnieje monopol magnetyczny</p>
+</div>
+</section>
+<section id="prawo-gaussa-dla-magnetyzmu">
+<h3>Prawo gaussa dla magnetyzmu<a class="headerlink" href="#prawo-gaussa-dla-magnetyzmu" title="Link to this heading">¶</a></h3>
+<p>Strumień pola magnetycznego przenikający przez dowolną powierzchnię zamkniętą
+daje zawsze <span class="math notranslate nohighlight">\(0\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\oint \vec{B} \cdot d\vec{R} = 0 \\
+div \vec{B} = 0
+\end{split}\]</div>
+</section>
+<section id="podstawowe-rodzaje-materialow-agneteycznych">
+<h3>Podstawowe rodzaje materiałów agneteycznych<a class="headerlink" href="#podstawowe-rodzaje-materialow-agneteycznych" title="Link to this heading">¶</a></h3>
+<section id="paramagnetyki">
+<h4>Paramagnetyki<a class="headerlink" href="#paramagnetyki" title="Link to this heading">¶</a></h4>
+<div class="admonition-namagnesowanie admonition">
+<p class="admonition-title">namagnesowanie</p>
+<p>namagnesowanie to wypadkowe pole namagnesowanego ciała
+$<span class="math notranslate nohighlight">\(
+M = \frac{\mu_B}{V}
+\)</span>$</p>
+</div>
+<div class="admonition-prawo-curie admonition">
+<p class="admonition-title">Prawo Curie</p>
+<p>zależność <span class="math notranslate nohighlight">\(\frac{M}{M_{max}}(\frac{B}{T})\)</span> jest liniowa w stosunkowo dużym zakresie pola</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>paramagnetyki są magnesami jedynie pod działąniem zewnętrznego pola</p>
+</div>
+</section>
+<section id="diamagnetyki">
+<h4>Diamagnetyki<a class="headerlink" href="#diamagnetyki" title="Link to this heading">¶</a></h4>
+<p>materiały, któ©ych atomy nie mają włąsnych elementów dimagnetycznych.</p>
+</section>
+<section id="ferromagnetyki">
+<h4>Ferromagnetyki<a class="headerlink" href="#ferromagnetyki" title="Link to this heading">¶</a></h4>
+</section>
+</section>
+<section id="wektory-magnetyczne">
+<h3>3 wektory magnetyczne<a class="headerlink" href="#wektory-magnetyczne" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(B\)</span> -indukcja magnetyczna</p></li>
+<li><p><span class="math notranslate nohighlight">\(M\)</span>  -namaganesowanie</p></li>
+<li><p><span class="math notranslate nohighlight">\(H\)</span> - natężenie pola magnetycznego</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+H = \frac{B}{\mu_0} - M
+\]</div>
+<div class="admonition seealso">
+<p class="admonition-title">Zobacz także</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+D = \epsilon_0 E + P \\
+\end{split}\]</div>
+</div>
+<div class="math notranslate nohighlight">
+\[
+B = \mu_0 \kappa H
+\]</div>
+<div class="admonition seealso">
+<p class="admonition-title">Zobacz także</p>
+<div class="math notranslate nohighlight">
+\[
+D = \epsilon_0 \epsilon_r E
+\]</div>
 </div>
 </section>
 </section>
@@ -1071,6 +1181,22 @@ dB = \frac{\mu_0}{4 \pi} \frac{dl \times r}{r^3}
 <li><a class="reference internal" href="#oddzialywanie-magnetyczne-dwoch-przewodnikow-z-pradem">Oddziaływanie magnetyczne dwóch przewodników z prądem</a></li>
 <li><a class="reference internal" href="#prawo-biot-savarta">Prawo Biot-Savarta</a></li>
 <li><a class="reference internal" href="#prawo-lentza">Prawo Lentza</a></li>
+<li><a class="reference internal" href="#indukcyjnosc-wzajemna-i-wlasna">Indukcyjność wzajemna i włąsna</a><ul>
+<li><a class="reference internal" href="#transformator">Transformator</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#magnetyczne-wlasnosci-materii">Magnetyczne własności materii</a><ul>
+<li><a class="reference internal" href="#pojecie-monopola-magnetycznego">Pojęcie monopola magnetycznego</a></li>
+<li><a class="reference internal" href="#prawo-gaussa-dla-magnetyzmu">Prawo gaussa dla magnetyzmu</a></li>
+<li><a class="reference internal" href="#podstawowe-rodzaje-materialow-agneteycznych">Podstawowe rodzaje materiałów agneteycznych</a><ul>
+<li><a class="reference internal" href="#paramagnetyki">Paramagnetyki</a></li>
+<li><a class="reference internal" href="#diamagnetyki">Diamagnetyki</a></li>
+<li><a class="reference internal" href="#ferromagnetyki">Ferromagnetyki</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#wektory-magnetyczne">3 wektory magnetyczne</a></li>
 </ul>
 </li>
 </ul>
@@ -1144,7 +1270,7 @@ dB = \frac{\mu_0}{4 \pi} \frac{dl \times r}{r^3}
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/304c4d77582e612e5bd7a7b9ffa4e65fa7da7803>Tue Apr 23 14:23:59 2024 +0200 egzamin z matmy: terminy (304c4d77582e612e5bd7a7b9ffa4e65fa7da7803)</a>
+<a href=https://github.com/gucio321/matematyka/commit/81d5c0e36308114d33a27da7c9682fa854206abf>Mon Apr 29 12:59:31 2024 +0200 wykład z matematyki; poprawki błędów latex'a (81d5c0e36308114d33a27da7c9682fa854206abf)</a>
 </font>
 
   </body>
