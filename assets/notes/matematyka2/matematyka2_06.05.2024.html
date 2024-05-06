@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>&lt;no title&gt; &#8212; Matematyka  - dokumentacja</title>
+    <title>Całka powierzchniowa niezorientowana &#8212; Matematyka  - dokumentacja</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
@@ -54,7 +54,7 @@
              accesskey="I">indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">&lt;no title&gt;</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Całka powierzchniowa niezorientowana</a></li> 
       </ul>
     </div>
     </div>
@@ -65,10 +65,38 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="admonition-pole-potencjalne admonition">
-<p class="admonition-title">Pole potencjalne</p>
-<p>pole nazywamy potecjalnym, jeżeli <span class="math notranslate nohighlight">\(\exists U(x) ~ grad U(x) = F(x)\)</span></p>
+  <!--21.05.2024 - sala w łączniku A3-A4 -->
+<section id="calka-powierzchniowa-niezorientowana">
+<h1>Całka powierzchniowa niezorientowana<a class="headerlink" href="#calka-powierzchniowa-niezorientowana" title="Link to this heading">¶</a></h1>
+<p>i$<span class="math notranslate nohighlight">\(
+x = x(u,v)\\
+y = y(u,v) \\
+z = z(uxv \\
+u,v, \in \Delta
+\)</span>$)</p>
+<div class="admonition-wektor-normalny admonition">
+<p class="admonition-title">wektor normalny</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{V} = det \begin{bmatrix}
+\vec{i} &amp; \vec{j} &amp; \vec{k} \\
+\frac{\partial x}{\partial u} &amp; \frac{\partial y}{\partial u} &amp; \frac{\partial z}{\partial u} \\
+\frac{\partial x}{\partial v} &amp; \frac{\partial y}{\partial v} &amp; \frac{\partial z}{\partial v} \\
+\end{bmatrix}
+\end{split}\]</div>
+<p>W szczegulnym  przypadku, kiedy obszar jest opisany wykresem funkcji</p>
+<div class="math notranslate nohighlight">
+\[
+u = x
+v = y
+z = f(x,y)
+\]</div>
 </div>
+<div class="math notranslate nohighlight">
+\[
+\iint_S f(x,y,z) ds = \iint_S f(x(u,v), y(u,v), z(u,v)) \sqrt{A^2 + B^2 + C^2} dudv
+\]</div>
+</section>
 
 
             <div class="clearer"></div>
@@ -118,7 +146,7 @@
              >indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">&lt;no title&gt;</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Całka powierzchniowa niezorientowana</a></li> 
       </ul>
     </div>
     </div>
