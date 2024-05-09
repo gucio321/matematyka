@@ -1061,6 +1061,133 @@ B = \mu_0 \kappa H
 D = \epsilon_0 \epsilon_r E
 \]</div>
 </div>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/eio/eio_2024.04.30.md</span></code></em></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\vec{B}\)</span> wiąże się ze wzystkimi prądami, skłądowa normalna jest ciągłą</p></li>
+<li><p><span class="math notranslate nohighlight">\(\vec{H}\)</span> wiąże się tylko z prądami rzeczywistymi</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+M = (\kappa - 1) \vec{H}\\
+\chi \~ \kappa -1
+\end{split}\]</div>
+<p><span class="math notranslate nohighlight">\(\chi\)</span> to podatność magnetyczna$</p>
+</section>
+</section>
+<section id="drgania-elektromagnetyczne-i-prad-przemienny">
+<h2>Drgania elektromagnetyczne i prąd przemienny<a class="headerlink" href="#drgania-elektromagnetyczne-i-prad-przemienny" title="Link to this heading">¶</a></h2>
+<section id="obwod-rc">
+<h3>Obwód RC<a class="headerlink" href="#obwod-rc" title="Link to this heading">¶</a></h3>
+<p>w obwodzie A łaczymy źródło SEM z kondensatorem i opornikiem.
+W obwodzie B odłączamy SEM.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\epsilon = I^2 R dt + d\left(\frac{Q^2}{C}\right) \\
+Q(t) = C* E (-e^{..})
+\end{split}\]</div>
+<p>w sytuacji B następuje rozładowanie kondensatora.</p>
+</section>
+<section id="obwod-rl">
+<h3>Obwód RL<a class="headerlink" href="#obwod-rl" title="Link to this heading">¶</a></h3>
+<p>zamiast kondensatora mamy cewkę</p>
+</section>
+</section>
+<section id="obwod-lc">
+<h2>Obwód LC<a class="headerlink" href="#obwod-lc" title="Link to this heading">¶</a></h2>
+<p>rozważmy obwód złożony wyłącznie z połączonych cewki i kondensatora.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\frac{Q}{C} + L \frac{d^2 Q}{dt^2} = 0 \\
+\frac{d^2 Q}{dt^2} + \frac{1}{LC} = 0
+\omega = \frac{1}{\sqrt{LC}}
+\end{split}\]</div>
+</section>
+<section id="obwod-rlc-drgania-em-tlumione">
+<h2>Obwód RLC (Drgania EM tłumione)<a class="headerlink" href="#obwod-rlc-drgania-em-tlumione" title="Link to this heading">¶</a></h2>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/eio/eio_2024.05.07.md</span></code></em></p>
+<p>Impedancja Kondensatora: <span class="math notranslate nohighlight">\(\hat{Z_C} = \frac{1}{j \omega C} = - \frac{j}{\omega C}\)</span>
+Impedancja cewki <span class="math notranslate nohighlight">\(\hat{Z_L} = j \omega L\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\hat{Z} = Z e^{j \omega}
+\hat{I} = \frac{\hat{\epsilon}}{\hat{R}}O
+\]</div>
+<section id="moc-w-obowodach-pradu-przemiennego">
+<h3>Moc w obowodach prądu przemiennego<a class="headerlink" href="#moc-w-obowodach-pradu-przemiennego" title="Link to this heading">¶</a></h3>
+<section id="natezenie-i-napiecie-skuteczne">
+<h4>Natężenie i napięcie skuteczne<a class="headerlink" href="#natezenie-i-napiecie-skuteczne" title="Link to this heading">¶</a></h4>
+<p>Natężeniem skutecznym nazywamy takie natężenie prądu stałego, któ©y wydziela w tym
+samym czasie tę samą ilość energii co dany prąd przemienny.</p>
+<div class="math notranslate nohighlight">
+\[
+I_{sk} = \frac{I_m}{\sqrt{2}}
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+dW = U_0 sin(\omega t) I  cos(\omega t + \phi) dt \\
+W = \int_0^\pi dW = \frac{1}{2} U_0 I_0 cos \phi t \\
+P = U_0 I_0 cos \phi
+\end{split}\]</div>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/eio/eio_2024.05.09.md</span></code></em></p>
+</section>
+</section>
+<section id="ruch-ladunkow-w-jednorodnym-polu-elektrycznym">
+<h3>Ruch łądunków w jednorodnym polu elektrycznym<a class="headerlink" href="#ruch-ladunkow-w-jednorodnym-polu-elektrycznym" title="Link to this heading">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\begin{split}
+m \frac{d^2 r }{dt^2} = q \vec{E} \\\end{split}\\\begin{split}\begin{matrix}
+m \frac{d^2 x}{dt^2} = q E &amp; m \frac{d^2 y}{dt^2} = 0 &amp; m \frac{d^2 z}{dt^2} = 0 \\
+v_x = \frac{q E}{m} t + v_0 cos \alpha &amp; v_y = v_0 sin \alpha &amp; v_z = 0 \\
+x = \frac{q E}{2m} t^2 + v_0 cos \alpha t &amp; y = v_0 sin \alpha t &amp; z = 0 \\
+\end{matrix}
+\end{split}\end{aligned}\end{align} \]</div>
+</section>
+<section id="ruch-ladunkow-w-jednorodnym-polu-magnetycznym">
+<h3>Ruch ładunków w jednorodnym polu magnetycznym<a class="headerlink" href="#ruch-ladunkow-w-jednorodnym-polu-magnetycznym" title="Link to this heading">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+F = q v \times B \\
+B = [B, 0, 0] \\
+\end{split}\]</div>
+</section>
+<section id="ruch-ladunkow-w-prostopadlych-jednorodnych-polach-e-i-b">
+<h3>Ruch łądunków w prostopadłych jednorodnych polach E i B<a class="headerlink" href="#ruch-ladunkow-w-prostopadlych-jednorodnych-polach-e-i-b" title="Link to this heading">¶</a></h3>
+</section>
+<section id="rownania-maxwella-w-prozni-w-postaci-calkowej">
+<h3>Równania Maxwella w próżni w postaci całkowej<a class="headerlink" href="#rownania-maxwella-w-prozni-w-postaci-calkowej" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>prawo Gaussa dla elektrycznośći <span class="math notranslate nohighlight">\(\oint_S E s = \frac{Q}{\varepsilon_0}\)</span></p></li>
+<li><p>prawo Gaussa dla magnetyzmu <span class="math notranslate nohighlight">\(\oint_S B s = 0\)</span></p></li>
+<li><p>prawo Faradaya dla elektryczności <span class="math notranslate nohighlight">\(\oint_L E dl = - \frac{d \Phi_B}{dt}\)</span></p></li>
+<li><p>prawo Ampera dla magnetyzmu <span class="math notranslate nohighlight">\(\oint_L B dl = \mu_0 I + \mu_0 \varepsilon_0 \frac{d \Phi_E}{dt}\)</span></p></li>
+</ol>
+</section>
+<section id="rownania-maxwella-w-prozni-w-postaci-rozniczkowej">
+<h3>Równania Maxwell’a w próżni w postaci różniczkowej<a class="headerlink" href="#rownania-maxwella-w-prozni-w-postaci-rozniczkowej" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(div E = \frac{\rho}{\varepsilon_0}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(div B = 0\)</span> (pole bezźródłowe)</p></li>
+<li><p><span class="math notranslate nohighlight">\(rot E = - \frac{d B}{dt}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(rot B = \mu_0 J + \mu_0 \varepsilon_0 \frac{d E}{dt}\)</span></p></li>
+</ol>
+</section>
+<section id="rownania-maxwella-w-ogolnej-postaci-rozniczkowej">
+<h3>Równania Maxwella w ogólnej postaci różniczkowej<a class="headerlink" href="#rownania-maxwella-w-ogolnej-postaci-rozniczkowej" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(div D = \rho\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(div B = 0\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(rot E = - \frac{d B}{dt}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(rot H = J + \frac{d D}{dt}\)</span></p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+D = \epsilon_0 \epsilon_r E \\
+B = \mu_0 \kappa_m H \\
+J = \sigma E
+\end{split}\]</div>
 </section>
 </section>
 </section>
@@ -1199,6 +1326,25 @@ D = \epsilon_0 \epsilon_r E
 <li><a class="reference internal" href="#wektory-magnetyczne">3 wektory magnetyczne</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#drgania-elektromagnetyczne-i-prad-przemienny">Drgania elektromagnetyczne i prąd przemienny</a><ul>
+<li><a class="reference internal" href="#obwod-rc">Obwód RC</a></li>
+<li><a class="reference internal" href="#obwod-rl">Obwód RL</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#obwod-lc">Obwód LC</a></li>
+<li><a class="reference internal" href="#obwod-rlc-drgania-em-tlumione">Obwód RLC (Drgania EM tłumione)</a><ul>
+<li><a class="reference internal" href="#moc-w-obowodach-pradu-przemiennego">Moc w obowodach prądu przemiennego</a><ul>
+<li><a class="reference internal" href="#natezenie-i-napiecie-skuteczne">Natężenie i napięcie skuteczne</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#ruch-ladunkow-w-jednorodnym-polu-elektrycznym">Ruch łądunków w jednorodnym polu elektrycznym</a></li>
+<li><a class="reference internal" href="#ruch-ladunkow-w-jednorodnym-polu-magnetycznym">Ruch ładunków w jednorodnym polu magnetycznym</a></li>
+<li><a class="reference internal" href="#ruch-ladunkow-w-prostopadlych-jednorodnych-polach-e-i-b">Ruch łądunków w prostopadłych jednorodnych polach E i B</a></li>
+<li><a class="reference internal" href="#rownania-maxwella-w-prozni-w-postaci-calkowej">Równania Maxwella w próżni w postaci całkowej</a></li>
+<li><a class="reference internal" href="#rownania-maxwella-w-prozni-w-postaci-rozniczkowej">Równania Maxwell’a w próżni w postaci różniczkowej</a></li>
+<li><a class="reference internal" href="#rownania-maxwella-w-ogolnej-postaci-rozniczkowej">Równania Maxwella w ogólnej postaci różniczkowej</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1270,7 +1416,7 @@ D = \epsilon_0 \epsilon_r E
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/9d3bb601a7cef01a656192707d51f1a5bc177f51>Mon May 6 12:50:05 2024 +0200 update matmy (9d3bb601a7cef01a656192707d51f1a5bc177f51)</a>
+<a href=https://github.com/gucio321/matematyka/commit/4a6f613886c092f67e83958765fdd3850f152f8e>Thu May 9 09:28:36 2024 +0200 eio: róœnania maxwella (4a6f613886c092f67e83958765fdd3850f152f8e)</a>
 </font>
 
   </body>
