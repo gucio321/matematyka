@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Prawo Ampera &#8212; Matematyka  - dokumentacja</title>
+    <title>Wektor Pointing’a &#8212; Matematyka  - dokumentacja</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
@@ -54,7 +54,7 @@
              accesskey="I">indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Prawo Ampera</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Wektor Pointing’a</a></li> 
       </ul>
     </div>
     </div>
@@ -65,62 +65,28 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="prawo-ampera">
-<h1>Prawo Ampera<a class="headerlink" href="#prawo-ampera" title="Link to this heading">¶</a></h1>
+  <section id="wektor-pointinga">
+<h1>Wektor Pointing’a<a class="headerlink" href="#wektor-pointinga" title="Link to this heading">¶</a></h1>
 <div class="math notranslate nohighlight">
 \[
-\oint \vec{B} \cdot d\vec{l} = \mu_0 I_{\text{prz}} = \mu_0 I
+\vec{S} = \vec{E} \times \vec{H}
 \]</div>
-<p>gdzie:</p>
+<p>(H to natężenie magnetyczne)</p>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(I\)</span> całkowite natężenie prądu objęte konturem całkowania</p></li>
-<li><p><span class="math notranslate nohighlight">\(\mi_0 = 4 \pi * 10^{-7} \frac{T*m}{a}\)</span> przenikalność magnetyczna próżni</p></li>
+<li><p>wektor jest róœnoleŋły do kierunku propagacji</p></li>
+<li><p>jednostka to <span class="math notranslate nohighlight">\(\frac{W}{m^2}\)</span> (tzw. powierzchniowa gęstość mocy)</p></li>
 </ul>
+</section>
+<section id="zachowanie-sie-fali-elektromagnetycznej-na-granicy-dwoch-osrodkow">
+<h1>Zachowanie się fali elektromagnetycznej na granicy dwóch ośrodków<a class="headerlink" href="#zachowanie-sie-fali-elektromagnetycznej-na-granicy-dwoch-osrodkow" title="Link to this heading">¶</a></h1>
+</section>
+<section id="wspolczynnik-zalamania">
+<h1>współczynnik załamania<a class="headerlink" href="#wspolczynnik-zalamania" title="Link to this heading">¶</a></h1>
 <div class="math notranslate nohighlight">
 \[
-B = \frac{\mu_0}{2 \pi} \frac{I}{r}
+n = \frac{c}{v}
 \]</div>
-<div class="admonition tip">
-<p class="admonition-title">Wskazówka</p>
-<p>zwojnica = selenoid = cewka</p>
-</div>
-<p>rozważmy zwojnicę o <span class="math notranslate nohighlight">\(N\)</span> zwojach:</p>
-<p>rozpatrzmy prostokąt przez jeden bok selenoidu.</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\oint B dl = B a \\
-B a = \mu_0 k i \\
-n = \frac{N}{L} \text{koncentracja zwojów} \\
-k = n * a \\
-B \cancel{a} = \mu_0 n \cancel{a} \\
-B = \mu_0 n i
-\\
-\\
-\Phi_B = B S = \mu_0 n i S = \mu_0 \frac{N}{L} i S
-\end{split}\]</div>
-<section id="oddzialywanie-magnetyczne-dwoch-przewodnikow-z-pradem">
-<h2>Oddziaływanie magnetyczne dwóch przewodników z prądem<a class="headerlink" href="#oddzialywanie-magnetyczne-dwoch-przewodnikow-z-pradem" title="Link to this heading">¶</a></h2>
-<div class="math notranslate nohighlight">
-\[
-F = \frac{\mu_0}{2 \pi} \frac{I_1 I_2} \frac{a}{d}
-\]</div>
-</section>
-<section id="prawo-biot-savarta">
-<h2>Prawo Biot-Savarta<a class="headerlink" href="#prawo-biot-savarta" title="Link to this heading">¶</a></h2>
-<p>przewód dzielimny na elementy prądowe <span class="math notranslate nohighlight">\(I dl\)</span>.
-Konstruujey wektor wodzący <span class="math notranslate nohighlight">\(r\)</span>.</p>
-<div class="math notranslate nohighlight">
-\[
-dB = \frac{\mu_0}{4 \pi} \frac{dl \times r}{r^3}
-\]</div>
-</section>
-<section id="prawo-lentza">
-<h2>Prawo Lentza<a class="headerlink" href="#prawo-lentza" title="Link to this heading">¶</a></h2>
-<div class="admonition note">
-<p class="admonition-title">Informacja</p>
-<p>indukowany prąd ma taki kierunek, że przeciwstawia się zmianie, któ©a go wywołała</p>
-</div>
-</section>
+<p><span class="math notranslate nohighlight">\(v &lt; c  \Rightarrow n \geq 1\)</span></p>
 </section>
 
 
@@ -132,12 +98,9 @@ dB = \frac{\mu_0}{4 \pi} \frac{dl \times r}{r^3}
         <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
     <h3><a href="../../../index.html">Spis treści:</a></h3>
     <ul>
-<li><a class="reference internal" href="#">Prawo Ampera</a><ul>
-<li><a class="reference internal" href="#oddzialywanie-magnetyczne-dwoch-przewodnikow-z-pradem">Oddziaływanie magnetyczne dwóch przewodników z prądem</a></li>
-<li><a class="reference internal" href="#prawo-biot-savarta">Prawo Biot-Savarta</a></li>
-<li><a class="reference internal" href="#prawo-lentza">Prawo Lentza</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#">Wektor Pointing’a</a></li>
+<li><a class="reference internal" href="#zachowanie-sie-fali-elektromagnetycznej-na-granicy-dwoch-osrodkow">Zachowanie się fali elektromagnetycznej na granicy dwóch ośrodków</a></li>
+<li><a class="reference internal" href="#wspolczynnik-zalamania">współczynnik załamania</a></li>
 </ul>
 
   </div>
@@ -182,7 +145,7 @@ dB = \frac{\mu_0}{4 \pi} \frac{dl \times r}{r^3}
              >indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Prawo Ampera</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Wektor Pointing’a</a></li> 
       </ul>
     </div>
     </div>
