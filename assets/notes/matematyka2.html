@@ -904,6 +904,68 @@ Pole jest ptencjalne (gradientowe) jeżeli</p>
 </div>
 <!--moglibyśmy zrobić np. $S_A$ i $S_B$, ale państwu już pewnie nie, ale mi sb się źle kojarzy-->
 <p>Współ©zędne sferyczne: przyjhmujemy <span class="math notranslate nohighlight">\(\phi\)</span> od osi <span class="math notranslate nohighlight">\(OX\)</span> i <span class="math notranslate nohighlight">\(\theta\)</span> od osi <span class="math notranslate nohighlight">\(OZ\)</span>.</p>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/matematyka2/matematyka2_2024.05.20.md</span></code></em></p>
+<p>pole E nazywamy selenoidalnym, jeżeli <span class="math notranslate nohighlight">\(rot G = E\)</span></p>
+<p>4 warunki są róœnoważne:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\iint_S E \cdot dS = 0\)</span> dla dowolnej powierzchni zamkniętej S</p></li>
+<li><p><span class="math notranslate nohighlight">\(\iint_S E \cdot dS\)</span> zależy tylko od konturu s oraz od orientacji powierzchni S</p></li>
+<li><p>pole E jest selenoidalne</p></li>
+<li><p><span class="math notranslate nohighlight">\(div E = 0\)</span></p></li>
+</ul>
+<div class="admonition-dygresja admonition">
+<p class="admonition-title">dygresja</p>
+<p>solen - <span class="math notranslate nohighlight">\(\sigma o\lambda\epsilon\ni\)</span> - rurka
+$$</p>
+</div>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/matematyka2/matematyka2_2024.06.03.md</span></code></em></p>
+<p>kryterium sylfwstra (aka kryterium sylwestera)</p>
+<ul class="simple">
+<li><p>jeżeli oba wyznaczniki są dodatnie, to w punkcie znajduje się minimum</p></li>
+<li><p>jeżeli oba wyznaczniki są ujemne, to w punkcie znajduje się maksimum</p></li>
+<li><p>jeżeli wyznacznik jest dodatni, a drugi ujemny, to punkt jest punktem siodłowym</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Przykłąd</p>
+<p>obszar D: <span class="math notranslate nohighlight">\(x \in \left(0, 2 \pi\right) \land y \in \left(0, 2 \pi\right) \land x + y = 2 \pi\)</span>
+<span class="math notranslate nohighlight">\(u(x,y) = \sin x + \sin y - \sin(x+y)\)</span></p>
+<p>Etap 1
+poszukać punktóœ podejżanych</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\begin{split}
+u'_x = \cos x - \cos(x+y) = 0 \\
+u'_y = \cos y - \cos(x+y) = 0 \\\end{split}\\\begin{split}P = \left(\frac{2}{3} \pi, \frac{2}{3} \pi \right) \\\end{split}\\\begin{split}u''_{x} = -\sin x + \sin(x+y) \\
+u''_{y} = -\sin y + \sin(x+y) \\
+u''_{xy} = \cos(x+y) - \cos(x+y) = 0 \\\end{split}\\\begin{split}\begin{bmatrix}
+u''_{xx} &amp; u''_{xy} \\
+u''_{yx} &amp; u''_{yy}
+\end{bmatrix}
+\end{split}\end{aligned}\end{align} \]</div>
+<p>ogólnie wychodzi na to że jest maksimum lokalne ponieważ <span class="math notranslate nohighlight">\(W_1\)</span> i <span class="math notranslate nohighlight">\(W_2\)</span> są ujemne.</p>
+<p>etap 2
+sprawdzić co się dzieje na brzegu</p>
+<p><span class="math notranslate nohighlight">\(y = 0, x \in (0, 2 \pi)\)</span></p>
+<p><span class="math notranslate nohighlight">\(u(x) = sin(x) - sin(x) = 0\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+x = 0, y \in (0, 2 \pi) \\
+u(y) = 0 + sin(y) - sin(y) = 0
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\begin{split}
+x \in \left(0, 2\pi\right) \land x + y = 2 \pi \Rightarrow y = 2\pi - x \\\end{split}\\u(x,y) = sin(x) + sin(2 \pi - x) - sin(2 \pi) = sin(x) - sin(x) = 0
+\end{aligned}\end{align} \]</div>
+<p>wnioski: największa wartość jest w punkcie P, natomiast najmniejsza jest na brzegu (0).</p>
+</div>
+</section>
+<section id="metoda-lagrangea">
+<h3>Metoda lagrange’a<a class="headerlink" href="#metoda-lagrangea" title="Link to this heading">¶</a></h3>
+<p>załużmy, że mamy funkcję <span class="math notranslate nohighlight">\(f(x,y)\)</span> oraz ograniczenie <span class="math notranslate nohighlight">\(g(x,y) = 0\)</span></p>
+<p>wtedy tworzymy funkcję <span class="math notranslate nohighlight">\(\Phi(x,y,\lambda) = f(x,y) + \lambda g(x,y)\)</span></p>
+<p>następnie liczymy pochodne cząstkowe <span class="math notranslate nohighlight">\(\Phi\)</span> po <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span> i <span class="math notranslate nohighlight">\(\lambda\)</span> i rozwiązujemy układ równań</p>
 </section>
 </section>
 </section>
@@ -971,6 +1033,7 @@ Pole jest ptencjalne (gradientowe) jeżeli</p>
 <li><a class="reference internal" href="#calka-krzywoliniowa-nieskierowana">Całka krzywoliniowa nieskierowana</a></li>
 <li><a class="reference internal" href="#calka-krzywoliniowa-skierowana">Całka krzywoliniowa skierowana</a></li>
 <li><a class="reference internal" href="#calka-powierzchniowa-zorientowana">Całka powierzchniowa zorientowana</a></li>
+<li><a class="reference internal" href="#metoda-lagrangea">Metoda lagrange’a</a></li>
 </ul>
 </li>
 </ul>
@@ -1044,7 +1107,7 @@ Pole jest ptencjalne (gradientowe) jeżeli</p>
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/b7552b2c9f08d1e3e3636a69273e85f5aa62db82>Thu May 16 09:53:33 2024 +0200 nic nie napisałem (b7552b2c9f08d1e3e3636a69273e85f5aa62db82)</a>
+<a href=https://github.com/gucio321/matematyka/commit/90011caa1375c80134d3ff5f0326de1ce97c785a>Mon Jun 3 12:57:47 2024 +0200 więcej matmy (90011caa1375c80134d3ff5f0326de1ce97c785a)</a>
 </font>
 
   </body>
