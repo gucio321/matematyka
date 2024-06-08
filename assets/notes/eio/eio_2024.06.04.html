@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Zadania &#8212; Matematyka  - dokumentacja</title>
+    <title>Siatka dyfrakcyjna (rozdzielczość) &#8212; Matematyka  - dokumentacja</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
@@ -54,7 +54,7 @@
              accesskey="I">indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Zadania</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Siatka dyfrakcyjna (rozdzielczość)</a></li> 
       </ul>
     </div>
     </div>
@@ -65,67 +65,20 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="zadania">
-<h1>Zadania<a class="headerlink" href="#zadania" title="Link to this heading">¶</a></h1>
-<div class="admonition note">
-<p class="admonition-title">Informacja</p>
-<p>Z kwadratoweo arkusza blachy wycinamy 4 kwadratowe kawałki (na rogach).
-Z czego powstaje nam “pudełko”. Jaka największa objętość?</p>
-<div class="math notranslate nohighlight">
+  <div class="math notranslate nohighlight">
 \[\begin{split}
-0 &lt; x &lt; \frac{a}{2} \\
-V(x) = (a-2x)^2 x \\
+\Delta \Tehata_0 = \frac{\lambda}{N d} \\
+\Delat \Theta_m = \frac{\lambda}{N d cos \Theata_m} \\
 \end{split}\]</div>
-<p>szukamy największą wartość funkcji w przedziale <span class="math notranslate nohighlight">\(x \in \left&lt;0, \frac{a}{2}\right&gt;\)</span></p>
+<section id="siatka-dyfrakcyjna-rozdzielczosc">
+<h1>Siatka dyfrakcyjna (rozdzielczość)<a class="headerlink" href="#siatka-dyfrakcyjna-rozdzielczosc" title="Link to this heading">¶</a></h1>
+<p><span class="math notranslate nohighlight">\(d\)</span> to tzw. stała siatki <span class="math notranslate nohighlight">\(d \approx 2 \mu m\)</span></p>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-V'(x) = (a-2x)^2 -4x(a-2x) \\
-V'(x) = (a-2x)(a-2x -4x) \\
-V'(x) = (a-2x)(a-6x) \\
-x = \frac{a}{2} \lor x = \frac{a}{6} \\
-\end{split}\]</div>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Informacja</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-O(h) = C * sin \alpha * \frac{1}{r^2} \\
-\frac{a}{r} = cos \alpha \\
-O(h) = C * sin \alpha * \frac{cos^2 \alpha}{a^2} \\
-O(h) = \frac{C}{a^2} * sin \alpha * cos^2 \alpha \\
-f(x) = sin x * cos^2 x \\
-x \in \left&lt;0, \frac{\pi}{2}\right) \\
-f'(x) = cos^3 x - 2sin^2 x cos x  \\
-f'(x) = cos x (cos^2 x - 2sin^2 x) \\
-x = \frac{\pi}{2} &amp;\lor tg^2 x = \frac{1}{2} \\
-&amp;\lor tg x = \frac{1}{\sqrt{2}} \text{tg &gt; 0 w przedziale} \\
-&amp;\lor x = arctg \frac{1}{\sqrt{2}} \\
-\end{split}\]</div>
-</div>
-</section>
-<section id="wypuklosc-funkcji">
-<h1>Wypukłość funkcji<a class="headerlink" href="#wypuklosc-funkcji" title="Link to this heading">¶</a></h1>
-<p><code class="docutils literal notranslate"><span class="pre">f</span></code> jest wypukłą ku górze jeśli w pewnym otoczeniu
-wykres f jest poniżej wykresu stycznej.</p>
-<p>Funkcja jest wypukła ku dołowi w punkcie <span class="math notranslate nohighlight">\(x_0\)</span> jeżeli w tm punkcie wykres jest powyżej wykresu stycznej</p>
-<div class="admonition-twierdzenie-o-wypuklosci admonition">
-<p class="admonition-title">Twierdzenie o wypukłości</p>
-<p><code class="docutils literal notranslate"><span class="pre">f</span></code> klasy <span class="math notranslate nohighlight">\(C^2\)</span></p>
-<p>Jeżeli <code class="docutils literal notranslate"><span class="pre">f</span></code> wypukła ku górze <span class="math notranslate nohighlight">\(\Rightarrow f''(x_0) \leq 0\)</span>
-Jeśli <span class="math notranslate nohighlight">\(f''(x_0) &lt; 0 \Rightarrow\)</span> funkcja jest wypukła ku górze.</p>
-</div>
-</section>
-<section id="asymptoty">
-<h1>Asymptoty<a class="headerlink" href="#asymptoty" title="Link to this heading">¶</a></h1>
-<p>Asymptoty to proste, do których wykres danej funkcji zbliża się dowolnie blisko.</p>
-<div class="admonition tip">
-<p class="admonition-title">Wskazówka</p>
-<p>Prosta o równaniu <span class="math notranslate nohighlight">\(y = ax+b\)</span> jest asymptotą ukośną, jeśli
-<span class="math notranslate nohighlight">\(f(x)-ax-b \to 0~dla~x\to \infty\)</span></p>
-</div>
-<p>Prosta o równaniu <span class="math notranslate nohighlight">\(y=ax+b\)</span> jest asymptotą ukośną funkcji f <span class="math notranslate nohighlight">\(\Leftrightarrow\)</span>
-<span class="math notranslate nohighlight">\(\exists lim_{x \to \infty} \frac{f(x)}{x} = a \land\)</span>
-<span class="math notranslate nohighlight">\(\exists lim_{x \to \infty} f(x)-ax = b\)</span></p>
+\[
+d sin \Theta_m  = m \lambda
+\]</div>
+<p>Zdolność rozdzielcza `<span class="math notranslate nohighlight">\(R = \frac{\lambda}{\Delta \lambda}\)</span></p>
+<p>Różniczkujemy definicję i porównujemy z równaniem siatki <span class="math notranslate nohighlight">\(R = ... = N m\)</span></p>
 </section>
 
 
@@ -134,15 +87,7 @@ Jeśli <span class="math notranslate nohighlight">\(f''(x_0) &lt; 0 \Rightarrow\
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
-    <h3><a href="../../../index.html">Spis treści:</a></h3>
-    <ul>
-<li><a class="reference internal" href="#">Zadania</a></li>
-<li><a class="reference internal" href="#wypuklosc-funkcji">Wypukłość funkcji</a></li>
-<li><a class="reference internal" href="#asymptoty">Asymptoty</a></li>
-</ul>
-
-  </div>
+        <div class="sphinxsidebarwrapper">
 <search id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Szybkie wyszukiwanie</h3>
     <div class="searchformwrapper">
@@ -184,7 +129,7 @@ Jeśli <span class="math notranslate nohighlight">\(f''(x_0) &lt; 0 \Rightarrow\
              >indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Zadania</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Siatka dyfrakcyjna (rozdzielczość)</a></li> 
       </ul>
     </div>
     </div>
