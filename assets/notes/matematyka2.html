@@ -966,7 +966,56 @@ x \in \left(0, 2\pi\right) \land x + y = 2 \pi \Rightarrow y = 2\pi - x \\\end{s
 <p>załużmy, że mamy funkcję <span class="math notranslate nohighlight">\(f(x,y)\)</span> oraz ograniczenie <span class="math notranslate nohighlight">\(g(x,y) = 0\)</span></p>
 <p>wtedy tworzymy funkcję <span class="math notranslate nohighlight">\(\Phi(x,y,\lambda) = f(x,y) + \lambda g(x,y)\)</span></p>
 <p>następnie liczymy pochodne cząstkowe <span class="math notranslate nohighlight">\(\Phi\)</span> po <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span> i <span class="math notranslate nohighlight">\(\lambda\)</span> i rozwiązujemy układ równań</p>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/matematyka2/matematyka2_2024.06.10.md</span></code></em></p>
 </section>
+</section>
+<section id="forma-kwadratowa-przyklad">
+<h2>Forma kwadratowa – przykłąd<a class="headerlink" href="#forma-kwadratowa-przyklad" title="Link to this heading">¶</a></h2>
+<p>niech <span class="math notranslate nohighlight">\(X = \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}\)</span>,
+<span class="math notranslate nohighlight">\(A = \begin{bmatrix} a_{11} &amp;&amp; a_{12} &amp;&amp; a_{13} \\ a_{21} &amp;&amp; a_{22} &amp;&amp; a_{23} \\ a_{31} &amp;&amp; a_{32} &amp;&amp; a_{33} \end{bmatrix}\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+f(x_1, x_2, x_3) = X^{T} * A * X = a_11 x_1^2 + a_22 x_2^2 + a_33 x_3^2 + 2 a_12 x_1 x_2 + 2 a_13 x_1 x_3 + 2 a_23 x_2 x_3
+\]</div>
+<p>szukamy najmniejszej wartośći tej funkcji na sferze jednostkowej <span class="math notranslate nohighlight">\(1-x_1^2 - x_2^2 - x_3^2 = 0\)</span></p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}
+\Phi(x_1, x_2, x_3) = f(x_1, x_2, x_3) + \lambda * g(x_1, x_2, x_3) = a_11 x_1^2 + a_22 x_2^2 + a_33 x_3^2 + 2 a_12 x_1 x_2 + 2 a_13 x_1 x_3 + 2 a_23 x_2 x_3 + \lambda (x_1, x_2, x_3)\\\begin{split}\left\{ \begin{matrix}
+\frac{\partial \Phi}{\partial x_1} = 2 a_11 x_1 + 2 a_12 x_2 + 2 a_13 x_3 - 2 \lambda x_1 = 0 \\
+\frac{\partial \Phi}{\partial x_2} = 2 a_22 x_2 + 2 a_12 x_1 + 2 a_23 x_3 - 2 \lambda x_2 = 0 \\
+\frac{\partial \Phi}{\partial x_3} = 2 a_33 x_3 + 2 a_13 x_1 + 2 a_23 x_2 - 2 \lambda x_3 = 0 \\
+g(x_1, x_2, x_3) = 0 \\
+\end{matrix} \right.
+\\
+\\
+\left\{ \begin{matrix}
+2 * A * X - 2 \begin{bmatrix} 1 &amp;&amp; 0 &amp;&amp; 0 \\ 0 &amp;&amp; 1 &amp;&amp; 0 \\ 0 &amp;&amp; 0 &amp;&amp; 1 \end{bmatrix} \lambda X = 0 \\
+g(x_1, x_2, x_3) = 0 \\
+\end{matrix} \right. = \end{split}\\\begin{split}\left\{ \begin{matrix}
+A * X - \lambda X = 0 \\
+g(x_1, x_2, x_3) = 0 \\
+\end{matrix} \right. = \end{split}\end{aligned}\end{align} \]</div>
+<div class="admonition-twierdzenie admonition">
+<p class="admonition-title">twierdzenie</p>
+<p>Jeżeli szukamy najmniejszej i największej wartośći funkcji <span class="math notranslate nohighlight">\(f(x_1, x_2, x_3) = X^T A X\)</span> na sferze jednostkowej, to
+punkty podejrzane to wektory własne macierzy <span class="math notranslate nohighlight">\(A - Z* \lambda\)</span></p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>Podsumowanie wykłądu</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\Gamma\)</span> euler’a</p></li>
+<li><p>funkcje wielu zmiennych, różniczkowalność e.t.c. (analogicznie jak dla 1 zmiennej)</p></li>
+<li><p>pojęcie ciąŋłości (tw. Darbou)</p></li>
+<li><p>funkcje z <span class="math notranslate nohighlight">\(\mathbb{R}^n \to \mathbb{R}^m\)</span> ciągłość, granice)</p></li>
+<li><p>różniczkowanie fcji wielu zmiennych; pochodne cząstkowe; różniczka <span class="math notranslate nohighlight">\(df = \begin{bmatrix} \frac{\partial f}{\partial x_1} \\ \frac{\partial f}{\partial x_2} \\ \vdots \\ \frac{\partial f}{\partial x_n} \end{bmatrix}\)</span></p></li>
+<li><p>ekstrema fcji wielu zmiennych (forma kwadratowa, tw. La’grange’a)</p></li>
+<li><p>całki (podwójne, potrójne, krzywoliniowe, powierzchniowe, objętościowe, zorientowane, niezorientowane, tw. Stokes’a, tw. Green’a, tw. Gauss’a-Ostrogradskiego, tw. o polu bezźródłowym)</p></li>
+<li><p>zadania typu oblicz objętość/ppowierzchnię</p></li>
+<li><p><strong>Reguły GULDINA</strong> <span class="math notranslate nohighlight">\(\leftarrow\)</span> przypadkiem zawsze się pojawiają na egzaminie…</p></li>
+</ul>
+</div>
 </section>
 </section>
 
@@ -1036,6 +1085,7 @@ x \in \left(0, 2\pi\right) \land x + y = 2 \pi \Rightarrow y = 2\pi - x \\\end{s
 <li><a class="reference internal" href="#metoda-lagrangea">Metoda lagrange’a</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#forma-kwadratowa-przyklad">Forma kwadratowa – przykłąd</a></li>
 </ul>
 </li>
 </ul>
@@ -1107,7 +1157,7 @@ x \in \left(0, 2\pi\right) \land x + y = 2 \pi \Rightarrow y = 2\pi - x \\\end{s
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/c6df3a62db70f79d29686dcfe363fd12bd196a48>Sun Jun 9 11:02:57 2024 +0200 statistics (c6df3a62db70f79d29686dcfe363fd12bd196a48)</a>
+<a href=https://github.com/gucio321/matematyka/commit/d48a49c2d0a1e7fa6c43e8a812e15ebc8e2745cf>Mon Jun 10 12:34:37 2024 +0200 mostatnia matma2 ever (d48a49c2d0a1e7fa6c43e8a812e15ebc8e2745cf)</a>
 </font>
 
   </body>

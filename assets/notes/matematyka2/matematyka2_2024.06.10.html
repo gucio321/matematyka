@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Moc w obowodach prądu przemiennego &#8212; Matematyka  - dokumentacja</title>
+    <title>Forma kwadratowa – przykłąd &#8212; Matematyka  - dokumentacja</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
@@ -54,7 +54,7 @@
              accesskey="I">indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Moc w obowodach prądu przemiennego</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Forma kwadratowa – przykłąd</a></li> 
       </ul>
     </div>
     </div>
@@ -65,30 +65,52 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <p>Impedancja Kondensatora: <span class="math notranslate nohighlight">\(\hat{Z_C} = \frac{1}{j \omega C} = - \frac{j}{\omega C}\)</span>
-Impedancja cewki <span class="math notranslate nohighlight">\(\hat{Z_L} = j \omega L\)</span></p>
+  <section id="forma-kwadratowa-przyklad">
+<h1>Forma kwadratowa – przykłąd<a class="headerlink" href="#forma-kwadratowa-przyklad" title="Link to this heading">¶</a></h1>
+<p>niech <span class="math notranslate nohighlight">\(X = \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}\)</span>,
+<span class="math notranslate nohighlight">\(A = \begin{bmatrix} a_{11} &amp;&amp; a_{12} &amp;&amp; a_{13} \\ a_{21} &amp;&amp; a_{22} &amp;&amp; a_{23} \\ a_{31} &amp;&amp; a_{32} &amp;&amp; a_{33} \end{bmatrix}\)</span></p>
 <div class="math notranslate nohighlight">
 \[
-\hat{Z} = Z e^{j \omega}
-\hat{I} = \frac{\hat{\epsilon}}{\hat{R}}O
+f(x_1, x_2, x_3) = X^{T} * A * X = a_11 x_1^2 + a_22 x_2^2 + a_33 x_3^2 + 2 a_12 x_1 x_2 + 2 a_13 x_1 x_3 + 2 a_23 x_2 x_3
 \]</div>
-<section id="moc-w-obowodach-pradu-przemiennego">
-<h1>Moc w obowodach prądu przemiennego<a class="headerlink" href="#moc-w-obowodach-pradu-przemiennego" title="Link to this heading">¶</a></h1>
-<section id="natezenie-i-napiecie-skuteczne">
-<h2>Natężenie i napięcie skuteczne<a class="headerlink" href="#natezenie-i-napiecie-skuteczne" title="Link to this heading">¶</a></h2>
-<p>Natężeniem skutecznym nazywamy takie natężenie prądu stałego, któ©y wydziela w tym
-samym czasie tę samą ilość energii co dany prąd przemienny.</p>
+<p>szukamy najmniejszej wartośći tej funkcji na sferze jednostkowej <span class="math notranslate nohighlight">\(1-x_1^2 - x_2^2 - x_3^2 = 0\)</span></p>
 <div class="math notranslate nohighlight">
-\[
-I_{sk} = \frac{I_m}{\sqrt{2}}
-\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-dW = U_0 sin(\omega t) I  cos(\omega t + \phi) dt \\
-W = \int_0^\pi dW = \frac{1}{2} U_0 I_0 cos \phi t \\
-P = U_0 I_0 cos \phi
-\end{split}\]</div>
-</section>
+\[ \begin{align}\begin{aligned}
+\Phi(x_1, x_2, x_3) = f(x_1, x_2, x_3) + \lambda * g(x_1, x_2, x_3) = a_11 x_1^2 + a_22 x_2^2 + a_33 x_3^2 + 2 a_12 x_1 x_2 + 2 a_13 x_1 x_3 + 2 a_23 x_2 x_3 + \lambda (x_1, x_2, x_3)\\\begin{split}\left\{ \begin{matrix}
+\frac{\partial \Phi}{\partial x_1} = 2 a_11 x_1 + 2 a_12 x_2 + 2 a_13 x_3 - 2 \lambda x_1 = 0 \\
+\frac{\partial \Phi}{\partial x_2} = 2 a_22 x_2 + 2 a_12 x_1 + 2 a_23 x_3 - 2 \lambda x_2 = 0 \\
+\frac{\partial \Phi}{\partial x_3} = 2 a_33 x_3 + 2 a_13 x_1 + 2 a_23 x_2 - 2 \lambda x_3 = 0 \\
+g(x_1, x_2, x_3) = 0 \\
+\end{matrix} \right.
+\\
+\\
+\left\{ \begin{matrix}
+2 * A * X - 2 \begin{bmatrix} 1 &amp;&amp; 0 &amp;&amp; 0 \\ 0 &amp;&amp; 1 &amp;&amp; 0 \\ 0 &amp;&amp; 0 &amp;&amp; 1 \end{bmatrix} \lambda X = 0 \\
+g(x_1, x_2, x_3) = 0 \\
+\end{matrix} \right. = \end{split}\\\begin{split}\left\{ \begin{matrix}
+A * X - \lambda X = 0 \\
+g(x_1, x_2, x_3) = 0 \\
+\end{matrix} \right. = \end{split}\end{aligned}\end{align} \]</div>
+<div class="admonition-twierdzenie admonition">
+<p class="admonition-title">twierdzenie</p>
+<p>Jeżeli szukamy najmniejszej i największej wartośći funkcji <span class="math notranslate nohighlight">\(f(x_1, x_2, x_3) = X^T A X\)</span> na sferze jednostkowej, to
+punkty podejrzane to wektory własne macierzy <span class="math notranslate nohighlight">\(A - Z* \lambda\)</span></p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>Podsumowanie wykłądu</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\Gamma\)</span> euler’a</p></li>
+<li><p>funkcje wielu zmiennych, różniczkowalność e.t.c. (analogicznie jak dla 1 zmiennej)</p></li>
+<li><p>pojęcie ciąŋłości (tw. Darbou)</p></li>
+<li><p>funkcje z <span class="math notranslate nohighlight">\(\mathbb{R}^n \to \mathbb{R}^m\)</span> ciągłość, granice)</p></li>
+<li><p>różniczkowanie fcji wielu zmiennych; pochodne cząstkowe; różniczka <span class="math notranslate nohighlight">\(df = \begin{bmatrix} \frac{\partial f}{\partial x_1} \\ \frac{\partial f}{\partial x_2} \\ \vdots \\ \frac{\partial f}{\partial x_n} \end{bmatrix}\)</span></p></li>
+<li><p>ekstrema fcji wielu zmiennych (forma kwadratowa, tw. La’grange’a)</p></li>
+<li><p>całki (podwójne, potrójne, krzywoliniowe, powierzchniowe, objętościowe, zorientowane, niezorientowane, tw. Stokes’a, tw. Green’a, tw. Gauss’a-Ostrogradskiego, tw. o polu bezźródłowym)</p></li>
+<li><p>zadania typu oblicz objętość/ppowierzchnię</p></li>
+<li><p><strong>Reguły GULDINA</strong> <span class="math notranslate nohighlight">\(\leftarrow\)</span> przypadkiem zawsze się pojawiają na egzaminie…</p></li>
+</ul>
+</div>
 </section>
 
 
@@ -97,16 +119,7 @@ P = U_0 I_0 cos \phi
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
-    <h3><a href="../../../index.html">Spis treści:</a></h3>
-    <ul>
-<li><a class="reference internal" href="#">Moc w obowodach prądu przemiennego</a><ul>
-<li><a class="reference internal" href="#natezenie-i-napiecie-skuteczne">Natężenie i napięcie skuteczne</a></li>
-</ul>
-</li>
-</ul>
-
-  </div>
+        <div class="sphinxsidebarwrapper">
 <search id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Szybkie wyszukiwanie</h3>
     <div class="searchformwrapper">
@@ -148,7 +161,7 @@ P = U_0 I_0 cos \phi
              >indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Moc w obowodach prądu przemiennego</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Forma kwadratowa – przykłąd</a></li> 
       </ul>
     </div>
     </div>
