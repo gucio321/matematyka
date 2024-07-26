@@ -1,0 +1,175 @@
+
+
+<!DOCTYPE html>
+
+<html lang="pl" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Metoda lagrange’a &#8212; Matematyka  - dokumentacja</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=df9e62d8" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
+    
+    <script src="../../../_static/documentation_options.js?v=a28d12eb"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/translations.js?v=da4973ce"></script>
+    <script src="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js?v=ffc8af2d"></script>
+    <script src="../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js?v=12818e64"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    
+    
+     
+        <script src="../../../_static/jquery.cookie.js"></script>
+    
+
+    
+     
+        <script src="../../../_static/cloud.base.js"></script>
+    
+
+    
+     
+        <script src="../../../_static/cloud.js"></script>
+    
+
+    <link rel="icon" href="../../../_static/icon.ico"/>
+    <link rel="index" title="Indeks" href="../../../genindex.html" />
+    <link rel="search" title="Szukaj" href="../../../search.html" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head><body>
+    <div class="relbar-top">
+        
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Nawigacja</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="Indeks ogólny"
+             accesskey="I">indeks</a></li>
+    <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">Metoda lagrange’a</a></li> 
+      </ul>
+    </div>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <p>kryterium sylfwstra (aka kryterium sylwestera)</p>
+<ul class="simple">
+<li><p>jeżeli oba wyznaczniki są dodatnie, to w punkcie znajduje się minimum</p></li>
+<li><p>jeżeli oba wyznaczniki są ujemne, to w punkcie znajduje się maksimum</p></li>
+<li><p>jeżeli wyznacznik jest dodatni, a drugi ujemny, to punkt jest punktem siodłowym</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Przykłąd</p>
+<p>obszar D: <span class="math notranslate nohighlight">\(x \in \left(0, 2 \pi\right) \land y \in \left(0, 2 \pi\right) \land x + y = 2 \pi\)</span>
+<span class="math notranslate nohighlight">\(u(x,y) = \sin x + \sin y - \sin(x+y)\)</span></p>
+<p>Etap 1
+poszukać punktóœ podejżanych</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\begin{split}
+u'_x = \cos x - \cos(x+y) = 0 \\
+u'_y = \cos y - \cos(x+y) = 0 \\\end{split}\\\begin{split}P = \left(\frac{2}{3} \pi, \frac{2}{3} \pi \right) \\\end{split}\\\begin{split}u''_{x} = -\sin x + \sin(x+y) \\
+u''_{y} = -\sin y + \sin(x+y) \\
+u''_{xy} = \cos(x+y) - \cos(x+y) = 0 \\\end{split}\\\begin{split}\begin{bmatrix}
+u''_{xx} &amp; u''_{xy} \\
+u''_{yx} &amp; u''_{yy}
+\end{bmatrix}
+\end{split}\end{aligned}\end{align} \]</div>
+<p>ogólnie wychodzi na to że jest maksimum lokalne ponieważ <span class="math notranslate nohighlight">\(W_1\)</span> i <span class="math notranslate nohighlight">\(W_2\)</span> są ujemne.</p>
+<p>etap 2
+sprawdzić co się dzieje na brzegu</p>
+<p><span class="math notranslate nohighlight">\(y = 0, x \in (0, 2 \pi)\)</span></p>
+<p><span class="math notranslate nohighlight">\(u(x) = sin(x) - sin(x) = 0\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+x = 0, y \in (0, 2 \pi) \\
+u(y) = 0 + sin(y) - sin(y) = 0
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\begin{split}
+x \in \left(0, 2\pi\right) \land x + y = 2 \pi \Rightarrow y = 2\pi - x \\\end{split}\\u(x,y) = sin(x) + sin(2 \pi - x) - sin(2 \pi) = sin(x) - sin(x) = 0
+\end{aligned}\end{align} \]</div>
+<p>wnioski: największa wartość jest w punkcie P, natomiast najmniejsza jest na brzegu (0).</p>
+</div>
+<section id="metoda-lagrangea">
+<h1>Metoda lagrange’a<a class="headerlink" href="#metoda-lagrangea" title="Link to this heading">¶</a></h1>
+<p>załużmy, że mamy funkcję <span class="math notranslate nohighlight">\(f(x,y)\)</span> oraz ograniczenie <span class="math notranslate nohighlight">\(g(x,y) = 0\)</span></p>
+<p>wtedy tworzymy funkcję <span class="math notranslate nohighlight">\(\Phi(x,y,\lambda) = f(x,y) + \lambda g(x,y)\)</span></p>
+<p>następnie liczymy pochodne cząstkowe <span class="math notranslate nohighlight">\(\Phi\)</span> po <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span> i <span class="math notranslate nohighlight">\(\lambda\)</span> i rozwiązujemy układ równań</p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Szybkie wyszukiwanie</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Szukaj" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+    
+    
+        <div class="sidebar-toggle-group no-js">
+            
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                 «
+                <span class="show-for-small">hide menu</span>
+                
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                 »
+            </button>
+        </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Nawigacja</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="Indeks ogólny"
+             >indeks</a></li>
+    <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">Metoda lagrange’a</a></li> 
+      </ul>
+    </div>
+    </div>
+
+<div class="footer" style="text-align:center">
+© Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
+Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
+Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
+<a href=https://github.com/gucio321/matematyka/commit/90dcb6d5c060189b382e3e1ff0584cd22610a740>Fri Jul 26 16:38:07 2024 +0200 rename everything to be in archive (90dcb6d5c060189b382e3e1ff0584cd22610a740)</a>
+</font>
+
+  </body>
+</html>

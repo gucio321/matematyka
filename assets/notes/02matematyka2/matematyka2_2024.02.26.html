@@ -1,0 +1,224 @@
+
+
+<!DOCTYPE html>
+
+<html lang="pl" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Całki dla przeciałów nieskończonych &#8212; Matematyka  - dokumentacja</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=df9e62d8" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
+    
+    <script src="../../../_static/documentation_options.js?v=a28d12eb"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/translations.js?v=da4973ce"></script>
+    <script src="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js?v=ffc8af2d"></script>
+    <script src="../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js?v=12818e64"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    
+    
+     
+        <script src="../../../_static/jquery.cookie.js"></script>
+    
+
+    
+     
+        <script src="../../../_static/cloud.base.js"></script>
+    
+
+    
+     
+        <script src="../../../_static/cloud.js"></script>
+    
+
+    <link rel="icon" href="../../../_static/icon.ico"/>
+    <link rel="index" title="Indeks" href="../../../genindex.html" />
+    <link rel="search" title="Szukaj" href="../../../search.html" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head><body>
+    <div class="relbar-top">
+        
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Nawigacja</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="Indeks ogólny"
+             accesskey="I">indeks</a></li>
+    <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">Całki dla przeciałów nieskończonych</a></li> 
+      </ul>
+    </div>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="calki-dla-przecialow-nieskonczonych">
+<h1>Całki dla przeciałów nieskończonych<a class="headerlink" href="#calki-dla-przecialow-nieskonczonych" title="Link to this heading">¶</a></h1>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\int_a^\infty f(x) dx = \lim_{b \to \infty} \int_a^b f(x)dx \\
+\end{split}\]</div>
+<p>Całka jest zbierzna, jeżeli</p>
+<div class="math notranslate nohighlight">
+\[
+\int_a^\infty f(x) dx &lt; \infty
+\]</div>
+<div class="admonition-przyklad admonition">
+<p class="admonition-title">Przykład</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\int_1^\infty \frac{1}{x} dx \\
+\int_1^b \frac{1}{x} dx = \left|ln(x)\right|_1^b \\
+\lim_{b \to \infty} ln(b) - ln(1) \to \infty
+\end{split}\]</div>
+<p>Ta całka <strong>nie</strong> jest zbierzna.</p>
+</div>
+</section>
+<section id="calki-funkcji-nieskonczonych">
+<h1>Całki funkcji nieskończonych<a class="headerlink" href="#calki-funkcji-nieskonczonych" title="Link to this heading">¶</a></h1>
+<p>Jeżeli <span class="math notranslate nohighlight">\(f(x) \to \infty ~ x \to b\)</span>, to mówimy, że <span class="math notranslate nohighlight">\(\int_a^b f(x) dx\)</span> jest zbierzna, jeśli
+<span class="math notranslate nohighlight">\(\exists \lim_{\psi \to b} \int_a^\psi f(x) dx\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[
+\int_0^1 \frac{1}{x} dx = \lim_{\psi \to \infty} ln(1) - ln(\psi)  = -\infty \Rightarrow \text{Całka jest rozbierzna}
+\]</div>
+<section id="szczegolne-przypadki-calek-na-przedzialach-nieograniczonych">
+<h2>Szczególne przypadki całek na przedziałach nieograniczonych<a class="headerlink" href="#szczegolne-przypadki-calek-na-przedzialach-nieograniczonych" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Kiedy całka <span class="math notranslate nohighlight">\(\int_1^\infty \frac{1}{x^\alpha} dx\)</span> jest zbierzna?</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\int_1^\infty \frac{1}{x^\alpha} dx = \left| \frac{x^{1-\alpha}}{1-\alpha} \right |_ 1^\infty = \\
+= \lim_{b \to \infty} \frac{b^{1-\alpha}}{1-\alpha} - \frac{1}{1-\alpha}
+\end{split}\]</div>
+<p>Całka jest zbierzna dla $1-\alpha &lt; 0</p>
+<div class="math notranslate nohighlight">
+\[
+\int_0^1 \frac{1}{x^\alpha} dx = \psi^1 - \frac{x^{1-\alpha}}{1-\alpha} 
+\]</div>
+</section>
+<section id="kryteria-porownawcze">
+<h2>Kryteria porównawcze<a class="headerlink" href="#kryteria-porownawcze" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>jeżeli $<span class="math notranslate nohighlight">\(f(x) &gt; 0 \land f(x) &lt; g(x) \in \left(a,b\right)\)</span> i <span class="math notranslate nohighlight">\(\int_a^b g(x) dx\)</span> jest zbierzna
+to <span class="math notranslate nohighlight">\(\int_a^b f(x) dx\)</span> też jest zbierzna.</p></li>
+<li><p>jeżeli <span class="math notranslate nohighlight">\(f(x)\)</span> jest asymptotycznie zbierzne z <span class="math notranslate nohighlight">\(g(x)\)</span> to <span class="math notranslate nohighlight">\(\int_a^b f(x)\)</span> i <span class="math notranslate nohighlight">\(\int_a^b g(x)\)</span> są obie równocześnie
+zbierzne lub rozbierzne.</p></li>
+</ul>
+<!-- rzecz troszeczke nielegalna -->>
+</section>
+<section id="szeregi">
+<h2>Szeregi<a class="headerlink" href="#szeregi" title="Link to this heading">¶</a></h2>
+<div class="admonition seealso">
+<p class="admonition-title">Zobacz także</p>
+<p>Szerzej rozważane w MATEMATYKA 3</p>
+</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\sum_{i=1}^\infty a_n = a_1 + a_2 + a_3 + ... + a_\infty \\
+\end{split}\]</div>
+<p>Jeżeli ciąg <span class="math notranslate nohighlight">\(a_n\)</span> jest zbierzny, wtedy mówimy, że szereg jest zbierzny.</p>
+<p>Rozważmy tzw. szereg harmoniczny:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\sum_n=1^\infty \frac{1}{n} \\
+\end{split}\]</div>
+<div class="admonition-bezwzgledna-zbierznosc admonition">
+<p class="admonition-title">bezwzględna zbierzność</p>
+<p>jeżeli <span class="math notranslate nohighlight">\(\int_a^b f(x) dx\)</span> jest zbierzna, to t acałka jest bezwzględnie zbierzna jeżeli <span class="math notranslate nohighlight">\(\int_a^b |f(x)| dx\)</span></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Jeżeli całka <span class="math notranslate nohighlight">\(\int_a^b f(x)dx\)</span> jest bezwzględnie zbierzna, to jest również zbierzna</p>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
+    <h3><a href="../../../index.html">Spis treści:</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Całki dla przeciałów nieskończonych</a></li>
+<li><a class="reference internal" href="#calki-funkcji-nieskonczonych">Całki funkcji nieskończonych</a><ul>
+<li><a class="reference internal" href="#szczegolne-przypadki-calek-na-przedzialach-nieograniczonych">Szczególne przypadki całek na przedziałach nieograniczonych</a></li>
+<li><a class="reference internal" href="#kryteria-porownawcze">Kryteria porównawcze</a></li>
+<li><a class="reference internal" href="#szeregi">Szeregi</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Szybkie wyszukiwanie</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Szukaj" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+    
+    
+        <div class="sidebar-toggle-group no-js">
+            
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                 «
+                <span class="show-for-small">hide menu</span>
+                
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                 »
+            </button>
+        </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Nawigacja</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="Indeks ogólny"
+             >indeks</a></li>
+    <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">Całki dla przeciałów nieskończonych</a></li> 
+      </ul>
+    </div>
+    </div>
+
+<div class="footer" style="text-align:center">
+© Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
+Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
+Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
+<a href=https://github.com/gucio321/matematyka/commit/90dcb6d5c060189b382e3e1ff0584cd22610a740>Fri Jul 26 16:38:07 2024 +0200 rename everything to be in archive (90dcb6d5c060189b382e3e1ff0584cd22610a740)</a>
+</font>
+
+  </body>
+</html>

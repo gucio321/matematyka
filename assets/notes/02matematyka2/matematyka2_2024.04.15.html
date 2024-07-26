@@ -1,0 +1,201 @@
+
+
+<!DOCTYPE html>
+
+<html lang="pl" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Rachunek całkowy wielu zmiennych &#8212; Matematyka  - dokumentacja</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=df9e62d8" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
+    
+    <script src="../../../_static/documentation_options.js?v=a28d12eb"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/translations.js?v=da4973ce"></script>
+    <script src="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js?v=ffc8af2d"></script>
+    <script src="../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js?v=12818e64"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    
+    
+     
+        <script src="../../../_static/jquery.cookie.js"></script>
+    
+
+    
+     
+        <script src="../../../_static/cloud.base.js"></script>
+    
+
+    
+     
+        <script src="../../../_static/cloud.js"></script>
+    
+
+    <link rel="icon" href="../../../_static/icon.ico"/>
+    <link rel="index" title="Indeks" href="../../../genindex.html" />
+    <link rel="search" title="Szukaj" href="../../../search.html" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head><body>
+    <div class="relbar-top">
+        
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Nawigacja</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="Indeks ogólny"
+             accesskey="I">indeks</a></li>
+    <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">Rachunek całkowy wielu zmiennych</a></li> 
+      </ul>
+    </div>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="rachunek-calkowy-wielu-zmiennych">
+<h1>Rachunek całkowy wielu zmiennych<a class="headerlink" href="#rachunek-calkowy-wielu-zmiennych" title="Link to this heading">¶</a></h1>
+<section id="calka-podwojna">
+<h2>Całka podwójna<a class="headerlink" href="#calka-podwojna" title="Link to this heading">¶</a></h2>
+<p>Niech <span class="math notranslate nohighlight">\(f = f(x,y)\)</span></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(F: P \to \mathbb{R} ~ P = [a,b] \times [c,d]\)</span></p></li>
+</ul>
+<p>Przypuśćmy, że mamy prostokąt (płąszczyznę) nad którą znajduje się wykres <span class="math notranslate nohighlight">\(f\)</span>.</p>
+<p>Załużmy, że musimy obliczyć objętość pod wykresem <span class="math notranslate nohighlight">\(f\)</span>.</p>
+<p>Tworzymy 3 sumy (jakd dla całek) dla prostopadłościanów skłądających się na wykres funkcji.
+(<span class="math notranslate nohighlight">\(s_n\)</span> dla najmniejszej wartości, <span class="math notranslate nohighlight">\(S_n\)</span> dla największej oraz <span class="math notranslate nohighlight">\(\sigma\)</span>)</p>
+<div class="admonition-definicja admonition">
+<p class="admonition-title">Definicja</p>
+<p>Jeżeli przy każdym, coraz drobniejszym, podziale prostokąta <span class="math notranslate nohighlight">\(P\)</span> ciąg <span class="math notranslate nohighlight">\(\sigma_n\)</span> dąży do tej samej granicy niezależnej od podziału, ani od wyboru punktów pośrednich, to granicę tę nazywamy
+całką podwójną funkcji <span class="math notranslate nohighlight">\(f\)</span> po prostokącie <span class="math notranslate nohighlight">\(P\)</span> i oznaczamy <span class="math notranslate nohighlight">\(\iint_P f(x,y) dxdy\)</span>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Całka <span class="math notranslate nohighlight">\(\iint_P f(x,y) dxdy\)</span> nie zawsze istnieje</p>
+</div>
+</section>
+<section id="calka-podwojna-nie-dla-prostokata">
+<h2>Całka podwójna nie dla prostokąta<a class="headerlink" href="#calka-podwojna-nie-dla-prostokata" title="Link to this heading">¶</a></h2>
+<p>jeżeli nie mamy prostokąßa, rozszeżamy naszą funkcję żeby była na prostokącie
+Przykłądowo: <span class="math notranslate nohighlight">\(f = \sqrt{1 - x^2 - y^2}\)</span></p>
+<div class="admonition-zbior-miary-0 admonition">
+<p class="admonition-title">zbiór miary 0</p>
+<p>Jeżeli zbiór <span class="math notranslate nohighlight">\(A\)</span> jest zbiorem miary 0, to całka podwójna po <span class="math notranslate nohighlight">\(A\)</span> jest równa 0.</p>
+<p>przykładowo:</p>
+<ul class="simple">
+<li><p>punkt jest miary 0 ponieważ można go pokryć prostokątem o dowolnie małym polu</p></li>
+</ul>
+</div>
+<div class="admonition-podstawowe-twierdzenie admonition">
+<p class="admonition-title">podstawowe twierdzenie</p>
+<p>Jeśli <span class="math notranslate nohighlight">\(F:P \to \mathbb{R}\)</span> i zbiór punktów nieciągłości <span class="math notranslate nohighlight">\(F\)</span> ma miarę 0,
+to <span class="math notranslate nohighlight">\(F\)</span> jest całkowalna na <span class="math notranslate nohighlight">\(P\)</span>.</p>
+</div>
+<p>Aby rozpoznać czy brzeg jest miary 0, można posłużyć się następującym
+twierdzeniem:</p>
+<div class="admonition-twierdzenie admonition">
+<p class="admonition-title">Twierdzenie</p>
+<p>jeżeli <span class="math notranslate nohighlight">\(f: \mathbb{R} \to \mathbb{R}\)</span> jest całkowalna, to jej wykres
+(krzywa) ma miarę 0.</p>
+</div>
+<p>Wniosek:</p>
+<blockquote>
+<div><p>Jeżeli <span class="math notranslate nohighlight">\(f: [a,b] \to \mathbb{R}\)</span> jest ciągła <span class="math notranslate nohighlight">\(\Rightarrow\)</span> jej wykres ma miarę 0.</p>
+</div></blockquote>
+<p>Na przykłądzie wykresu koła:</p>
+<ul class="simple">
+<li><p>brzeg to okrąg</p></li>
+<li><p>okrąg można traktować jako wykres funkcji</p></li>
+<li><p>wykres jest ciągły</p></li>
+<li><p>wykres jest miary 0</p></li>
+<li><p>funkcja jest całkowalna</p></li>
+</ul>
+<!--skoro jesteśmy już uspokojeni, to można iść... możecie iść gdzie kto chce, ja idę na obiad.-->
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
+    <h3><a href="../../../index.html">Spis treści:</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Rachunek całkowy wielu zmiennych</a><ul>
+<li><a class="reference internal" href="#calka-podwojna">Całka podwójna</a></li>
+<li><a class="reference internal" href="#calka-podwojna-nie-dla-prostokata">Całka podwójna nie dla prostokąta</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Szybkie wyszukiwanie</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Szukaj" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+    
+    
+        <div class="sidebar-toggle-group no-js">
+            
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                 «
+                <span class="show-for-small">hide menu</span>
+                
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                 »
+            </button>
+        </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Nawigacja</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="Indeks ogólny"
+             >indeks</a></li>
+    <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">Rachunek całkowy wielu zmiennych</a></li> 
+      </ul>
+    </div>
+    </div>
+
+<div class="footer" style="text-align:center">
+© Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
+Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
+Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
+<a href=https://github.com/gucio321/matematyka/commit/90dcb6d5c060189b382e3e1ff0584cd22610a740>Fri Jul 26 16:38:07 2024 +0200 rename everything to be in archive (90dcb6d5c060189b382e3e1ff0584cd22610a740)</a>
+</font>
+
+  </body>
+</html>

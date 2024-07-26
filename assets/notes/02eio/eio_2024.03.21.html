@@ -1,0 +1,244 @@
+
+
+<!DOCTYPE html>
+
+<html lang="pl" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Pojęcie pola &#8212; Matematyka  - dokumentacja</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=df9e62d8" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
+    
+    <script src="../../../_static/documentation_options.js?v=a28d12eb"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/translations.js?v=da4973ce"></script>
+    <script src="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js?v=ffc8af2d"></script>
+    <script src="../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js?v=12818e64"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    
+    
+     
+        <script src="../../../_static/jquery.cookie.js"></script>
+    
+
+    
+     
+        <script src="../../../_static/cloud.base.js"></script>
+    
+
+    
+     
+        <script src="../../../_static/cloud.js"></script>
+    
+
+    <link rel="icon" href="../../../_static/icon.ico"/>
+    <link rel="index" title="Indeks" href="../../../genindex.html" />
+    <link rel="search" title="Szukaj" href="../../../search.html" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head><body>
+    <div class="relbar-top">
+        
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Nawigacja</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="Indeks ogólny"
+             accesskey="I">indeks</a></li>
+    <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">Pojęcie pola</a></li> 
+      </ul>
+    </div>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="pojecie-pola">
+<h1>Pojęcie pola<a class="headerlink" href="#pojecie-pola" title="Link to this heading">¶</a></h1>
+<div class="admonition seealso">
+<p class="admonition-title">Zobacz także</p>
+<p>dr R. Strzałka - Zestaw 0 - Tabela</p>
+</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Phi(\vec{r}, t) \\
+A(\vec{r}, t)
+\end{split}\]</div>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Phi(\vec{r}) = const \Rightarrow \text{pole stałe} \\
+\vec{A}(\vec{r}) = const \Rightarrow \text{Pole jednorodne}
+\end{split}\]</div>
+</div>
+<section id="uklad-wspolrzednych-sferyczny">
+<h2>Układ współrzędnych sferyczny<a class="headerlink" href="#uklad-wspolrzednych-sferyczny" title="Link to this heading">¶</a></h2>
+<p>Współrzędne zapisujemy jako <span class="math notranslate nohighlight">\((r, \theta \phi)\)</span></p>
+</section>
+<section id="operatory-rozniczkowe">
+<h2>Operatory różniczkowe<a class="headerlink" href="#operatory-rozniczkowe" title="Link to this heading">¶</a></h2>
+<p>Operator wektorowy <span class="math notranslate nohighlight">\(\nabla\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\nabla = \left(\frac{\partial}{\partial x}, \frac{\partial}{\partial y}, \frac{\partial}{\partial z}\right)
+\]</div>
+<p>Gradient pola <span class="math notranslate nohighlight">\(\Phi\)</span> definiujemy jako <span class="math notranslate nohighlight">\(\nabla \Phi\)</span>.</p>
+<p>Wektor gradientu <span class="math notranslate nohighlight">\(\Phi\)</span> wskazuje kierunek i wartość maksymalnego przyrostu przestrzennego
+wielkości skalarnej <span class="math notranslate nohighlight">\(\Phi\)</span>.</p>
+<p>Dywergencja <span class="math notranslate nohighlight">\(div \Phi = \nabla * \Phi\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+div \vec{A} = \lim_{V \to 0} \frac{1}{V} \oint_S \vec{A} \vec{ds}
+\]</div>
+<p>Opisuje wirowość pola - gęstość powierzchniową krożenie pola <span class="math notranslate nohighlight">\(\vec{A}\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+(rot \vec{A})_z = \lim_{S \to 0} \frac{1}{L} \oint \vec{A} ds \\
+\end{split}\]</div>
+</section>
+<section id="laplasian-pola-skalarnego">
+<h2>Laplasian pola skalarnego<a class="headerlink" href="#laplasian-pola-skalarnego" title="Link to this heading">¶</a></h2>
+<div class="math notranslate nohighlight">
+\[
+\Delta = \nabla^2
+\]</div>
+<div class="admonition-funkcje-harmoniczne admonition">
+<p class="admonition-title">Funkcje harmoniczne</p>
+<p>to ciągłę rozwiązania równania laplasa</p>
+</div>
+</section>
+<section id="laplasian-pola-wektorowego">
+<h2>Laplasian pola wektorowego<a class="headerlink" href="#laplasian-pola-wektorowego" title="Link to this heading">¶</a></h2>
+</section>
+<section id="szczegulne-przypadki-pol-wektorowych">
+<h2>Szczegulne przypadki pól wektorowych<a class="headerlink" href="#szczegulne-przypadki-pol-wektorowych" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Pole bezwirowe (<span class="math notranslate nohighlight">\(\vec{P}\)</span>) - <span class="math notranslate nohighlight">\(rot \vec{P} = 0\)</span></p></li>
+</ul>
+<div class="admonition-cechy admonition">
+<p class="admonition-title">cechy</p>
+<ul class="simple">
+<li><p>zerowanie się rotacji</p></li>
+<li><p>istnienie niezerowej dywergencji (przynajmniej w niektórych punktach pola</p></li>
+</ul>
+</div>
+<ul class="simple">
+<li><p>pole bezźródłowe (dywergencja wszędzie znika)</p></li>
+</ul>
+<div class="admonition-cechy admonition">
+<p class="admonition-title">cechy</p>
+<ul class="simple">
+<li><p>zerowanie się dywergencji</p></li>
+<li><p>istnieje potencjał wektorowy</p></li>
+<li><p>nie istnieje potencjał skalarny</p></li>
+<li><p>istnieje rotacja (przynajmniej w niektórych punktach pola</p></li>
+</ul>
+<div class="highlight-) notranslate"><div class="highlight"><pre><span></span>
+```{admonition} Twierdzenie
+Każde pole wektorowe może być przedstawione jako suma trzech pól:
+- potencjalnego
+- wirowego
+- harmonicznego
+</pre></div>
+</div>
+</div>
+</section>
+<section id="przyklad">
+<h2>Przykład<a class="headerlink" href="#przyklad" title="Link to this heading">¶</a></h2>
+<p>prędkość prądu w rzece rozkład jak <span class="math notranslate nohighlight">\(|x\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{v} = 0, v_y, 0)
+\]</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
+    <h3><a href="../../../index.html">Spis treści:</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Pojęcie pola</a><ul>
+<li><a class="reference internal" href="#uklad-wspolrzednych-sferyczny">Układ współrzędnych sferyczny</a></li>
+<li><a class="reference internal" href="#operatory-rozniczkowe">Operatory różniczkowe</a></li>
+<li><a class="reference internal" href="#laplasian-pola-skalarnego">Laplasian pola skalarnego</a></li>
+<li><a class="reference internal" href="#laplasian-pola-wektorowego">Laplasian pola wektorowego</a></li>
+<li><a class="reference internal" href="#szczegulne-przypadki-pol-wektorowych">Szczegulne przypadki pól wektorowych</a></li>
+<li><a class="reference internal" href="#przyklad">Przykład</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Szybkie wyszukiwanie</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Szukaj" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+    
+    
+        <div class="sidebar-toggle-group no-js">
+            
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                 «
+                <span class="show-for-small">hide menu</span>
+                
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                 »
+            </button>
+        </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Nawigacja</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="Indeks ogólny"
+             >indeks</a></li>
+    <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">Pojęcie pola</a></li> 
+      </ul>
+    </div>
+    </div>
+
+<div class="footer" style="text-align:center">
+© Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
+Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
+Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
+<a href=https://github.com/gucio321/matematyka/commit/90dcb6d5c060189b382e3e1ff0584cd22610a740>Fri Jul 26 16:38:07 2024 +0200 rename everything to be in archive (90dcb6d5c060189b382e3e1ff0584cd22610a740)</a>
+</font>
+
+  </body>
+</html>

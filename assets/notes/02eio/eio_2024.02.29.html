@@ -1,0 +1,231 @@
+
+
+<!DOCTYPE html>
+
+<html lang="pl" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Fale Sprężyste &#8212; Matematyka  - dokumentacja</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=df9e62d8" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
+    
+    <script src="../../../_static/documentation_options.js?v=a28d12eb"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/translations.js?v=da4973ce"></script>
+    <script src="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js?v=ffc8af2d"></script>
+    <script src="../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js?v=12818e64"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    
+    
+     
+        <script src="../../../_static/jquery.cookie.js"></script>
+    
+
+    
+     
+        <script src="../../../_static/cloud.base.js"></script>
+    
+
+    
+     
+        <script src="../../../_static/cloud.js"></script>
+    
+
+    <link rel="icon" href="../../../_static/icon.ico"/>
+    <link rel="index" title="Indeks" href="../../../genindex.html" />
+    <link rel="search" title="Szukaj" href="../../../search.html" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head><body>
+    <div class="relbar-top">
+        
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Nawigacja</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="Indeks ogólny"
+             accesskey="I">indeks</a></li>
+    <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">Fale Sprężyste</a></li> 
+      </ul>
+    </div>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="fale-sprezyste">
+<h1>Fale Sprężyste<a class="headerlink" href="#fale-sprezyste" title="Link to this heading">¶</a></h1>
+<p>Rozpatrzmy mechanizm propagacji fali w pręcie (fala podłużna) (Eksperyment z wygiętym prętem w imadle).</p>
+<p>Rozpatrzmy wycinek pręta (“Plasterek”) przed dojściem impulsu falowego wycięty w odległości <span class="math notranslate nohighlight">\(A\)</span> i <span class="math notranslate nohighlight">\(A'\)</span>, szerokości <span class="math notranslate nohighlight">\(dx\)</span> wykonanego z materiału
+o gęstości <span class="math notranslate nohighlight">\(\rho\)</span></p>
+<p>Po dojściu impulsu przekrój <span class="math notranslate nohighlight">\(A\)</span> odchyli się o <span class="math notranslate nohighlight">\(\psi\)</span>. Ponieważ materiał jest sprężysty, przekrój <span class="math notranslate nohighlight">\(A'\)</span> nie przesunie się o <span class="math notranslate nohighlight">\(\psi\)</span> tylko o <span class="math notranslate nohighlight">\(d\psi\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+m = \rho * s * dx \\
+a = \frac{d^2 \psi}{dt^2} \\
+dF = F - F' \\
+dF = \rho * s * dx * \frac{d^2 \psi}{dt^2} \\
+\bf{\frac{dF}{dx} = \rho * s * \frac{d^2 \psi}{dt^2}} \\
+\end{split}\]</div>
+<p>Teraz należy wykonać obliczenia zgodnie z prawem Hook’a</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+P = E * \frac{d \psi}{dx} \\
+F = E * s * \frac{d \psi}{dx} \\
+\frac{F}{dx} = E * s * \frac{d^2 \psi}{dx^2} \\
+\\
+\frac{d^2 \psi}{dt^2} = \frac{E}{\rho} \frac{d^2 \psi}{dx^2} \\
+v = \sqrt{\frac{E}{\rho}}
+\end{split}\]</div>
+</section>
+<section id="ogolna-formula-na-predkosc-fali-sprezystej">
+<h1>Ogólna Formuła na prędkość fali sprężystej<a class="headerlink" href="#ogolna-formula-na-predkosc-fali-sprezystej" title="Link to this heading">¶</a></h1>
+<ul class="simple">
+<li><p>rozchodzenie fali podłużnej w cieczy (lub gazie).</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+v = \sqrt{\frac{K}{\rho}}
+\]</div>
+<ul class="simple">
+<li><p>fala poprzeczna w pręcie (rozchodząca się na zasadzie mechanizmu ścinania).</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+v = \sqrt{\frac{G}{\rho}}
+\]</div>
+<p><code class="docutils literal notranslate"><span class="pre">G</span></code> to moduł sztywności.</p>
+<div class="admonition-wzor-newtona admonition">
+<p class="admonition-title">Wzór Newtona</p>
+<p>Niech M oznacza odpowiedni moduł sprężystości, wtedy</p>
+<div class="math notranslate nohighlight">
+\[
+v = \sqrt{\frac{M}{\rho}}
+\]</div>
+</div>
+<ul class="simple">
+<li><p>Fala poprzeczna na strunie</p></li>
+</ul>
+</section>
+<section id="fale-na-powierzchni-wody">
+<h1>Fale na powierzchni wody<a class="headerlink" href="#fale-na-powierzchni-wody" title="Link to this heading">¶</a></h1>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+F = 2 \sigma l \\
+\end{split}\]</div>
+<p>Przybliżony wzór dla fal harmnoicznych</p>
+<div class="math notranslate nohighlight">
+\[
+v = \sqrt{\frac{g\lambda}{2\pi} +\frac{2\pi \sigma}{\rho \lambda}}
+\]</div>
+<p>Wzór jest adekwatny gdy głebokość zbiornika jest dużo większa od długości fali.</p>
+<section id="osrodek-dyspersyjny">
+<h2>Ośrodek dyspersyjny<a class="headerlink" href="#osrodek-dyspersyjny" title="Link to this heading">¶</a></h2>
+<p>rozpatrzmy propagację fal bardzo długich. Można zauważyć, że w tym przypadku
+im większa długość fali <span class="math notranslate nohighlight">\(\lambda\)</span> tym prędkość większa.</p>
+<div class="admonition-osrodek-dyspersyjny admonition">
+<p class="admonition-title">Ośrodek dyspersyjny</p>
+<p>Ośrodek dyspersyjny to taki, w którym prędkość rozchodzenia się fali
+zależy od długości fali</p>
+</div>
+<p>Pakiet falowy to połączenie fali harmonicznej (sinusoidalnej) z pojdeynczym impulsem falowym.</p>
+<p>W środowisku dyspersyjnym pakiet falowy się rozpadnie (dystorsia).</p>
+<div class="math notranslate nohighlight">
+\[
+v = \lambda f = \frac{\omega}{k}
+\]</div>
+<p>Rozważamy pakiety falowe złożone z dwuch częstości.
+Dla pakietów o dowolnej liczbie składowych występuje prętkość grupowa <span class="math notranslate nohighlight">\(v_g = \frac{d \omega}{dk}\)</span></p>
+</section>
+</section>
+<section id="natezenie-fali">
+<h1>Natężenie Fali<a class="headerlink" href="#natezenie-fali" title="Link to this heading">¶</a></h1>
+<p><span class="math notranslate nohighlight">\(I\)</span> - powierzchniowa gęstość mocy <span class="math notranslate nohighlight">\(\left[\frac{W}{m^2}\right]\)</span>.</p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
+    <h3><a href="../../../index.html">Spis treści:</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Fale Sprężyste</a></li>
+<li><a class="reference internal" href="#ogolna-formula-na-predkosc-fali-sprezystej">Ogólna Formuła na prędkość fali sprężystej</a></li>
+<li><a class="reference internal" href="#fale-na-powierzchni-wody">Fale na powierzchni wody</a><ul>
+<li><a class="reference internal" href="#osrodek-dyspersyjny">Ośrodek dyspersyjny</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#natezenie-fali">Natężenie Fali</a></li>
+</ul>
+
+  </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Szybkie wyszukiwanie</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Szukaj" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+    
+    
+        <div class="sidebar-toggle-group no-js">
+            
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                 «
+                <span class="show-for-small">hide menu</span>
+                
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                 »
+            </button>
+        </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Nawigacja</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="Indeks ogólny"
+             >indeks</a></li>
+    <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">Fale Sprężyste</a></li> 
+      </ul>
+    </div>
+    </div>
+
+<div class="footer" style="text-align:center">
+© Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
+Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
+Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
+<a href=https://github.com/gucio321/matematyka/commit/90dcb6d5c060189b382e3e1ff0584cd22610a740>Fri Jul 26 16:38:07 2024 +0200 rename everything to be in archive (90dcb6d5c060189b382e3e1ff0584cd22610a740)</a>
+</font>
+
+  </body>
+</html>
