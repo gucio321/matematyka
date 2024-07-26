@@ -2,16 +2,31 @@
 
 ## 1.1 fale w ośrodku dyspersyjnym
 
+$$
+k = \frac{2 \pi}{\lambda}
+\psi(x,t) = A sin(k(x+vt) = A sin(kx + )
+$$
+
 **Q:** Proszę opisać ruch falowy w ośrodku dyspersyjnym i prędkość grupową
 
 **A:**
-- Ruch falowy w ośrodku dyspersyjnym to ruch falowy, w którym prędkość fali zależy od częstotliwości.
+- Ruch falowy w ośrodku dyspersyjnym to ruch falowy, w którym prędkość fazowa fali zależy od częstotliwości $\omega = \omega(k)$.
 
 $$
-v = \frac{\omega}{k}
+v_g = \frac{d\omega}{dk} \\
+niech~\omega = v k \\
+v_g = \frac{d(vk)}{dk} = v
+v_g = v + k \frac{dv}{dk}
 $$
 
 - Prędkość grupowa to prędkość **obwiedni** kilku złożonych fal harmonicznych.
+
+_wykres sinusa z obwiednią_
+
+$$
+y = y_0 sin(kx - \omega t) + y_0 sin(k'x - \omega' t) = 2y_0 sin(\frac{k+k'}{2}x - \frac{\omega + \omega'}{2}t) cos(\frac{k-k'}{2}x - \frac{\omega - \omega'}{2}t)
+$$
+
 
 Można ją przedstawić jako pochodną prędkości fazowej po wektorze falowym.
 
@@ -65,4 +80,11 @@ ELABORATE
 
 **Q:** Relatywistyczny efekt dopplera
 
+**A:**
 
+Relatywistyczny efekt Dopplera to zjawisko zmiany częstotliwości fali elektromagnetycznej w wyniku ruchu źródła fali.
+
+$$
+$$
+
+gdzie $\beta = \frac{v}{c}$
