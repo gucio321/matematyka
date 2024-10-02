@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. tip::
+.. .. tip::
    Ukończyłem już sesję egzaminacypjną 2023/2024!
    Z tego powodu życzę wszystkim odwiedzających udanych wakacji!
    Do zobaczenia w przyszłym roku akademickim 2024/2025
