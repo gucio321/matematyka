@@ -1,4 +1,4 @@
-https://home/agh.edu.pl/mariuszp
+[https://home.agh.edu.pl/mariuszp](https://home.agh.edu.pl/mariuszp)
 
 ## Wstęp / pojęcia podstawowe
 
