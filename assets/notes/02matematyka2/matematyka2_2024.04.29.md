@@ -15,7 +15,7 @@ y = r sin \phi \\
 {y'}^2 = r^2 cos^2 \phi \\
 \sqrt{{x'}^2 + {y'}^2} = r \\
 \psi = \frac{1}{\pi r} \int_0^\pi r cos \phi r^2 d\phi = 0 
-\etha = \frac{2r}{\pi}
+\eta = \frac{2r}{\pi}
 $$
 ```
 
@@ -31,9 +31,9 @@ objętość takiego obszaru jest równe pole tego co się obraca razy droga śro
 :::
 
 $$
-4 \pi r^2 = 2 \pi \etha  \pi r \\
-2 r = \etha  \pi \\
-\etha = \frac{2r}{\pi} \\
+4 \pi r^2 = 2 \pi \eta  \pi r \\
+2 r = \eta  \pi \\
+\eta = \frac{2r}{\pi} \\
 $$
 ```
 

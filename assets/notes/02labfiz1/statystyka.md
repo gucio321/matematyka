@@ -5,7 +5,7 @@ przeprowadzić - A czy B czy złożone czy z prawa przenoszenia
 niepewności
 
 Niepewność typu A: estymato odchylenia średniej
-$S_{\bar{x}} = \sqrt{\frac{1}{n(n-1)} \Sum_{i=1}^{n} (x_i - \bar{x})^2}$
+$S_{\bar{x}} = \sqrt{\frac{1}{n(n-1)} \sum_{i=1}^{n} (x_i - \bar{x})^2}$
 
 Niepewność typu B: "Naukowa ocena eksperymentatora":
 - dla prostych przyżądów mechanicznych równa najmniejszej podziałce
@@ -27,7 +27,7 @@ linii trendu i czy ewentualnie można by to zrobić jakoś po swojemu ?
 Linia trędu jest zastosowaniem metody najmniejszych kwadratów.
 
 metoda najmniejszych kwadratów polega na minimalizacji odległości punktów od prostej,
-czyli $min \Sum_{i=1}^{n} (y_i - b - ax_i)^2$.
+czyli $min \sum_{i=1}^{n} (y_i - b - ax_i)^2$.
 
 w MS Excel'u można użyć funkcji `linest` aby uzyskać wykaz parametrów dopasowania linii
 metodą najmniejszych kwadratów. 

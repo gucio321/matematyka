@@ -36,7 +36,7 @@ krzywą $f(x)$ obracamy wogół osi $OX$.
 
 środek Ciężkości:
 
-Jeżeli środek ciężkości ma współżędne $\ksi, \eta$, to
+Jeżeli środek ciężkości ma współżędne $\xi, \eta$, to
 
 $$
 \xi = \frac{1}{|D|} \iint_D x dx dy \\
