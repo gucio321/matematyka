@@ -236,12 +236,12 @@ E_k = h(\nu - \nu_0)
 <h1>Efekt comptona<a class="headerlink" href="#efekt-comptona" title="Link to this heading">¶</a></h1>
 <p>ref:</p>
 <ul class="simple">
-<li><p>facebook.com/messages/t/24000276406284390</p></li>
+<li><p>https://www.youtube.com/watch?v=oTNiJVdEyCc&amp;list=PLRN3HroZGu2mCtdalEmZAM2nr1xBWAtUn&amp;index=9</p></li>
 </ul>
 <p>Gdy swiatło pada na materię, czasami wybija z niej elektrony,
 przekazując im część swojej energii. Powoduje to zmianę długości fali
 (dowód z zasady zachowania pędu i zasaday zachowania energii <span class="math notranslate nohighlight">\(E = \sqrt{m^2 c^4 + p^2 c^2}\)</span>)</p>
-<p>Końcowe przesunięcie fali <span class="math notranslate nohighlight">\(\Delta \lambda = \frac{h}{m_e c}{1 - cos \Theta} = \lambda_C (1 - cos \Theta}\)</span></p>
+<p>Końcowe przesunięcie fali <span class="math notranslate nohighlight">\(\Delta \lambda = \frac{h}{m_e c}\left(1 - cos \Theta\right) = \lambda_C (1 - cos \Theta)\)</span></p>
 <p>W doświadczeniu z rozpraszaniem wiązki lasera na materii powoduje to dwa “piki” na wykresie odbieranych długości fali.
 Pik dalszy (przesunięty w prawo o dłuższych falach to właśnie efekt Coptona). Drugi (pierwszy o niższej dł. Fali)
 powstaje w wyniku interakcji fotonów z całym atomem (nie udało im się wybić elektronu a atom jest większy)</p>
@@ -266,6 +266,43 @@ E = h \nu = m_{e^-} c^2 + E_{e^-} + m_{e^+} c^2 + E_{e^+} = 2 m_e c^2 + E_k
 <div class="admonition tip">
 <p class="admonition-title">Wskazówka</p>
 <p>Minimalna długość fali tworzącej elektrony wynosi <span class="math notranslate nohighlight">\(\lambda = 1.2 pm\)</span> - fotony gamma.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>Zjawisko to nie zachodzi (nie powinno zachodzić) w próżni.
+Porces ten wymaga obecności nukleonów</p>
+<p>Dowód:</p>
+<p>Z ZZE mamy:</p>
+<div class="math notranslate nohighlight">
+\[
+E = 2 \gamma m_0 c^2 
+\]</div>
+<p>Natomiast z ZZP:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+2 p_x = \frac{E}{c} = \frac{h \nu}{c} = 2 p cos \theta \\
+h \nu &amp;= 2 p c cos \theta \\
+&amp;= 2 \gamma m_0 v c cos \theta \\
+&amp;= 2 \gamma m_0 c^2 \frac{v}{c} cos \theta \\
+\end{split}\]</div>
+<ul class="simple">
+<li><p>z założenia <span class="math notranslate nohighlight">\(\frac{v}{c} &lt; 1\)</span></p></li>
+<li><p>z definicji <span class="math notranslate nohighlight">\(cos \theta \leq 1\)</span></p></li>
+</ul>
+<p>Więc mamy:
+$<span class="math notranslate nohighlight">\(
+\frac{v}{c} &lt; 0 ~ \land ~ cos \theta \leq 1 \Rightarrow \frac{v}{c} cos \theta &lt; 1 \Rightarrow h \nu &lt; 2 m_0 c^2
+\)</span>$</p>
+<p>Ostatnie spostrzeżenie nie zgadza się z ZZE.</p>
+</div>
+<div class="admonition-cciekawostka admonition">
+<p class="admonition-title">Cciekawostka</p>
+<p>W zależności od energii fotonów obserwujemy różne efekty kwantowe:</p>
+<ul class="simple">
+<li><p>niska energia - efekt fotoelektryczny</p></li>
+<li><p>średnia energia - przesunięcie Comptona</p></li>
+<li><p>Bardzo duża energia - kreacja par elektron/pozyton</p></li>
+</ul>
 </div>
 </section>
 
@@ -363,7 +400,7 @@ E = h \nu = m_{e^-} c^2 + E_{e^-} + m_{e^+} c^2 + E_{e^+} = 2 m_e c^2 + E_k
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/1f30514c735723e59379f1dc40fe10b9b00e822d>Tue Oct 22 13:20:20 2024 +0200 quantum meta (1f30514c735723e59379f1dc40fe10b9b00e822d)</a>
+<a href=https://github.com/gucio321/matematyka/commit/0f403e04c961fedf2c9d327f9fa9eb42a2916d5b>Tue Oct 22 16:13:30 2024 +0200 kwanty fixing (0f403e04c961fedf2c9d327f9fa9eb42a2916d5b)</a>
 </font>
 
   </body>
