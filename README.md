@@ -33,8 +33,13 @@ on apt-based:
 
 on arch:
 - extra/texlive-binextra
-- sudo pacman -S texlive-core texlive-bin
-- sudo pacman -S extra/texlive-latex extra/texlive-latexextra extra/texlive-plaingeneric
+- texlive-core
+- texlive-bin
+- extra/texlive-latex
+- extra/texlive-latexextra
+- extra/texlive-plaingeneric
+- extra/texlive-langpolish
+- extra/texlive-mathscience
 
 ## Thing about PDF customization
 
