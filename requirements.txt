@@ -1,5 +1,5 @@
 sphinx
 myst-parser
 cloud-sptheme
-sphinxcontrib-images
+#sphinxcontrib-images==master
 myst-parser
