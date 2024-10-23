@@ -20,6 +20,22 @@ python3 -m pip install -r requirements.txt
 make html
 ```
 
+## Building PDF
+
+On rpm-based linux distros install the following:
+
+```sh
+dnf install -y latexmk texlive-cmap texlive-collection-fontsrecommended texlive-fncychap texlive-wrapfig texlive-capt-of texlive-framed texlive-upquote texlive-needspace texlive-tabulary texlive-parskip texlive-oberdiek texlive-cancel
+```
+
+on apt-based:
+
+
+on arch:
+- extra/texlive-binextra
+- sudo pacman -S texlive-core texlive-bin
+- sudo pacman -S extra/texlive-latex extra/texlive-latexextra extra/texlive-plaingeneric
+
 ## Thing about PDF customization
 
 <details><summary>Start here later</summary>
