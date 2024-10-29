@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Efekt fotoelektryczny &#8212; Matematyka  - dokumentacja</title>
+    <title>Szereg funkcyjny potęgowy &#8212; Matematyka  - dokumentacja</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=df9e62d8" />
@@ -51,7 +51,7 @@
              accesskey="I">indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Efekt fotoelektryczny</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Szereg funkcyjny potęgowy</a></li> 
       </ul>
     </div>
     </div>
@@ -62,40 +62,26 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="efekt-fotoelektryczny">
-<h1>Efekt fotoelektryczny<a class="headerlink" href="#efekt-fotoelektryczny" title="Link to this heading">¶</a></h1>
-<p>ref:</p>
-<ul class="simple">
-<li><p>https://www.youtube.com/watch?v=ObQ7Di_xuIs&amp;list=PLRN3HroZGu2mCtdalEmZAM2nr1xBWAtUn&amp;index=8</p></li>
-</ul>
-<p>Światło padające na powierzchnię ciała wybija z niego fotony.
-Przeprowadzono eksperyment z katodą i anodą oraz prostym obwodem elektrycznym co doprowadziło do 3 spostrzeżeń:</p>
-<ul class="simple">
-<li><p>proces wybijania elektronów jest natychmiastowy</p></li>
-<li><p>Energia kinetyczna elektronów nie zależy od natężenia światła</p></li>
-<li><p>energia kinetyczna elektronów jest proporcjonalna do częstotliwości</p></li>
-</ul>
-<p>Powyższych punktów nie da się wytłumaczyć klasyczną fizyką. Rozwiązanie podał Einstain.</p>
-<p>Zauważył on, że światło jest skwantowane i przenosi ono <span class="math notranslate nohighlight">\(E=h \nu\)</span> energii.</p>
+  <section id="szereg-funkcyjny-potegowy">
+<h1>Szereg funkcyjny potęgowy<a class="headerlink" href="#szereg-funkcyjny-potegowy" title="Link to this heading">¶</a></h1>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}
+a_n = a_0(x-x_0)^n\\r = \frac{1}{\lambda}
+\lambda = \root{n}{a_n}\\r = \frac{1}{\lambda}
+\lambda = \lim \frac{a_{n+1}}{a_n}
+\end{aligned}\end{align} \]</div>
+<section id="rozniczkowanie-i-calkowanie-szeregu-potegowego">
+<h2>Różniczkowanie i całkowanie szeregu potęgowego<a class="headerlink" href="#rozniczkowanie-i-calkowanie-szeregu-potegowego" title="Link to this heading">¶</a></h2>
+<p>szereg potęgowy można różniczkować wyraz po wyrazie.</p>
+</section>
+<section id="rozwijanie-fcji-w-szereg-potegowy">
+<h2>Rozwijanie fcji w szereg potęgowy<a class="headerlink" href="#rozwijanie-fcji-w-szereg-potegowy" title="Link to this heading">¶</a></h2>
 <div class="math notranslate nohighlight">
 \[
-h \nu = E_k + W_W
+Q(x) = \int_{x_0}^{x} f(x) dx
 \]</div>
-<p>gdzie:</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(E_k\)</span> to energia kinetyczna jaką otrzyma elektron</p></li>
-<li><p><span class="math notranslate nohighlight">\(W_w\)</span> to praca wyjścia</p></li>
-</ul>
-<p>Powyższy wzór można rozpisać również w innych wariantach na przykład (w nawiązaniu do cw 82 z pracowni)</p>
-<div class="math notranslate nohighlight">
-\[
-U_h = \frac{h \nu}{e} - \frac{W_w}{e}
-\]</div>
-<p>Albo też z częstotliwością progową:</p>
-<div class="math notranslate nohighlight">
-\[
-E_k = h(\nu - \nu_0)
-\]</div>
+<p>Jest funkcją pierwotn, takż, że <span class="math notranslate nohighlight">\(Q(x_0) = 0\)</span></p>
+</section>
 </section>
 
 
@@ -104,7 +90,17 @@ E_k = h(\nu - \nu_0)
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
-        <div class="sphinxsidebarwrapper">
+        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
+    <h3><a href="../../../index.html">Spis treści:</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Szereg funkcyjny potęgowy</a><ul>
+<li><a class="reference internal" href="#rozniczkowanie-i-calkowanie-szeregu-potegowego">Różniczkowanie i całkowanie szeregu potęgowego</a></li>
+<li><a class="reference internal" href="#rozwijanie-fcji-w-szereg-potegowy">Rozwijanie fcji w szereg potęgowy</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
 <search id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Szybkie wyszukiwanie</h3>
     <div class="searchformwrapper">
@@ -146,7 +142,7 @@ E_k = h(\nu - \nu_0)
              >indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Efekt fotoelektryczny</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Szereg funkcyjny potęgowy</a></li> 
       </ul>
     </div>
     </div>
