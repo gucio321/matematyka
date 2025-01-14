@@ -25,7 +25,9 @@ Zdolność emisyjną ciała doskonale czarnego oznaczamy jako $R_T$
 
 Wykres Zdolności emisyjnej od częstotliwości fali przedstawia następująćy wykres:
 
-![wykres](http://website.fis.agh.edu.pl/~Wolny/k1graf/5.gif)
+```{raw} html
+<img src="http://website.fis.agh.edu.pl/~Wolny/k1graf/5.gif" />
+```
 
 
 Całkowita zdolność emisyjna: $R_t = \int_0^\infty R_T d\nu$
