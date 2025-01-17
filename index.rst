@@ -60,4 +60,13 @@ W szczególności następującym przedmiotom:
 
    |img|
 
+.. note::
+
+   Jestem świadomy problemów z wyświetlaniem punktowanych list w całym dokumencie w wersji HTML.
+   Niestety jest 2 tygodnie przed sesją i nie mogę poświęcić 0.5 godziny na debugowanie kodu w CSS.
+   Fix pojawi się najprawdopodobniej dopiero po sesji.
+
+   Więcej informacji na https://github.com/gucio321/matematyka/issues/4.
+   W razie konieczności rozczytania nieczytelnych punktów zapraszam do analizy odpowiedniego pliku źródłowego na GitHubie.
+
 Zapraszam do przeglądania kodu źródłowego strony `w moim repozytorium GitHub <https://github.com/gucio321/matematyka>`_
