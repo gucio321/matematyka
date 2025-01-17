@@ -236,7 +236,7 @@ E(X) = \sum_{i=1}^{n} x_i * p(x_i)
 Prawdopodobieństwo <span class="math notranslate nohighlight">\(p(x_i) oznacza procentowy udział \)</span>x_i$ w docelowych pomiarach.</p>
 <div class="math notranslate nohighlight">
 \[
-\bar{x} = \frac{1 + 1 + 5 * 2 + 3 * 3}{10} = (1 * 0.2) + (2 * 0.5) + (3 * 0.3) = \Sum_{i = 1}^{3} x_i * p(x_i)
+\bar{x} = \frac{1 + 1 + 5 * 2 + 3 * 3}{10} = (1 * 0.2) + (2 * 0.5) + (3 * 0.3) = \sum_{i = 1}^{3} x_i * p(x_i)
 \]</div>
 <p>hehe, mam nadzieję że to jasne.</p>
 </div>
@@ -251,8 +251,27 @@ na wartość oczekiwaną X mamy następujące oznaczenia</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Informacja</p>
-<p>Wartość Oczekiwana Funkcji Zmiennej losowej <span class="math notranslate nohighlight">\(E(g(x)) = \Sum_{i} g(x_i) * p(x_i)\)</span></p>
+<p>Wartość Oczekiwana Funkcji Zmiennej losowej <span class="math notranslate nohighlight">\(E(g(x)) = \sum_{i} g(x_i) * p(x_i)\)</span></p>
 </div>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/statystyczna/statystyczna_2025.01.15.md</span></code></em></p>
+</section>
+</section>
+<section id="metoda-momentow">
+<h2>Metoda momentów<a class="headerlink" href="#metoda-momentow" title="Link to this heading">¶</a></h2>
+<p>K-ty teoretycznyy moment zdefiniowany jest jako:</p>
+<div class="math notranslate nohighlight">
+\[
+\mu_k = E(X^k) = \int_{-\infty}^{\infty} x^k f(x) dx
+\]</div>
+<p>(Czyli wartość oczekiwana <span class="math notranslate nohighlight">\(X^k\)</span>).</p>
+<p>Można róœnież zdefiniować ten moment dla określonej “średniej” <span class="math notranslate nohighlight">\(\mu_k = E((X - \mu)^k)\)</span>.</p>
+<p>Moment k-tego rzędu próby (odnosi się bezpośrednio do danych, a nie do teoretycznej funkcji gęstości):</p>
+<div class="math notranslate nohighlight">
+\[
+M_k = \frac{1}{n} \sum_{i=1}^{n} x_i^k
+\]</div>
+<p>Można zauważyć, że dla k=1 powyższe wyrażenie uprości się do <span class="math notranslate nohighlight">\(M_1 = \frac{1}{n} \sum_{i=1}^{n} x_i = \bar{x}\)</span> (średnia próby).</p>
 <hr class="docutils" />
 <p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/statystyczna/wyklady_tracker.md</span></code></em></p>
 <div class="admonition-tracker-wykladooe admonition">
@@ -261,7 +280,6 @@ na wartość oczekiwaną X mamy następujące oznaczenia</p>
 <li><p>07.10.2024 (dodatkowy)</p></li>
 </ul>
 </div>
-</section>
 </section>
 </section>
 
@@ -289,6 +307,7 @@ na wartość oczekiwaną X mamy następujące oznaczenia</p>
 <li><a class="reference internal" href="#wartosc-oczekiwana">Wartość Oczekiwana</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#metoda-momentow">Metoda momentów</a></li>
 </ul>
 </li>
 </ul>
@@ -352,7 +371,7 @@ na wartość oczekiwaną X mamy następujące oznaczenia</p>
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/00a1ceb339c1b9fac44be2b7393765f8e3b042d8>Wed Nov 20 13:38:40 2024 +0100 updates (00a1ceb339c1b9fac44be2b7393765f8e3b042d8)</a>
+<a href=https://github.com/gucio321/matematyka/commit/7d7a157b2a4fd789357f26a2b5c8dd7bfc9be7c8>Fri Jan 17 10:23:27 2025 +0100 update everything (7d7a157b2a4fd789357f26a2b5c8dd7bfc9be7c8)</a>
 </font>
 
   </body>

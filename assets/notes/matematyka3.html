@@ -40,7 +40,7 @@
     <link rel="index" title="Indeks" href="../../genindex.html" />
     <link rel="search" title="Szukaj" href="../../search.html" />
     <link rel="next" title="Matematyka Statystyczna" href="statystyczna.html" />
-    <link rel="prev" title="Wstęp do Fizyki Kwantowej - Ćwiczenia" href="kwanty_cw.html" /> 
+    <link rel="prev" title="Laboratorium Fizyczne - Kartkówka" href="labfiz.html" /> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
   </head><body>
     <div class="relbar-top">
@@ -55,7 +55,7 @@
           <a href="statystyczna.html" title="Matematyka Statystyczna"
              accesskey="N">dalej</a> &nbsp; &nbsp;</li>
         <li class="right" >
-          <a href="kwanty_cw.html" title="Wstęp do Fizyki Kwantowej - Ćwiczenia"
+          <a href="labfiz.html" title="Laboratorium Fizyczne - Kartkówka"
              accesskey="P">wstecz</a> &nbsp; &nbsp;</li>
     <li><a href="../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
@@ -116,7 +116,7 @@ zbierzny jest szereg szereg wartości bezwszględnych</p>
 </section>
 <section id="kryterium-cossiego">
 <h3>Kryterium Cossiego<a class="headerlink" href="#kryterium-cossiego" title="Link to this heading">¶</a></h3>
-<p><span class="math notranslate nohighlight">\(\gamma = \lim \root{n}{|a_n|}
+<p><span class="math notranslate nohighlight">\(\gamma = \lim \root\of{n}{|a_n|}
 jeżeli \)</span>\gamma &lt; 1<span class="math notranslate nohighlight">\(  to szereg \)</span>a_n<span class="math notranslate nohighlight">\( jest bezwzględnie zbierzny.
 jeżeli \)</span>\gamma &gt; 1$ nie jest bezwzględnie zbierzny (jest można nawet powiedzieć rozbierzny).</p>
 </section>
@@ -140,7 +140,7 @@ jeżeli \)</span>\gamma &gt; 1$ nie jest bezwzględnie zbierzny (jest można naw
 <div class="math notranslate nohighlight">
 \[ \begin{align}\begin{aligned}
 a_n = a_0(x-x_0)^n\\r = \frac{1}{\lambda}
-\lambda = \root{n}{a_n}\\r = \frac{1}{\lambda}
+\lambda = \root \of{n}{a_n}\\r = \frac{1}{\lambda}
 \lambda = \lim \frac{a_{n+1}}{a_n}
 \end{aligned}\end{align} \]</div>
 <section id="rozniczkowanie-i-calkowanie-szeregu-potegowego">
@@ -169,6 +169,54 @@ a_0 = \frac{1}{4\pi} \int_{-\pi}^{pi} f(x)\\
 <li><p>funkcja jest przedziałąmi ciągła w przedziale</p></li>
 <li><p>funkcja ma skończone granice jednostronne</p></li>
 </ul>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/matematyka3/matematyka_2024.12.15.md</span></code></em></p>
+</section>
+<section id="szeregi-fouriera">
+<h2>Szeregi Fouriera<a class="headerlink" href="#szeregi-fouriera" title="Link to this heading">¶</a></h2>
+<p>Po pierwsze, przepraszam za długi brak update’ów strony - w tym semestrze wiekszość rzeczy
+zamiast z wykładów ogarniam z youtube albo gotowych prezentacji ze stron prowadzących,
+więc robienie notatek na bierząco przestało mieć sens.
+Zapraszam do zerknięcia na ref’y na poszczegulnych podstronach.</p>
+<p>Rozważamy funkcję <span class="math notranslate nohighlight">\(f(x)\)</span> na przedziale <span class="math notranslate nohighlight">\([-p, p]\)</span>. Wtedy szereg Fouriera tej funkcji to:</p>
+<div class="admonition-warunki-dirichleta admonition">
+<p class="admonition-title">Warunki Dirichleta:</p>
+<ul class="simple">
+<li><p>funkcja jest przedziałami monotonicnza (czyli na przykład nie funkcja weierstrassa)</p></li>
+<li><p>funkcja ma skończoną liczbę punktów nieciągłości, z tym, że <span class="math notranslate nohighlight">\(f(x) = \frac{f(x^+) + f(x^-)}{2}\)</span></p></li>
+<li><p>funkcja na granicach przedziału spełnia warunek <span class="math notranslate nohighlight">\(f(-p) = f(p) = \frac{f(p) + f(b)}{2}\)</span></p></li>
+</ul>
+</div>
+<p>Definiujemy następujące ciągi:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+a_n = \frac{1}{p} \int_{-p}^{p} f(x) \cos\left(\frac{n\pi x}{p}\right) dx \\
+b_n = \frac{1}{p} \int_{-p}^{p} f(x) \sin\left(\frac{n\pi x}{p}\right) dx
+\end{split}\]</div>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>w skrajnym przypadku <span class="math notranslate nohighlight">\(a_0\)</span> przyjmuje postać:</p>
+<div class="math notranslate nohighlight">
+\[
+a_0 = \frac{1}{p} \int_{-p}^{p} f(x) dx
+\]</div>
+</div>
+<p>Szereg Fouriera funkcji <span class="math notranslate nohighlight">\(f(X)\)</span> przyjmuje następującą postać:</p>
+<div class="math notranslate nohighlight">
+\[
+f(x) = \frac{a_0}{2} + \sum_{n=1}^{\infty} \left(a_n \cos\left(\frac{n\pi x}{p}\right) + b_n \sin\left(\frac{n\pi x}{p}\right)\right)
+\]</div>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/matematyka3/matematyka_2025.01.10.md</span></code></em></p>
+</section>
+<section id="rownanie-rozniczkowe-czastkowe-2-rzedu">
+<h2>Równanie Różniczkowe cząstkowe 2 rzędu<a class="headerlink" href="#rownanie-rozniczkowe-czastkowe-2-rzedu" title="Link to this heading">¶</a></h2>
+<div class="math notranslate nohighlight">
+\[
+A(x,y) \frac{\partial^2 u}{\partial x^2} + 2B(x,y) \frac{\partial^2 u}{\partial x \partial y} + C(x,y) \frac{\partial^2 u}{\partial y^2} = D(x,y)
+\]</div>
+<p>Niech <span class="math notranslate nohighlight">\(\Delta = B^2 - AC\)</span>.</p>
+<p>dla <span class="math notranslate nohighlight">\(\Delta &gt; 0 \)</span> równanie paraboliczne. Ma jedną rodzinę charakterystyk <span class="math notranslate nohighlight">\(F_1(x,y) = C_1\)</span></p>
 </section>
 </section>
 
@@ -195,6 +243,8 @@ a_0 = \frac{1}{4\pi} \int_{-\pi}^{pi} f(x)\\
 </ul>
 </li>
 <li><a class="reference internal" href="#szereg-trygonometryczny-furiera">Szereg trygonometryczny Furiera</a></li>
+<li><a class="reference internal" href="#szeregi-fouriera">Szeregi Fouriera</a></li>
+<li><a class="reference internal" href="#rownanie-rozniczkowe-czastkowe-2-rzedu">Równanie Różniczkowe cząstkowe 2 rzędu</a></li>
 </ul>
 </li>
 </ul>
@@ -202,8 +252,8 @@ a_0 = \frac{1}{4\pi} \int_{-\pi}^{pi} f(x)\\
   </div>
   <div class="sphinxprev">
     <h4>Poprzednia strona</h4>
-    <p class="topless"><a href="kwanty_cw.html"
-                          title="Poprzednia strona">&larr; Wstęp do Fizyki Kwantowej - Ćwiczenia</a></p>
+    <p class="topless"><a href="labfiz.html"
+                          title="Poprzednia strona">&larr; Laboratorium Fizyczne - Kartkówka</a></p>
   </div>
   <div class="sphinxnext">
     <h4>Następna strona</h4>
@@ -253,7 +303,7 @@ a_0 = \frac{1}{4\pi} \int_{-\pi}^{pi} f(x)\\
           <a href="statystyczna.html" title="Matematyka Statystyczna"
              >dalej</a> &nbsp; &nbsp;</li>
         <li class="right" >
-          <a href="kwanty_cw.html" title="Wstęp do Fizyki Kwantowej - Ćwiczenia"
+          <a href="labfiz.html" title="Laboratorium Fizyczne - Kartkówka"
              >wstecz</a> &nbsp; &nbsp;</li>
     <li><a href="../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
@@ -266,7 +316,7 @@ a_0 = \frac{1}{4\pi} \int_{-\pi}^{pi} f(x)\\
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/00a1ceb339c1b9fac44be2b7393765f8e3b042d8>Wed Nov 20 13:38:40 2024 +0100 updates (00a1ceb339c1b9fac44be2b7393765f8e3b042d8)</a>
+<a href=https://github.com/gucio321/matematyka/commit/7d7a157b2a4fd789357f26a2b5c8dd7bfc9be7c8>Fri Jan 17 10:23:27 2025 +0100 update everything (7d7a157b2a4fd789357f26a2b5c8dd7bfc9be7c8)</a>
 </font>
 
   </body>
