@@ -43,7 +43,7 @@ szereg $\frac{(-1)^n}{n}$ jest zbierzny (later), ale nie jest zbierzny bezwzglę
 
 ### Kryterium Cossiego
 
-$\gamma = \lim \root{n}{|a_n|}
+$\gamma = \lim \root\of{n}{|a_n|}
 jeżeli $\gamma < 1$  to szereg $a_n$ jest bezwzględnie zbierzny.
 jeżeli $\gamma > 1$ nie jest bezwzględnie zbierzny (jest można nawet powiedzieć rozbierzny).
 

@@ -27,7 +27,7 @@ To przecież oznacza, że gdybyśmy zrobili 10 pomiarów, to
 Prawdopodobieństwo $p(x_i) oznacza procentowy udział $x_i$ w docelowych pomiarach.
 
 $$
-\bar{x} = \frac{1 + 1 + 5 * 2 + 3 * 3}{10} = (1 * 0.2) + (2 * 0.5) + (3 * 0.3) = \Sum_{i = 1}^{3} x_i * p(x_i)
+\bar{x} = \frac{1 + 1 + 5 * 2 + 3 * 3}{10} = (1 * 0.2) + (2 * 0.5) + (3 * 0.3) = \sum_{i = 1}^{3} x_i * p(x_i)
 $$
 
 hehe, mam nadzieję że to jasne.
@@ -41,5 +41,5 @@ na wartość oczekiwaną X mamy następujące oznaczenia
 ```
 
 ```{note}
-Wartość Oczekiwana Funkcji Zmiennej losowej $E(g(x)) = \Sum_{i} g(x_i) * p(x_i)$
+Wartość Oczekiwana Funkcji Zmiennej losowej $E(g(x)) = \sum_{i} g(x_i) * p(x_i)$
 ```
