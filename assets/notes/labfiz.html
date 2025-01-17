@@ -103,13 +103,66 @@
 <li><p><span class="math notranslate nohighlight">\(\frac{e}{k}\)</span> oznacza stosunek ładunku elektrycznego do stałej Boltzmanna</p></li>
 <li><p>Stała Boltzmana łączy energię kinetyczną cząstek z temperaturą.</p></li>
 <li><p>Zastosowania: Silnik Cieplny (cykl Carnot’a), Rozkład Boltzmana</p></li>
+<li><p>dlaczego tranzystor bipolarny a nie dioda? W tranzystorze bipolarnym łątwo da się zbadać charakterystykę prądową (prąd kolektora <span class="math notranslate nohighlight">\(I_c\)</span> zależy od <span class="math notranslate nohighlight">\(U_{EB}\)</span>. zależność t ajest znana <span class="math notranslate nohighlight">\(I_C = A*exp(\frac{U_{EB}}{kT})\)</span>)</p></li>
 </ul>
 </section>
 <section id="halotron-43">
 <h2>Halotron (43)<a class="headerlink" href="#halotron-43" title="Link to this heading">¶</a></h2>
 <ul class="simple">
-<li><p>Napięcie Halla - Napięcie powstałe w przewodniku z prądem umieszczonym w polu magnetycznym.</p></li>
+<li><p>Napięcie Halla - Napięcie powstałe w przewodniku z prądem umieszczonym w polu magnetycznym.</p>
+<ul>
+<li><p>ładunki płyną przez halotron</p></li>
+<li><p>po “włączeniu” B, ładunki pod wpływem siły lorentza zostają przeciągnięte na jdeną stronę przewodnika</p></li>
+<li><p>ponieważ jednoimienne ładunki sią na jednej stronie przewodnika powstaje napięcie zwane napięciem Hala.</p></li>
+</ul>
+</li>
+<li><p>Stała Halotronu zależy od materiału wykonania urządzenia. Określa intensywoność zjawiska <span class="math notranslate nohighlight">\(R_H = \frac{I* d}{U * B}\)</span>.</p></li>
+<li><p>Kalibracja: Przy znanym B dokonujemy pomiarów napięcia halla.</p></li>
+<li><p>Zastosowania:</p>
+<ul>
+<li><p>pomiar prędkości kątowej</p></li>
+<li><p>bezkontaktowy pomiar prądu</p></li>
+<li><p>kompas (w smartfonach)</p></li>
+</ul>
+</li>
 <li><p>Halotron wykorzystuje siłę Lorentza</p></li>
+<li><p>Pomiar: B ~ c*U</p></li>
+</ul>
+</section>
+<section id="dozymetria-96">
+<h2>Dozymetria (96)<a class="headerlink" href="#dozymetria-96" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Radioaktywne izotopy używane w labie to m.in. Cez (Cs) bądź Kobalt (Co)</p></li>
+<li><p>Izotopy promieniotwórcze to materiały niestabilne ulegające rozpadowi po określonym czasie (określany probabilistycznie).</p></li>
+<li><p>Aktywność:</p>
+<ul>
+<li><p>Miara liczby rozpadów w czasie <span class="math notranslate nohighlight">\(\frac{dN}{dt}\)</span></p></li>
+<li><p>Zależy od:</p>
+<ul>
+<li><p>Liczby jąder</p></li>
+<li><p>Okresu połowicznego rozpadu <span class="math notranslate nohighlight">\(T_{\frac{1}{2}}\)</span></p></li>
+<li><p>rodzaju promieniotwórczości (alfa, beta, gamma)</p></li>
+</ul>
+</li>
+<li><p>Zmienia się w czasie jak <span class="math notranslate nohighlight">\(e^{-\lambda t}\)</span> gdzie <span class="math notranslate nohighlight">\(\lambda = \frac{ln(2)}{T_{\frac{1}{2}}}\)</span></p></li>
+</ul>
+</li>
+<li><p>Zależnośc mocy dawki od odległości wynika z zasady kwadratu odległości <span class="math notranslate nohighlight">\(P \sim \frac{1}{r^2}\)</span></p></li>
+<li><p>Rodzaje promieniowania:</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(\alpha\)</span> (duża energia, niska penetracja),</p></li>
+<li><p><span class="math notranslate nohighlight">\(\beta\)</span> (średnia energia, średnia penetracja),</p></li>
+<li><p><span class="math notranslate nohighlight">\(\gamma\)</span> (niska energia, duża penetracja)</p></li>
+</ul>
+</li>
+<li><p>prawo osłabienia <span class="math notranslate nohighlight">\(I(x) = I_0 * e^{-\mu x}\)</span> gdzie <span class="math notranslate nohighlight">\(\mu\)</span> to współczynnik osłabienia - zależy od energii promieniowania i od materiału.</p></li>
+<li><p>Czas połowicznego rozpadu wiąże się ze stałą rozpadu jak <span class="math notranslate nohighlight">\(T_{\frac{1}{2}} = \frac{ln(2)}{\lambda}\)</span></p></li>
+</ul>
+</section>
+<section id="kriogenika-113">
+<h2>Kriogenika (113)<a class="headerlink" href="#kriogenika-113" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Ciekły azot z uwagi na swą “ciekłość” utrzymuje stałą temperaturę <span class="math notranslate nohighlight">\(-209^oC\)</span> (tak jak lód dopuki jest lodem ma najwyżej <span class="math notranslate nohighlight">\(0^oC\)</span>)</p></li>
 </ul>
 </section>
 </section>
@@ -126,6 +179,8 @@
 <li><a class="reference internal" href="#">Laboratorium Fizyczne - Kartkówka</a><ul>
 <li><a class="reference internal" href="#tranzystor-125">Tranzystor (125)</a></li>
 <li><a class="reference internal" href="#halotron-43">Halotron (43)</a></li>
+<li><a class="reference internal" href="#dozymetria-96">Dozymetria (96)</a></li>
+<li><a class="reference internal" href="#kriogenika-113">Kriogenika (113)</a></li>
 </ul>
 </li>
 </ul>
@@ -197,7 +252,7 @@
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/46621345293e7a12728f11e2908f8dd288510368>Fri Jan 17 13:53:20 2025 +0100 move note on top of the page (46621345293e7a12728f11e2908f8dd288510368)</a>
+<a href=https://github.com/gucio321/matematyka/commit/7d8b8cdc0de89ab7d978d686b3e27b0156ebb7d9>Fri Jan 17 14:42:12 2025 +0100 add 2 more labs in labfiz (7d8b8cdc0de89ab7d978d686b3e27b0156ebb7d9)</a>
 </font>
 
   </body>
