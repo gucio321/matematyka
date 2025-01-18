@@ -89,3 +89,13 @@
 - zastosowania generatora cieplnego: zasilanie np. stacji badawczych. Opłacalność zależy - mało efektywne i drogie.
 
 ## Baterie słoneczne (134)
+- Rodzaje ogniw fotowoltaicznych:
+    - Amorficzne (niska wydajność) (elastyczne, lekkie, tanie, działają przy niskim oświetleniu, ale mniej trwałe)
+    - Polikrystaliczne (niska wydajność, powszechnie używane z uwagi na niskie koszty produkcji)
+    - Monokrystaliczne (najwyższa wydajność, najdroższe)
+- Granica Shockleya-Queissera - teoretyczna granica wydajności ogniw fotowoltaicznych (33.7% dla widma światła słonecznego)
+```{note}
+Granica SQ dotyczy tylko ogniw jednozłączowych. Ogniwa wielozłączowe (np. tandemowe - cokolwiek to znaczy) mogą osiągać wydajność większą niż 33.7%
+```
+- Zmiana natężenia wraz z odległością tak jak w dozymetrii $\frac{1}{r^2}$ (chociaż nam to w sprawku wyszło bardziej coś jak $A* 0.99^x$)
+- luxomierz - mierzy natężenia światła na jednostkę powierzchni. Detektorem jest zazwyczaj fotodioda.
