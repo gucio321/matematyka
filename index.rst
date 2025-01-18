@@ -1,3 +1,10 @@
+.. note::
+
+   Obecnie doświadczam problemów z zarządzaniem obrazkami. W razie konieczności podglądu obrazków
+   które nie wyświetlają się poprawnie zapraszam do przeglądania kodu źródłowego na GitHubie.
+
+   Więcej informacji na https://github.com/gucio321/matematyka/issues/5
+
 .. Matematyka documentation master file, created by
    sphinx-quickstart on Mon Oct  9 11:04:28 2023.
    You can adapt this file completely to your liking, but it should at least
