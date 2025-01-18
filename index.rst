@@ -24,16 +24,6 @@
    | Analiza   | 24.06 (1.8/1.9 14)   | 01.07 (A d10 14:30)    | 03.09 (3.09 D d10 10:00)       |
    +-----------+----------------------+------------------------+--------------------------------+
 
-.. note::
-
-   Jestem świadomy problemów z wyświetlaniem punktowanych list w całym dokumencie w wersji HTML.
-   Niestety jest 2 tygodnie przed sesją i nie mogę poświęcić 0.5 godziny na debugowanie kodu w CSS.
-   Fix pojawi się najprawdopodobniej dopiero po sesji.
-
-   Więcej informacji na https://github.com/gucio321/matematyka/issues/4.
-   W razie konieczności rozczytania nieczytelnych punktów zapraszam do analizy odpowiedniego pliku źródłowego na GitHubie.
-
-
 Wstęp
 ======================================
 
