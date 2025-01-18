@@ -99,3 +99,50 @@ Granica SQ dotyczy tylko ogniw jednozłączowych. Ogniwa wielozłączowe (np. ta
 ```
 - Zmiana natężenia wraz z odległością tak jak w dozymetrii $\frac{1}{r^2}$ (chociaż nam to w sprawku wyszło bardziej coś jak $A* 0.99^x$)
 - luxomierz - mierzy natężenia światła na jednostkę powierzchni. Detektorem jest zazwyczaj fotodioda.
+
+## Wyznaczenie $\frac{e}{m}$ dla elektronu (45)
+
+- Siła Lorentza - siła działająca na łądunki w polu magnetycznym $F = q * v * B * sin(\alpha)$
+- Jednorodne Pole M - prostopadłe linie pola magnetycznego o takiej samej indukcji. Przykłady:
+    - pole magnetyczne wewnątrz solenoidu
+    - pole między sztabkami magnesu
+    - pole magnetyczne ziemii można przybliżyć jako jednorodne
+- Cewki Hermholtza - ukłąd 2 identycznych cewek aby wytworzyć jednorodne pole magnetyczne. Prąd płynie w tym samym kierunku.
+    - Wektor B jest wzdłuż osi cewek
+    - v - musi być prostopadłe do osi cewek
+    - F jest zgodnie z siłą lorentza
+
+## Efekt Fotoelektryczny (82)
+
+- Zjawisko polegające na emisji elektronów z powierzchni materiału pod wpływem padającego na niego światła.
+```{tip}
+$$
+h * \nu = E_k + m_e c^2
+$$
+
+Również
+$$
+W + E_{max} = h * \nu
+$$
+
+gdzie W to praca wyjścia a E_{max} to maksymalna energia kinetyczna elektronów
+```
+[ref](https://youtu.be/ObQ7Di_xuIs)
+- Energia Fermiego to energia maksymalna dla temperatury metalu 0K
+
+## Lasery (86/87)
+
+- Emisja spontaniczna następuje w skutek przejścia atomu z wyższego stanu pobudzenia na niższy w wyniku czego emitowany jest foton.
+- Emisja wymuszona:
+    - Atom na wyższym poziomie pobudzenia jest zmuszony do przejścia na niższy poziom przez foton. Emitowany w ten sposób foton ma taką samą fazę jak foton wymuszający.
+- inwersja obsadzeń: więcej atomów jest w stanie wzbudzonym. Kluczowe do działania lasera - zapewnia większą emisję wymuszoną niż absorpcję. Inwersje osiąga się dzięki pompowaniu.
+- Pompowanie optyczne polega na dostarczaniu atomom światła o odpowiednio dużej energii aby mogły przejść na wyższy poziom energetyczny
+- Akcja laserowa:
+    1. pompowanie energii
+    2. inwersja obsadzeń - pompowanie przewyższa liczbę atomów wzbudzonych
+    3. emisja wypmuszona - atomy emitują fotony o takiej samej fazie
+    4. wzmocnienie - fotony poruszają się w aktywnym ośrodku powodując więcej emisji wymuszonych
+    5. rezonans - fale odbijają się pomiędzy 2 zwierciadłami. jedno z nich odbija 100% fotonów, drógie przepuszcza niektóre z nich.
+- cechy światła laserowego:
+    - kocherętne (zgodne w fazie)
+    - monochromatyczne (jedna długość fali), skupione (mała średnica wiązki), spójne (mała rozbieżność wiązki)
