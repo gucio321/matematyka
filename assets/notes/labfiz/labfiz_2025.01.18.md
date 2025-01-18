@@ -5,7 +5,7 @@
 - Tranzystor to element półprzewodnikowy
 - Budowa: Emiter (wytwarzane są z niej łądunki), Baza (steruje przepływem łądunków), Kolektor (zbiera ładunki)
 - Podział [ref](https://pl.wikipedia.org/wiki/Tranzystor):
-    * Bipolarne i Uniplorane
+    * Bipolarne i Uniplorane (aka diody)
     * pnp i npn (dla bipolarnych) - ze względu na warstwy przewodzenia
     * materiał wykonania (krzem, german, e.t.c.)
     * {małej, dużej} mocy {małej, wielkiej} częstotliwości e.t.c.
@@ -56,3 +56,19 @@
 ## Kriogenika (113)
 
 - Ciekły azot z uwagi na swą "ciekłość" utrzymuje stałą temperaturę $-209^oC$ (tak jak lód dopuki jest lodem ma najwyżej $0^oC$)
+- Diagramy fazowe:
+<!--![Diagram Fazowy Azotu](./diagram_fazowy.png)-->
+![Diagram Fazowy Azotu](http://chemvlog.pl/wp-content/uploads/2015/10/wykres-fazowy-azotu.jpg)
+   - Punkt potrójny: współistnienie trzech faz
+   - Punkt krytyczny: punkt, w którym zanika różnica między fazami ciecz i gaz
+- Przejścia fazowe:
+    - I Rodzaju: zachodzi skokowa zmiana pewnych właściwości (np. gęstości). Pochodne są nieciągłe. Wymagają dostarczenai ciepła przemiany.
+    - II Rodzaju charakteryzują się ciągłością wszystkich pochodnych f'cji termodynamicznym. Zwykle występują jako punkty krytyczne.
+- R. Clausiusa-Clapeyrona $\frac{dp}{dT} = \frac{\Delta H}{T \Delta V}$ gdzie:
+    - $\Delta H$ to entalpia (aka ciepło) przemiany
+    - $\Delta V$ to zmiana objętości
+    - $p$ to ciśnienie
+    - $T$ to temperatura
+    - $\frac{dp}{dT} to współczynnik nachylenia krzywej fazowej
+
+## Peltier (133)
