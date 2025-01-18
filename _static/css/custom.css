@@ -89,12 +89,6 @@ div.body h2 {
 	background: #000000;
 }
 
-/* for lists - items have too large interline*/
-li p {
-        line-height: 0px;
-}
-
-
 /* note, important, tip warning, background */
 div.admonition {
 	background-color: #31005d;
