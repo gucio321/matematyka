@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Matematyka'
-copyright = '2023, Maciej Szeptuch'
+copyright = '2023-2025, Maciej Szeptuch'
 author = 'Maciej Szeptuch'
 
 
