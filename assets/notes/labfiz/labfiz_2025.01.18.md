@@ -72,3 +72,20 @@
     - $\frac{dp}{dT} to współczynnik nachylenia krzywej fazowej
 
 ## Peltier (133)
+
+- Bilans cieplny Peltiera:
+![schemat](../../labfiz/peltier.png)
+    - Dla chłodziarki: $Q_{chłodzone} + W = Q_{chłodnicy}$ - ciepło jest zabierane z obszaru chłodzonego i przekazywane do chłodnicy
+- Efekt Thomsona: generacja ciepła w przewodniku z prądem w wyniku przpeływu prądu $Q_{thomsona} = \tau * I \Delta T * t$ gdzie $\tau$ to współczynnik Thomsona*
+ _w sumie to ten wzór jest z chata GPT i nie mogę nigdzie znaleźć więcej danych więc bym mu nie ufał_
+- Ciepło Joula-Lentza - opozycja do ciepła Thomsona. Powstaje w wyniku istnienia oporu. Jest wydzielane przez płynący prąd.
+- Sprawność to stosunek uzyskanej pracy do włożonego ciepłą (dla silnika)
+```{important}
+**Sprawność** stosujemy dla silnika cieplnego \
+**Wydajność** stosuje się dla chłodziarki, gdzie jest to stodunek uzyskanego odpływu ciepła do włożonej pracy. __MOŻE BYĆ WIĘKSZA OD 1__
+```
+
+- Kierunek działania elementu peltiera można odwrócić. Wtedy różnica temperatur wymusza przepływ prądu.
+- zastosowania generatora cieplnego: zasilanie np. stacji badawczych. Opłacalność zależy - mało efektywne i drogie.
+
+## Baterie słoneczne (134)
