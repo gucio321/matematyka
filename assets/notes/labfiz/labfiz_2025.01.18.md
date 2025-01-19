@@ -178,3 +178,36 @@ $$
         - warunki zewnętrzne (temperatura e.t.c.)
 - kryterium Rayleigha - określa kiedy  2 położone blisko siebie obiekty są rozróżnialne.
 $\Theta = 1.22 * \frac{\lambda}{D}$. Oznacza to że dwa obiekty są rozróżnialne tylko wtedy, gdy różnica między nimi jest przynajmniej $\Theta$
+
+## Kąt Zwilżenia (15)
+- ciecze hydrofobowe - nie chcą się mieszać z wodą (np. olej)
+- ciecze hydrofilowe - mieszają się z wodą (np. alkochole)
+- kąt zwilżenia - kąt utworzony przez powierzchnię stałą ze styczną do powierzchni cieczy w punkcie styku 3 faz:
+    - statyczny - mieżony na nieruchomej cieczy na statycznej powierzchni
+    - dynamiczny - kształt kropli zmienia się w czasie (postępujący i cofający - różnica to kąt histerezy)
+
+![rysunek](https://upload.wikimedia.org/wikipedia/commons/0/09/Krople.svg)
+
+- Powieżchniowa energia swobodna - energia zgromadzona w atomach na powierzchni. $\frac{J}{m^2}$. Im wyższa energia swobodna tym wyższa "hydrofilność" (np. szkło)
+- Napięcie powierzchniowe - zjawisko wynpikające z dążenia powierzchni cieczy do najmniejszej powierzchni. Definiowana jako energia potrzebna na zwiększenie powierzchni o jednostkę powierzcni.
+- Praca adhezji - energia potrzebna do rozdzielenia 2 faz (np. cieczy i ciała stałego). $W_{a} = \gamma_{c} + \gamma_{s} - \gamma_{cs}$. Im większa praca tym większa "przyczepialność"
+    - da się wyrazić z równania Yanga-Dupré: $W_{a} = \gamma_{c} + \gamma_{s} - \gamma_{cs} = \gamma_c (1 + cos(\theta))$
+
+| Nazwa | równanie | Opis  |
+|-------|----------|-------|
+| Yanga | $\gamma_{sg} = \gamma_{sl} + \gamma_{lg} cos(\theta)$ | opisuje równowagę sił na granicy 3 faz |
+| Dupre | $W_{a} = \gamma_{c} + \gamma_{s} - \gamma_{cs}$ | opisuje pracę adhezji - siłę potrzebną do rozdzielenia 2 faz |
+| yanga-Dupre | $W_{a} = \gamma_{lg} (1 + cos(\theta))$ | połączenie obu powyższych równań  - łączy kąt zwilżenia z pracą adhezji |
+
+Równania używane przy projektowaniu powłok i klejów (kleje mają dużą pracę adhezji żeby się ich nie dało rozkleić).
+Oznacza to że muszą mieć mały kąt zwilżenia (1 przykłąd na rysunku) - cos musi być duuuży.
+
+```{admonition} Efekt Lotosu
+Chat ciągle coś pisze o efekcie lotosu, więc z ciekawości spytałem o co cho:
+
+Liście lotosu są super hydrofobowe - czyli tak bardzo nie lubią wody, że woda się po nich toczy zbierająć przy okazji zanieczyszczenia.
+Dzięki temu liście lotosu pozostają czyste nawet w błotnistych okolicach. Innymi przykłądami to na przykład nartniki które
+dzięki superhydrofobości chodzą po powierzchni wody. Efekt wykorzystuje się na przykłąd w odzierzy przeciwdeszczowej albo w lakierach i farbach (niebrudzące się elewacje budynków).
+```
+
+## Próżnia (22)
