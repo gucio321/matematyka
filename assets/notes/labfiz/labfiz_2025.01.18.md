@@ -1,3 +1,11 @@
+```{warning}
+Ponieważ piszemy kratkówkę tylko z ćwiczeń, które odbył mój zespół, następująće ćwiczenia nie są tu opisane:
+- diody (123)
+- polarymetr (74)
+- dyfrakcja (71)
+- pętla histerezy (39)
+```
+
 # Laboratorium Fizyczne - Kartkówka
 
 ## Tranzystor (125)
@@ -211,3 +219,17 @@ dzięki superhydrofobości chodzą po powierzchni wody. Efekt wykorzystuje się 
 ```
 
 ## Próżnia (22)
+- Gaz doskonały - model teoretyczny gazu w idealnych warunkach (cząsteczki **nie** oddziaływują ze sobą obrucz **sprężystych** zderzeń, cząsteczki punktowe, poruszają się chaoteycznie).
+- Opisywany przez róœnanie clapeyrona $pV = nRT$:
+    - p - ciśnienie
+    - V - objętość
+    - n - liczba moli gazu
+    - R - uniwersalna stałą gazowa
+    - T - temperatura
+- działa w niskim ciśnieniu i wysokiej temperaturze
+- Prawo Boyle'a-Mariotte'a - to po prostu r. Clapeyrona dla stałej temperatury i liczby moli.
+- Jednostki ciśnienia
+    - Pa - pascal - jednostka SI
+    - atm - atmosfera - ciśnienie wywierane przez słup rtęci o wysokości 760mm (1 atm = 101325 Pa)
+    - bar - 1 bar = 100 kPa
+    - mmHg - milimetry słupa rtęci - 1 mmHg = 133.322 Pa
