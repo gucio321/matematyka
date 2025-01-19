@@ -343,6 +343,63 @@ E = \frac{h * c}{\lambda}
 <span class="math notranslate nohighlight">\(\Theta = 1.22 * \frac{\lambda}{D}\)</span>. Oznacza to że dwa obiekty są rozróżnialne tylko wtedy, gdy różnica między nimi jest przynajmniej <span class="math notranslate nohighlight">\(\Theta\)</span></p></li>
 </ul>
 </section>
+<section id="kat-zwilzenia-15">
+<h2>Kąt Zwilżenia (15)<a class="headerlink" href="#kat-zwilzenia-15" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>ciecze hydrofobowe - nie chcą się mieszać z wodą (np. olej)</p></li>
+<li><p>ciecze hydrofilowe - mieszają się z wodą (np. alkochole)</p></li>
+<li><p>kąt zwilżenia - kąt utworzony przez powierzchnię stałą ze styczną do powierzchni cieczy w punkcie styku 3 faz:</p>
+<ul>
+<li><p>statyczny - mieżony na nieruchomej cieczy na statycznej powierzchni</p></li>
+<li><p>dynamiczny - kształt kropli zmienia się w czasie (postępujący i cofający - różnica to kąt histerezy)</p></li>
+</ul>
+</li>
+</ul>
+<p><img alt="rysunek" src="https://upload.wikimedia.org/wikipedia/commons/0/09/Krople.svg" /></p>
+<ul class="simple">
+<li><p>Powieżchniowa energia swobodna - energia zgromadzona w atomach na powierzchni. <span class="math notranslate nohighlight">\(\frac{J}{m^2}\)</span>. Im wyższa energia swobodna tym wyższa “hydrofilność” (np. szkło)</p></li>
+<li><p>Napięcie powierzchniowe - zjawisko wynpikające z dążenia powierzchni cieczy do najmniejszej powierzchni. Definiowana jako energia potrzebna na zwiększenie powierzchni o jednostkę powierzcni.</p></li>
+<li><p>Praca adhezji - energia potrzebna do rozdzielenia 2 faz (np. cieczy i ciała stałego). <span class="math notranslate nohighlight">\(W_{a} = \gamma_{c} + \gamma_{s} - \gamma_{cs}\)</span>. Im większa praca tym większa “przyczepialność”</p>
+<ul>
+<li><p>da się wyrazić z równania Yanga-Dupré: <span class="math notranslate nohighlight">\(W_{a} = \gamma_{c} + \gamma_{s} - \gamma_{cs} = \gamma_c (1 + cos(\theta))\)</span></p></li>
+</ul>
+</li>
+</ul>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Nazwa</p></th>
+<th class="head"><p>równanie</p></th>
+<th class="head"><p>Opis</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Yanga</p></td>
+<td><p><span class="math notranslate nohighlight">\(\gamma_{sg} = \gamma_{sl} + \gamma_{lg} cos(\theta)\)</span></p></td>
+<td><p>opisuje równowagę sił na granicy 3 faz</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dupre</p></td>
+<td><p><span class="math notranslate nohighlight">\(W_{a} = \gamma_{c} + \gamma_{s} - \gamma_{cs}\)</span></p></td>
+<td><p>opisuje pracę adhezji - siłę potrzebną do rozdzielenia 2 faz</p></td>
+</tr>
+<tr class="row-even"><td><p>yanga-Dupre</p></td>
+<td><p><span class="math notranslate nohighlight">\(W_{a} = \gamma_{lg} (1 + cos(\theta))\)</span></p></td>
+<td><p>połączenie obu powyższych równań  - łączy kąt zwilżenia z pracą adhezji</p></td>
+</tr>
+</tbody>
+</table>
+<p>Równania używane przy projektowaniu powłok i klejów (kleje mają dużą pracę adhezji żeby się ich nie dało rozkleić).
+Oznacza to że muszą mieć mały kąt zwilżenia (1 przykłąd na rysunku) - cos musi być duuuży.</p>
+<div class="admonition-efekt-lotosu admonition">
+<p class="admonition-title">Efekt Lotosu</p>
+<p>Chat ciągle coś pisze o efekcie lotosu, więc z ciekawości spytałem o co cho:</p>
+<p>Liście lotosu są super hydrofobowe - czyli tak bardzo nie lubią wody, że woda się po nich toczy zbierająć przy okazji zanieczyszczenia.
+Dzięki temu liście lotosu pozostają czyste nawet w błotnistych okolicach. Innymi przykłądami to na przykład nartniki które
+dzięki superhydrofobości chodzą po powierzchni wody. Efekt wykorzystuje się na przykłąd w odzierzy przeciwdeszczowej albo w lakierach i farbach (niebrudzące się elewacje budynków).</p>
+</div>
+</section>
+<section id="proznia-22">
+<h2>Próżnia (22)<a class="headerlink" href="#proznia-22" title="Link to this heading">¶</a></h2>
+</section>
 </section>
 
 
@@ -365,6 +422,8 @@ E = \frac{h * c}{\lambda}
 <li><a class="reference internal" href="#efekt-fotoelektryczny-82">Efekt Fotoelektryczny (82)</a></li>
 <li><a class="reference internal" href="#lasery-86-87">Lasery (86/87)</a></li>
 <li><a class="reference internal" href="#spektrometr-83">Spektrometr (83)</a></li>
+<li><a class="reference internal" href="#kat-zwilzenia-15">Kąt Zwilżenia (15)</a></li>
+<li><a class="reference internal" href="#proznia-22">Próżnia (22)</a></li>
 </ul>
 </li>
 </ul>
@@ -420,7 +479,7 @@ E = \frac{h * c}{\lambda}
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/1844b8ed5903ed75f821374135f5da4b28e26207>Sun Jan 19 13:51:16 2025 +0100 labfiz: spektrometria (1844b8ed5903ed75f821374135f5da4b28e26207)</a>
+<a href=https://github.com/gucio321/matematyka/commit/7635a699affdc6cf78c6900ea428f740cb874686>Sun Jan 19 19:28:33 2025 +0100 labfiz: kat zwilzenia (7635a699affdc6cf78c6900ea428f740cb874686)</a>
 </font>
 
   </body>
