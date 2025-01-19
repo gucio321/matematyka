@@ -146,3 +146,35 @@ gdzie W to praca wyjścia a E_{max} to maksymalna energia kinetyczna elektronów
 - cechy światła laserowego:
     - kocherętne (zgodne w fazie)
     - monochromatyczne (jedna długość fali), skupione (mała średnica wiązki), spójne (mała rozbieżność wiązki)
+
+## Spektrometr (83)
+- widmo emisyjne - widmo światła emitowane przez atomy przechodzące ze stanu wzbudzonego do podstawowego (lub niższego)
+- każdey pierwiastek ma swoje unikatowe widmo
+- widmo absorbcyjne - wartości energii promieniowania które są absorbowane aby wzbudzić atom.
+```{tip}
+Just BTW.
+
+$$
+E = h * \nu \\
+c = \lambda * \nu
+E = \frac{h * c}{\lambda}
+$$
+```
+- widmo emisyjne pierwiastka zależy od:
+    - poziomy energetyczne atomu zależą od liczb kwantowych, któ©e pośrednio zależą od liczby protonów w jądrze.
+    - Liczby kwantowe:
+        - n - główna liczba kwantowa (powłoka)
+        - l - poboczna liczba kwantowa (moment pędu, kształt orbity) (od 0 do n-1)
+        - m - magnetyczna liczba kwantowa (orientacja orbitalu względem zewnętrznego pola magnetycznego) (od -l do l)
+        - s - spinowy moment elektronu (1/2 lub -1/2)
+- zdolność rozdzielcza: zdolność spektrometru do rozróżniania dwuch położonych plisko siebie linii spektralnych.
+    - definiowana jako $\frac{\lambda}{\Delta \lambda}$
+    - od czego zależy?
+        - rodzaje:
+            - siatka dyfrakcyjna 
+            - pryzmat
+        - szerokość szczeliny wejściowej
+        - długośc drogi optycznej
+        - warunki zewnętrzne (temperatura e.t.c.)
+- kryterium Rayleigha - określa kiedy  2 położone blisko siebie obiekty są rozróżnialne.
+$\Theta = 1.22 * \frac{\lambda}{D}$. Oznacza to że dwa obiekty są rozróżnialne tylko wtedy, gdy różnica między nimi jest przynajmniej $\Theta$
