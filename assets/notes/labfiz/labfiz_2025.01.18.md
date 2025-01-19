@@ -1,3 +1,7 @@
+```{denger}
+DISCLAIMER: W opracowywaniu poniższych zagadnień jako wyszukiwarki korzystałem z ChatGPT!
+```
+
 ```{warning}
 Ponieważ piszemy kratkówkę tylko z ćwiczeń, które odbył mój zespół, następująće ćwiczenia nie są tu opisane:
 - diody (123)
@@ -13,7 +17,7 @@ Ponieważ piszemy kratkówkę tylko z ćwiczeń, które odbył mój zespół, na
 - Tranzystor to element półprzewodnikowy
 - Budowa: Emiter (wytwarzane są z niej łądunki), Baza (steruje przepływem łądunków), Kolektor (zbiera ładunki)
 - Podział [ref](https://pl.wikipedia.org/wiki/Tranzystor):
-    * Bipolarne i Uniplorane (aka diody)
+    * Bipolarne i Uniplorane
     * pnp i npn (dla bipolarnych) - ze względu na warstwy przewodzenia
     * materiał wykonania (krzem, german, e.t.c.)
     * {małej, dużej} mocy {małej, wielkiej} częstotliwości e.t.c.
