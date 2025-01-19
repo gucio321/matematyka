@@ -233,3 +233,24 @@ dzięki superhydrofobości chodzą po powierzchni wody. Efekt wykorzystuje się 
     - atm - atmosfera - ciśnienie wywierane przez słup rtęci o wysokości 760mm (1 atm = 101325 Pa)
     - bar - 1 bar = 100 kPa
     - mmHg - milimetry słupa rtęci - 1 mmHg = 133.322 Pa
+- Manometry - mierzą ciśnienie - rodzaje:
+    - ze względu na typ pomiaru:
+        * ciśnienie absolutne (od próżni absolutnej)
+        * względne - od ciśnienia atmosferycznego
+    - ze względu na konstrukcję:
+        * cieczowe (np. U-rurkowe)
+        * sprężynowe - wykorzystują odkształcenia sprężyste pod wpływme ciśnienia.
+- pompa rotacyjna - po prostu coś się kręci i przepycha gaz ([poszukaj sobie schematu](https://letmegoogle.it/?q=%C5%82opatkowa%20pompa%20rotacyjna%20schemat)). Rodzaje pomp:
+    - zębate
+    - łopatkowe
+- Pompy mogą osiągnąć niską lub średnią próżnię. Niektóre pompy olejowe łopatkowe mogą osiągnąc próżnię wysoką
+- Klasyfikacje próżni:
+
+| Nazwa | Ciśnienie | Opis |
+|-------|-----------|------|
+| ultraekstremalna | poniżej $10^{-12}$ | badanie nad teorią kwantową, eksperymenty w CERNie |
+| ekstremalna | $10^{-9} - 10^{-12}$ | Eksperymenty w fizyce cząsteczek |
+| ultra wysoka | $10^{-7} - 10^{-9}$ | badania materiałów i nanotechnologia, urządzenie półprzewodnikowe |
+| wysoka | $10^{-3} - 10^{-7}$ | w laboratoriach, ,mikroskopia  |
+| średnia | $10^{-1} - 10^{-3}$ | pakowanie próżniowe, chemia |
+| niska | $10^1 - 10^{-1} Pa$ | w przemyśle |
