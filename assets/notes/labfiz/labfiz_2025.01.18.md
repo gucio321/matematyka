@@ -1,4 +1,4 @@
-```{denger}
+```{important}
 DISCLAIMER: W opracowywaniu poniższych zagadnień jako wyszukiwarki korzystałem z ChatGPT!
 ```
 
