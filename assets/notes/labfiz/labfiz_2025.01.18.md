@@ -86,7 +86,7 @@ Ponieważ piszemy kratkówkę tylko z ćwiczeń, które odbył mój zespół, na
 ## Peltier (133)
 
 - Bilans cieplny Peltiera:
-![schemat](../../labfiz/peltier.png)
+![schemat](labfiz/peltier.png)
     - Dla chłodziarki: $Q_{chłodzone} + W = Q_{chłodnicy}$ - ciepło jest zabierane z obszaru chłodzonego i przekazywane do chłodnicy
 - Efekt Thomsona: generacja ciepła w przewodniku z prądem w wyniku przpeływu prądu $Q_{thomsona} = \tau * I \Delta T * t$ gdzie $\tau$ to współczynnik Thomsona*
  _w sumie to ten wzór jest z chata GPT i nie mogę nigdzie znaleźć więcej danych więc bym mu nie ufał_
@@ -198,7 +198,7 @@ $\Theta = 1.22 * \frac{\lambda}{D}$. Oznacza to że dwa obiekty są rozróżnial
     - statyczny - mieżony na nieruchomej cieczy na statycznej powierzchni
     - dynamiczny - kształt kropli zmienia się w czasie (postępujący i cofający - różnica to kąt histerezy)
 
-![rysunek](https://upload.wikimedia.org/wikipedia/commons/0/09/Krople.svg)
+![rysunek](labfiz/woda.png)
 
 - Powieżchniowa energia swobodna - energia zgromadzona w atomach na powierzchni. $\frac{J}{m^2}$. Im wyższa energia swobodna tym wyższa "hydrofilność" (np. szkło)
 - Napięcie powierzchniowe - zjawisko wynpikające z dążenia powierzchni cieczy do najmniejszej powierzchni. Definiowana jako energia potrzebna na zwiększenie powierzchni o jednostkę powierzcni.
