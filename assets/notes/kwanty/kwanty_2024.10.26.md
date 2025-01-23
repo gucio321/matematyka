@@ -7,7 +7,7 @@ E = h \nu \\
 p = \frac{E}{c} = \frac{h \nu}{c} = \frac{h}{\lambda}
 $$
 
-To dla cząstek materialnych równiez można zastosować to prawo wtedy $p = \frac{h}{\lambda} \Rightarrow \lambda = \frac{h}{p$
+To dla cząstek materialnych równiez można zastosować to prawo wtedy $p = \frac{h}{\lambda} \Rightarrow \lambda = \frac{h}{p}$
 
 | Nie-Relatywistycznie               | Relatywistycznie                   |
 |------------------------------------|------------------------------------|
