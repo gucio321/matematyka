@@ -273,6 +273,45 @@ M_k = \frac{1}{n} \sum_{i=1}^{n} x_i^k
 \]</div>
 <p>Można zauważyć, że dla k=1 powyższe wyrażenie uprości się do <span class="math notranslate nohighlight">\(M_1 = \frac{1}{n} \sum_{i=1}^{n} x_i = \bar{x}\)</span> (średnia próby).</p>
 <hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/statystyczna/statystyczna_2025.01.30.md</span></code></em></p>
+</section>
+<section id="notatki-do-egzaminu-break-it-down">
+<h2>Notatki do egzaminu (break it down)<a class="headerlink" href="#notatki-do-egzaminu-break-it-down" title="Link to this heading">¶</a></h2>
+<section id="momenty">
+<h3>Momenty<a class="headerlink" href="#momenty" title="Link to this heading">¶</a></h3>
+<p>ogólnie moment <code class="docutils literal notranslate"><span class="pre">n</span></code>tego rzędu to wartość oczekiwana x podniesionego do <code class="docutils literal notranslate"><span class="pre">n</span></code>:</p>
+<div class="math notranslate nohighlight">
+\[
+m_n = \left\langle x^n \right\rangle
+\]</div>
+<p>Moment pierwszego rzędu jest popularnie zwany średnią.</p>
+<p>Moment centralny, to… Moment zwykły tylko że wokół środka (czyli od każdego x odejmujemy średnie x aka jego wartośc oczekiwaną - serio tu nie ma różnicy chyba).</p>
+<p>Moment centralny oznacza się przez <span class="math notranslate nohighlight">\(\mu\)</span> i definuje jako:</p>
+<div class="math notranslate nohighlight">
+\[
+\mu_n = \left\langle (x - \left\langle x \right\rangle)^n \right\rangle
+\]</div>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>moment centralny 1 rzędu byłby równy zero:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mu_{hipotetycznie 1} = \left\langle (x - \left\langle x \right\rangle)^1 \right\rangle = \\
+\left\langle x \right\rangle - \left\langle\left\langle x \right\rangle\right\rangle = 
+\left\langle x \right\rangle - \left\langle x \right\rangle = 0
+\end{split}\]</div>
+<p>Można to udowodnić (szczególnie cześć z <span class="math notranslate nohighlight">\(\left\langle\left\langle x \right\rangle\right\rangle = \left\langle x \right\rangle\)</span> z faktu, że <span class="math notranslate nohighlight">\(\left\langle x \right\rangle\)</span> jest liczbą więc można
+wyciągnąć przed całkę i mieć całkę z <code class="docutils literal notranslate"><span class="pre">f</span></code> która jest oczywiście <code class="docutils literal notranslate"><span class="pre">1</span></code> (zachęcam do policzenia. ja to mam w zeszycie i mi się nie chce przepisywać).</p>
+<p>Dlatego też moment centralny 1 rzędu to… moment zwykły 1 rzędu czyli po prostu średnia.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>Spoiler alert! tak na prawdę to “śrdnia” <span class="math notranslate nohighlight">\(\neq\)</span> <span class="math notranslate nohighlight">\(\left\langle x \right\rangle\)</span>,
+bo średnia to estymator wartości oczekiwanej, a wartość oczekiwana to wartość oczekiwana.</p>
+<p>To jest tak, że średnią aka estymator liczysz z <strong>DANYCH</strong>, natomiast wartość oczekiwaną z <strong>ROZKŁADU</strong>.
+Więc hipootetycznie to te same rzeczy ale no jednak nie.</p>
+</div>
+<hr class="docutils" />
 <p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/statystyczna/wyklady_tracker.md</span></code></em></p>
 <div class="admonition-tracker-wykladooe admonition">
 <p class="admonition-title">Tracker wykłądóœ</p>
@@ -280,6 +319,7 @@ M_k = \frac{1}{n} \sum_{i=1}^{n} x_i^k
 <li><p>07.10.2024 (dodatkowy)</p></li>
 </ul>
 </div>
+</section>
 </section>
 </section>
 
@@ -308,6 +348,10 @@ M_k = \frac{1}{n} \sum_{i=1}^{n} x_i^k
 </ul>
 </li>
 <li><a class="reference internal" href="#metoda-momentow">Metoda momentów</a></li>
+<li><a class="reference internal" href="#notatki-do-egzaminu-break-it-down">Notatki do egzaminu (break it down)</a><ul>
+<li><a class="reference internal" href="#momenty">Momenty</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -371,7 +415,7 @@ M_k = \frac{1}{n} \sum_{i=1}^{n} x_i^k
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/a58bd1ce4e555e7efcafd0040f6818f95dfa9c90>Thu Jan 23 15:30:26 2025 +0100 labfiz: fix labfiz images mess - now pdf is buildable (a58bd1ce4e555e7efcafd0040f6818f95dfa9c90)</a>
+<a href=https://github.com/gucio321/matematyka/commit/ab4c976339703d8464c7ceb562a0348c59710bcc>Thu Jan 30 20:35:38 2025 +0100 statystyka: I start my exams right now (ab4c976339703d8464c7ceb562a0348c59710bcc)</a>
 </font>
 
   </body>

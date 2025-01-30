@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>&lt;no title&gt; &#8212; Matematyka  - dokumentacja</title>
+    <title>Notatki do egzaminu (break it down) &#8212; Matematyka  - dokumentacja</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=7de1373a" />
@@ -51,7 +51,7 @@
              accesskey="I">indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">&lt;no title&gt;</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Notatki do egzaminu (break it down)</a></li> 
       </ul>
     </div>
     </div>
@@ -62,12 +62,44 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <p>Kryterium Całkowe:</p>
-<ul class="simple">
-<li><p>jeżeli wyrazy w szeregu zsą dodatnie</p></li>
-<li><p>dana jest f-cja, malejąća <span class="math notranslate nohighlight">\(f(n) = a_n\)</span></p></li>
-<li><p>ciąŋ jest zbierzny <span class="math notranslate nohighlight">\(\Leftrightarrow \int_1^\infty f(n) dn\)</span> jest zbierzna</p></li>
-</ul>
+  <section id="notatki-do-egzaminu-break-it-down">
+<h1>Notatki do egzaminu (break it down)<a class="headerlink" href="#notatki-do-egzaminu-break-it-down" title="Link to this heading">¶</a></h1>
+<section id="momenty">
+<h2>Momenty<a class="headerlink" href="#momenty" title="Link to this heading">¶</a></h2>
+<p>ogólnie moment <code class="docutils literal notranslate"><span class="pre">n</span></code>tego rzędu to wartość oczekiwana x podniesionego do <code class="docutils literal notranslate"><span class="pre">n</span></code>:</p>
+<div class="math notranslate nohighlight">
+\[
+m_n = \left\langle x^n \right\rangle
+\]</div>
+<p>Moment pierwszego rzędu jest popularnie zwany średnią.</p>
+<p>Moment centralny, to… Moment zwykły tylko że wokół środka (czyli od każdego x odejmujemy średnie x aka jego wartośc oczekiwaną - serio tu nie ma różnicy chyba).</p>
+<p>Moment centralny oznacza się przez <span class="math notranslate nohighlight">\(\mu\)</span> i definuje jako:</p>
+<div class="math notranslate nohighlight">
+\[
+\mu_n = \left\langle (x - \left\langle x \right\rangle)^n \right\rangle
+\]</div>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>moment centralny 1 rzędu byłby równy zero:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mu_{hipotetycznie 1} = \left\langle (x - \left\langle x \right\rangle)^1 \right\rangle = \\
+\left\langle x \right\rangle - \left\langle\left\langle x \right\rangle\right\rangle = 
+\left\langle x \right\rangle - \left\langle x \right\rangle = 0
+\end{split}\]</div>
+<p>Można to udowodnić (szczególnie cześć z <span class="math notranslate nohighlight">\(\left\langle\left\langle x \right\rangle\right\rangle = \left\langle x \right\rangle\)</span> z faktu, że <span class="math notranslate nohighlight">\(\left\langle x \right\rangle\)</span> jest liczbą więc można
+wyciągnąć przed całkę i mieć całkę z <code class="docutils literal notranslate"><span class="pre">f</span></code> która jest oczywiście <code class="docutils literal notranslate"><span class="pre">1</span></code> (zachęcam do policzenia. ja to mam w zeszycie i mi się nie chce przepisywać).</p>
+<p>Dlatego też moment centralny 1 rzędu to… moment zwykły 1 rzędu czyli po prostu średnia.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>Spoiler alert! tak na prawdę to “śrdnia” <span class="math notranslate nohighlight">\(\neq\)</span> <span class="math notranslate nohighlight">\(\left\langle x \right\rangle\)</span>,
+bo średnia to estymator wartości oczekiwanej, a wartość oczekiwana to wartość oczekiwana.</p>
+<p>To jest tak, że średnią aka estymator liczysz z <strong>DANYCH</strong>, natomiast wartość oczekiwaną z <strong>ROZKŁADU</strong>.
+Więc hipootetycznie to te same rzeczy ale no jednak nie.</p>
+</div>
+</section>
+</section>
 
 
             <div class="clearer"></div>
@@ -75,7 +107,16 @@
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
-        <div class="sphinxsidebarwrapper">
+        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
+    <h3><a href="../../../index.html">Spis treści:</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Notatki do egzaminu (break it down)</a><ul>
+<li><a class="reference internal" href="#momenty">Momenty</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
 <search id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Szybkie wyszukiwanie</h3>
     <div class="searchformwrapper">
@@ -117,7 +158,7 @@
              >indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">&lt;no title&gt;</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Notatki do egzaminu (break it down)</a></li> 
       </ul>
     </div>
     </div>
