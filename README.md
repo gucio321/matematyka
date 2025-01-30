@@ -7,6 +7,16 @@
 Przed Państwem kod źródłowy mojej strony z notatkami z matematyki.
 Zapraszam do oglądania i komentowania!
 
+## How it works?
+
+- I write markdown locally (If I need I build it using `make html`).
+- I commit changes and push them to this repository.
+- First layer of my CI/CD pipeline is triggered by push event. It does the following:
+   - some automation happens to put all the source together (include all files in subdirectories of `assets/notes`). It also updates commit hash/name/date at the bottom of the website.
+   - it builds the html content from sphinx project and pushes it to `gh-pages` branch (this branch has nothing to do with `master` - it has completely different content).
+   - this push triggers the built-in GitHub workflow that does its magic things so that my page hosted via github is updated.
+   - the second step of my CI/CD pipeline (parallel to the above) aims to generate a PDF document from the same source. It is also pushed but this time to `pdf` branch where it could be downloaded via a green scammy-looking button on top of this readme.
+
 ## Instalacja
 
 Część plików nie jestd dodawana do git'a. Generują się same po użyciu dowolnej komendy z Makefile'a.
