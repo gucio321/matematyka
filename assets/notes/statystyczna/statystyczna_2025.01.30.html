@@ -98,6 +98,26 @@ bo średnia to estymator wartości oczekiwanej, a wartość oczekiwana to warto�
 <p>To jest tak, że średnią aka estymator liczysz z <strong>DANYCH</strong>, natomiast wartość oczekiwaną z <strong>ROZKŁADU</strong>.
 Więc hipootetycznie to te same rzeczy ale no jednak nie.</p>
 </div>
+<p>Moment mieszany <span class="math notranslate nohighlight">\(\mu_{m, n}\)</span> to moment centralny dla 2 rzeczy</p>
+<div class="math notranslate nohighlight">
+\[
+\mu_{m, n} = \left\langle (x - \left\langle x \right\rangle)^m (y - \left\langle y \right\rangle)^n \right\rangle
+\]</div>
+</section>
+<section id="wazne-momenty">
+<h2>ważne momenty<a class="headerlink" href="#wazne-momenty" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>wariancja: <span class="math notranslate nohighlight">\(\sigma^2 = \mu_2 = \left\langle x^2 \right\rangle - \left\langle x \right\rangle^2\)</span></p></li>
+<li><p>kowariancja to moment mieszany 1 rzędu <span class="math notranslate nohighlight">\(\mu_{1, 1} = \left\langle xy \right\rangle - \left\langle x \right\rangle \left\langle y \right\rangle\)</span>
+Jeżeli zmienne są statystycznie niezależne <span class="math notranslate nohighlight">\(\Rightarrow\)</span> kowariancja równa 0</p></li>
+</ul>
+</section>
+<section id="wspolczynnik-korelacji-pearsona">
+<h2>Współczynnik korelacji (Pearsona)<a class="headerlink" href="#wspolczynnik-korelacji-pearsona" title="Link to this heading">¶</a></h2>
+<div class="math notranslate nohighlight">
+\[
+p = \frac{cov[x,y]}{\sqrt{v[x]v[y]}}
+\]</div>
 </section>
 </section>
 
@@ -112,6 +132,8 @@ Więc hipootetycznie to te same rzeczy ale no jednak nie.</p>
     <ul>
 <li><a class="reference internal" href="#">Notatki do egzaminu (break it down)</a><ul>
 <li><a class="reference internal" href="#momenty">Momenty</a></li>
+<li><a class="reference internal" href="#wazne-momenty">ważne momenty</a></li>
+<li><a class="reference internal" href="#wspolczynnik-korelacji-pearsona">Współczynnik korelacji (Pearsona)</a></li>
 </ul>
 </li>
 </ul>
@@ -167,7 +189,7 @@ Więc hipootetycznie to te same rzeczy ale no jednak nie.</p>
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/bc74100e2497f26ba67d72da7717100add6c0015>Fri Jan 31 10:37:10 2025 +0100 index.rst: add exam dates (bc74100e2497f26ba67d72da7717100add6c0015)</a>
+<a href=https://github.com/gucio321/matematyka/commit/8bb1b0fb217033ecd7e6fb52f5690a73859e4e09>Fri Jan 31 10:37:30 2025 +0100 update statistics stuff (8bb1b0fb217033ecd7e6fb52f5690a73859e4e09)</a>
 </font>
 
   </body>
