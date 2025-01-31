@@ -39,3 +39,22 @@ bo średnia to estymator wartości oczekiwanej, a wartość oczekiwana to warto�
 To jest tak, że średnią aka estymator liczysz z **DANYCH**, natomiast wartość oczekiwaną z **ROZKŁADU**.
 Więc hipootetycznie to te same rzeczy ale no jednak nie.
 ```
+
+Moment mieszany $\mu_{m, n}$ to moment centralny dla 2 rzeczy
+
+$$
+\mu_{m, n} = \left\langle (x - \left\langle x \right\rangle)^m (y - \left\langle y \right\rangle)^n \right\rangle
+$$
+
+### ważne momenty
+
+- wariancja: $\sigma^2 = \mu_2 = \left\langle x^2 \right\rangle - \left\langle x \right\rangle^2$
+- kowariancja to moment mieszany 1 rzędu $\mu_{1, 1} = \left\langle xy \right\rangle - \left\langle x \right\rangle \left\langle y \right\rangle$
+Jeżeli zmienne są statystycznie niezależne $\Rightarrow$ kowariancja równa 0
+
+
+### Współczynnik korelacji (Pearsona)
+
+$$
+p = \frac{cov[x,y]}{\sqrt{v[x]v[y]}}
+$$
