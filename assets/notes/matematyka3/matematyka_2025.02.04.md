@@ -15,3 +15,8 @@ Numery zadaąń tutaj odnoszą się do książki
 | 2  | R. Różniczkowe cząstkowe | 540c, 541d, 542abd, 547, 550, 551b, 554, 555. |
 
 
+- 40.7.a - z kryt całkowego, potem rozpisać sumę
+- 40.7.c - najpierw z kryt porównawczego uprościć, potem z d'Alemberta. Sumę z 2 szeregów geometrycznych
+- 40.11.b - z kryt. Cauchy'ego wychodzi $\frac{1}{2}$
+- 40.11.h - można rozbić na iloczyn. z jednej części wychodzi 4 a z 2 $\lim_{n\to\infty} \left(1 - \frac{1}{n+1}\right^{2n} = e^{-2}$ (po przekształceniach i użyciu def)
+- 40.11.e - z kryt. d'Alemberta wychodzi 8 więc rozbierzny
