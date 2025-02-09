@@ -69,7 +69,7 @@ Ponieważ piszemy kratkówkę tylko z ćwiczeń, które odbył mój zespół, na
 
 - Ciekły azot z uwagi na swą "ciekłość" utrzymuje stałą temperaturę $-209^oC$ (tak jak lód dopuki jest lodem ma najwyżej $0^oC$)
 - Diagramy fazowe:
-![Diagram Fazowy Azotu](labfiz/diagram_fazowy.png)
+![Diagram Fazowy Azotu](labfiz/diagram_fazowy.jpg)
    - Punkt potrójny: współistnienie trzech faz
    - Punkt krytyczny: punkt, w którym zanika różnica między fazami ciecz i gaz
 - Przejścia fazowe:
