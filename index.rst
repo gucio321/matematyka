@@ -1,4 +1,4 @@
-.. note::
+.. .. note::
 
    Obecnie doświadczam problemów z zarządzaniem obrazkami. W razie konieczności podglądu obrazków
    które nie wyświetlają się poprawnie zapraszam do przeglądania kodu źródłowego na GitHubie.
