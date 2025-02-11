@@ -1,1 +1,0 @@
-# Wstęp do Fizyki Kwantowej
