@@ -23,8 +23,9 @@ pochłonięte. To jest tak zwany model **ciała doskonale czarnego**
 
 Zdolność emisyjną ciała doskonale czarnego oznaczamy jako $R_T$
 
-Wykres Zdolności emisyjnej od częstotliwości fali przedstawia następująćy wykres:
+Wykres Zdolności emisyjnej od częstotliwości fali przedstawia następujący wykres:
 
+![Wykres Zdolności Emisyjnej]](kwanty/wykres.png)
 ```{raw} html
 <img src="http://website.fis.agh.edu.pl/~Wolny/k1graf/5.gif" />
 ```
