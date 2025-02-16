@@ -101,5 +101,6 @@ myst_enable_extensions = [
 latex_elements = {
         'preamble': r'''
         \usepackage{cancel}
+        \usepackage{braket}
         ''',
 }
