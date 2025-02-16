@@ -10,13 +10,14 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. .. tip::
-   Ukończyłem już sesję egzaminacypjną 2023/2024!
-   Z tego powodu życzę wszystkim odwiedzających udanych wakacji!
-   Do zobaczenia w przyszłym roku akademickim 2024/2025
+.. tip::
+   Z pewnymi trudnośćiami (pzdr M.P.) ukończyłem już sesję egzaminacypjną semestru zimowego 2024/2025!
+   Z tego powodu życzę wszystkim odwiedzającym udanych feri!
+   Do zobaczenia w przyszłym semestrze i powodzenia dla wszystkich którzy nadal walczą ze statystyką!
    gucio321 <gucio321@protonmail.com>
 
-.. warning::
+.. .. warning::
+   
    Terminy egzaminów:
 
    +------------+------------------------+--------------------------+--------------------------------+
