@@ -1,0 +1,185 @@
+
+
+<!DOCTYPE html>
+
+<html lang="pl" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Obwody elektryczne &#8212; Matematyka  - dokumentacja</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=7de1373a" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
+    
+    <script src="../../../_static/documentation_options.js?v=a28d12eb"></script>
+    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/translations.js?v=2827c288"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    
+    
+     
+        <script src="../../../_static/jquery.cookie.js"></script>
+    
+
+    
+     
+        <script src="../../../_static/cloud.base.js"></script>
+    
+
+    
+     
+        <script src="../../../_static/cloud.js"></script>
+    
+
+    <link rel="icon" href="../../../_static/icon.ico"/>
+    <link rel="index" title="Indeks" href="../../../genindex.html" />
+    <link rel="search" title="Szukaj" href="../../../search.html" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head><body>
+    <div class="relbar-top">
+        
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Nawigacja</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="Indeks ogólny"
+             accesskey="I">indeks</a></li>
+    <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">Obwody elektryczne</a></li> 
+      </ul>
+    </div>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="obwody-elektryczne">
+<h1>Obwody elektryczne<a class="headerlink" href="#obwody-elektryczne" title="Link to this heading">¶</a></h1>
+<section id="elementy-obwodu">
+<h2>Elementy obwodu<a class="headerlink" href="#elementy-obwodu" title="Link to this heading">¶</a></h2>
+<p>Obwóð skłąda się z m.in.:</p>
+<ul class="simple">
+<li><p>źródło napięcia</p></li>
+<li><p>źródło prąðu (natężenia prąðu)</p></li>
+<li><p>rezystory</p></li>
+<li><p>kondensatory</p></li>
+<li><p>cewki</p></li>
+</ul>
+<p>z punktu widzenia topologii obwodu wyróżniamy:</p>
+<ul class="simple">
+<li><p>węzły</p></li>
+<li><p>oczka</p></li>
+<li><p>gałęzie</p></li>
+</ul>
+</section>
+<section id="sygnaly">
+<h2>Sygnały<a class="headerlink" href="#sygnaly" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>napięcie (różnica potencjałów) <span class="math notranslate nohighlight">\(U_AB = V_A - V_B\)</span>. Może być idealna albo rzeczywiste (zależy, czy jest opornik z oporem wewnętrznym)
+wyróżniamy także źródło napięćia sterowana (na przykład <span class="math notranslate nohighlight">\(U = ax\)</span>)</p></li>
+<li><p>prąd <span class="math notranslate nohighlight">\(I = \frac{dq}{dt}\)</span>
+Również można wyróżnić idealne lub realne, do którego wpina się rezystor równolegle.
+Dzielnik prądu: TODO <span class="math notranslate nohighlight">\(I_1 = J \frac{G_1}{G_1 + G_2+...}\)</span> gdzie G to konduktancja (<span class="math notranslate nohighlight">\(\frac{1}{R}\)</span>)</p></li>
+</ul>
+<p>Źródło prąðu i źródło napięcia nazywamy elementami aktywnymi, natomiast pozostałe to elementy pasywne.</p>
+<p>L i C to elementy zachowawcze (zachowują energię)
+R to element dyscypatywny (rozprasza energię)</p>
+</section>
+<section id="prawa">
+<h2>Prawa<a class="headerlink" href="#prawa" title="Link to this heading">¶</a></h2>
+<p>Prawo Ohma: <span class="math notranslate nohighlight">\(U = I*R\)</span> (napięcie jest proporcjonalne do prądu ze wszpółczynnikiem R)</p>
+<p>Kondensator charakteryzuje się pojemnością C a Cewka Idukcyjnośćią L</p>
+<p>Prawa Kirhoffa:</p>
+<ol class="arabic simple">
+<li><p>algebraiczna suma prądów w węźle jest równa 0</p></li>
+<li><p>algebraiczna suma napięć w oczku jest róœna 0</p></li>
+</ol>
+<div class="admonition-uklady-lti admonition">
+<p class="admonition-title">Ukłądy LTI</p>
+<p>Linear Time Invariant - obwody liniowe niezależne w czasie</p>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
+    <h3><a href="../../../index.html">Spis treści:</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Obwody elektryczne</a><ul>
+<li><a class="reference internal" href="#elementy-obwodu">Elementy obwodu</a></li>
+<li><a class="reference internal" href="#sygnaly">Sygnały</a></li>
+<li><a class="reference internal" href="#prawa">Prawa</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Szybkie wyszukiwanie</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Szukaj" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+    
+    
+        <div class="sidebar-toggle-group no-js">
+            
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                 «
+                <span class="show-for-small">hide menu</span>
+                
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                 »
+            </button>
+        </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Nawigacja</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="Indeks ogólny"
+             >indeks</a></li>
+    <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">Obwody elektryczne</a></li> 
+      </ul>
+    </div>
+    </div>
+
+<div class="footer" style="text-align:center">
+© Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
+Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
+Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
+<a href=https://github.com/gucio321/matematyka/commit/ba32b034d2bc3b75653523b3fa213bc66af6eadd>Thu Mar 6 15:49:31 2025 +0100 updates after wednesday (ba32b034d2bc3b75653523b3fa213bc66af6eadd)</a>
+</font>
+
+  </body>
+</html>
