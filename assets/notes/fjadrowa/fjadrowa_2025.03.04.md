@@ -75,15 +75,16 @@ zastosujmy tranformacje lorentza o v wzdłuż osi z o prędkość $\beta$ (ewent
 
 $$
 \begin{bmatrix}
-\gamma 0 0 -\beta \gamma \\
-0 1 0 0 \\
-0 0 1 0 \\
--\beta \gamma 0 0 \gamma
-\end{bmatrix} \begin{bmatrix}
+\gamma & 0 & 0 & -\beta \gamma \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+-\beta \gamma & 0 & 0 & \gamma
+\end{bmatrix}
+\begin{bmatrix}
 t \\
 x \\
 y \\
-z \end{bmatrix} = \begin{bmatrix}
+z \end{bmatrix}
 $$
 
 TODO: policzyć to i zobaczyć czy wyjdzie

@@ -1,0 +1,1 @@
+# Termodynamika i Fizyka Statystyczna
