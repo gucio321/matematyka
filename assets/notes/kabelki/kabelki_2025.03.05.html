@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Obwody elektryczne &#8212; Matematyka  - dokumentacja</title>
+    <title>Elementy obwodu &#8212; Matematyka  - dokumentacja</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=7de1373a" />
@@ -51,7 +51,7 @@
              accesskey="I">indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Obwody elektryczne</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Elementy obwodu</a></li> 
       </ul>
     </div>
     </div>
@@ -62,10 +62,8 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="obwody-elektryczne">
-<h1>Obwody elektryczne<a class="headerlink" href="#obwody-elektryczne" title="Link to this heading">¶</a></h1>
-<section id="elementy-obwodu">
-<h2>Elementy obwodu<a class="headerlink" href="#elementy-obwodu" title="Link to this heading">¶</a></h2>
+  <section id="elementy-obwodu">
+<h1>Elementy obwodu<a class="headerlink" href="#elementy-obwodu" title="Link to this heading">¶</a></h1>
 <p>Obwóð skłąda się z m.in.:</p>
 <ul class="simple">
 <li><p>źródło napięcia</p></li>
@@ -80,7 +78,6 @@
 <li><p>oczka</p></li>
 <li><p>gałęzie</p></li>
 </ul>
-</section>
 <section id="sygnaly">
 <h2>Sygnały<a class="headerlink" href="#sygnaly" title="Link to this heading">¶</a></h2>
 <ul class="simple">
@@ -109,6 +106,30 @@ R to element dyscypatywny (rozprasza energię)</p>
 </div>
 </section>
 </section>
+<section id="dzielniki-pradu-i-napiecia">
+<h1>Dzielniki prądu i napięcia<a class="headerlink" href="#dzielniki-pradu-i-napiecia" title="Link to this heading">¶</a></h1>
+<section id="dzielnik-napiecia">
+<h2>Dzielnik Napięcia<a class="headerlink" href="#dzielnik-napiecia" title="Link to this heading">¶</a></h2>
+<p>Rozważmy szeregowo połączone m rezystorów o róznych napięciach (<span class="math notranslate nohighlight">\(R_1, R_2, ..., R_m\)</span>)</p>
+<p>Rozważmy następujące wyrażenia</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+U_0 = \sum_{i=1}^{m} U_i = \sum_{i=1}^{m} I * R_i = I \sum_{i=1}^{m} R_i \\
+U_n = I * R_n \\
+\end{split}\]</div>
+<p>Można wyliczyć sotsunek napięcia źródła <span class="math notranslate nohighlight">\(U_0\)</span> do napięcia na n-tym oporniku:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{U_0}{U_n} = \frac{\sum_{i=1}^{m} R_i}{R_n}
+\]</div>
+</section>
+<section id="dzielnik-pradu">
+<h2>Dzielnik Prądu<a class="headerlink" href="#dzielnik-pradu" title="Link to this heading">¶</a></h2>
+<p>Rozważmy najpierw 2 równolegle połączone rezystory zasilane źróðłem prądowym.
+Dla takiego układu, można zapisać następujące wyrażenia.</p>
+<p><img alt="dzielnik prądu" src="assets/notes/kabelki/kabelki/obwod1.svg" /></p>
+</section>
+</section>
 
 
             <div class="clearer"></div>
@@ -119,10 +140,14 @@ R to element dyscypatywny (rozprasza energię)</p>
         <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
     <h3><a href="../../../index.html">Spis treści:</a></h3>
     <ul>
-<li><a class="reference internal" href="#">Obwody elektryczne</a><ul>
-<li><a class="reference internal" href="#elementy-obwodu">Elementy obwodu</a></li>
+<li><a class="reference internal" href="#">Elementy obwodu</a><ul>
 <li><a class="reference internal" href="#sygnaly">Sygnały</a></li>
 <li><a class="reference internal" href="#prawa">Prawa</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#dzielniki-pradu-i-napiecia">Dzielniki prądu i napięcia</a><ul>
+<li><a class="reference internal" href="#dzielnik-napiecia">Dzielnik Napięcia</a></li>
+<li><a class="reference internal" href="#dzielnik-pradu">Dzielnik Prądu</a></li>
 </ul>
 </li>
 </ul>
@@ -169,7 +194,7 @@ R to element dyscypatywny (rozprasza energię)</p>
              >indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Obwody elektryczne</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Elementy obwodu</a></li> 
       </ul>
     </div>
     </div>
@@ -178,7 +203,7 @@ R to element dyscypatywny (rozprasza energię)</p>
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/ba32b034d2bc3b75653523b3fa213bc66af6eadd>Thu Mar 6 15:49:31 2025 +0100 updates after wednesday (ba32b034d2bc3b75653523b3fa213bc66af6eadd)</a>
+<a href=https://github.com/gucio321/matematyka/commit/db2cba2f04d04f9ca4151e917d5109973d19dfce>Sun Mar 9 15:10:16 2025 +0100 This commit does several things (read more): (db2cba2f04d04f9ca4151e917d5109973d19dfce)</a>
 </font>
 
   </body>

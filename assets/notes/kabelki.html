@@ -78,10 +78,8 @@
 <h1>Obwody Elektryczne i Struktury Półprzewodnikowe<a class="headerlink" href="#obwody-elektryczne-i-struktury-polprzewodnikowe" title="Link to this heading">¶</a></h1>
 <hr class="docutils" />
 <p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/kabelki/kabelki_2025.03.05.md</span></code></em></p>
-<section id="obwody-elektryczne">
-<h2>Obwody elektryczne<a class="headerlink" href="#obwody-elektryczne" title="Link to this heading">¶</a></h2>
 <section id="elementy-obwodu">
-<h3>Elementy obwodu<a class="headerlink" href="#elementy-obwodu" title="Link to this heading">¶</a></h3>
+<h2>Elementy obwodu<a class="headerlink" href="#elementy-obwodu" title="Link to this heading">¶</a></h2>
 <p>Obwóð skłąda się z m.in.:</p>
 <ul class="simple">
 <li><p>źródło napięcia</p></li>
@@ -96,7 +94,6 @@
 <li><p>oczka</p></li>
 <li><p>gałęzie</p></li>
 </ul>
-</section>
 <section id="sygnaly">
 <h3>Sygnały<a class="headerlink" href="#sygnaly" title="Link to this heading">¶</a></h3>
 <ul class="simple">
@@ -125,6 +122,30 @@ R to element dyscypatywny (rozprasza energię)</p>
 </div>
 </section>
 </section>
+<section id="dzielniki-pradu-i-napiecia">
+<h2>Dzielniki prądu i napięcia<a class="headerlink" href="#dzielniki-pradu-i-napiecia" title="Link to this heading">¶</a></h2>
+<section id="dzielnik-napiecia">
+<h3>Dzielnik Napięcia<a class="headerlink" href="#dzielnik-napiecia" title="Link to this heading">¶</a></h3>
+<p>Rozważmy szeregowo połączone m rezystorów o róznych napięciach (<span class="math notranslate nohighlight">\(R_1, R_2, ..., R_m\)</span>)</p>
+<p>Rozważmy następujące wyrażenia</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+U_0 = \sum_{i=1}^{m} U_i = \sum_{i=1}^{m} I * R_i = I \sum_{i=1}^{m} R_i \\
+U_n = I * R_n \\
+\end{split}\]</div>
+<p>Można wyliczyć sotsunek napięcia źródła <span class="math notranslate nohighlight">\(U_0\)</span> do napięcia na n-tym oporniku:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{U_0}{U_n} = \frac{\sum_{i=1}^{m} R_i}{R_n}
+\]</div>
+</section>
+<section id="dzielnik-pradu">
+<h3>Dzielnik Prądu<a class="headerlink" href="#dzielnik-pradu" title="Link to this heading">¶</a></h3>
+<p>Rozważmy najpierw 2 równolegle połączone rezystory zasilane źróðłem prądowym.
+Dla takiego układu, można zapisać następujące wyrażenia.</p>
+<p><img alt="dzielnik prądu" src="../../_images/obwod1.svg" /></p>
+</section>
+</section>
 </section>
 
 
@@ -137,10 +158,14 @@ R to element dyscypatywny (rozprasza energię)</p>
     <h3><a href="../../index.html">Spis treści:</a></h3>
     <ul>
 <li><a class="reference internal" href="#">Obwody Elektryczne i Struktury Półprzewodnikowe</a><ul>
-<li><a class="reference internal" href="#obwody-elektryczne">Obwody elektryczne</a><ul>
-<li><a class="reference internal" href="#elementy-obwodu">Elementy obwodu</a></li>
+<li><a class="reference internal" href="#elementy-obwodu">Elementy obwodu</a><ul>
 <li><a class="reference internal" href="#sygnaly">Sygnały</a></li>
 <li><a class="reference internal" href="#prawa">Prawa</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#dzielniki-pradu-i-napiecia">Dzielniki prądu i napięcia</a><ul>
+<li><a class="reference internal" href="#dzielnik-napiecia">Dzielnik Napięcia</a></li>
+<li><a class="reference internal" href="#dzielnik-pradu">Dzielnik Prądu</a></li>
 </ul>
 </li>
 </ul>
@@ -214,7 +239,7 @@ R to element dyscypatywny (rozprasza energię)</p>
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/ba32b034d2bc3b75653523b3fa213bc66af6eadd>Thu Mar 6 15:49:31 2025 +0100 updates after wednesday (ba32b034d2bc3b75653523b3fa213bc66af6eadd)</a>
+<a href=https://github.com/gucio321/matematyka/commit/db2cba2f04d04f9ca4151e917d5109973d19dfce>Sun Mar 9 15:10:16 2025 +0100 This commit does several things (read more): (db2cba2f04d04f9ca4151e917d5109973d19dfce)</a>
 </font>
 
   </body>
