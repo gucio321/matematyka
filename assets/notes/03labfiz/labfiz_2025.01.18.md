@@ -69,7 +69,7 @@ Ponieważ piszemy kratkówkę tylko z ćwiczeń, które odbył mój zespół, na
 
 - Ciekły azot z uwagi na swą "ciekłość" utrzymuje stałą temperaturę $-209^oC$ (tak jak lód dopuki jest lodem ma najwyżej $0^oC$)
 - Diagramy fazowe:
-![Diagram Fazowy Azotu](labfiz/diagram_fazowy.jpg)
+![Diagram Fazowy Azotu](03labfiz/diagram_fazowy.jpg)
    - Punkt potrójny: współistnienie trzech faz
    - Punkt krytyczny: punkt, w którym zanika różnica między fazami ciecz i gaz
 - Przejścia fazowe:
@@ -85,7 +85,7 @@ Ponieważ piszemy kratkówkę tylko z ćwiczeń, które odbył mój zespół, na
 ## Peltier (133)
 
 - Bilans cieplny Peltiera:
-![schemat](labfiz/peltier.png)
+![schemat](03labfiz/peltier.png)
     - Dla chłodziarki: $Q_{chłodzone} + W = Q_{chłodnicy}$ - ciepło jest zabierane z obszaru chłodzonego i przekazywane do chłodnicy
 - Efekt Thomsona: generacja ciepła w przewodniku z prądem w wyniku przpeływu prądu $Q_{thomsona} = \tau * I \Delta T * t$ gdzie $\tau$ to współczynnik Thomsona*
  _w sumie to ten wzór jest z chata GPT i nie mogę nigdzie znaleźć więcej danych więc bym mu nie ufał_
@@ -197,7 +197,7 @@ $\Theta = 1.22 * \frac{\lambda}{D}$. Oznacza to że dwa obiekty są rozróżnial
     - statyczny - mieżony na nieruchomej cieczy na statycznej powierzchni
     - dynamiczny - kształt kropli zmienia się w czasie (postępujący i cofający - różnica to kąt histerezy)
 
-![rysunek](labfiz/woda.png)
+![rysunek](03labfiz/woda.png)
 
 - Powieżchniowa energia swobodna - energia zgromadzona w atomach na powierzchni. $\frac{J}{m^2}$. Im wyższa energia swobodna tym wyższa "hydrofilność" (np. szkło)
 - Napięcie powierzchniowe - zjawisko wynpikające z dążenia powierzchni cieczy do najmniejszej powierzchni. Definiowana jako energia potrzebna na zwiększenie powierzchni o jednostkę powierzcni.

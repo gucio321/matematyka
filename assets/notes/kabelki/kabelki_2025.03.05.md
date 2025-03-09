@@ -1,6 +1,4 @@
-## Obwody elektryczne
-
-### Elementy obwodu
+## Elementy obwodu
 
 Obwóð skłąda się z m.in.:
 - źródło napięcia
@@ -40,3 +38,29 @@ Prawa Kirhoffa:
 ```{admonition} Ukłądy LTI
 Linear Time Invariant - obwody liniowe niezależne w czasie
 ```
+
+## Dzielniki prądu i napięcia
+
+### Dzielnik Napięcia
+
+Rozważmy szeregowo połączone m rezystorów o róznych napięciach ($R_1, R_2, ..., R_m$)
+
+Rozważmy następujące wyrażenia
+
+$$
+U_0 = \sum_{i=1}^{m} U_i = \sum_{i=1}^{m} I * R_i = I \sum_{i=1}^{m} R_i \\
+U_n = I * R_n \\
+$$
+
+Można wyliczyć sotsunek napięcia źródła $U_0$ do napięcia na n-tym oporniku:
+
+$$
+\frac{U_0}{U_n} = \frac{\sum_{i=1}^{m} R_i}{R_n}
+$$
+
+### Dzielnik Prądu
+
+Rozważmy najpierw 2 równolegle połączone rezystory zasilane źróðłem prądowym.
+Dla takiego układu, można zapisać następujące wyrażenia.
+
+![dzielnik prądu](kabelki/obwod1.svg)

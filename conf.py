@@ -29,6 +29,7 @@ author = 'Maciej Szeptuch'
 # ones.
 extensions = [
         "sphinx.ext.githubpages",
+        "sphinx.ext.imgconverter",
         #"sphinxcontrib.images", # https://github.com/sphinx-contrib/images
         "myst_parser",
         #"cloud_sptheme.ext.issue_tracker",
