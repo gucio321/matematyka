@@ -64,3 +64,22 @@ Rozważmy najpierw 2 równolegle połączone rezystory zasilane źróðłem prą
 Dla takiego układu, można zapisać następujące wyrażenia.
 
 ![dzielnik prądu](kabelki/obwod1.svg)
+
+$$
+I_0 = I_1 + I_2 = \frac{U}{R_1} + \frac{U}{R_2}
+I_2 = \frac{U}{R_2}
+$$
+
+Nastęþnie, znalogicznie do powyższego przypadku, można zapisać stosunek:
+
+$$
+\frac{I_0}{I_2} = R_2 \left( \frac{1}{R_1} + \frac{1}{R_2} \right) = \\
+= \frac{R_2 + R_1}{R_1}
+$$
+
+Uogulnienie tego zagadnienia na m rezystorów nie da tak prostego wzoru jak powyżej.
+Jego najprostsza postać przyjmie postać:
+
+$$
+\frac{I_0}{I_n} = R_n \sum_{i=1}^{m} \frac{1}{R_i}
+$4
