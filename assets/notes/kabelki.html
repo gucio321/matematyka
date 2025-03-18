@@ -160,6 +160,69 @@ Jego najprostsza postać przyjmie postać:</p>
 <p>$<span class="math notranslate nohighlight">\(
 \frac{I_0}{I_n} = R_n \sum_{i=1}^{m} \frac{1}{R_i}
 \)</span>4</p>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/kabelki/kabelki_2025.03.2.md</span></code></em></p>
+</section>
+</section>
+<section id="prawa-kirhoffa-i-prawa-wynikajace">
+<h2>Prawa Kirhoffa i prawa wynikające<a class="headerlink" href="#prawa-kirhoffa-i-prawa-wynikajace" title="Link to this heading">¶</a></h2>
+<section id="zasada-superpozycji">
+<h3>Zasada superpozycji<a class="headerlink" href="#zasada-superpozycji" title="Link to this heading">¶</a></h3>
+<blockquote>
+<div><p>Odpowiedź ukłądu na sume wymuszeń jest róœna sumie odpowiedzi na poszczególne wymuszenia.</p>
+</div></blockquote>
+<div class="math notranslate nohighlight">
+\[
+I_L = I_L(E) + I_L(J)
+\]</div>
+</section>
+<section id="tw-thevenina">
+<h3>Tw. Thévenina<a class="headerlink" href="#tw-thevenina" title="Link to this heading">¶</a></h3>
+<blockquote>
+<div><p>Każdy liniowy dwójnik aktywny możemy zastąpić obwodem równoważnym w postaci rzeczywistego źródła napięcia. Rezystancja tego źródła jest rezystancją dwójnika, po wyłączeniu w nim wszystkich realnych źródeł napięcia i prądu. Wartość napięcia tego źródła wyliczamy jako napięcie na rozwartych końcówkach dwojnika.</p>
+</div></blockquote>
+<div class="admonition-dwojnik admonition">
+<p class="admonition-title">dwójnik</p>
+<p>obwód z któ©ego można wyprowadzi 2 “nóżki”</p>
+</div>
+</section>
+<section id="tw-nortona">
+<h3>Tw. Nortona<a class="headerlink" href="#tw-nortona" title="Link to this heading">¶</a></h3>
+<p>Każdy liniowy dwójnik aktywny możemy zastąpić obwodem równoważnym w postaci rzeczywistego źródła prądu. Rezystancja tego źródła jest rezystancją dwójnika, po wyłączeniu w nim wszystkich realnych źródeł napięcia i prądu. Wartość prądu tego źródła wyliczamy jako prąd dwójnika przy jego końcówkach zwartych.</p>
+</section>
+<section id="metoda-macierzowa-pradow-oczkowych">
+<h3>Metoda macierzowa prądów oczkowych<a class="headerlink" href="#metoda-macierzowa-pradow-oczkowych" title="Link to this heading">¶</a></h3>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>w obwodzie nie mogą występować źródła prądu</p>
+</div>
+<p>Zapisujemy równania dla oczek (gałężie - węzły + 1 równań) i zapisujemy macierz</p>
+<div class="math notranslate nohighlight">
+\[
+[U] = [R] \cdot [I]
+\]</div>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>I w macierzy to tzw. prżdy oczkowe, natomiast prądy rzecywiste w układzie trzeba dopiero wyliczyć</p>
+</div>
+<p>Macierz [R] mamy:</p>
+<ul class="simple">
+<li><p>na diagonali sumaryczne opory oczek</p></li>
+<li><p>w pozostałych miejscach wzajemne ich opory (jak prąð przechodzi w 2 różnych kierunkach ,dajemy -)</p></li>
+</ul>
+</section>
+<section id="metoda-macierzowa-potencjalow-wezlowych">
+<h3>Metoda macierzowa potencjałów węzłowych<a class="headerlink" href="#metoda-macierzowa-potencjalow-wezlowych" title="Link to this heading">¶</a></h3>
+<p><span class="math notranslate nohighlight">\(G * V = I\)</span> (macierz konduktancji razy wektor nieznanych potencjałów jest równy wektorowi znanych prądów)</p>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>w obwodzie nie może być źródeł napięciowych</p>
+</div>
+<ol class="arabic simple">
+<li><p>ustalamy rząd problemu (węzły - 1)</p></li>
+<li><p>ustalamy węzeł referencyjny (w dla którego wszystkie potencjały będą liczone)</p></li>
+<li></li>
+</ol>
 </section>
 </section>
 </section>
@@ -182,6 +245,14 @@ Jego najprostsza postać przyjmie postać:</p>
 <li><a class="reference internal" href="#dzielniki-pradu-i-napiecia">Dzielniki prądu i napięcia</a><ul>
 <li><a class="reference internal" href="#dzielnik-napiecia">Dzielnik Napięcia</a></li>
 <li><a class="reference internal" href="#dzielnik-pradu">Dzielnik Prądu</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#prawa-kirhoffa-i-prawa-wynikajace">Prawa Kirhoffa i prawa wynikające</a><ul>
+<li><a class="reference internal" href="#zasada-superpozycji">Zasada superpozycji</a></li>
+<li><a class="reference internal" href="#tw-thevenina">Tw. Thévenina</a></li>
+<li><a class="reference internal" href="#tw-nortona">Tw. Nortona</a></li>
+<li><a class="reference internal" href="#metoda-macierzowa-pradow-oczkowych">Metoda macierzowa prądów oczkowych</a></li>
+<li><a class="reference internal" href="#metoda-macierzowa-potencjalow-wezlowych">Metoda macierzowa potencjałów węzłowych</a></li>
 </ul>
 </li>
 </ul>
@@ -255,7 +326,7 @@ Jego najprostsza postać przyjmie postać:</p>
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/fcc460ef170e4c65a83d152201a0c3ec87856ff6>Mon Mar 10 10:55:37 2025 +0100 add more notes about current splitter (fcc460ef170e4c65a83d152201a0c3ec87856ff6)</a>
+<a href=https://github.com/gucio321/matematyka/commit/4090efc84ce49942883803390f384476549d9609>Tue Mar 18 10:06:26 2025 +0100 updates (4090efc84ce49942883803390f384476549d9609)</a>
 </font>
 
   </body>
