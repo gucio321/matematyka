@@ -161,6 +161,43 @@ Jego najprostsza postać przyjmie postać:</p>
 \frac{I_0}{I_n} = R_n \sum_{i=1}^{m} \frac{1}{R_i}
 \)</span>4</p>
 <hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/kabelki/kabelki_2025.03.19.md</span></code></em></p>
+</section>
+<section id="twierdzenie-o-wlaczaniu-idealnych-zrodel-napiecia-w-wezle">
+<h3>twierdzenie o włączaniu idealnych źródeł napięcia w węźle<a class="headerlink" href="#twierdzenie-o-wlaczaniu-idealnych-zrodel-napiecia-w-wezle" title="Link to this heading">¶</a></h3>
+<div class="admonition-twierdzenie admonition">
+<p class="admonition-title">twierdzenie</p>
+<p>dodanie takich samych (co do wartości i kierunku) idealnych źródeł napięcia w każdej gałęzi wychodzącej z węzła NIE zmienia rozkłądu prądów w obwodzie.</p>
+</div>
+<div class="admonition-twierdzenie admonition">
+<p class="admonition-title">twierdzenie</p>
+<p>dodanie takich samych co do wartośći i kierunku źródeł prądu nie zmienia rozkłądu nap→ęć w oczku</p>
+</div>
+</section>
+</section>
+<section id="inne-elementy-obowdu">
+<h2>inne elementy obowdu<a class="headerlink" href="#inne-elementy-obowdu" title="Link to this heading">¶</a></h2>
+<section id="kondensatory">
+<h3>Kondensatory<a class="headerlink" href="#kondensatory" title="Link to this heading">¶</a></h3>
+<p><span class="math notranslate nohighlight">\(Q = C \cdot U\)</span> ma związek z prądem poprzez $I = \frac{dQ}{dt}</p>
+</section>
+<section id="cewki">
+<h3>Cewki<a class="headerlink" href="#cewki" title="Link to this heading">¶</a></h3>
+<p>są charakteryzowane przez indukcyjność <span class="math notranslate nohighlight">\(\Epsilon = N \Psi = L \cdot I\)</span>
+gdzie <span class="math notranslate nohighlight">\(\Epsilon\)</span> to strumień skojarzony.</p>
+<p>Można uzależnić <span class="math notranslate nohighlight">\(\Epsilon\)</span> od napięcia za pomocą prawa Faradaya:</p>
+<p><span class="math notranslate nohighlight">\(U = \frac{d\Epsilon|}{dt} = L \frac{dI}{dt}\)</span></p>
+<p>Jak mamy 2 cewki, to pojawia się samoindukcja</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+U_{L2} = M \frac{dI_1}{dt} + L_2 \frac{dI_2}{dt} \\
+U_{L1} = M \frac{dI_2}{dt} + L_1 \frac{dI_1}{dt}
+\end{split}\]</div>
+</section>
+<section id="uklady-pradu-zmiennego">
+<h3>Ukłądy prądu zmiennego<a class="headerlink" href="#uklady-pradu-zmiennego" title="Link to this heading">¶</a></h3>
+<p>prąð zmiennny = sinusoidalny, stan ustalony</p>
+<hr class="docutils" />
 <p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/kabelki/kabelki_2025.03.2.md</span></code></em></p>
 </section>
 </section>
@@ -245,6 +282,13 @@ I_L = I_L(E) + I_L(J)
 <li><a class="reference internal" href="#dzielniki-pradu-i-napiecia">Dzielniki prądu i napięcia</a><ul>
 <li><a class="reference internal" href="#dzielnik-napiecia">Dzielnik Napięcia</a></li>
 <li><a class="reference internal" href="#dzielnik-pradu">Dzielnik Prądu</a></li>
+<li><a class="reference internal" href="#twierdzenie-o-wlaczaniu-idealnych-zrodel-napiecia-w-wezle">twierdzenie o włączaniu idealnych źródeł napięcia w węźle</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#inne-elementy-obowdu">inne elementy obowdu</a><ul>
+<li><a class="reference internal" href="#kondensatory">Kondensatory</a></li>
+<li><a class="reference internal" href="#cewki">Cewki</a></li>
+<li><a class="reference internal" href="#uklady-pradu-zmiennego">Ukłądy prądu zmiennego</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#prawa-kirhoffa-i-prawa-wynikajace">Prawa Kirhoffa i prawa wynikające</a><ul>
@@ -326,7 +370,7 @@ I_L = I_L(E) + I_L(J)
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/9f22a008cf37f72deea5d9443ede56bd3b2e04f8>Tue Mar 18 11:55:13 2025 +0100 kabelki_cw: add header (9f22a008cf37f72deea5d9443ede56bd3b2e04f8)</a>
+<a href=https://github.com/gucio321/matematyka/commit/3f14eab7b0886d756941bb7300d67e9f2c8c30f5>Sun Mar 23 16:49:28 2025 +0100 udptes (3f14eab7b0886d756941bb7300d67e9f2c8c30f5)</a>
 </font>
 
   </body>
