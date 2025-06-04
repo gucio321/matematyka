@@ -260,7 +260,68 @@ I_L = I_L(E) + I_L(J)
 <li><p>ustalamy węzeł referencyjny (w dla którego wszystkie potencjały będą liczone)</p></li>
 <li></li>
 </ol>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/kabelki/kabelki_2025.03.26.md</span></code></em></p>
 </section>
+</section>
+<section id="liczba-zespolona-jako-reprezentacja-wlasnosci-pradu">
+<h2>Liczba zespolona jako reprezentacja własności prądu<a class="headerlink" href="#liczba-zespolona-jako-reprezentacja-wlasnosci-pradu" title="Link to this heading">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>nie patrzymy na liczbę z jako <span class="math notranslate nohighlight">\(x+iy\)</span> (#MMF), tylko jako <span class="math notranslate nohighlight">\(z = |z|e^{i\phi}\)</span></p>
+</div>
+<section id="prawo-ohma">
+<h3>Prawo ohma<a class="headerlink" href="#prawo-ohma" title="Link to this heading">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+U(j \omega)e^{j\omega t} = R*I(j \omega)e^{j\omega t} \\
+U(j \omega) = R*I(j \omega) \\
+Z_R = R = \frac{U(j \omega)}{I(j \omega)}
+\end{split}\]</div>
+</section>
+<section id="pojemnosc">
+<h3>Pojemność<a class="headerlink" href="#pojemnosc" title="Link to this heading">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+I = C \frac{dU}{dt} \\
+I(j \omega) = j \omega C U(j \omega) \\
+Z_C = \frac{U(j \omega)}{I(j \omega)} = \frac{e^{-j\frac{\pi}{2}}}{\omega C} = \frac{1}{j \omega C}
+\end{split}\]</div>
+</section>
+<section id="id1">
+<h3>Cewki<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+U = L \frac{dI}{dt} \\
+U(j \omega) = j \omega L I(j \omega) \\
+Z_L = \frac{U(j \omega)}{I(j \omega)} = j \omega L
+\end{split}\]</div>
+<hr class="docutils" />
+<p><em>Notatki z pliku <code class="docutils literal notranslate"><span class="pre">notes/kabelki/kabelki_2025.05.21.md</span></code></em></p>
+</section>
+</section>
+<section id="filtry-aktywne">
+<h2>Filtry aktywne<a class="headerlink" href="#filtry-aktywne" title="Link to this heading">¶</a></h2>
+<p>Rodzaje:</p>
+<ul class="simple">
+<li><p>bessela - najgorsza charakterystyka amplitudowa, przenosi kształt</p></li>
+<li><p>czebyszewa - bardzo dobra charakterystyka amplitudowa, w pasmie output nie ma niektórych in częstotliwości</p></li>
+<li><p>butterwortha - dobra charakterystyka amplitudowa, płąska charakterystyka przenoszenia</p></li>
+</ul>
+<section id="typowe-konfiguracje">
+<h3>Typowe konfiguracje:<a class="headerlink" href="#typowe-konfiguracje" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Solen-key</p></li>
+<li><p>z wielokrotnym sprzężeniem zwrotnym</p></li>
+</ul>
+</section>
+</section>
+<section id="rozwazania-nt-linii-dlugiej">
+<h2>Rozważania nt. Linii Długiej<a class="headerlink" href="#rozwazania-nt-linii-dlugiej" title="Link to this heading">¶</a></h2>
+<div class="admonition-linia-dluga admonition">
+<p class="admonition-title">Linia długa</p>
+<p>dział elektryczności analizujący rozmiar elementóœ</p>
+</div>
 </section>
 </section>
 
@@ -299,6 +360,17 @@ I_L = I_L(E) + I_L(J)
 <li><a class="reference internal" href="#metoda-macierzowa-potencjalow-wezlowych">Metoda macierzowa potencjałów węzłowych</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#liczba-zespolona-jako-reprezentacja-wlasnosci-pradu">Liczba zespolona jako reprezentacja własności prądu</a><ul>
+<li><a class="reference internal" href="#prawo-ohma">Prawo ohma</a></li>
+<li><a class="reference internal" href="#pojemnosc">Pojemność</a></li>
+<li><a class="reference internal" href="#id1">Cewki</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#filtry-aktywne">Filtry aktywne</a><ul>
+<li><a class="reference internal" href="#typowe-konfiguracje">Typowe konfiguracje:</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#rozwazania-nt-linii-dlugiej">Rozważania nt. Linii Długiej</a></li>
 </ul>
 </li>
 </ul>
@@ -370,7 +442,7 @@ I_L = I_L(E) + I_L(J)
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/3f14eab7b0886d756941bb7300d67e9f2c8c30f5>Sun Mar 23 16:49:28 2025 +0100 udptes (3f14eab7b0886d756941bb7300d67e9f2c8c30f5)</a>
+<a href=https://github.com/gucio321/matematyka/commit/ecfebafb99f997077388753ed7e912d159a9d8b4>Wed Jun 4 23:54:10 2025 +0200 update some notes (ecfebafb99f997077388753ed7e912d159a9d8b4)</a>
 </font>
 
   </body>
