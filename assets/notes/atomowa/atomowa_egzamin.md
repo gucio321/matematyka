@@ -6,7 +6,8 @@
 |--------------------------|-------------------------------------------------|
 | 1                        | (wsm to nie mam tego ale podobne do 4.2)        |
 | 2                        | 4.2                                             |
-| 3.a                      | nie ma w ! ale jest w wykładzie                 |
+| 3                        | nie ma w ! ale jest w wykładzie 4               |
+| 4                        | 
 
 ### Zadanie 1
 1. $\psi = Y R$
@@ -38,3 +39,20 @@ dla 0 zostaje tylko skłądnik z $\rho^2$ w mianowniku. Potem pdostawiamy $\Chi 
 ### B
 przy rozwiązywaniu równań należy pamiętać, że $\Chi(\rho \to 0) = 0 \and \Chi(\rho \to \infty) = 0$.
 Powinno wyjść $\Chi(\rho \to 0) = C \rho^{l+1}$ i $\Chi(\rho \to \infty) = e^{-\frac{1}{2}\rho}$
+
+Potem trzeba policzyć 2 pochodną tego nowego $\Chi$ ale to jest tortura więc jak to wyciągnę to będę liczył.
+
+### C
+
+Aby policzyć energię trzeba wyliczyć E (podstawiająć $\alpha = -n$)
+
+### Zadanie 4
+
+Sferyczne liczby kwantowe:
+- Główna liczba kwantowa $n = 1, 2, 3, \ldots$
+- Orbitalna liczba kwantowa $l \in \{0, 1, \ldots, n-1\}$
+- magnetyczna liczba kwantowa $m \left< -l, l \right> \intersect \mathbb{Z}$
+- spinowa liczba kwantowa $s = \pm \frac{1}{2}$
+
+Energia zdegenorwana oznacza, że dla jednej wartości energii możliwe jest więcej niż jedna kombinacja liczb kwantowych.
+Aby udowodnić, że liczba takich deformacji wynosi $n^2$ należy obliczyć sumę po wszystkich możliwych wartościach, czyli $\sum_{l=0}^{n-1}\sum_{m=-l}^{l} 1$.
