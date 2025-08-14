@@ -59,3 +59,8 @@ Energia zdegenorwana oznacza, że dla jednej wartości energii możliwe jest wi�
 Aby udowodnić, że liczba takich deformacji wynosi $n^2$ należy obliczyć sumę po wszystkich możliwych wartościach, czyli $\sum_{l=0}^{n-1}\sum_{m=-l}^{l} 1$.
 
 ### Zadanie 5
+
+W tym zadaniu są 2 (a nawet 3) kluczowe rzeczy:
+- definicja sferycznego ukłądu współrzędnych. Wtedy wiemy, że $\hat{r} = (\phi, \theta) \Rightarrow -\hat{r} = (\phi \pm \pi, \pi - \theta)$ (pamiętamy, że $\theta$ liczymy od osi OZ).
+- rozkminienie co to jest $\cos(\pi - \theta) = - \cos\theta \Rightarrow \cos^2(\pi - \theta) = \cos^2 \theta$. Wtedy cosinusy w wielomianie Laguerre'a zjadają minusa tylko dół pochodnej wypluwa $(-1)^{l+m}$.
+- $exp(im\pi) = (-1)^m$ natomiast $(-1)^{l+m+m} = (-1)^{l+2m} = (-1)^l$, ponieważ $m \in \mathbb{Z}$.
