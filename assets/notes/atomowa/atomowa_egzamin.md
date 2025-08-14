@@ -64,3 +64,18 @@ W tym zadaniu są 2 (a nawet 3) kluczowe rzeczy:
 - definicja sferycznego ukłądu współrzędnych. Wtedy wiemy, że $\hat{r} = (\phi, \theta) \Rightarrow -\hat{r} = (\phi \pm \pi, \pi - \theta)$ (pamiętamy, że $\theta$ liczymy od osi OZ).
 - rozkminienie co to jest $\cos(\pi - \theta) = - \cos\theta \Rightarrow \cos^2(\pi - \theta) = \cos^2 \theta$. Wtedy cosinusy w wielomianie Laguerre'a zjadają minusa tylko dół pochodnej wypluwa $(-1)^{l+m}$.
 - $exp(im\pi) = (-1)^m$ natomiast $(-1)^{l+m+m} = (-1)^{l+2m} = (-1)^l$, ponieważ $m \in \mathbb{Z}$.
+
+### Zadanie 6
+#### A
+
+Cała filozofia polega na rozpisaniu $\psi_{nlm} = R_{nl}(r) Y_{lm}(\hat{r})$. Wyciągamy funkcję niezależną od $\theta \phi$.
+#### B
+Podstawiamy z tablic (które są dołączone do zestawu) i wychodzi. P'stwo w r=0 jest zawsze 0.
+#### C
+Bierzemy rozwiązanie z punktu B i liczymy dla niego coś takiego: $\left<r\right> = \int_0^\infty r P_{10}(r) dr$. Powinno wyjśc $\frac{3}{2}$.
+
+```{tip}
+$$
+\limit_{x \to -\infty} x^n e^x = 0 \quad \text{dla } n \in \mathbb{N}_+
+$$
+```
