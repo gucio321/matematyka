@@ -7,7 +7,8 @@
 | 1                        | (wsm to nie mam tego ale podobne do 4.2)        |
 | 2                        | 4.2                                             |
 | 3                        | nie ma w ! ale jest w wykładzie 4               |
-| 4                        | 
+| 4                        | 4.5                                             |
+| 5                        |
 
 ### Zadanie 1
 1. $\psi = Y R$
@@ -24,23 +25,23 @@ Musimy udowodnić 4. Podstawiamy kolejno:
 ### Zadanie 2
 
 ```{important}
-Trzeba pamiętać, że $\frac{d}{dr}\Chi = \frac{d}{d\rho}\Chi \frac{d}{dr}\rho$ (czyli innymi słowy, że różniczkowanie $\Chi$ po $r$ wypluwa nam jeszcze $\rho'$)
+Trzeba pamiętać, że $\frac{d}{dr}\chi = \frac{d}{d\rho}\chi \frac{d}{dr}\rho$ (czyli innymi słowy, że różniczkowanie $\chi$ po $r$ wypluwa nam jeszcze $\rho'$)
 ```
 
-Cała trudność polega na policzeniu 2 pochodnej $\Chi$ po $r$. Potem wstawiamy do równania które jest w zadaniu i wychodzi.
+Cała trudność polega na policzeniu 2 pochodnej $\chi$ po $r$. Potem wstawiamy do równania które jest w zadaniu i wychodzi.
 
 ### zadanie 3
 #### A
 po prostu podstawiamy pod $\rho$ 0 albo $\infty$.
 ```{tip}
-dla 0 zostaje tylko skłądnik z $\rho^2$ w mianowniku. Potem pdostawiamy $\Chi = \rho^\alpha$ i wychodzi.
+dla 0 zostaje tylko skłądnik z $\rho^2$ w mianowniku. Potem pdostawiamy $\chi = \rho^\alpha$ i wychodzi.
 ```
 
 ### B
-przy rozwiązywaniu równań należy pamiętać, że $\Chi(\rho \to 0) = 0 \and \Chi(\rho \to \infty) = 0$.
-Powinno wyjść $\Chi(\rho \to 0) = C \rho^{l+1}$ i $\Chi(\rho \to \infty) = e^{-\frac{1}{2}\rho}$
+przy rozwiązywaniu równań należy pamiętać, że $\chi(\rho \to 0) = 0 \and \chi(\rho \to \infty) = 0$.
+Powinno wyjść $\chi(\rho \to 0) = C \rho^{l+1}$ i $\chi(\rho \to \infty) = e^{-\frac{1}{2}\rho}$
 
-Potem trzeba policzyć 2 pochodną tego nowego $\Chi$ ale to jest tortura więc jak to wyciągnę to będę liczył.
+Potem trzeba policzyć 2 pochodną tego nowego $\chi$ ale to jest tortura więc jak to wyciągnę to będę liczył.
 
 ### C
 
@@ -56,3 +57,5 @@ Sferyczne liczby kwantowe:
 
 Energia zdegenorwana oznacza, że dla jednej wartości energii możliwe jest więcej niż jedna kombinacja liczb kwantowych.
 Aby udowodnić, że liczba takich deformacji wynosi $n^2$ należy obliczyć sumę po wszystkich możliwych wartościach, czyli $\sum_{l=0}^{n-1}\sum_{m=-l}^{l} 1$.
+
+### Zadanie 5
