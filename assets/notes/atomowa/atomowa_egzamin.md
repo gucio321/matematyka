@@ -38,7 +38,7 @@ dla 0 zostaje tylko skłądnik z $\rho^2$ w mianowniku. Potem pdostawiamy $\chi 
 ```
 
 ### B
-przy rozwiązywaniu równań należy pamiętać, że $\chi(\rho \to 0) = 0 \and \chi(\rho \to \infty) = 0$.
+przy rozwiązywaniu równań należy pamiętać, że $\chi(\rho \to 0) = 0 \land \chi(\rho \to \infty) = 0$.
 Powinno wyjść $\chi(\rho \to 0) = C \rho^{l+1}$ i $\chi(\rho \to \infty) = e^{-\frac{1}{2}\rho}$
 
 Potem trzeba policzyć 2 pochodną tego nowego $\chi$ ale to jest tortura więc jak to wyciągnę to będę liczył.
@@ -52,7 +52,7 @@ Aby policzyć energię trzeba wyliczyć E (podstawiająć $\alpha = -n$)
 Sferyczne liczby kwantowe:
 - Główna liczba kwantowa $n = 1, 2, 3, \ldots$
 - Orbitalna liczba kwantowa $l \in \{0, 1, \ldots, n-1\}$
-- magnetyczna liczba kwantowa $m \left< -l, l \right> \intersect \mathbb{Z}$
+- magnetyczna liczba kwantowa $m \left< -l, l \right> \cap \mathbb{Z}$
 - spinowa liczba kwantowa $s = \pm \frac{1}{2}$
 
 Energia zdegenorwana oznacza, że dla jednej wartości energii możliwe jest więcej niż jedna kombinacja liczb kwantowych.
