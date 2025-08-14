@@ -1,6 +1,6 @@
 Oddziaływanie silne nie zmienia zapachu kwarku (u,d,c,s,t,b)
 
-jeżeli zmeirzę $\alpha_s (\mu^2)$ to dla innych energii $\lpaha_s(q^2) = \frac{\alpha(\mu^2)}{1 + \frac{11 N_c - 2 N_f}{12 \pi} \alpha(\mu^2) \ln \frac{q^2}{\mu^2}}$
+jeżeli zmeirzę $\alpha_s (\mu^2)$ to dla innych energii $\alpha_s(q^2) = \frac{\alpha(\mu^2)}{1 + \frac{11 N_c - 2 N_f}{12 \pi} \alpha(\mu^2) \ln \frac{q^2}{\mu^2}}$
 
 $\alpha_s = \frac{g^2}{4 \pi}$ ($\alpha = \frac{e^2}{4 \pi \epsilon_0}$)
 

@@ -16,12 +16,12 @@ $Q = C \cdot U$ ma związek z prądem poprzez $I = \frac{dQ}{dt}
 
 ### Cewki
 
-są charakteryzowane przez indukcyjność $\Epsilon = N \Psi = L \cdot I$
-gdzie $\Epsilon$ to strumień skojarzony.
+są charakteryzowane przez indukcyjność $\epsilon = N \Psi = L \cdot I$
+gdzie $\epsilon$ to strumień skojarzony.
 
-Można uzależnić $\Epsilon$ od napięcia za pomocą prawa Faradaya:
+Można uzależnić $\epsilon$ od napięcia za pomocą prawa Faradaya:
 
-$U = \frac{d\Epsilon|}{dt} = L \frac{dI}{dt}$
+$U = \frac{d\epsilon|}{dt} = L \frac{dI}{dt}$
 
 Jak mamy 2 cewki, to pojawia się samoindukcja
 
