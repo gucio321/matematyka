@@ -76,6 +76,6 @@ Bierzemy rozwiązanie z punktu B i liczymy dla niego coś takiego: $\left<r\righ
 
 ```{tip}
 $$
-\limit_{x \to -\infty} x^n e^x = 0 \quad \text{dla } n \in \mathbb{N}_+
+\lim_{x \to -\infty} x^n e^x = 0 \quad \text{dla } n \in \mathbb{N}_+
 $$
 ```
