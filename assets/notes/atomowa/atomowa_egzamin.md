@@ -8,7 +8,9 @@
 | 2                        | 4.2                                             |
 | 3                        | nie ma w ! ale jest w wykładzie 4               |
 | 4                        | 4.5                                             |
-| 5                        |
+| 5                        |                                                 |
+| 6                        |                                                 |
+| 7                        | okolice 6.3                                     |
 
 ### Zadanie 1
 1. $\psi = Y R$
@@ -79,3 +81,17 @@ $$
 \lim_{x \to -\infty} x^n e^x = 0 \quad \text{dla } n \in \mathbb{N}_+
 $$
 ```
+
+### Zadanie 7
+
+Zacznijmy od ostatniej części:
+dowód na uproszczenie do delty Diraca jest prosty. Wystarczy powiedzieć, że dla $\epsilon_0$ widać dlete, bo $\epsilon_0 \perp \epsilon_{\pm 1}$.
+Natomiast dla $m = \pm 1$ definiujemy $\epsilon_m = \frac{-m}{\sqrt{2}} \left( \hat{e_1} + i m \hat{e_2} \right)$ i jawnie wyliczamy $\epsilon_m \cdot \epsilon *_{m'}$.
+```{tip}
+$$
+\hat{e_1} \perp \hat{e_2} \Rightarrow \hat{e_1} \cdot \hat{e_2} = 0 \\
+\hat{e_m}^2 = 1
+$$
+```
+
+W 1 części zadania, należy z tablic rozpisać harmonike sferyczną dla $l=1$ i $m=0, \pm 1$. Następnie podstawiamy i wychodzi definicja cylindrycznego ukłądu współrzędnych. (Potem liczymy sumę ale to już nie jest trudne).
