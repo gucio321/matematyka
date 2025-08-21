@@ -11,6 +11,8 @@
 | 5                        |                                                 |
 | 6                        |                                                 |
 | 7                        | okolice 6.3                                     |
+| 8                        | nie wiem i TODO                                 |
+| 9                        | 5.3 i 6.1                                       |
 
 ### Zadanie 1
 1. $\psi = Y R$
@@ -95,3 +97,25 @@ $$
 ```
 
 W 1 części zadania, należy z tablic rozpisać harmonike sferyczną dla $l=1$ i $m=0, \pm 1$. Następnie podstawiamy i wychodzi definicja cylindrycznego ukłądu współrzędnych. (Potem liczymy sumę ale to już nie jest trudne).
+
+### Zadanie 9
+#### A
+Wyliczamy $E'$ i dochodzimy do $E$ od razu. przy $B$ trzeba wyprowadzić $\nabla \times (\nabla f) = 0$.
+
+```{tip}
+niech $G = \nabla \times \nabla f$.
+
+$$
+G_i = \epsilon_{ijk} \partial_j \partial_k f
+$$
+
+ponieważ $\partial_j$ komutuje z $\partial_k$, to symbol antysymetryczny okazuje się być symetryczny :smile: i wychodzi 0.
+```
+
+#### B
+najpierw rozpisujemy równanie do jawnej postaci.
+po obu stronach pojawi się wtedy wyraz typu $\gamma q \chi' \psi$.
+Powinniśmy wtedy dojść do momentu, w którym należy udowodnić, że $D^2(A')\gamma \psi = \gamma D^2(A) \psi$.
+Robi się to w 2 etapach
+1. udowadniamy, że $D(A')\gamma \psi = \gamma D(A)\psi$. 
+2. mnożymy powyższy wynik przez siebie samego i otrzymujemy wersję kwadratową.
