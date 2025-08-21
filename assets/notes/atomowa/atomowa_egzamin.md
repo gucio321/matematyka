@@ -13,6 +13,7 @@
 | 7                        | okolice 6.3                                     |
 | 8                        | nie wiem i TODO                                 |
 | 9                        | 5.3 i 6.1                                       |
+| 10                       | 5.5                                             |
 
 ### Zadanie 1
 1. $\psi = Y R$
@@ -119,3 +120,16 @@ Powinniśmy wtedy dojść do momentu, w którym należy udowodnić, że $D^2(A')
 Robi się to w 2 etapach
 1. udowadniamy, że $D(A')\gamma \psi = \gamma D(A)\psi$. 
 2. mnożymy powyższy wynik przez siebie samego i otrzymujemy wersję kwadratową.
+
+### Zadanie 10
+#### A
+
+Tutaj trudna część to pamiętanie definicji dalambercianu $\square = -\nabla^2 + \frac{1}{c^2} \frac{\partial^2}{\partial t^2}$.
+polaryzacja jest liniowa jeśli $A_0 = const$
+
+#### B
+Bierzemy warunek z cechowania czyli $\nabla A = 0$ i wychodzi, że $k \perp A_0$.
+
+#### C
+no wstawiamy.
+### Zadanie 11
