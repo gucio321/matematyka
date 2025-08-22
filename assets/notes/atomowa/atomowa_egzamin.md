@@ -15,6 +15,7 @@
 | 9                        | 5.3 i 6.1                                       |
 | 10                       | 5.5                                             |
 | 11                       | 6.2                                             |
+| 12                       | 7.2                                             |
 
 ![Strona 1](./atomowa/egzamin_s1.jpg)
 
@@ -158,4 +159,9 @@ Z - Z* = (Z_x + i Z_y) - (Z_x - i Z_y) = 2 i Z_y = 2 i \Im Z
 $$
 ```
 
+![Strona 3](./atomowa/egzamin_s3.jpg)
 
+### Zadanie 12
+
+1. zakładamy, że $\vec{A_0}\perp\vec{k}$
+2. korzystamy z relacji $k = \frac{\omega}{c}$ oraz $\frac{1}{\mu_0} = \epsilon_0 c^2$
