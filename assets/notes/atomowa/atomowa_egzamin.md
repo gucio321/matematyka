@@ -16,6 +16,8 @@
 | 10                       | 5.5                                             |
 | 11                       | 6.2                                             |
 
+![Strona 1](./atomowa/egzamin_s1.jpg)
+
 ### Zadanie 1
 1. $\psi = Y R$
 2. $\hat{H} = \frac{p^2}{2m} - \frac{ke^2}{r}$
@@ -70,6 +72,8 @@ W tym zadaniu są 2 (a nawet 3) kluczowe rzeczy:
 - definicja sferycznego ukłądu współrzędnych. Wtedy wiemy, że $\hat{r} = (\phi, \theta) \Rightarrow -\hat{r} = (\phi \pm \pi, \pi - \theta)$ (pamiętamy, że $\theta$ liczymy od osi OZ).
 - rozkminienie co to jest $\cos(\pi - \theta) = - \cos\theta \Rightarrow \cos^2(\pi - \theta) = \cos^2 \theta$. Wtedy cosinusy w wielomianie Laguerre'a zjadają minusa tylko dół pochodnej wypluwa $(-1)^{l+m}$.
 - $exp(im\pi) = (-1)^m$ natomiast $(-1)^{l+m+m} = (-1)^{l+2m} = (-1)^l$, ponieważ $m \in \mathbb{Z}$.
+
+![Strona 2](./atomowa/egzamin_s2.jpg)
 
 ### Zadanie 6
 #### A
@@ -133,4 +137,25 @@ Bierzemy warunek z cechowania czyli $\nabla A = 0$ i wychodzi, że $k \perp A_0$
 
 #### C
 no wstawiamy.
+
 ### Zadanie 11
+
+Trzeba się trochę pobawić. Wygodnie jest zrobić następujące podstawienia:
+- zakładamy, że $\Im a = 0$ co znacznie uprości obliczenia.
+- $\Theta = \omega t - \vec{k}\cdot\vec{r}+\Phi$
+
+plan działania jest taki:
+1. liczymy pochodną $E_m = - \frac{\partial A_m}{\partial t}$
+2. Wyciągamy co się da
+3. Stosujemy sprytny trick
+4. rozpisujemy jako wektor i wychodzą współrzędne walcowe.
+
+```{admonition} sprytny trick
+Niech $Z$ dowolna liczba urojona
+
+$$
+Z - Z* = (Z_x + i Z_y) - (Z_x - i Z_y) = 2 i Z_y = 2 i \Im Z
+$$
+```
+
+
