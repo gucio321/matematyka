@@ -16,6 +16,8 @@
 | 10                       | 5.5                                             |
 | 11                       | 6.2                                             |
 | 12                       | 7.2                                             |
+| 13                       | 8.1                                             |
+| 14                       | 9.1                                             |
 
 ![Strona 1](./atomowa/egzamin_s1.jpg)
 
@@ -165,3 +167,12 @@ $$
 
 1. zakładamy, że $\vec{A_0}\perp\vec{k}$
 2. korzystamy z relacji $k = \frac{\omega}{c}$ oraz $\frac{1}{\mu_0} = \epsilon_0 c^2$
+
+### Zadanie 13
+
+Rozpisuje się $H_at = \frac{\hat{\vec{p}}^2}{2m} - \frac{ke^2}{r}$ (ta 2 część od razu wypada bo komutuje z definicji do 0).
+Rozpisujemy komutator $\left[\nabla^2, r\right]$
+
+```{tip}
+Należy pamiętać, że $\nabla r = \delta_{ij} \partial_i x_j = 1$ oraz, że $\nabla^2 r = \delta_{ij} \partial^2_i x_j = 0$.
+```
