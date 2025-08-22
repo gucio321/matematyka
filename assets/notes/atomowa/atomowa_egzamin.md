@@ -14,6 +14,7 @@
 | 8                        | nie wiem i TODO                                 |
 | 9                        | 5.3 i 6.1                                       |
 | 10                       | 5.5                                             |
+| 11                       | 6.2                                             |
 
 ### Zadanie 1
 1. $\psi = Y R$
