@@ -176,3 +176,24 @@ Rozpisujemy komutator $\left[\nabla^2, r\right]$
 ```{tip}
 Należy pamiętać, że $\nabla r = \delta_{ij} \partial_i x_j = 1$ oraz, że $\nabla^2 r = \delta_{ij} \partial^2_i x_j = 0$.
 ```
+
+### Zadanie 14
+#### Część pierwsza
+1. zakłądamy, że bierzemy bazę funkcji ortogonalnych (bo czemu nie). Wtedy $\braket{\psi_i|\psi_j} = \delta_{ij}$.
+2. Norma z def to $\braket{\psi|\psi} = \int \psi^* \psi d^3r = 1$.
+
+#### Część druga
+```{tip}
+jak to wylosujesz, to możesz się poddać.
+Jak to wylosujesz, to twoje szczęście jest porównywalne z... wyobraź sobie, że próbujesz otworzyć drzwi ale zamiast tego nie trafiasz w klamkę, odbijasz się od nich, przewracasz się i łamiesz rękę.
+```
+
+A tak serio, to da się to zrobić, ale trzeba używać jakichś dzikich przekształceń.
+1. wychodzisz z R. Schrödingera (w formie ketowej najlepiej) $H \ket{\psi} = i \hbar \ket{\psi}$
+2. rozpisujesz kety.
+3. prawa strona: Pamiętaj o tym że C zależą od czasu więc trzeba je też różniczkować i mamy po kolei:
+   - $\braket{\psi_i|\psi_j'} = \braket{\psi_1|\frac{-i E_j}{\hbar} \psi_j} = -\frac{i E_j}{\hbar} \delta_{ij}$ 
+   - $\bra{\psi_i} H \ket{\psi_j} = \bra{\psi_i} H_{at} \ket{\psi_j} + \bra{\psi_i} V \ket{\psi_j}$
+   - $\bra{\psi_i} H \ket{\psi_j} = exp\left(i\frac{E_i - E_j}{\hbar}t \right) E_j \delta_{ij}$
+   - $\bra{\psi_i} V \ket{\psi_j} = exp\left(i\frac{E_i - E_j}{\hbar}t \right) \cos\left(\omega t\right) W_{ij}$
+   - zakłądamy, że $W_{ii} = 0$
