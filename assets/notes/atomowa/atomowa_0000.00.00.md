@@ -1,1 +1,1 @@
-# Wstęp do Fizyki Jądrowej i Molekularnej
+# Wstęp do Fizyki Atomowej i Molekularnej
