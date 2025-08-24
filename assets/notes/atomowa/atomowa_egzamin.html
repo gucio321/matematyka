@@ -304,6 +304,38 @@ Rozpisujemy komutator <span class="math notranslate nohighlight">\(\left[\nabla^
 <p>Należy pamiętać, że <span class="math notranslate nohighlight">\(\nabla r = \delta_{ij} \partial_i x_j = 1\)</span> oraz, że <span class="math notranslate nohighlight">\(\nabla^2 r = \delta_{ij} \partial^2_i x_j = 0\)</span>.</p>
 </div>
 </section>
+<section id="zadanie-14">
+<h2>Zadanie 14<a class="headerlink" href="#zadanie-14" title="Link to this heading">¶</a></h2>
+<section id="czesc-pierwsza">
+<h3>Część pierwsza<a class="headerlink" href="#czesc-pierwsza" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>zakłądamy, że bierzemy bazę funkcji ortogonalnych (bo czemu nie). Wtedy <span class="math notranslate nohighlight">\(\braket{\psi_i|\psi_j} = \delta_{ij}\)</span>.</p></li>
+<li><p>Norma z def to <span class="math notranslate nohighlight">\(\braket{\psi|\psi} = \int \psi^* \psi d^3r = 1\)</span>.</p></li>
+</ol>
+</section>
+<section id="czesc-druga">
+<h3>Część druga<a class="headerlink" href="#czesc-druga" title="Link to this heading">¶</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>jak to wylosujesz, to możesz się poddać.
+Jak to wylosujesz, to twoje szczęście jest porównywalne z… wyobraź sobie, że próbujesz otworzyć drzwi ale zamiast tego nie trafiasz w klamkę, odbijasz się od nich, przewracasz się i łamiesz rękę.</p>
+</div>
+<p>A tak serio, to da się to zrobić, ale trzeba używać jakichś dzikich przekształceń.</p>
+<ol class="arabic simple">
+<li><p>wychodzisz z R. Schrödingera (w formie ketowej najlepiej) <span class="math notranslate nohighlight">\(H \ket{\psi} = i \hbar \ket{\psi}\)</span></p></li>
+<li><p>rozpisujesz kety.</p></li>
+<li><p>prawa strona: Pamiętaj o tym że C zależą od czasu więc trzeba je też różniczkować i mamy po kolei:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\braket{\psi_i|\psi_j'} = \braket{\psi_1|\frac{-i E_j}{\hbar} \psi_j} = -\frac{i E_j}{\hbar} \delta_{ij}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\bra{\psi_i} H \ket{\psi_j} = \bra{\psi_i} H_{at} \ket{\psi_j} + \bra{\psi_i} V \ket{\psi_j}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\bra{\psi_i} H \ket{\psi_j} = exp\left(i\frac{E_i - E_j}{\hbar}t \right) E_j \delta_{ij}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\bra{\psi_i} V \ket{\psi_j} = exp\left(i\frac{E_i - E_j}{\hbar}t \right) \cos\left(\omega t\right) W_{ij}\)</span></p></li>
+<li><p>zakłądamy, że <span class="math notranslate nohighlight">\(W_{ii} = 0\)</span></p></li>
+</ul>
+</li>
+</ol>
+</section>
+</section>
 </section>
 
 
@@ -348,6 +380,11 @@ Rozpisujemy komutator <span class="math notranslate nohighlight">\(\left[\nabla^
 <li><a class="reference internal" href="#zadanie-11">Zadanie 11</a></li>
 <li><a class="reference internal" href="#zadanie-12">Zadanie 12</a></li>
 <li><a class="reference internal" href="#zadanie-13">Zadanie 13</a></li>
+<li><a class="reference internal" href="#zadanie-14">Zadanie 14</a><ul>
+<li><a class="reference internal" href="#czesc-pierwsza">Część pierwsza</a></li>
+<li><a class="reference internal" href="#czesc-druga">Część druga</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -403,7 +440,7 @@ Rozpisujemy komutator <span class="math notranslate nohighlight">\(\left[\nabla^
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/33d2057648fe4e5b48165da1c451aec7c1a4a4a9>Sun Aug 24 21:14:52 2025 +0200 Merge branch 'master' of github.com:gucio321\/matematyka (33d2057648fe4e5b48165da1c451aec7c1a4a4a9)</a>
+<a href=https://github.com/gucio321/matematyka/commit/b564955aaa402358848b91366a222bcc2a14c0e1>Sun Aug 24 21:30:36 2025 +0200 atomowa: zadanie 14 (b564955aaa402358848b91366a222bcc2a14c0e1)</a>
 </font>
 
   </body>
