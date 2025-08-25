@@ -18,6 +18,8 @@
 | 12                       | 7.2                                             |
 | 13                       | 8.1                                             |
 | 14                       | 9.1                                             |
+| 15                       | 9.3                                             |
+| 16                       | trochę na pewno jest 9.5                        |
 
 ![Strona 1](./atomowa/egzamin_s1.jpg)
 
@@ -197,3 +199,50 @@ A tak serio, to da się to zrobić, ale trzeba używać jakichś dzikich przeksz
    - $\bra{\psi_i} H \ket{\psi_j} = exp\left(i\frac{E_i - E_j}{\hbar}t \right) E_j \delta_{ij}$
    - $\bra{\psi_i} V \ket{\psi_j} = exp\left(i\frac{E_i - E_j}{\hbar}t \right) \cos\left(\omega t\right) W_{ij}$
    - zakłądamy, że $W_{ii} = 0$
+
+### Zadanie 15
+
+(Protip z [zadania 14](#zadanie-14) nadal obowiązuje)
+To jest to zadanie z evil-trickami w całkach.
+
+Definiujemy sobie:
+- $\omega_0 = \frac{E_2 - E_1}{\hbar}$
+- $\omega_\pm = \left|\omega \pm \omega_0\right|$
+- $T_\pm = \frac{2\pi}{\omega_\pm}$
+
+```{note}
+$\omega_- \to 0$
+```
+
+```{important}
+$$
+cos x = \frac{1}{2} \left(e^{ix} + e^{-ix}\right) \\
+$$
+```
+
+Wiedząc to wszystko walczymy z całką:
+
+$$
+I_\pm = \int_t^{t+T_+} e^{i\omega_\pm t} C_2 dt
+$$
+
+Całkę liczymy oczywiście przez części (no bo czemu nie?).
+
+Rozpisujemy wszystko no i ogólnie jest problem. Na pewno jak się wyciągnie $\frac{1}{i\omega_-}$, to $I_+$ się całe wyzeruje (bo $\frac{\omega_-}{\omega_+}$ ma się zerować).
+No i z tego co zostaje robimy jakieś ugabuga z Taylorem i wychodzi... a przynajmniej powinno.
+
+```{note}
+tam w jednym miejscu coś się wyciąga przed całkę mimo tego, że jest zależne od zmiennej całkowania
+```
+
+### Zadanie 16
+#### A
+z jednego z równań liczymy $C_1$ a następnie $C_1'$ i podstawiamy do 2. jak się nie pomylimy to wychodzi.
+#### B
+Warunki początkowe:
+- $C_2(0) = 0$, bo tak.
+- $C_1(0) = 1$ z normalizacji.
+- $C_2'(0) = -\frac{iW_{21}}{2\hbar}$ z pierwszego równania.
+
+Podstawiamy równanie charakterystyczne $C_2(t) = \exp(\lambda t)$
+W $\Delta$ powinien już sięp okazać $\omega_R$ potem liczyby współczynniki no i coś wychodzi.
