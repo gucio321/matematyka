@@ -239,6 +239,12 @@ V_{ef} = \frac{L^2}{2 \mu r^2} + \frac{D}{r}
 <tr class="row-odd"><td><p>14</p></td>
 <td><p>9.1</p></td>
 </tr>
+<tr class="row-even"><td><p>15</p></td>
+<td><p>9.3</p></td>
+</tr>
+<tr class="row-odd"><td><p>16</p></td>
+<td><p>trochę na pewno jest 9.5</p></td>
+</tr>
 </tbody>
 </table>
 <p><img alt="Strona 1" src="../../_images/egzamin_s1.jpg" /></p>
@@ -460,6 +466,58 @@ Jak to wylosujesz, to twoje szczęście jest porównywalne z… wyobraź sobie, 
 </ol>
 </section>
 </section>
+<section id="zadanie-15">
+<h3>Zadanie 15<a class="headerlink" href="#zadanie-15" title="Link to this heading">¶</a></h3>
+<p>(Protip z <a class="reference internal" href="#zadanie-14"><span class="xref myst">zadania 14</span></a> nadal obowiązuje)
+To jest to zadanie z evil-trickami w całkach.</p>
+<p>Definiujemy sobie:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\omega_0 = \frac{E_2 - E_1}{\hbar}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\omega_\pm = \left|\omega \pm \omega_0\right|\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(T_\pm = \frac{2\pi}{\omega_\pm}\)</span></p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p><span class="math notranslate nohighlight">\(\omega_- \to 0\)</span></p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+cos x = \frac{1}{2} \left(e^{ix} + e^{-ix}\right) \\
+\end{split}\]</div>
+</div>
+<p>Wiedząc to wszystko walczymy z całką:</p>
+<div class="math notranslate nohighlight">
+\[
+I_\pm = \int_t^{t+T_+} e^{i\omega_\pm t} C_2 dt
+\]</div>
+<p>Całkę liczymy oczywiście przez części (no bo czemu nie?).</p>
+<p>Rozpisujemy wszystko no i ogólnie jest problem. Na pewno jak się wyciągnie <span class="math notranslate nohighlight">\(\frac{1}{i\omega_-}\)</span>, to <span class="math notranslate nohighlight">\(I_+\)</span> się całe wyzeruje (bo <span class="math notranslate nohighlight">\(\frac{\omega_-}{\omega_+}\)</span> ma się zerować).
+No i z tego co zostaje robimy jakieś ugabuga z Taylorem i wychodzi… a przynajmniej powinno.</p>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>tam w jednym miejscu coś się wyciąga przed całkę mimo tego, że jest zależne od zmiennej całkowania</p>
+</div>
+</section>
+<section id="zadanie-16">
+<h3>Zadanie 16<a class="headerlink" href="#zadanie-16" title="Link to this heading">¶</a></h3>
+<section id="id9">
+<h4>A<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h4>
+<p>z jednego z równań liczymy <span class="math notranslate nohighlight">\(C_1\)</span> a następnie <span class="math notranslate nohighlight">\(C_1'\)</span> i podstawiamy do 2. jak się nie pomylimy to wychodzi.</p>
+</section>
+<section id="id10">
+<h4>B<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h4>
+<p>Warunki początkowe:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(C_2(0) = 0\)</span>, bo tak.</p></li>
+<li><p><span class="math notranslate nohighlight">\(C_1(0) = 1\)</span> z normalizacji.</p></li>
+<li><p><span class="math notranslate nohighlight">\(C_2'(0) = -\frac{iW_{21}}{2\hbar}\)</span> z pierwszego równania.</p></li>
+</ul>
+<p>Podstawiamy równanie charakterystyczne <span class="math notranslate nohighlight">\(C_2(t) = \exp(\lambda t)\)</span>
+W <span class="math notranslate nohighlight">\(\Delta\)</span> powinien już sięp okazać <span class="math notranslate nohighlight">\(\omega_R\)</span> potem liczyby współczynniki no i coś wychodzi.</p>
+</section>
+</section>
 </section>
 </section>
 
@@ -518,6 +576,12 @@ Jak to wylosujesz, to twoje szczęście jest porównywalne z… wyobraź sobie, 
 <li><a class="reference internal" href="#zadanie-14">Zadanie 14</a><ul>
 <li><a class="reference internal" href="#czesc-pierwsza">Część pierwsza</a></li>
 <li><a class="reference internal" href="#czesc-druga">Część druga</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#zadanie-15">Zadanie 15</a></li>
+<li><a class="reference internal" href="#zadanie-16">Zadanie 16</a><ul>
+<li><a class="reference internal" href="#id9">A</a></li>
+<li><a class="reference internal" href="#id10">B</a></li>
 </ul>
 </li>
 </ul>
@@ -593,7 +657,7 @@ Jak to wylosujesz, to twoje szczęście jest porównywalne z… wyobraź sobie, 
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/b564955aaa402358848b91366a222bcc2a14c0e1>Sun Aug 24 21:30:36 2025 +0200 atomowa: zadanie 14 (b564955aaa402358848b91366a222bcc2a14c0e1)</a>
+<a href=https://github.com/gucio321/matematyka/commit/2ae554d91aaf2027f2fafde2915258036a1eca7e>Mon Aug 25 21:59:45 2025 +0200 atomowa: troche z15 i trochę z16 (2ae554d91aaf2027f2fafde2915258036a1eca7e)</a>
 </font>
 
   </body>
