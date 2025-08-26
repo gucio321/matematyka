@@ -246,3 +246,9 @@ Warunki początkowe:
 
 Podstawiamy równanie charakterystyczne $C_2(t) = \exp(\lambda t)$
 W $\Delta$ powinien już sięp okazać $\omega_R$ potem liczyby współczynniki no i coś wychodzi.
+
+#### C
+$P_{12} = |C_2(t)|^2$ bo to kwadrat amplitudy funkcji falowej.
+
+![Strona 4](./atomowa/egzamin_s4.jpg)
+#### Zadanie 17
