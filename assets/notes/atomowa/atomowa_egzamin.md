@@ -251,4 +251,20 @@ W $\Delta$ powinien już sięp okazać $\omega_R$ potem liczyby współczynniki 
 $P_{12} = |C_2(t)|^2$ bo to kwadrat amplitudy funkcji falowej.
 
 ![Strona 4](./atomowa/egzamin_s4.jpg)
+
 #### Zadanie 17
+
+#### Średniowanie po polaryzacjach
+Wybieramy wektor fali $\hat{n}$ i weersory prostopadłe do niego czyli $\hat{e_1} \hat{e_2}$.
+
+$$
+\braket{|e_lambda \cdot r|^2}_\lambda &= \frac{1}{2} \left(|r^2 - |\hat{n}\cdot r|^2) = \\
+&= \frac{1}{2}|r|^2 (1 - \cos^2 \theta)
+$$
+
+#### Średniowanie po kierunkach
+
+Liczymy całkę $\frac{1}{4\pi} \int_{4\pi} (1 - \cos^2 \theta) d\Omega = \frac{1}{4\pi} \int_0^{2\pi} d\phi \int_0^\pi d\theta \left(1-\cos\theta\right)\sin\theta$.
+
+#### Część 2 zadania
+aby udowodnić, że polaryzacje kołowe też działają, trzeba zrobić średniowanie po nich i podstawić z ich definicji.
