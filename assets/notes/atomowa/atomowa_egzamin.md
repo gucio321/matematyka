@@ -290,4 +290,7 @@ Podobne do 21. Podstawiamy i wychodzi tylko dużo liczenia.
 
 ### Zadanie 23
 
-$\Sigma = \frac{\hbar}{2} \sigma$
+$\hat{\Sigma} = \frac{\hbar}{2} \begin{Bmatrix}\sigma & 0 \\ 0 & \sigma \end{Bmatrix}$
+
+I w sumie to warto rozbić zarówno Hamlitonian jak i $\vac{\hat{J}}$ na 2 części aby liczyć po jednej rzeczy na raz.
+Przydatna jest konwencja sumacyjna Einsteina.
