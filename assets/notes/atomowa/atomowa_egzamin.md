@@ -294,3 +294,18 @@ $\hat{\Sigma} = \frac{\hbar}{2} \begin{Bmatrix}\sigma & 0 \\ 0 & \sigma \end{Bma
 
 I w sumie to warto rozbić zarówno Hamlitonian jak i $\vac{\hat{J}}$ na 2 części aby liczyć po jednej rzeczy na raz.
 Przydatna jest konwencja sumacyjna Einsteina.
+
+![Strona 5](./atomowa/egzamin_s5.jpg)
+
+### Zadanie 24
+
+Jest zaskakująco proste! Wystarczy obliczyć granicę!
+Polecam robić to krokami:
+1. $\lambda \to 1$
+2. $\lim_{\lambda \to 1} f(r)$
+i potem już podstawić do tej wielkiej macierzy, której mi się nie chce przepisywać, ale w większości się wyzeruje, bo jest $\lambda - 1$.
+
+
+### Podsumowanie
+
+Dzięki za czytanie i powodzenia!
