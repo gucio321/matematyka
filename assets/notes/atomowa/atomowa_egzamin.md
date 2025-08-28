@@ -258,7 +258,7 @@ $P_{12} = |C_2(t)|^2$ bo to kwadrat amplitudy funkcji falowej.
 Wybieramy wektor fali $\hat{n}$ i weersory prostopadłe do niego czyli $\hat{e_1} \hat{e_2}$.
 
 $$
-\braket{|e_lambda \cdot r|^2}_\lambda &= \frac{1}{2} \left(|r^2 - |\hat{n}\cdot r|^2) = \\
+\braket{|e_lambda \cdot r|^2}_\lambda &= \frac{1}{2} \left(|r^2 - |\hat{n}\cdot r|^2\right) = \\
 &= \frac{1}{2}|r|^2 (1 - \cos^2 \theta)
 $$
 
@@ -268,3 +268,26 @@ Liczymy całkę $\frac{1}{4\pi} \int_{4\pi} (1 - \cos^2 \theta) d\Omega = \frac{
 
 #### Część 2 zadania
 aby udowodnić, że polaryzacje kołowe też działają, trzeba zrobić średniowanie po nich i podstawić z ich definicji.
+
+### Zadanie 18
+- wiemy, że $\omega_{jk} = \frac{\Delta E}{\hbar}$
+- Przybliżamy $\
+
+### Zadanie 20
+Jest proste, tylko ma dużo liczenia.
+Można zdefiniować $\sigma_i$ za pomocą delt Kronekera.
+
+### Zadanie 21
+Plan działania jest taki:
+1. definiujemy $\vec{\mathbb{S}} = \frac{\hbar}{2} \vec{\sigma}$
+2. definiujemy $\vec{n} = \left(n_x, n_y, n_z\right) \in \mathbb{R}^3 : |\vec{n}| = 1$
+3. Tworzymy równanie  macierzowe (można dla szpanu użyć delt kronekera).
+4. rozwiązujemy równanie (ciekawostka jest taka, że z 2 równań otrzymujemy rozwiązania dla 3 zmiennych)
+
+### Zadanie 22
+
+Podobne do 21. Podstawiamy i wychodzi tylko dużo liczenia.
+
+### Zadanie 23
+
+$\Sigma = \frac{\hbar}{2} \sigma$
