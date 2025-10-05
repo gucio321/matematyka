@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Laby &#8212; Matematyka  - dokumentacja</title>
+    <title>Notatki z wykładu na youtube &#8212; Matematyka  - dokumentacja</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=7de1373a" />
@@ -51,7 +51,7 @@
              accesskey="I">indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Laby</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Notatki z wykładu na youtube</a></li> 
       </ul>
     </div>
     </div>
@@ -62,25 +62,84 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="laby">
-<h1>Laby<a class="headerlink" href="#laby" title="Link to this heading">¶</a></h1>
-</section>
-<section id="intro">
-<h1>Intro<a class="headerlink" href="#intro" title="Link to this heading">¶</a></h1>
+  <section id="notatki-z-wykladu-na-youtube">
+<h1>Notatki z wykładu na youtube<a class="headerlink" href="#notatki-z-wykladu-na-youtube" title="Link to this heading">¶</a></h1>
+<p>https://www.youtube.com/watch?v=yQDfVJzEymI&amp;list=PLyYrySVqmyVPzvVlPW-TTzHhNWg1J_0LU</p>
+<section id="polprzewodniki">
+<h2>Półprzewodniki<a class="headerlink" href="#polprzewodniki" title="Link to this heading">¶</a></h2>
+<p>Istnieją 2 sposoby przenoszenia ładunków w półprzewodniku:</p>
 <ul class="simple">
-<li><p>pierwszy tranzystor ostrzowy</p></li>
-<li><p>pierwsze tranzystory złączowe</p></li>
-<li><p>pierwszy układ scalony</p></li>
-<li><p>powstanie technologii CMOS (Complementary Metal-Oxide Semiconductor) (tranzystor polowy)</p></li>
+<li><p>elektrony</p></li>
+<li><p>dziury</p></li>
 </ul>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>Przenoszenie poprzez dziury jest wolniejsze niż poprzez elektrony gdyż technicznie wymaga ono uwolnienia elektronu z jednego wiązania i wychwyt przez wiązanie “z dziurom”</p>
+</div>
+<div class="admonition-definicja-ev admonition">
+<p class="admonition-title">Definicja eV</p>
+<p>Elektroo-volt, to ilość energii potrzebnej, aby przetransportować jeden elektron przez różnicę potencjałów jednego volta.</p>
+</div>
+<p>Wzór na ilość wolnych elektronów w półprzewodniku:</p>
+<div class="math notranslate nohighlight">
+\[
+n_i = 5.2 \cdot 10^{15} T^{\frac{3}{2}} \exp\left(-\frac{E_g}{2kT}\right)
+\]</div>
+<p>Gdzie:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(T\)</span> - temperatura bezwzględna</p></li>
+<li><p><span class="math notranslate nohighlight">\(E_g\)</span> - przerwa energetyczna</p></li>
+</ul>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(E_g\)</span> [eV]</p></th>
+<th class="head"><p>Atom</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0.67</p></td>
+<td><p>German</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.12</p></td>
+<td><p>Krzem</p></td>
+</tr>
+<tr class="row-even"><td><p>2.5</p></td>
+<td><p>Diament</p></td>
+</tr>
+</tbody>
+</table>
 <div class="admonition note">
 <p class="admonition-title">Informacja</p>
-<p>w dzisiejszych czasach zasßpeuje się rezystory i kondensatory tranzystorami, bo tranzystory są najmniejsze i najtańsze.</p>
+<p>Wiemy, że diament jest izolatorem, dlatego jego energia jest tak duża.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>Wiemy, że dla krzemu <span class="math notranslate nohighlight">\(n_i \approx 10^{10}\)</span></p>
+<p>Oznaczmy:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(n\)</span> - koncentracja (liczba / gęstość) wolnych elektronów</p></li>
+<li><p><span class="math notranslate nohighlight">\(p\)</span> - koncentracja dziur</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>Dla krzemu niedomieszkowanego (czystego) <span class="math notranslate nohighlight">\(n = p = n_i\)</span></p>
+</div>
+</div>
+<p>Domieszkowanie pozwala nam zwiększyć liczbę elektronów/dziur w półprzewodniku.
+Domieszkujemy atomy z 5 lub 3 elektronami walencyjnymi.</p>
+<p>Przykładowo, gdy chcemy zwiększyć liczbę elektronów, dodajemy atomy fosforu w liczbie <span class="math notranslate nohighlight">\(N_D\)</span> (donorów) (zazwyczaj między <span class="math notranslate nohighlight">\(10^{15}\)</span> a <span class="math notranslate nohighlight">\(10^{17} \frc{atom}{cm^3}\)</span> atomów).
+Jak widać, liczba domieszkowanych atomów znacząco przeayższa liczbę wolnych elektronów natywnie w krzemie <span class="math notranslate nohighlight">\(\Rightarrow n \approx N_D\)</span>.
+Można także stwierdzić, że <span class="math notranslate nohighlight">\(n\cdot p = n_i^2\)</span>.</p>
+</section>
+<section id="domieszkowanie">
+<h2>Domieszkowanie<a class="headerlink" href="#domieszkowanie" title="Link to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">https://www.youtube.com/watch?v=NWolpDgi6_Y&amp;list=PLyYrySVqmyVPzvVlPW-TTzHhNWg1J_0LU&amp;index=2</span></code></p>
+<p>Gdy dodajemy <span class="math notranslate nohighlight">\(N_D\)</span> atomów donorowych (np. fosforu) na <span class="math notranslate nohighlight">\(cm^3\)</span>, przyjmójemy że w materiale będziemy mieć <span class="math notranslate nohighlight">\(N_D\)</span> wolnych nośników (tu elektronów).</p>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>Zakładamy, że <span class="math notranslate nohighlight">\(N_D \gg n_i\)</span></p>
 </div>
 </section>
-<section id="parametry-tranzystora">
-<h1>Parametry tranzystora<a class="headerlink" href="#parametry-tranzystora" title="Link to this heading">¶</a></h1>
-<p>Przy produkcji ukłądów scalonych określa się parametr <span class="math notranslate nohighlight">\(L_{min}\)</span> czyli najniższa szerokość kanału.</p>
 </section>
 
 
@@ -92,9 +151,11 @@
         <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
     <h3><a href="../../../index.html">Spis treści:</a></h3>
     <ul>
-<li><a class="reference internal" href="#">Laby</a></li>
-<li><a class="reference internal" href="#intro">Intro</a></li>
-<li><a class="reference internal" href="#parametry-tranzystora">Parametry tranzystora</a></li>
+<li><a class="reference internal" href="#">Notatki z wykładu na youtube</a><ul>
+<li><a class="reference internal" href="#polprzewodniki">Półprzewodniki</a></li>
+<li><a class="reference internal" href="#domieszkowanie">Domieszkowanie</a></li>
+</ul>
+</li>
 </ul>
 
   </div>
@@ -139,7 +200,7 @@
              >indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Laby</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Notatki z wykładu na youtube</a></li> 
       </ul>
     </div>
     </div>
