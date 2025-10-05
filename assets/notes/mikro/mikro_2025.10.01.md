@@ -1,3 +1,5 @@
+## Laby
+
 ## Intro
 - pierwszy tranzystor ostrzowy
 - pierwsze tranzystory złączowe
