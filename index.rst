@@ -16,7 +16,7 @@
    Do zobaczenia w przyszłym semestrze i powodzenia dla wszystkich którzy nadal walczą ze statystyką!
    gucio321 <gucio321@protonmail.com>
 
-.. warning::
+.. .. warning::
    
    Terminy egzaminów:
 
