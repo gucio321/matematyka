@@ -1,6 +1,6 @@
 ## Notatki z wykładu na youtube
 
-https://www.youtube.com/watch?v=yQDfVJzEymI&list=PLyYrySVqmyVPzvVlPW-TTzHhNWg1J_0LU
+`https://www.youtube.com/watch?v=yQDfVJzEymI&list=PLyYrySVqmyVPzvVlPW-TTzHhNWg1J_0LU`
 
 ### Półprzewodniki
 
@@ -52,9 +52,13 @@ Dla krzemu niedomieszkowanego (czystego) $n = p = n_i$
 Domieszkowanie pozwala nam zwiększyć liczbę elektronów/dziur w półprzewodniku.
 Domieszkujemy atomy z 5 lub 3 elektronami walencyjnymi.
 
-Przykładowo, gdy chcemy zwiększyć liczbę elektronów, dodajemy atomy fosforu w liczbie $N_D$ (donorów) (zazwyczaj między $10^{15}$ a $10^{17} \frc{atom}{cm^3}$ atomów).
+Przykładowo, gdy chcemy zwiększyć liczbę elektronów, dodajemy atomy fosforu w liczbie $N_D$ (donorów) (zazwyczaj między $10^{15}$ a $10^{17} \frac{atom}{cm^3}$ atomów).
 Jak widać, liczba domieszkowanych atomów znacząco przeayższa liczbę wolnych elektronów natywnie w krzemie $\Rightarrow n \approx N_D$.
-Można także stwierdzić, że $n\cdot p = n_i^2$.
+Można także stwierdzić, że:
+
+$$
+n\cdot p = n_i^2
+$$
 
 ### Domieszkowanie
 
@@ -65,3 +69,13 @@ Gdy dodajemy $N_D$ atomów donorowych (np. fosforu) na $cm^3$, przyjmójemy że 
 ```{tip}
 Zakładamy, że $N_D \gg n_i$
 ```
+
+Wyróżniamy 2 typy domieszkowania:
+- materiał typu n (donor) - więcej elektronów
+- materiał typu p (akceptor) - więcej dziur
+
+### Przepływ nośników
+
+**Dryf** to przepływ ładunków spowodowany różnicą potencjałów (polem elektrycznym).
+
+Taki przepływ określa prawo Ohma $U = I\cdotR$. Jednak jak znaleźć R?
