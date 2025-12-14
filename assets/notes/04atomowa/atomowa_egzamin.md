@@ -292,7 +292,7 @@ Podobne do 21. Podstawiamy i wychodzi tylko dużo liczenia.
 
 $\hat{\Sigma} = \frac{\hbar}{2} \begin{Bmatrix}\sigma & 0 \\ 0 & \sigma \end{Bmatrix}$
 
-I w sumie to warto rozbić zarówno Hamlitonian jak i $\vac{\hat{J}}$ na 2 części aby liczyć po jednej rzeczy na raz.
+I w sumie to warto rozbić zarówno Hamlitonian jak i $\vec{\hat{J}}$ na 2 części aby liczyć po jednej rzeczy na raz.
 Przydatna jest konwencja sumacyjna Einsteina.
 
 ![Strona 5](./04atomowa/egzamin_s5.jpg)
