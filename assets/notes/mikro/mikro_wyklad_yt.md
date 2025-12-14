@@ -78,4 +78,4 @@ Wyróżniamy 2 typy domieszkowania:
 
 **Dryf** to przepływ ładunków spowodowany różnicą potencjałów (polem elektrycznym).
 
-Taki przepływ określa prawo Ohma $U = I\cdotR$. Jednak jak znaleźć R?
+Taki przepływ określa prawo Ohma $U = I\cdot R$. Jednak jak znaleźć R?
