@@ -63,7 +63,7 @@ $$
 Rozważmy najpierw 2 równolegle połączone rezystory zasilane źróðłem prądowym.
 Dla takiego układu, można zapisać następujące wyrażenia.
 
-![dzielnik prądu](kabelki/obwod1.svg)
+![dzielnik prądu](04kabelki/obwod1.svg)
 
 $$
 I_0 = I_1 + I_2 = \frac{U}{R_1} + \frac{U}{R_2}
