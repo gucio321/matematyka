@@ -21,7 +21,7 @@
 | 15                       | 9.3                                             |
 | 16                       | trochę na pewno jest 9.5                        |
 
-![Strona 1](./atomowa/egzamin_s1.jpg)
+![Strona 1](./04atomowa/egzamin_s1.jpg)
 
 ### Zadanie 1
 1. $\psi = Y R$
@@ -78,7 +78,7 @@ W tym zadaniu są 2 (a nawet 3) kluczowe rzeczy:
 - rozkminienie co to jest $\cos(\pi - \theta) = - \cos\theta \Rightarrow \cos^2(\pi - \theta) = \cos^2 \theta$. Wtedy cosinusy w wielomianie Laguerre'a zjadają minusa tylko dół pochodnej wypluwa $(-1)^{l+m}$.
 - $exp(im\pi) = (-1)^m$ natomiast $(-1)^{l+m+m} = (-1)^{l+2m} = (-1)^l$, ponieważ $m \in \mathbb{Z}$.
 
-![Strona 2](./atomowa/egzamin_s2.jpg)
+![Strona 2](./04atomowa/egzamin_s2.jpg)
 
 ### Zadanie 6
 #### A
@@ -163,7 +163,7 @@ Z - Z* = (Z_x + i Z_y) - (Z_x - i Z_y) = 2 i Z_y = 2 i \Im Z
 $$
 ```
 
-![Strona 3](./atomowa/egzamin_s3.jpg)
+![Strona 3](./04atomowa/egzamin_s3.jpg)
 
 ### Zadanie 12
 
@@ -250,7 +250,7 @@ W $\Delta$ powinien już sięp okazać $\omega_R$ potem liczyby współczynniki 
 #### C
 $P_{12} = |C_2(t)|^2$ bo to kwadrat amplitudy funkcji falowej.
 
-![Strona 4](./atomowa/egzamin_s4.jpg)
+![Strona 4](./04atomowa/egzamin_s4.jpg)
 
 #### Zadanie 17
 
@@ -295,7 +295,7 @@ $\hat{\Sigma} = \frac{\hbar}{2} \begin{Bmatrix}\sigma & 0 \\ 0 & \sigma \end{Bma
 I w sumie to warto rozbić zarówno Hamlitonian jak i $\vac{\hat{J}}$ na 2 części aby liczyć po jednej rzeczy na raz.
 Przydatna jest konwencja sumacyjna Einsteina.
 
-![Strona 5](./atomowa/egzamin_s5.jpg)
+![Strona 5](./04atomowa/egzamin_s5.jpg)
 
 ### Zadanie 24
 
