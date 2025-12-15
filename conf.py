@@ -30,6 +30,7 @@ author = 'Maciej Szeptuch'
 extensions = [
         "sphinx.ext.githubpages",
         "sphinx.ext.imgconverter",
+        "sphinxcontrib.mermaid",
         #"sphinxcontrib.images", # https://github.com/sphinx-contrib/images
         "myst_parser",
         #"cloud_sptheme.ext.issue_tracker",
