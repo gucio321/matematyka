@@ -3,3 +3,4 @@ myst-parser
 cloud-sptheme
 #sphinxcontrib-images==master
 myst-parser
+sphinxcontrib-mermaid
