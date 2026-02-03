@@ -86,10 +86,58 @@ Do pomiaru dawki musimy znać:
 
 ### Zasady postępowania ze źródłami promieniotwórczymi
 
+```{admonition} Wyłączenie
+dana substancja nie podlega przepisom prawa atomowego
+```
+
+Pracownie dzielimy na klasy A, B i C (w zależności od aktywności źródeł).
+
+Ponadto istnieje podział ze względu na typ (źródeł otwartych i zamkniętych).
+
+Wymagania:
+- Osłabienie przez ściany pracowni:
+    - 0.1 mSv/rok dla budynku mieszkalnego
+    - 0.3 mSv/rok dla innych 
+- wejśćie oznakowane
+- dokumentacja pracowni
+- przechowywanie źródeł i odpadów tak żeby nie doszło do skażenia
+- nie ma innych groźnych materiałóœ (typu łatwopalne, wybuchowe e.t.c.)
+
+pracownicy musżą mieć środki ochrony osobistej (bhp) i beepery (indywidualne czujnik) - jeśli możliwe przekroczenie dawek.
+
+Teren nadzorowany i kontrolowany:
+- teren kontrolowany - możliwość przekroczenia dawek dla pracowników narażonych > 6 mSv/rok
+- teren nadzorowany - możliwość przekroczenia dawek dla ogółu ludności > 0.3 mSv/rok
+
+Dokumenty wymagane do pracy:
+- PZJ Program Zapewnienia Jakości
+- karta katalogowa źródeł
+- zakładowy plan postępowania awaryjnego
+- program bezpieczeństwa jądrowego i ORad
+- program szkoleń okresowych
+- regulamin pracy w warunkach szkodliwych
+
 ### Ewidencja i kontrola źródeł
 
 ### Odpady promieniotwórcze
 
+```{admonition} Definicja
+Odpady promieniotwórcze to takie substancje, które zawierają izotopy promieniotwórcze
+i dla których nie przewiduje się dalszego użytkowania, a ich aktywność lub stężenie przekracza określone wartości graniczne [ustawa].
+```
+
+Podział:
+- akrywność
+    - niskoaktywne
+    - średnioaktywne
+    - wysokoaktywne
+- czas rozpadu
+    - krótkożyciowe
+    - długożyciowe
+
+
 ### Postępowanie awaryjne
 
 ### Transport materiałów promieniotwórczych
+
+Materiały promieniotwórcze to szczególna grupa  materiałów niebezpiecznych. Ich kod 
