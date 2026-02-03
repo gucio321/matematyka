@@ -37,6 +37,8 @@ extensions = [
         "myst_parser" # ref: https://www.sphinx-doc.org/en/master/usage/markdown.html
 ]
 
+mermaid_params = ['--theme', 'forest']
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
@@ -104,5 +106,6 @@ latex_elements = {
         'preamble': r'''
         \usepackage{cancel}
         \usepackage{braket}
+        \usepackage{esdiff}
         ''',
 }
