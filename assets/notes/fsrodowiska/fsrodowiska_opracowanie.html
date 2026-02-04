@@ -257,11 +257,11 @@ Kręcenie się jest najprawdopodobniej spowodowane konwekcją spowodowaną ochł
 <h3>Prawo Daltona, skłąd atmosfery<a class="headerlink" href="#prawo-daltona-sklad-atmosfery" title="Link to this heading">¶</a></h3>
 <p>Z róąnania stanu gazu doskonałego można wyliczyć tzw. ciśnienie parcjalne</p>
 <div class="math notranslate nohighlight">
-\[
-p_N V_N = RT
-p_O V_O = RT
+\[\begin{split}
+p_N V_N = RT \\
+p_O V_O = RT \\
 p = \sum_i p_i
-\]</div>
+\end{split}\]</div>
 <p>Stężenia gazów w atmosferze</p>
 <ul class="simple">
 <li><p>Azot - <span class="math notranslate nohighlight">\(78.08\%\)</span></p></li>
@@ -368,6 +368,97 @@ pV = m R_d T \\
 \gamma = \frac{g}{c_p} \\
 \end{split}\]</div>
 </section>
+<section id="mechanizm-powstawania-wiatru-halnego">
+<h3>mechanizm powstawania wiatru halnego<a class="headerlink" href="#mechanizm-powstawania-wiatru-halnego" title="Link to this heading">¶</a></h3>
+</section>
+<section id="pochodna-substancjhalna">
+<h3>Pochodna substancjhalna<a class="headerlink" href="#pochodna-substancjhalna" title="Link to this heading">¶</a></h3>
+<p>Zakłądamy balon bardzo szybko wymieniająćy ciepło z otoczeniem</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+dT = \frac{\partial T}{\partial t} dt + \frac{\partial T}{\partial r} dr \\
+\frac{dT}{dt} = \frac{\partial T}{\partial t} + \frac{\partial T}{\partial r} \frac{dr}{dt}
+\end{split}\]</div>
+<p>oznaczmy składowe prędkości jako <span class="math notranslate nohighlight">\(\mathbb{v} = (v_x, v_y, v_z) = (u, v, w)\)</span>
+wtedy z def prędkości możemy zapisać</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{dT}{dt} = \frac{\partial T}{\partial t} + \frac{\partial T}{\partial r} \mathbb{v}
+\frac{dT}{dt} = \frac{\partial T}{\partial t} + \mathbb{v} \nabla T 
+\]</div>
+</section>
+<section id="opis-ruchu-powietrza-w-ukladzie-eulera-i-lagrangea">
+<h3>Opis ruchu powietrza w ukłądzie eulera i Lagrange’a<a class="headerlink" href="#opis-ruchu-powietrza-w-ukladzie-eulera-i-lagrangea" title="Link to this heading">¶</a></h3>
+<div class="admonition-opis-eulera admonition">
+<p class="admonition-title">Opis eulera</p>
+<p>pole fizyczne w nieruchomym ukłądzie odniesienia</p>
+</div>
+<div class="admonition-opis-lagrange-a admonition">
+<p class="admonition-title">Opis Lagrange’a</p>
+<p>Ukłąd związany7 z poruszającym się płynam (tu: powietrzem)</p>
+</div>
+<p>paczka powietrza (“Różniczka”) jest na tyle duża, że możńa dla niej określić wymagane paramatry</p>
+<p>Możemy stworzyć kilka modeli:</p>
+<ul class="simple">
+<li><p>najprostzszy - Zakłądamy również, że paczka nie zmienia istotnie swoich granic (model odpowiedni w stratosferze)</p></li>
+<li><p>pudełkowy - pudełko zawiera cząstki</p></li>
+<li><p>Puff Models - turbulencje są uwzględnione (jako gałsowskie odkształcenie obłoku). sprawdza się dla stałych wartości turbulencji i wiatru (czyli nie w PBL ani dolnej troposferze)</p></li>
+<li><p>cząsteczkowy (Lagrange particle dispersion model) trasport cząstek o różneju masie jest modelowany jako proces Markowa.</p></li>
+</ul>
+<p>Obserwator w ukłądzie lagrangeowskim rejestruje zmiany temperatury jako <span class="math notranslate nohighlight">\(\frac{dT}{dt}\)</span> (patrz pochodna substancjalna)</p>
+</section>
+<section id="sily-objetosciowe-dzialajace-na-paczke-powietrza">
+<h3>Siły objętościowe działające na paczke powietrza<a class="headerlink" href="#sily-objetosciowe-dzialajace-na-paczke-powietrza" title="Link to this heading">¶</a></h3>
+<p>Wyróżnia się dwie siły (zależą od masy):</p>
+<ul class="simple">
+<li><p>przyciągania</p></li>
+<li><p>bezwłądnośći (coriolisa)</p></li>
+</ul>
+</section>
+<section id="sily-powierzchniowe-dzialajace-na-paczke-powietrza">
+<h3>Siły powierzchniowe działające na paczkę powietrza<a class="headerlink" href="#sily-powierzchniowe-dzialajace-na-paczke-powietrza" title="Link to this heading">¶</a></h3>
+<p>Wyróżnia się następujące:</p>
+<ul class="simple">
+<li><p>siła gradientu ciśnienia</p></li>
+<li><p>siłą tarcia</p></li>
+</ul>
+<p>gradient ciśnienia wylicza się poprzez rtóżnicę ciśnień na poszczególne ścianki.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+(p - \frac{\partial p}{\partial y}\frac{\delta y}{2} - p - \frac{\partial p}{\partial y}\frac{\delta y}{2}) \delta x \delta z = - \frac{\partial p}{\partial y} \delta x \delta y \delta z \\
+\frac{F}{\delta m} = -\frac{1}{\rho} \nabla p
+\end{split}\]</div>
+</section>
+<section id="wiatr-geostroficzny">
+<h3>Wiatr geostroficzny<a class="headerlink" href="#wiatr-geostroficzny" title="Link to this heading">¶</a></h3>
+<p>występuje gdy siła coriolisa równoważy gradient cviśnienia.</p>
+<div class="math notranslate nohighlight">
+\[
+f v_i = - \frac{1}{\rho} \frac{\partial p}{\partial x_i}
+\]</div>
+</section>
+<section id="wiatr-cyklostroficzny">
+<h3>Wiatr cyklostroficzny<a class="headerlink" href="#wiatr-cyklostroficzny" title="Link to this heading">¶</a></h3>
+<p>występuje m.in. w trąbach powietrznych. Nie uwzględnia się siły coriolisa (mała skala)
+Siła gradientu ciśnienia równ oważona jest przez siłę odśrodkową.</p>
+<div class="math notranslate nohighlight">
+\[
+u_c = \pm \sqrt{\frac{r}{\rho}\frac{\partial p}{\partial r}}
+\]</div>
+</section>
+<section id="wiatr-gradientowy">
+<h3>Wiatr gradientowy<a class="headerlink" href="#wiatr-gradientowy" title="Link to this heading">¶</a></h3>
+<p>wieje po traiektorii na któ©ej równoważą się 3 siły:</p>
+<ul class="simple">
+<li><p>gradientu ciśnienia</p></li>
+<li><p>coriolisa</p></li>
+<li><p>odśrodkowa</p></li>
+</ul>
+</section>
+<section id="model-ekmana">
+<h3>Model ekmana<a class="headerlink" href="#model-ekmana" title="Link to this heading">¶</a></h3>
+<p>opisuje ruch w warstwie tarcia</p>
+</section>
 </section>
 </section>
 
@@ -404,6 +495,15 @@ pV = m R_d T \\
 <li><a class="reference internal" href="#rownowaga-w-kolumnie-plynu-niescisliwego">Równowaga w kolumnie płynu nieściśliwego</a></li>
 <li><a class="reference internal" href="#rownowaga-w-kolumnie-plynu-scisliwego">Równowaga w kolumnie płynu ściśliwego</a></li>
 <li><a class="reference internal" href="#wzor-okreslajacy-wielkosc-gradientu-sucho-adiabatycznego">wzór określająćy wielkość gradientu sucho-adiabatycznego</a></li>
+<li><a class="reference internal" href="#mechanizm-powstawania-wiatru-halnego">mechanizm powstawania wiatru halnego</a></li>
+<li><a class="reference internal" href="#pochodna-substancjhalna">Pochodna substancjhalna</a></li>
+<li><a class="reference internal" href="#opis-ruchu-powietrza-w-ukladzie-eulera-i-lagrangea">Opis ruchu powietrza w ukłądzie eulera i Lagrange’a</a></li>
+<li><a class="reference internal" href="#sily-objetosciowe-dzialajace-na-paczke-powietrza">Siły objętościowe działające na paczke powietrza</a></li>
+<li><a class="reference internal" href="#sily-powierzchniowe-dzialajace-na-paczke-powietrza">Siły powierzchniowe działające na paczkę powietrza</a></li>
+<li><a class="reference internal" href="#wiatr-geostroficzny">Wiatr geostroficzny</a></li>
+<li><a class="reference internal" href="#wiatr-cyklostroficzny">Wiatr cyklostroficzny</a></li>
+<li><a class="reference internal" href="#wiatr-gradientowy">Wiatr gradientowy</a></li>
+<li><a class="reference internal" href="#model-ekmana">Model ekmana</a></li>
 </ul>
 </li>
 </ul>
@@ -461,7 +561,7 @@ pV = m R_d T \\
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/779bd64976717ac7c8310adf700c64bc234b7244>Tue Feb 3 22:52:46 2026 +0100 workflow: instyall inkscape for advanced svg support (779bd64976717ac7c8310adf700c64bc234b7244)</a>
+<a href=https://github.com/gucio321/matematyka/commit/a8af501ad256881604b8b8c712b124b9f9750560>Wed Feb 4 14:06:42 2026 +0100 add something more and fix equation (a8af501ad256881604b8b8c712b124b9f9750560)</a>
 </font>
 
   </body>
