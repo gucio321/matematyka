@@ -225,6 +225,7 @@ $$
 $$
 
 dla atmosfery jednorodnej (bez gradientui temp):
+
 $$
 p(z) = p_0 exp\left(- \frac{g z}{R_d T}\right)
 $$
