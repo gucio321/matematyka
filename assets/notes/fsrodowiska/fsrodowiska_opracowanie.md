@@ -177,8 +177,8 @@ gdy wiatr słoneczny wpada do atmosfery powstaje tzw. zoża polarna (jonizascja 
 Z róąnania stanu gazu doskonałego można wyliczyć tzw. ciśnienie parcjalne
 
 $$
-p_N V_N = RT
-p_O V_O = RT
+p_N V_N = RT \\
+p_O V_O = RT \\
 p = \sum_i p_i
 $$
 
@@ -295,3 +295,91 @@ $$
 \frac{\partial T}{\partial z} =  - \frac{g}{c_p} \\
 \gamma = \frac{g}{c_p} \\
 $$
+
+### mechanizm powstawania wiatru halnego
+
+
+### Pochodna substancjhalna
+
+Zakłądamy balon bardzo szybko wymieniająćy ciepło z otoczeniem
+
+$$
+dT = \frac{\partial T}{\partial t} dt + \frac{\partial T}{\partial r} dr \\
+\frac{dT}{dt} = \frac{\partial T}{\partial t} + \frac{\partial T}{\partial r} \frac{dr}{dt}
+$$
+
+oznaczmy składowe prędkości jako $\mathbb{v} = (v_x, v_y, v_z) = (u, v, w)$
+wtedy z def prędkości możemy zapisać
+
+$$
+\frac{dT}{dt} = \frac{\partial T}{\partial t} + \frac{\partial T}{\partial r} \mathbb{v}
+\frac{dT}{dt} = \frac{\partial T}{\partial t} + \mathbb{v} \nabla T 
+$$
+
+### Opis ruchu powietrza w ukłądzie eulera i Lagrange'a
+
+```{admonition} Opis eulera 
+pole fizyczne w nieruchomym ukłądzie odniesienia
+```
+
+```{admonition} Opis Lagrange'a
+Ukłąd związany7 z poruszającym się płynam (tu: powietrzem)
+```
+
+paczka powietrza ("Różniczka") jest na tyle duża, że możńa dla niej określić wymagane paramatry
+
+Możemy stworzyć kilka modeli:
+- najprostzszy - Zakłądamy również, że paczka nie zmienia istotnie swoich granic (model odpowiedni w stratosferze)
+- pudełkowy - pudełko zawiera cząstki
+- Puff Models - turbulencje są uwzględnione (jako gałsowskie odkształcenie obłoku). sprawdza się dla stałych wartości turbulencji i wiatru (czyli nie w PBL ani dolnej troposferze)
+- cząsteczkowy (Lagrange particle dispersion model) trasport cząstek o różneju masie jest modelowany jako proces Markowa. 
+
+Obserwator w ukłądzie lagrangeowskim rejestruje zmiany temperatury jako $\frac{dT}{dt}$ (patrz pochodna substancjalna)
+
+### Siły objętościowe działające na paczke powietrza
+Wyróżnia się dwie siły (zależą od masy):
+- przyciągania
+- bezwłądnośći (coriolisa)
+
+
+### Siły powierzchniowe działające na paczkę powietrza
+
+Wyróżnia się następujące:
+- siła gradientu ciśnienia
+- siłą tarcia
+
+gradient ciśnienia wylicza się poprzez rtóżnicę ciśnień na poszczególne ścianki.
+
+$$
+(p - \frac{\partial p}{\partial y}\frac{\delta y}{2} - p - \frac{\partial p}{\partial y}\frac{\delta y}{2}) \delta x \delta z = - \frac{\partial p}{\partial y} \delta x \delta y \delta z \\
+\frac{F}{\delta m} = -\frac{1}{\rho} \nabla p
+$$
+
+
+### Wiatr geostroficzny
+
+występuje gdy siła coriolisa równoważy gradient cviśnienia.
+
+$$
+f v_i = - \frac{1}{\rho} \frac{\partial p}{\partial x_i}
+$$
+
+### Wiatr cyklostroficzny
+
+występuje m.in. w trąbach powietrznych. Nie uwzględnia się siły coriolisa (mała skala)
+Siła gradientu ciśnienia równ oważona jest przez siłę odśrodkową.
+
+$$
+u_c = \pm \sqrt{\frac{r}{\rho}\frac{\partial p}{\partial r}}
+$$
+
+### Wiatr gradientowy
+
+wieje po traiektorii na któ©ej równoważą się 3 siły:
+- gradientu ciśnienia
+- coriolisa
+- odśrodkowa
+
+### Model ekmana
+
+opisuje ruch w warstwie tarcia
