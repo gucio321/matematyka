@@ -185,6 +185,63 @@ BR(i) = \frac{\Gamma_i}{\Gamma}
 \]</div>
 </div>
 </section>
+<section id="wyklad-3">
+<h2>Wykład 3<a class="headerlink" href="#wyklad-3" title="Link to this heading">¶</a></h2>
+<p>Zderzenia: (definicja jest trywialna)</p>
+<div class="admonition-zlota-regula-fermiego admonition">
+<p class="admonition-title">Złota reguła fermiego</p>
+<p>Pozwala na wyliczenie:</p>
+<div class="math notranslate nohighlight">
+\[
+W = \Gamma_{fi} = 2\pi |T_{fi}|^2 \rho(E_i) = 2\pi \bra{f} \hat{H'} \ket{i} \rho(E_i)
+\]</div>
+<p>gdzie:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(i\)</span> oraz <span class="math notranslate nohighlight">\(f\)</span> to stany końcowy i początkowy</p></li>
+<li><p><span class="math notranslate nohighlight">\(|T_{fi}|^2\)</span> to amplituda przejścia. Im większa, tym częstsze przejście</p></li>
+<li><p><span class="math notranslate nohighlight">\(\rho(E_i)\)</span> degeneracja stanu końcowego - ile stanów o tej samej energii</p></li>
+</ul>
+</div>
+<p>Równanie Schrödingera:
+mamy funkcje falową <span class="math notranslate nohighlight">\(\Psi\)</span> która zawiera info o pędzie i energii stanu (<span class="math notranslate nohighlight">\(\ket\Psi\)</span>)</p>
+<p>Możemy zdefiniować operatory do “wyciągania” informacji z funkcji falowej</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\hat{P} = - i \nabla\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\hat{E} = i \frac{\partial}{\partial t}\)</span></p></li>
+</ul>
+<p>Wartości własne operatora dają nam wyniki pomiaru (trywialne, po prostu mądrze powiedziane że zadziałanie operatorem na <span class="math notranslate nohighlight">\(\Psi\)</span> daje to co chcemy razy <span class="math notranslate nohighlight">\(\Psi\)</span>)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\hat{H} = \frac{p^2}{2m} + V \\
+i \hbar \frac{d}{dt} \ket\Psi = \hat{H} \ket\Psi
+\end{split}\]</div>
+<p>Są też napisane trywialne rzeczy na tym slajdzie to ich nie przepisuje.</p>
+<p>A no i funfact: Hamiltonian nie zależy od czasu (więc jest zachowany - energia jest zachowana).
+A wszystko co komutuje z hamiltonianem to też jest zachowane. Pozdro.</p>
+<p><strong>Równanie Kleina-Gordona</strong> - Chodzi o to żeby równanie Schrödingera było niezmiennicze lorentzowsko (relatywistyczne).</p>
+<p>Bierzemy niezmiennik relatywistyczny:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+P^2 \equiv m^2 = E^2 - p^2 \\
+\end{split}\]</div>
+<p>Podstawiamy jawne postacie operatorów i mnożymy przez <span class="math notranslate nohighlight">\(\ket\Psi\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+E^2 - p^2 = m^2 \\
+- \frac{\partial^2}{\partial t^2} + \Delta = m^2 \\
+\left(- \frac{\partial^2}{\partial t^2} + \Delta\right)\ket\Psi = m^2 \ket\Psi \\
+\end{split}\]</div>
+<p>Mamy równanie K-G. Daje ono czasem niefizyczne wyniki (ujemne energie i gęstości prawdopodobieństwa).</p>
+<p>Rozwiązaniem części przestrzennej jest potencjał Yukawy.</p>
+<p><strong>Równanie Diraca</strong> Działa jak równanie Schroödingera, ale achowuje niezmienniczość względem transformacji Lorentza</p>
+<p>Można zapamiętać, że R. Diraca jest pierwiastkiem z K-G:</p>
+<div class="math notranslate nohighlight">
+\[
+\left(i\gamma^0\frac{\partial}{\partial t} + i \vec\gamma \cdot \nabla - m) \ket\Psi = 0
+\]</div>
+<p>gdzie: <span class="math notranslate nohighlight">\(\gamma\)</span> jest odpowiednią macierzą (tak jak na teoretycznej).</p>
+<p>Równanie Diraca pozwoliło przewidzieć istnienie pozytronu. (taki funfact)</p>
+</section>
 </section>
 
 
@@ -199,6 +256,7 @@ BR(i) = \frac{\Gamma_i}{\Gamma}
 <li><a class="reference internal" href="#">Powtórka przed egzaminem</a><ul>
 <li><a class="reference internal" href="#wyklad-1">Wykłąd 1</a></li>
 <li><a class="reference internal" href="#wyklad-2">Wykłąd 2</a></li>
+<li><a class="reference internal" href="#wyklad-3">Wykład 3</a></li>
 </ul>
 </li>
 </ul>
@@ -254,7 +312,7 @@ BR(i) = \frac{\Gamma_i}{\Gamma}
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/6d7d65093835e0e8d62630d1e93b768050b07422>Sat Jun 20 16:43:04 2026 +0200 add 2nd lecture (6d7d65093835e0e8d62630d1e93b768050b07422)</a>
+<a href=https://github.com/gucio321/matematyka/commit/7801ada94939f2a851b69645a3a5890bf5736447>Sat Jun 20 18:32:05 2026 +0200 ceio: wyklad 3 (7801ada94939f2a851b69645a3a5890bf5736447)</a>
 </font>
 
   </body>
