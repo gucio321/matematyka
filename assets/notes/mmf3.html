@@ -373,6 +373,90 @@ d_\epsilon(x) = \left\{
 \int_\Omega dx \delta(x - x_0) f(x) = f(x_0)
 \]</div>
 <p>Tak jakby ktoś nie zauważył, to <span class="math notranslate nohighlight">\(\delta\)</span> to innymi słowy <span class="math notranslate nohighlight">\(\lim_{\epsilon\to 0} d_\epsilon (x)\)</span></p>
+<p>ciekawe zaqleżnośći:</p>
+<ul class="simple">
+<li><p>ortogonalność <span class="math notranslate nohighlight">\(\braket{x|y} = \delta(x-y)\)</span></p></li>
+<li><p>relacja zupełności</p></li>
+</ul>
+</section>
+<section id="transformaty-calkowe">
+<h2>Transformaty całkowe<a class="headerlink" href="#transformaty-calkowe" title="Link to this heading">¶</a></h2>
+</section>
+<section id="transformata-fouriera">
+<h2>Transformata fouriera<a class="headerlink" href="#transformata-fouriera" title="Link to this heading">¶</a></h2>
+<p>Mamy funkcje okresową (delta okresową). Można zwielokrotnić okres bo tak. Jak całkujemy po okresie to nie zależy odkąd zaczynamy.</p>
+<p>Ogulnie transformować możemy funkcje okresowe.</p>
+<p>funckje parzyste możńa rozwijać w szeregi cosinusów a nieparzyste - sinusów.</p>
+<p>Można zeskalować funkcje na przedział szerszy niż <span class="math notranslate nohighlight">\([-\pi,\pi]\)</span>.  wtedy zamiast <span class="math notranslate nohighlight">\(\pi\)</span> mamy <span class="math notranslate nohighlight">\(l\)</span>.</p>
+<p>Warunki dirichleta:</p>
+<ol class="arabic simple">
+<li><p>jest przedziałami monotoniczna na przedziale</p></li>
+<li><p>jest ciągła z wyjątkiem skończonej liczby punktów. w tych punktach nieciągłości punkt ma być średnią arytmetyczną z <span class="math notranslate nohighlight">\(\epsilon_-\)</span> i <span class="math notranslate nohighlight">\(\epsilon_+\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(f(a) = f(b) = \frac{1}{2}(f(a) + f(b))\)</span></p></li>
+</ol>
+<p>Jeżeli funkcja spełnia w/w warunki to jest rozwijalna w szereg fouriera.</p>
+<div class="math notranslate nohighlight">
+\[
+f(x) = \frac{a_0}{2} + \sum_{n=1}^\infty a_n cos(k_n x) + \sum_{n=1}^\infty b_n sin(k_n x)
+\]</div>
+<p>Teraz uwaga! będzie mocne.</p>
+<p>Funkcja która nie jest <span class="math notranslate nohighlight">\(\Delta\)</span>-okresowa może być traktowana jak funkcja okresowa z <span class="math notranslate nohighlight">\(\Delta \to \infty\)</span>.</p>
+<p>Mamy transformate dla funkcji 2l-okresowej:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+f(x) = \sum_{n=-\infty}^\infty c_n e^{ik_n x} \\
+c_n = \frac{1}{2l} \int_{-l}^l dx e^{-ik_n x} f(x)
+\end{split}\]</div>
+<p>robimy śmie3szne rzeczy z podstawieniem <span class="math notranslate nohighlight">\(\frac{1}{l} = \frac{\Delta k_n}{\pi}\)</span>. Przy granicy <span class="math notranslate nohighlight">\(l\to\infty\)</span> otrzymujemy:</p>
+<div class="math notranslate nohighlight">
+\[
+f(x) = \frac{1}{2 \pi} \int dk \left(\int dx' e^{-ikx'}f(x')\right) e^{ikx}
+\]</div>
+</section>
+<section id="rownania-czastkowe-2-rzedu-czastkowe">
+<h2>Równania cząstkowe 2 rzędu cząstkowe<a class="headerlink" href="#rownania-czastkowe-2-rzedu-czastkowe" title="Link to this heading">¶</a></h2>
+<p>Mamy równanie postaci:</p>
+<div class="math notranslate nohighlight">
+\[
+\sum_i^n \sum_j^n a_{ij}(x) \frac{\partial^2}{\partial x_i \partial x_j} u(x) + \sum_i^n b_i(x) \frac{\partial}{\partial x_i} u(x) + c(x) u(x) = f(x)
+\]</div>
+<p>czyli mamy współczynniki a, b, c, funkcje szukaną <span class="math notranslate nohighlight">\(u\)</span> i niejednorodność <span class="math notranslate nohighlight">\(f(x)\)</span></p>
+<p>Ten cały przód definiujemy jako operator <span class="math notranslate nohighlight">\(\hat L\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\hat L u(x) = f(x)
+\]</div>
+<p>Superpozycja: jak znamy jakieś rozwiązania, to ich kombinacja liniowa też jest rozwiązaniem.</p>
+<p>Jeżeli znamy dwa rozwiązania róœnania niejdenorodnego <span class="math notranslate nohighlight">\(u_1\)</span> i <span class="math notranslate nohighlight">\(u_2\)</span>, to <span class="math notranslate nohighlight">\(u = u_1 -u_2\)</span> jest rozwiązaniem równania jednorodnego.</p>
+<p>Można więc zapisać, że <span class="math notranslate nohighlight">\(u(x) = \Phi(x) + \Chi(x)\)</span>, gdzie <span class="math notranslate nohighlight">\(\Chi\)</span> jest rozwiązaniem ogulnym jednorodnego a <span class="math notranslate nohighlight">\(\Phi\)</span> jest rozwiązaniem częściowym niejednorodnego.</p>
+<p>Rozwiązywanie:</p>
+<ol class="arabic simple">
+<li><p>bierzemy jednorodne i wyznaczamy rozwiązanie</p></li>
+<li><p>liczymy rozwiązanie szczegulne dla niejednorodnego (np. pomijamy wtedy stałe całkowania ?)</p></li>
+<li><p>sumujemy 1 i 2</p></li>
+</ol>
+<p>Operator różniczkowy 2 rzędu można podzielić na dwie części:</p>
+<p><span class="math notranslate nohighlight">\(\hat L = \hat L_0 + \hat l\)</span></p>
+</section>
+<section id="funkcja-greena">
+<h2>Funkcja Greena<a class="headerlink" href="#funkcja-greena" title="Link to this heading">¶</a></h2>
+<p>Mamy rozwiązanie klasyczne ukłądu równań: <span class="math notranslate nohighlight">\(y = \hat L ^{-1} f\)</span> gdzie:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(y\)</span> - wektor zmiennych</p></li>
+<li><p><span class="math notranslate nohighlight">\(\hat L\)</span> - macierz współczynników</p></li>
+<li><p><span class="math notranslate nohighlight">\(f\)</span> - wektor stałych</p></li>
+</ul>
+<p>teraz zmieniamy oznaczenia żeby było bardziej fancy (przy okazji przechodzi do przestrzeni liniowej o <span class="math notranslate nohighlight">\(\infty\)</span> wymiarach, bo czmeu nie)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\ket y &amp;= \hat L^{-1} \ket f \\
+\braket{x|y} &amp;= \bra{x} \hat L^{-1} \ket f \\
+\int dx \ket x \bra x &amp;= \mathbb{1} \\
+\braket{x|y} &amp;= \int dx' \bra{x} \ket{x'} \bra{x'} \hat L^{-1} \ket f \\
+y(x) &amp;= \int dx' G(x, x') f(x)
+\end{split}\]</div>
+<p>Przyjacielu, teraz pewnie zastanawiasz się co tu się stało? Odpowiedź jest trywialna - nie wiem.</p>
+<p>Funkcja greena <span class="math notranslate nohighlight">\(G(x,x') = \bra x \hat L ^{-1} \ket{x'}\)</span> to operator rezolwenty zapisany w bazie x.</p>
 </section>
 </section>
 
@@ -407,6 +491,10 @@ d_\epsilon(x) = \left\{
 <li><a class="reference internal" href="#funkcjonal">Funkcjonał</a></li>
 <li><a class="reference internal" href="#dystrybucje">Dystrybucje</a></li>
 <li><a class="reference internal" href="#delta-diraca">Delta diraca</a></li>
+<li><a class="reference internal" href="#transformaty-calkowe">Transformaty całkowe</a></li>
+<li><a class="reference internal" href="#transformata-fouriera">Transformata fouriera</a></li>
+<li><a class="reference internal" href="#rownania-czastkowe-2-rzedu-czastkowe">Równania cząstkowe 2 rzędu cząstkowe</a></li>
+<li><a class="reference internal" href="#funkcja-greena">Funkcja Greena</a></li>
 </ul>
 </li>
 </ul>
@@ -478,7 +566,7 @@ d_\epsilon(x) = \left\{
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/aff3f9a5ff02590d8df9fff76ee247f1de2e9115>Wed Jun 24 16:50:09 2026 +0200 mf: fix indentation ' (aff3f9a5ff02590d8df9fff76ee247f1de2e9115)</a>
+<a href=https://github.com/gucio321/matematyka/commit/85d241b25a11bcea26559b4058976c70fd238442>Wed Jun 24 23:39:43 2026 +0200 add some shit (85d241b25a11bcea26559b4058976c70fd238442)</a>
 </font>
 
   </body>
