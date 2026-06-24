@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Elektromagnetyzm i Optyka &#8212; Matematyka  - dokumentacja</title>
+    <title>Szereg ortonormalny &#8212; Matematyka  - dokumentacja</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=7de1373a" />
@@ -17,6 +17,8 @@
     <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
     <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="../../../_static/translations.js?v=2827c288"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
 
     
     
@@ -49,7 +51,7 @@
              accesskey="I">indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Elektromagnetyzm i Optyka</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Szereg ortonormalny</a></li> 
       </ul>
     </div>
     </div>
@@ -60,8 +62,55 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section class="tex2jax_ignore mathjax_ignore" id="elektromagnetyzm-i-optyka">
-<h1>Elektromagnetyzm i Optyka<a class="headerlink" href="#elektromagnetyzm-i-optyka" title="Link to this heading">¶</a></h1>
+  <section id="szereg-ortonormalny">
+<h1>Szereg ortonormalny<a class="headerlink" href="#szereg-ortonormalny" title="Link to this heading">¶</a></h1>
+<p>Ortonor<strong>malne</strong> funkcje definiujemy przy pomocy delty kronekera (w sumie czym sie różńi delta diraca od kronekera?).</p>
+<div class="math notranslate nohighlight">
+\[
+\braket{f_i|f_j} = \delta_{ij}
+\]</div>
+<div class="admonition-funkcja-wagowa admonition">
+<p class="admonition-title">funkcja wagowa</p>
+<p>Taka losowa wstawka o funkcji wagowej <span class="math notranslate nohighlight">\(w(x)\)</span> by chatgpt:</p>
+<p>Funkcja wagowa (<span class="math notranslate nohighlight">\(w(x)\)</span>) nazywa się tak, bo… wprowadza wage dla skłądnikóœ iloczynu skalarnego funkcji.
+W normalnym przypadku, <span class="math notranslate nohighlight">\(w(x)=1\)</span>. Natomiast istnieją sytuacjie, w których tak nie jest:</p>
+<ul class="simple">
+<li><p>wielomiany Laguer’a <span class="math notranslate nohighlight">\(w(x) = e^{-x}\)</span></p></li>
+<li><p>wielomiany hamiltona <span class="math notranslate nohighlight">\(w(x) = e^{-x^2}\)</span></p></li>
+</ul>
+</div>
+<p>Natomiast można też zrobić warunek na orto<strong>gonalność</strong> wprowadzająć stałą normalizacyjną <span class="math notranslate nohighlight">\(N_i\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\braket{f_i|f_j} = N_i \delta_{ij}
+\]</div>
+<p>Można zdefiniować ciąg ortogonalny. Funkcje <span class="math notranslate nohighlight">\(f_n\)</span> są <strong>liniowo niezależne</strong>, wtedy:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Phi_1 = f_1 \\
+\Phi_n = f_n - \sum_{k=1}^{n-1} \frac{\braket{f_k|\Phi_k}}{\braket{\Phi_k | \Phi_k}}
+\end{split}\]</div>
+<p>Czyli od każdej funkcji odejmujemy tę jej część która jest zależna od poprzednich wyrazów ciągu</p>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>Na wektorach to fajnie widać:</p>
+<p><span class="math notranslate nohighlight">\(\braket{f_k | \Phi_k}\)</span> to dłutość rzutu <span class="math notranslate nohighlight">\(f_k\)</span> na <span class="math notranslate nohighlight">\(\Phi_k\)</span> pomnożona przez długość <span class="math notranslate nohighlight">\(\Phi_k\)</span>, natomiast <span class="math notranslate nohighlight">\(\braket{\phi_k|\Phi_k}\)</span> to po prostu długość <span class="math notranslate nohighlight">\(\Phi_k\)</span> w kwadracie.
+W efekcie ułamek to długość rzutu <span class="math notranslate nohighlight">\(f_k\)</span> na <span class="math notranslate nohighlight">\(\Phi_k\)</span> do długości <span class="math notranslate nohighlight">\(\Phi_k\)</span>, czyli:</p>
+<blockquote>
+<div><p>Jaki procent <span class="math notranslate nohighlight">\(f_k\)</span> stanowi jej rzut (czyli tak jakby liniowa zależność) na <span class="math notranslate nohighlight">\(\Phi_k\)</span></p>
+</div></blockquote>
+</div>
+<p>Jeżeli chcemy rozwinąć funkcje <span class="math notranslate nohighlight">\(f\)</span> w szereg ortogonalny (zakłądamy że mamy zbiór funkcji ortogonalnych - jak wyżej):</p>
+<p>Zawsze można zrobić: <span class="math notranslate nohighlight">\(f = \sum_k^\infty c_k \phi_k\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+f &amp;= \sum_k^\infty c_k \Phi_k \\
+\braket{f | \Phi_n} &amp;= \braket{\sum_k^\infty c_k \Phi_k | \Phi_n} \\
+\braket{f | \Phi_n} &amp;= \sum_k^\infty c_k \braket{\Phi_k | \Phi_n} \\ 
+\braket{f | \Phi_n} &amp;= \sum_k^\infty c_k N_k \delta_{kn} \\ 
+\braket{f | \Phi_n} &amp;= c_n N_n \\ 
+c_n = \frac{\braket{f | \Phi_n}}{\braket{\Phi_n | \Phi_n}}
+\end{split}\]</div>
 </section>
 
 
@@ -112,7 +161,7 @@
              >indeks</a></li>
     <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">Elektromagnetyzm i Optyka</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Szereg ortonormalny</a></li> 
       </ul>
     </div>
     </div>
