@@ -290,6 +290,65 @@ Chociaż to pewnie nie ma znaczenia bo można obustronnie sprzężyć najpierw.<
 </ul>
 <p>No i tu końćzy się 2.5</p>
 </section>
+<section id="funkcjonal">
+<h2>Funkcjonał<a class="headerlink" href="#funkcjonal" title="Link to this heading">¶</a></h2>
+<p>To jakaś truktura typu funkcja <span class="math notranslate nohighlight">\(\to\)</span> liczba.</p>
+<div class="admonition-nosnik-funkcji admonition">
+<p class="admonition-title">nośnik funkcji</p>
+<p>to zbiór argumentów dla których funkcja przyjmuje niezerowe wartości</p>
+<p>Nośnik jest zwarty jak przedział jest domknięty.</p>
+</div>
+<div class="admonition-funkcje-prubne admonition">
+<p class="admonition-title">funkcje prubne</p>
+<p>Są fajne.</p>
+<ul class="simple">
+<li><p>ciągłe z pochodnymi wszystkich rzędów</p></li>
+<li><p>zwarty nośnik</p></li>
+</ul>
+</div>
+<p>No i w sumie z wykłądu nie dowiedzieliśmy się czym jest funkcjonał.
+Chat pisze że to po prosatu funkcja tylko zamiast liczby przyjmuje element przestrzeni liniowej (np. funkcje).</p>
+<p>Przykład <span class="math notranslate nohighlight">\(F(f) = \int_a^b f(x) dx\)</span></p>
+<p>FUnkcjonały mogą być liniowe (bo czemu nie) wtedy gdy są liniowe.</p>
+</section>
+<section id="dystrybucje">
+<h2>Dystrybucje<a class="headerlink" href="#dystrybucje" title="Link to this heading">¶</a></h2>
+<p>Dystrybucja to ciągły funkcjonał określony na zbiorze funkcji próbnych.</p>
+<p>Innymi słowy: funkcjonał przyjmujący jako argument funkcje, która jest ciągła z pochodnymi wszystkich rzędów oraz ma zwarty nośnik.</p>
+<p>Definiujemy: <span class="math notranslate nohighlight">\(\Phi\)</span> zbió© funkcji próbnych. <span class="math notranslate nohighlight">\(T\)</span> to funkcjonał (dystrybucja):</p>
+<div class="math notranslate nohighlight">
+\[
+T(\Phi) = \braket{f_T | \Phi}
+\]</div>
+<p><span class="math notranslate nohighlight">\(f_T\)</span> nazywa się <strong>generatorem dystrybucji.</strong></p>
+<p>własności:</p>
+<ul class="simple">
+<li><p>jest liniowy</p></li>
+<li><p>nie wiem jak to sie nazywa ale <span class="math notranslate nohighlight">\(T[\Phi] = S[\Phi] \Leftrightarrow \braket{T | \Phi} = \braket{S | \Phi}\)</span></p></li>
+</ul>
+<p>Z tego wynika ze dystrybucje sa elementami przestrzeni liniowej.</p>
+<p>Działania:</p>
+<ul class="simple">
+<li><p>jak mnożymy x (zmienną niezależną) przez stałą <span class="math notranslate nohighlight">\(\alpha\)</span> to mamy <span class="math notranslate nohighlight">\(T[f(x')] = \left\{ x = \alpha x' \right\} = \frac{1}{\alpha} T[f(\frac{1}{\alpha})]\)</span></p></li>
+<li><p>przesuwanie dystrubucji <span class="math notranslate nohighlight">\(T[f(x')] = \left\{x = x' - x_0 \right\} = T[f(x+x_0)]\)</span></p></li>
+<li><p>różniczkowanie dystrybucji <span class="math notranslate nohighlight">\(T'[f] = -T[f']\)</span></p></li>
+<li><p>n’ta pochodna dystrybucji analogicznie.</p></li>
+</ul>
+<p>Przykłądy:</p>
+<ul class="simple">
+<li><p>generator typu <span class="math notranslate nohighlight">\(f_T(x) = |x|\)</span> liczymy <span class="math notranslate nohighlight">\(T'(f)\)</span> wychodzi nam, że generator takiej dystrybucji wynosi <span class="math notranslate nohighlight">\(sig(x)\)</span> (przy liczeniu przez części wyraz znika bo jest zwarty nośnik więc <span class="math notranslate nohighlight">\(0 * \infty = 0\)</span>, lol)</p></li>
+</ul>
+<p>Dystrybucja regularna: dystrybucja generowana przez funkcje lokalnie całkowalną</p>
+<div class="admonition-funkcja-lokalnie-calkowalna admonition">
+<p class="admonition-title">funkcja lokalnie całkowalna</p>
+<div class="math notranslate nohighlight">
+\[
+\int_\Omega dx |f(x)| &lt; \infty
+\]</div>
+</div>
+<p>Dystrybucja osobliwa to nieregularna</p>
+<p>No i to chyba było do 2.6 i 2.7.</p>
+</section>
 </section>
 
 
@@ -322,6 +381,8 @@ Chociaż to pewnie nie ma znaczenia bo można obustronnie sprzężyć najpierw.<
 </ul>
 </li>
 <li><a class="reference internal" href="#pojecie-operatora">Pojęcie Operatora</a></li>
+<li><a class="reference internal" href="#funkcjonal">Funkcjonał</a></li>
+<li><a class="reference internal" href="#dystrybucje">Dystrybucje</a></li>
 </ul>
 </li>
 </ul>
@@ -393,7 +454,7 @@ Chociaż to pewnie nie ma znaczenia bo można obustronnie sprzężyć najpierw.<
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/a0ca79f9f5dc04f22e2f8f8d25c6dad1257ccc84>Wed Jun 24 12:43:18 2026 +0200 mmf: a.5 (a0ca79f9f5dc04f22e2f8f8d25c6dad1257ccc84)</a>
+<a href=https://github.com/gucio321/matematyka/commit/e7e2e3eaddcc54e550a3fee639f0d3c177b2885b>Wed Jun 24 14:17:52 2026 +0200 2.6 and 2.7 (e7e2e3eaddcc54e550a3fee639f0d3c177b2885b)</a>
 </font>
 
   </body>
