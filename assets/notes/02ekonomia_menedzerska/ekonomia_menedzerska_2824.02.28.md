@@ -1,5 +1,0 @@
-- wymyślamy inwestycje
-- założenia
-- analiza w układzie rocznym
-- źrudła inwestycji (kapitał włąsny/kredyt zaciągany w 2 transzach po roku)
-- 
