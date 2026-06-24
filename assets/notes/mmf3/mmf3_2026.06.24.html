@@ -109,8 +109,44 @@ f &amp;= \sum_k^\infty c_k \Phi_k \\
 \braket{f | \Phi_n} &amp;= \sum_k^\infty c_k \braket{\Phi_k | \Phi_n} \\ 
 \braket{f | \Phi_n} &amp;= \sum_k^\infty c_k N_k \delta_{kn} \\ 
 \braket{f | \Phi_n} &amp;= c_n N_n \\ 
-c_n = \frac{\braket{f | \Phi_n}}{\braket{\Phi_n | \Phi_n}}
+c_n &amp;= \frac{\braket{f | \Phi_n}}{\braket{\Phi_n | \Phi_n}}
 \end{split}\]</div>
+<div class="admonition warning">
+<p class="admonition-title">Ostrzeżenie</p>
+<p>to wyprowadzenie jest częściowo niepoprawne: tutaj zakłądamy (chat zakłąda) matematyczną definicje iloczynu skalarnego.
+Gdybyśmy chcieli zrobić to po fizycznemu to trzebaby domnożyć przez <span class="math notranslate nohighlight">\(\bra{\Phi_n}\)</span> (żeby sprzężenia się zgodziły).
+Chociaż to pewnie nie ma znaczenia bo można obustronnie sprzężyć najpierw.</p>
+</div>
+<p>No i dotąd jest odpowiedź na <strong>2.4</strong> (właśnie ogarnołem że to jest A nie 2, ale trudno)</p>
+</section>
+<section id="pojecie-operatora">
+<h1>Pojęcie Operatora<a class="headerlink" href="#pojecie-operatora" title="Link to this heading">¶</a></h1>
+<p>Nie do końća wiem co znaczą znaczki w wykłądzie, ale chyba chodzi o to że operator to takie coś co jest wewnętrzne dla danej przestrzeni (działa <span class="math notranslate nohighlight">\(\hat V : V \to V\)</span>)</p>
+<p>Operator jest liniowy wtedy gdy jest liniowy.</p>
+<p>Działania na operatorach:</p>
+<ul class="simple">
+<li><p>dodawanie:  operatory możńa dodać do siebie (wtedy ich dziedziny <span class="math notranslate nohighlight">\(D_{1 + 2} = D_1 \cap D_2\)</span>)</p></li>
+<li><p>mnożenie przez skalar</p></li>
+<li><p>mnożenie <span class="math notranslate nohighlight">\((L_1 L_2)f = L_1(L_2 f) = L_1 L_2 f\)</span></p></li>
+</ul>
+<p>Sprzężenie po hermitowsku: <span class="math notranslate nohighlight">\(\hat L^\dagger\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\braket{g | \hat L f } = {\hat L^\dagger g | f}
+\]</div>
+<p>Operator hermitowski to taki, który się nie zmienia przy sprzężeniu <span class="math notranslate nohighlight">\(\hat L = \hat L ^ \dagger\)</span>.</p>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>Operator sprzężony po hermitowsku <strong>to nie jest</strong> operator hermitowski!</p>
+</div>
+<p>Przykłady:</p>
+<ul class="simple">
+<li><p>operator pochodnej <span class="math notranslate nohighlight">\(\frac{d}{dx}\)</span>. Podstawiamy, robimy trick z całkowaniem przez części, wychodzi, że <span class="math notranslate nohighlight">\(\hat L \to - \hat L\)</span> abo nie (zależy od krańców przedziałów oznaczoności funkcji cokolwiek to znaczy).</p></li>
+</ul>
+<ul class="simple">
+<li><p>Operator pędu <span class="math notranslate nohighlight">\(\hat p = - i \hbar \frac{d}{dx}\)</span>. Tutaj z marszu zakładamy że krańce dziedziny są 0 więc od razu wychodzi że operator jest samosprzężony (bo ma i w sobie, któ©e się sprzęga niwelująć -).</p></li>
+</ul>
+<p>No i tu końćzy się 2.5</p>
 </section>
 
 
@@ -119,7 +155,14 @@ c_n = \frac{\braket{f | \Phi_n}}{\braket{\Phi_n | \Phi_n}}
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
-        <div class="sphinxsidebarwrapper">
+        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
+    <h3><a href="../../../index.html">Spis treści:</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Szereg ortonormalny</a></li>
+<li><a class="reference internal" href="#pojecie-operatora">Pojęcie Operatora</a></li>
+</ul>
+
+  </div>
 <search id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Szybkie wyszukiwanie</h3>
     <div class="searchformwrapper">
@@ -170,7 +213,7 @@ c_n = \frac{\braket{f | \Phi_n}}{\braket{\Phi_n | \Phi_n}}
 © Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
 Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
 Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
-<a href=https://github.com/gucio321/matematyka/commit/5f2be0f05d806048093152a5ab8a01ee5b3afd85>Wed Jun 24 11:20:17 2026 +0200 mf3 wyprowadzenie cn (5f2be0f05d806048093152a5ab8a01ee5b3afd85)</a>
+<a href=https://github.com/gucio321/matematyka/commit/a0ca79f9f5dc04f22e2f8f8d25c6dad1257ccc84>Wed Jun 24 12:43:18 2026 +0200 mmf: a.5 (a0ca79f9f5dc04f22e2f8f8d25c6dad1257ccc84)</a>
 </font>
 
   </body>
