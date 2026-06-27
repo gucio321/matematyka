@@ -42,3 +42,60 @@ Własnośći lagranżjanu:
 - Operator eulera-lagrange'a jest liniowy dla lagranżjanu ($\alpha E(L_1) + \beta E(L_2) = E(\alpha L_1 + \beta L_2))$ 
 
 ## Wykład 2
+
+```{admoniton} Ukłąd inercjalny
+Ukłąd w którym ruch swobodny odbywa się ze stałą prędkością (czyli nie ma przyspieszenia).
+
+::::{tip}
+Funfact: spytałem chatGPT czy pociąg jadący po ziemii jest układem inercjalnym, skoro przecież na ziemii mamy przyspieszenie grawitacyjne.
+Okazuje się, że w mechanice newtonowskiej traktuje się przyspieszenie grawitacyjne jako rzeczywistą siłę - czyli to tak na prawde nie jest przyspieszenie.
+::::
+
+Przestrzeń jest jednorodna i izotropowa a czas jest izotropowy, to znaczy nie ma w nich dziur ($dt \to 0$, definicja przestrzeni liniowej) a dodatkowo w przestrzeni nie ma kierunków (czyli obrót o kont nie zmienia fizyki).
+```
+
+Układ odniesienia porusza się z prędkością $\vec{v}$ (stałą) i jest układem inercjalnymm.
+
+zarówno w **układzie inercjalnym** jak i we wszystkich **układach odniesienia** obowiązują te same prawa fizyki.
+
+Transformacja galileusza:
+
+Niech $\vec r^*$ oznacza położenie układu odniesienia względem ukłądu inercjalnego (obserwatora)
+
+$$
+\vec r^*(t) &=  \vec r(t) + \vec R_0 \vec v t \\
+\dot{\vec r^*}(t) &= \dot{\vec r}(t) + \vec v
+$$
+
+```{important}
+czas płynie tak samo we wszystkich układach odniesienia (jest uniwersalny)
+
+Nie no to tak na prawde scam bo potem jest Einstain ale na razie nie ma.
+```
+
+Całka ruchu oznacza, że dana wielkość nie zmienia się w czasie.
+
+$f(q, \dot q)$ nazywamy całką ruchu, jeżeli $\frac{\df }{dt} = 0$.
+
+```{admonition} Twierdzenie Noether
+Jeżeli występuje symetria to coś jest zachowane.
+Formalnie:
+
+$$
+\delta L(q(t, \epsilon), \dot q(t, \epsilon), t)|_{\epsilon \to 0} = \frac{d}{dt} f(q, t)
+$$
+
+Chodzi o to, że czasem nie da się znaleźć takiego $F$ żeby spełniało równanie.
+```
+
+Jeżeli ukłąd spełnia równanie E-L, to istnieje całka ruchu:
+
+$$
+I = \sum_i \frac{\partial L}{\partial \dot q_I} \frac{\partial q_i}{\partial \epsilon} |_{\epsilon \to 0} - f(q,t) = const
+$$
+
+Prawo zachowania energii: $\frac{d}{dt} \left(\sum_i \dot q_i \frac{\partial L}{\partial \dot q_i} - L\right) = 0$
+
+Translacja lagrangianu o wektor w przestrzeni nie zmienia praw fizyki.
+
+No i tak można iść dalej (pęd, obrót o kąt)
