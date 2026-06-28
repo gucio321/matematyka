@@ -99,3 +99,51 @@ Prawo zachowania energii: $\frac{d}{dt} \left(\sum_i \dot q_i \frac{\partial L}{
 Translacja lagrangianu o wektor w przestrzeni nie zmienia praw fizyki.
 
 No i tak można iść dalej (pęd, obrót o kąt)
+
+Funckja Rayligha pozwala na uwzględnienie tarć w lagrangianie.
+Normalnie lagrangian jest dla ukłądów tzw. zachowawczych, czyli nie tracących energii.
+W prawdziwym świecie jednak nie ma takich systuacji.
+
+$$
+R(\vec v) = \frac{1}{2} \sum_{j \in xyz}  \sum_i \lambda_i^j (\vec v _i^j)^2
+$$
+
+Róœnanie ruchu z uwzględnieniem funkcji Rayligha
+
+$$
+\frac{d}{dt} \left(\frac{\partial L}{\partial \dot q_j}\right) - \frac{\partial L}{\partial q_j} + \frac{\partial R}{\partial \dot q_J} = Q_j
+$$
+
+Twierdzenie o dysypacji:
+
+Funkcja Rayligha odpowiada za połowę mocy traconej $\frac{dE}{dt} = -2R$ (z tw. Eulera o fukncjach jednorodnych)
+
+Możńa reozważyć rzeczywisty oscylator z tłumieniem rayleigha + po dodaniu wymuszenia można szukać rezonansu.
+
+### Wykład 4
+
+Najważniejsze punkty do zapamiętania (chyba z poprzedniego?):
+- zasada Hamiltona $\delta S = 0$
+- Twierdzenie Noether - symetrie (np. zachowanie momentu pędu)
+- rezonans w rzutach liniowych - straty tysypatytwne ratują oscylator przed nieskończonością ($\frac{\partial E}{\partial t} = -2R$)
+
+
+Zasada d'Alamberta: Praca wszystkich sił w ukłądzie (zewnętrznych i wewnętrznych) musi być równa zeru:
+
+$$
+\sum_i \left(F_i^{(ext)} - m \ddot r \right) = 0
+$$
+
+Tensor Momentu bezwłądności definiuje się jako macierz 3x3 opisująca bezwładność bryły (rozkłąd masy) wzdłuż każdej osi:
+
+$$
+I_{ij} = \int_\Omega d^3r \rho(\vec r) (r^2\delta^{ij} - r^i r^j)
+$$
+
+Uogulnione twierdzenie Steinera (to dla momentu bezwładności):
+
+Przesuwanie osi obrotu o wektor $\vec a$ od środka masy:
+
+$$
+I_{jk} \to I_{jk}^{(CM)} + M(|a|^2 \delta^{jk} - a^j a^k)
+$$
