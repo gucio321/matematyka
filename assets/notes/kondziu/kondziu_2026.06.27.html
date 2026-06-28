@@ -1,0 +1,251 @@
+
+
+<!DOCTYPE html>
+
+<html lang="pl" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Wykład 2 &#8212; Matematyka  - dokumentacja</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/cloud.css?v=f9ae72be" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=7de1373a" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
+    
+    <script src="../../../_static/documentation_options.js?v=a28d12eb"></script>
+    <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../../../_static/translations.js?v=2827c288"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+
+    
+    
+     
+        <script src="../../../_static/jquery.cookie.js"></script>
+    
+
+    
+     
+        <script src="../../../_static/cloud.base.js"></script>
+    
+
+    
+     
+        <script src="../../../_static/cloud.js"></script>
+    
+
+    <link rel="icon" href="../../../_static/icon.ico"/>
+    <link rel="index" title="Indeks" href="../../../genindex.html" />
+    <link rel="search" title="Szukaj" href="../../../search.html" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head><body>
+    <div class="relbar-top">
+        
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Nawigacja</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="Indeks ogólny"
+             accesskey="I">indeks</a></li>
+    <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">Wykład 2</a></li> 
+      </ul>
+    </div>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="admonition-dzialanie admonition">
+<p class="admonition-title">działanie</p>
+<p>to funkcjonał (czyli przyjmuje funkcje i zwraca liczbe) opisujący zmiane lagranżjanu (czyli bilansu energii) wzdłuż trajektorii</p>
+<div class="math notranslate nohighlight">
+\[
+S \equiv \int_{t_1}^{t_2} L dt
+\]</div>
+</div>
+<p>Zasada najmniejszego działania mówi, że wszechświat jest leniwy: $\frac{\delta S}{\delta q(t)}</p>
+<p>Równanie Eulera-Lagrange’a:</p>
+<div class="math notranslate nohighlight">
+\[
+\delta S = S[q(t) + \delta q(t)] - S[q(t)]
+\]</div>
+<p>Korzystająć z rozwinięcia Teylora <span class="math notranslate nohighlight">\(f(x + \delta x,y + \delta y) = f(x,y) + \frac{\partial f}{\partial x} \delta x + \frac {\partial f}{\partial y} \delta y\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\delta S &amp;= \int_{t_1}^{t_2} dt \left(L + \frac{\partial L}{\partial q} \delta q + \frac{\partial L}{\partial \dot{q}} \delta \dot q \right) - \int_{t_1}^{t_2} dt L \\
+\delta S &amp;= \int_{t_1}^{t_2} dt \left(\cancel L + \frac{\partial L}{\partial q} \delta q + \frac{\partial L}{\partial \dot{q}} \delta \dot q \right) - \cancel{\int_{t_1}^{t_2} dt L} \\
+\frac{d}{dt} \left(\frac{\partial L}{\partial \dot q} \delta q\right) &amp;= \delta q \frac{d}{dt} \frac{\partial L}{\partial \dot q} + \frac{\partial L}{\partial \dot q} \frac{d}{dt} \delta q \\
+\delta S &amp;= \int_{t_1}^{t_2} dt \left(\frac{\partial L}{\partial q} \delta q + \frac{d}{dt}\left(\frac{\partial L}{\partial \dot{q}} \delta q\right) - \delta q \frac{d}{dt} \frac{\partial L}{\partial \dot q} \right) \\
+\delta S &amp;= \int_{t_1}^{t_2} dt \delta q \left(\frac{\partial L}{\partial q} \delta q - \delta q \frac{d}{dt} \frac{\partial L}{\partial \dot q} \right) + \left. \frac{\partial L}{\partial \dot q} \delta q \right|_{t_1}^{t_2} \\
+\end{split}\]</div>
+<p>Zakłada się, że na krańcach trajektorii, system jest w stanie ustalonym, więc warjacja <span class="math notranslate nohighlight">\(q\)</span> zmierza do zera, dlatego:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\delta S = \int_{t_1}^{t_2} dt \delta q \left(\frac{\partial L}{\partial q} - \frac{d}{dt} \frac{\partial L}{\partial \dot q} \right) \\
+\end{split}\]</div>
+<p>Zgodnie z zasadą najmniejszego działąnia, <span class="math notranslate nohighlight">\(\delta S\)</span> musi znikać. Ponieważ <span class="math notranslate nohighlight">\(\delta q\)</span> nie może zanikać:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\delta S = 0 \Leftrightarrow \frac{\partial L}{\partial q} - \frac{d}{dt} \frac{\partial L}{\partial \dot q} = 0 \\
+\end{split}\]</div>
+<p>Własnośći lagranżjanu:</p>
+<ul class="simple">
+<li><p>Można bezkarnie doać pochodną dowolnej funkcji po czasie <span class="math notranslate nohighlight">\(L + \frac{d f(q, \dot q, t)}{dt} \Leftrightarrow L\)</span></p></li>
+<li><p>Operator eulera-lagrange’a jest liniowy dla lagranżjanu (<span class="math notranslate nohighlight">\(\alpha E(L_1) + \beta E(L_2) = E(\alpha L_1 + \beta L_2))\)</span></p></li>
+</ul>
+<section id="wyklad-2">
+<h1>Wykład 2<a class="headerlink" href="#wyklad-2" title="Link to this heading">¶</a></h1>
+<p>Układ odniesienia porusza się z prędkością <span class="math notranslate nohighlight">\(\vec{v}\)</span> (stałą) i jest układem inercjalnymm.</p>
+<p>zarówno w <strong>układzie inercjalnym</strong> jak i we wszystkich <strong>układach odniesienia</strong> obowiązują te same prawa fizyki.</p>
+<p>Transformacja galileusza:</p>
+<p>Niech <span class="math notranslate nohighlight">\(\vec r^*\)</span> oznacza położenie układu odniesienia względem ukłądu inercjalnego (obserwatora)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec r^*(t) &amp;=  \vec r(t) + \vec R_0 \vec v t \\
+\dot{\vec r^*}(t) &amp;= \dot{\vec r}(t) + \vec v
+\end{split}\]</div>
+<div class="admonition important">
+<p class="admonition-title">Ważne</p>
+<p>czas płynie tak samo we wszystkich układach odniesienia (jest uniwersalny)</p>
+<p>Nie no to tak na prawde scam bo potem jest Einstain ale na razie nie ma.</p>
+</div>
+<p>Całka ruchu oznacza, że dana wielkość nie zmienia się w czasie.</p>
+<p><span class="math notranslate nohighlight">\(f(q, \dot q)\)</span> nazywamy całką ruchu, jeżeli <span class="math notranslate nohighlight">\(\frac{\df }{dt} = 0\)</span>.</p>
+<div class="admonition-twierdzenie-noether admonition">
+<p class="admonition-title">Twierdzenie Noether</p>
+<p>Jeżeli występuje symetria to coś jest zachowane.
+Formalnie:</p>
+<div class="math notranslate nohighlight">
+\[
+\delta L(q(t, \epsilon), \dot q(t, \epsilon), t)|_{\epsilon \to 0} = \frac{d}{dt} f(q, t)
+\]</div>
+<p>Chodzi o to, że czasem nie da się znaleźć takiego <span class="math notranslate nohighlight">\(F\)</span> żeby spełniało równanie.</p>
+</div>
+<p>Jeżeli ukłąd spełnia równanie E-L, to istnieje całka ruchu:</p>
+<div class="math notranslate nohighlight">
+\[
+I = \sum_i \frac{\partial L}{\partial \dot q_I} \frac{\partial q_i}{\partial \epsilon} |_{\epsilon \to 0} - f(q,t) = const
+\]</div>
+<p>Prawo zachowania energii: <span class="math notranslate nohighlight">\(\frac{d}{dt} \left(\sum_i \dot q_i \frac{\partial L}{\partial \dot q_i} - L\right) = 0\)</span></p>
+<p>Translacja lagrangianu o wektor w przestrzeni nie zmienia praw fizyki.</p>
+<p>No i tak można iść dalej (pęd, obrót o kąt)</p>
+<p>Funckja Rayligha pozwala na uwzględnienie tarć w lagrangianie.
+Normalnie lagrangian jest dla ukłądów tzw. zachowawczych, czyli nie tracących energii.
+W prawdziwym świecie jednak nie ma takich systuacji.</p>
+<div class="math notranslate nohighlight">
+\[
+R(\vec v) = \frac{1}{2} \sum_{j \in xyz}  \sum_i \lambda_i^j (\vec v _i^j)^2
+\]</div>
+<p>Róœnanie ruchu z uwzględnieniem funkcji Rayligha</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{d}{dt} \left(\frac{\partial L}{\partial \dot q_j}\right) - \frac{\partial L}{\partial q_j} + \frac{\partial R}{\partial \dot q_J} = Q_j
+\]</div>
+<p>Twierdzenie o dysypacji:</p>
+<p>Funkcja Rayligha odpowiada za połowę mocy traconej <span class="math notranslate nohighlight">\(\frac{dE}{dt} = -2R\)</span> (z tw. Eulera o fukncjach jednorodnych)</p>
+<p>Możńa reozważyć rzeczywisty oscylator z tłumieniem rayleigha + po dodaniu wymuszenia można szukać rezonansu.</p>
+<section id="wyklad-4">
+<h2>Wykład 4<a class="headerlink" href="#wyklad-4" title="Link to this heading">¶</a></h2>
+<p>Najważniejsze punkty do zapamiętania (chyba z poprzedniego?):</p>
+<ul class="simple">
+<li><p>zasada Hamiltona <span class="math notranslate nohighlight">\(\delta S = 0\)</span></p></li>
+<li><p>Twierdzenie Noether - symetrie (np. zachowanie momentu pędu)</p></li>
+<li><p>rezonans w rzutach liniowych - straty tysypatytwne ratują oscylator przed nieskończonością (<span class="math notranslate nohighlight">\(\frac{\partial E}{\partial t} = -2R\)</span>)</p></li>
+</ul>
+<p>Zasada d’Alamberta: Praca wszystkich sił w ukłądzie (zewnętrznych i wewnętrznych) musi być równa zeru:</p>
+<div class="math notranslate nohighlight">
+\[
+\sum_i \left(F_i^{(ext)} - m \ddot r \right) = 0
+\]</div>
+<p>Tensor Momentu bezwłądności definiuje się jako macierz 3x3 opisująca bezwładność bryły (rozkłąd masy) wzdłuż każdej osi:</p>
+<div class="math notranslate nohighlight">
+\[
+I_{ij} = \int_\Omega d^3r \rho(\vec r) (r^2\delta^{ij} - r^i r^j)
+\]</div>
+<p>Uogulnione twierdzenie Steinera (to dla momentu bezwładności):</p>
+<p>Przesuwanie osi obrotu o wektor <span class="math notranslate nohighlight">\(\vec a\)</span> od środka masy:</p>
+<div class="math notranslate nohighlight">
+\[
+I_{jk} \to I_{jk}^{(CM)} + M(|a|^2 \delta^{jk} - a^j a^k)
+\]</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
+    <h3><a href="../../../index.html">Spis treści:</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Wykład 2</a><ul>
+<li><a class="reference internal" href="#wyklad-4">Wykład 4</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Szybkie wyszukiwanie</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Szukaj" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+    
+    
+        <div class="sidebar-toggle-group no-js">
+            
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                 «
+                <span class="show-for-small">hide menu</span>
+                
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                 »
+            </button>
+        </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Nawigacja</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="Indeks ogólny"
+             >indeks</a></li>
+    <li><a href="../../../index.html">Matematyka  - dokumentacja</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">Wykład 2</a></li> 
+      </ul>
+    </div>
+    </div>
+
+<div class="footer" style="text-align:center">
+© Copyright 2023, <a href="https://github.com/gucio321/">Maciej Szeptuch</a>.
+Created using <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> 4.2.0.<br>
+Ewentualne błędy proszę zgłąszać w <a href="github.com/gucio321/matematyka">Repozytorium GitHub</a><br><br>
+<a href=https://github.com/gucio321/matematyka/commit/6b135fd75f64d42ae4500683528ba2a408dbaeb2>Sun Jun 28 14:23:08 2026 +0200 Merge branch 'master' of github.com:gucio321\/matematyka (6b135fd75f64d42ae4500683528ba2a408dbaeb2)</a>
+</font>
+
+  </body>
+</html>
